@@ -66,16 +66,16 @@
 % |||||||||||||||||||||| USTREZNO POPRAVI |||||||||||||||||||||||
 % |||||||||||||||||||||| EDIT ACCORDINGLY |||||||||||||||||||||||
 %----------------------------------------------------------------
-\newcommand{\ttitle}{Vzorec zaključnega dela}
-\newcommand{\ttitleEn}{Thesis template}
+\newcommand{\ttitle}{Primerjava uspešnosti odprtokodnih in komercialnih orodij za luščenje podatkov}
+\newcommand{\ttitleEn}{Performance comparison of open source and commercial information extraction tools}
 \newcommand{\tsubject}{\ttitle}
 \newcommand{\tsubjectEn}{\ttitleEn}
-\newcommand{\tauthor}{Mojster Jaka}
-\newcommand{\temail}{mojster.jaka@gmai.com}
-\newcommand{\myyear}{2016}
-\newcommand{\tkeywords}{računalnik, računalnik, računalnik}
-\newcommand{\tkeywordsEn}{computer, computer, computer}
-\newcommand{\mysupervisor}{doc.~dr.\ Peter Klepec}
+\newcommand{\tauthor}{Romana Grilj}
+\newcommand{\temail}{romana.grilj@gmai.com}
+\newcommand{\myyear}{2023}
+\newcommand{\tkeywords}{analiza podatkov, ekstrakcija podatkov, strukturni podatki, spletno rudarjenje}
+\newcommand{\tkeywordsEn}{Data analysis, Information Retrieval, structural data, Web Mining}
+\newcommand{\mysupervisor}{doc.~dr.\ Slavko Žitnik}
 \newcommand{\mycosupervisor}{akad.~prof.~dr.\ Martin Krpan}
 
 % include formatted front pages
@@ -253,6 +253,25 @@ Kot smo omenili že v uvodu, je pravi način za citiranje literature uporaba \Bi
 Programski paket \LaTeX je prvotno predstavljen v priročniku~\cite{Lamport} in je v resnici nadgradnja sistema \TeX\ avtorja Donalda Knutha, znanega po denimo, če izpustim njegovo umetnost programiranja, Knuth-Bendixovem algoritmu~\cite{Knuth}.
 
 Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ Fortnowa~\cite{Fortnow}.
+
+%----------------------------------------------------------------
+% Poglavje (Opis funkciionalnosti) 5
+%----------------------------------------------------------------
+\chapter{Opis funkcionalnosti}
+\label{ch4}
+\section{Prepoznavanje imenskih entitet}
+\label{sec:ner}
+Prepoznavanje imenskih entitet je tehnika v področju obdelave naravnega jezika (NLP), ki se uporablja za prepoznavanje in klasifikacijo posebnih vrst besed v besedilu. Te posebne vrste besed so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
+
+Cilj NER  je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo. Na primer, v stavek "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi NER sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
+
+NER ima številne praktične uporabe, kot so:
+\begin{enumerate}
+ \item  Avtomatsko označevanje imenskih entitet v novicah, člankih in drugih besedilnih vsebinah.
+ \item Razumevanje strukture in vsebine dokumentov za informacijsko iskanje in kategorizacijo.
+ \item Pomoč pri analizi sentimenta, kjer se želimo razumeti, kako se osebe, organizacije ali druge entitete omenjene v besedilu nanašajo na določeno temo ali izdelek.
+\end{enumerate}
+Metode prepoznavanja imenskih entitet se razvijajo in izpopolnjujejo s pomočjo strojnega učenja in naprednih algoritmov obdelave jezika. Ti sistemi so lahko zelo koristni pri obvladovanju in razumevanju velikih količin besedil, kar ima širok spekter uporabe v različnih industrijskih panogah.
 
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6

@@ -18,5 +18,7 @@
 \contentsline {section}{\numberline {4.1}Notacije}{9}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Lepe tabele in psevdokoda}{9}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Kaj pa literatura?}{11}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Sklepne ugotovitve}{13}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{15}{appendix.A}%
+\contentsline {chapter}{\numberline {6}Opis funkcionalnosti}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{13}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Sklepne ugotovitve}{15}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{17}{appendix.A}%
