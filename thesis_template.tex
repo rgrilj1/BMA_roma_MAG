@@ -320,7 +320,7 @@ Objektno zaznavanje se uporablja v številnih aplikacijah, kot so samovozeča vo
  %----------------------------------------------------------------
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
-\chapter{Uporabljeni dataseti}
+\chapter{Dataseti}
 \label{ch5}
 \section{Kaj je dataset?}
 Dataset je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskav, učenja modelov ali drugih postopkov obdelave podatkov. Dataseti vsebujejo različne vrste podatkov, od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
@@ -329,7 +329,23 @@ Na primer, v naravnojezikovni obdelavi (NLP) dataset vsebuje besedilne podatke, 
 V poslovnem okolju se dataseti uporabljajo za analizo strank, trženjske kampanje, obdelavo naravnega jezika v storitvah za stranke in še veliko drugih aplikacij.
 Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in so primerni za ciljno nalogo, da bi omogočili kakovostno analizo in doseganje uporabnih rezultatov.
 
+\section{Uporabljeni dataseti}
+\subsection{CoNLL 2003}
+ je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika (NLP), zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
+ Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet (NER) v obdelavi naravnega jezika (NLP). Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
+Dataset vsebuje angleške novičarske članke, pri čemer je vsaka beseda v teh člankih označena z ustreznim poimenovanim entitetnim oznako. Poimenovane entitete so razdeljene v štiri glavne kategorije:
+\begin{enumerate}
+ \item Oseba (PER): Posamezna imena ljudi.
+ \item Organizacija (ORG): Imena podjetij, ustanov ali organizacij.
+ \item Lokacija (LOC): Imena geografskih lokacij, kot so mesta, države ali regije.
+ \item Razno (MISC): Druge poimenovane entitete, ki ne spadajo v zgoraj navedene kategorije, na primer datumi, odstotki ali denar.
+ \end{enumerate}
+ Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z belim prostorom.
+ Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni benchmark za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER.
+ 
+
+ 
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
 %----------------------------------------------------------------
