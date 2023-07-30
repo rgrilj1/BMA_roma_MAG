@@ -21,5 +21,6 @@
 \contentsline {chapter}{\numberline {6}Opis funkcionalnosti}{13}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{13}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analiza sentimenta}{14}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Povzetek}{15}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Sklepne ugotovitve}{17}{chapter.7}%
 \contentsline {chapter}{\numberline {A}Title of the appendix 1}{19}{appendix.A}%
