@@ -24,5 +24,6 @@
 \contentsline {section}{\numberline {6.3}Povzetek}{15}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Izvleček besedne zveze}{15}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Klasifikacija besedila}{16}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Sklepne ugotovitve}{17}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{19}{appendix.A}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov}{16}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Sklepne ugotovitve}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{21}{appendix.A}%
