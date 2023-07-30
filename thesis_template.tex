@@ -294,7 +294,17 @@ Nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za 
 
 Identifikacija ključnih besed je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen tekst. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
 
+ \section{Klasifikacija besedila}
+ Klasifikacija besedil je postopek, pri katerem avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. Na primer, lahko klasificiramo e-poštna sporočila kot "spam" ali "ne-spam", novice glede na tematiko, uporabniške komentarje glede na ton (pozitiven, negativen, nevtralen), itd.
 
+Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", "s", itd.).
+
+Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana "Bag-of-Words" (vreča besed), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja.
+
+Nato sledi faza učenja, kjer uporabimo različne metode strojnega učenja, kot so Naivni Bayes, Logistična regresija, podporne vektorje, globoke nevronske mreže itd. Za učenje uporabimo skupino že klasificiranih besedil, imenovano učna množica ali učni nabor. Model se nauči prepoznati vzorce in odnose med besedili ter pripadajočimi kategorijami.
+
+Ko je model uspešno naučen, ga preizkusimo na novih, neznanih besedilih, ki niso bila uporabljena med učenjem. S pomočjo naučenih vzorcev in odnosov model oceni, v katero kategorijo spada posamezno neznano besedilo.
+ 
  
 
 %----------------------------------------------------------------
