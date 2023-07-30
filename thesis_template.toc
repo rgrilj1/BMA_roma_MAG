@@ -1,0 +1,22 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{}{chapter*.2}%
+\babel@toc {slovene}{}\relax 
+\contentsline {chapter}{Povzetek}{}{section*.4}%
+\babel@toc {slovene}{}\relax 
+\contentsline {chapter}{Razširjeni povzetek}{i}{chapter*.7}%
+\contentsline {section}{\numberline {I}Kratek pregled sorodnih del}{i}{section.0.1}%
+\contentsline {section}{\numberline {II}Predlagana metoda}{i}{section.0.2}%
+\contentsline {section}{\numberline {III}Eksperimentalna evaluacija}{i}{section.0.3}%
+\contentsline {section}{\numberline {IV}Sklep}{i}{section.0.4}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Sklicevanje na besedilne konstrukte}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Plovke: slike in tabele}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Formati slik}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Razno}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Notacije}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Lepe tabele in psevdokoda}{9}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Kaj pa literatura?}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Sklepne ugotovitve}{13}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{15}{appendix.A}%
