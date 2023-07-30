@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  30 JUL 2023 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  30 JUL 2023 17:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -994,17 +994,17 @@ l.153 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/eng/copyright2.tex
-<cc-licenca/cc_cc_30.pdf, id=116, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=120, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=117, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=121, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=118, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=122, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1216,12 +1216,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Chapter 3.
-<figures//pic1.pdf, id=249, 455.24379pt x 341.4326pt>
+<figures//pic1.pdf, id=254, 455.24379pt x 341.4326pt>
 File: figures//pic1.pdf Graphic file (type pdf)
 <use figures//pic1.pdf>
 Package pdftex.def Info: figures//pic1.pdf  used on input line 145.
 (pdftex.def)             Requested size: 284.52756pt x 213.40526pt.
-<figures//pic2.png, id=252, 405.515pt x 347.2975pt>
+<figures//pic2.png, id=257, 405.515pt x 347.2975pt>
 File: figures//pic2.png Graphic file (type png)
 <use figures//pic2.png>
 Package pdftex.def Info: figures//pic2.png  used on input line 170.
@@ -1340,11 +1340,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-Overfull \hbox (7.40698pt too wide) in paragraph at lines 321--322
-[]\OT1/cmr/m/n/12 Objektno za-z-na-vanje se uporablja v ^^Tstevilnih ap-likaci-
-jah, kot so samovoze^^Tca
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1391,7 +1386,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22
 
 ]
-Underfull \hbox (badness 3068) in paragraph at lines 364--365
+Underfull \hbox (badness 3068) in paragraph at lines 361--362
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
@@ -1400,20 +1395,14 @@ Underfull \hbox (badness 3068) in paragraph at lines 364--365
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `thesis_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis_template.out':
-(rerunfilecheck)             Before: 6C119A74EA0A6B3CF12202DF250DD2FB;3244
-(rerunfilecheck)             After:  B2CE3B3AA0D8A2A2BA66BE204B8F6122;3382.
+Package rerunfilecheck Info: File `thesis_template.out' has not changed.
+(rerunfilecheck)             Checksum: B2CE3B3AA0D8A2A2BA66BE204B8F6122;3382.
  ) 
 Here is how much of TeX's memory you used:
- 13603 strings out of 476025
- 221108 string characters out of 5790017
- 1861388 words of memory out of 5000000
- 33681 multiletter control sequences out of 15000+600000
+ 13608 strings out of 476025
+ 221147 string characters out of 5790017
+ 1862388 words of memory out of 5000000
+ 33682 multiletter control sequences out of 15000+600000
  528600 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,79p,1542b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1438,10 +1427,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (43 pages, 403993 bytes).
+Output written on thesis_template.pdf (43 pages, 404215 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 90 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
