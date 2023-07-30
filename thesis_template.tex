@@ -273,6 +273,18 @@ NER ima številne praktične uporabe, kot so:
 \end{enumerate}
 Metode prepoznavanja imenskih entitet se razvijajo in izpopolnjujejo s pomočjo strojnega učenja in naprednih algoritmov obdelave jezika. Ti sistemi so lahko zelo koristni pri obvladovanju in razumevanju velikih količin besedil, kar ima širok spekter uporabe v različnih industrijskih panogah.
 
+\section{Analiza sentimenta}
+Analiza sentimenta se nanaša na proces določanja čustvenega odziva, nagnjenosti ali stališča zapisanega besedila. Cilj analize sentimenta je ugotoviti, ali je določeno besedilo pozitivno, negativno ali nevtralno. To je lahko koristno pri analizi mnenj strank, razumevanju čustvenega odziva na izdelke, blagovne znamke, dogodke itd.
+Na primer, če imamo naslednji stavek: "Ta film je fantastičen, vreden ogleda!", bi analiza sentimenta prepoznala, da je izraz pozitiven.
+Ta analiza temelji na uporabi naravnojezikovnega procesiranja (NLP) in strojnega učenja. Obstaja več pristopov k analizi sentimenta, vključno z naslednjimi:
+\begin{enumerate}
+ \item Pravilni pristopi: Uporabljajo se predvsem pravila in vzorci za identifikacijo pozitivnih in negativnih izrazov v besedilu. Na primer, besede, kot so "dobro", "fantastično", "radostno" itd., bi bile označene kot pozitivne, medtem ko bi bile besede, kot so "slabo", "žalostno", "neznosno" itd., označene kot negativne.
+ \item Strojno učenje na podlagi besedila: Ta pristop vključuje uporabo algoritmov strojnega učenja, ki so naučeni prepoznati čustveni naboj besed v besedilu na podlagi velikega števila označenih podatkov (besedil s čustvenimi oznakami). Najpogostejši pristop je uporaba algoritmov za klasifikacijo, kot je na primer metoda podpornih vektorjev (SVM) ali nevronske mreže.
+ \item Analiza sentimenta s čustvenimi slovarji: Ta pristop vključuje uporabo slovarjev z besedami in izrazoslovjem, ki so povezani z določenimi čustvi. Besedilo se nato preveri in oceni glede na prisotnost pozitivnih ali negativnih besed iz čustvenih slovarjev.
+ \item Algoritmi globokega učenja: V zadnjem času so se pojavili tudi pristopi, ki temeljijo na globočem učenju, kot je uporaba rekurentnih nevronskih mrež (RNN) ali transformerskih modelov, ki so pokazali izjemne rezultate pri analizi sentimenta.
+\end{enumerate}
+
+
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
 %----------------------------------------------------------------
