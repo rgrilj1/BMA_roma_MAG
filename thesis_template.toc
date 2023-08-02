@@ -29,5 +29,5 @@
 \contentsline {section}{\numberline {7.1}Kaj je dataset?}{19}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Uporabljeni dataseti}{20}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}CoNLL 2003}{20}{subsection.7.2.1}%
-\contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{21}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{23}{appendix.A}%
+\contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{23}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{25}{appendix.A}%

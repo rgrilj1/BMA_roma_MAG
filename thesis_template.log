@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  30 JUL 2023 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  2 AUG 2023 21:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -911,7 +911,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 89.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box57
-) (./thesis_template.aux)
+) (./thesis_template.aux
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+)
 \openout1 = `thesis_template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
@@ -932,8 +936,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
 LaTeX Font Info:    ... okay on input line 127.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
 LaTeX Font Info:    ... okay on input line 127.
-
-(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
 \scratchdimen=\dimen180
@@ -1365,6 +1368,12 @@ Chapter 7.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
+<figures//conll.png, id=461, 400.49625pt x 169.63374pt>
+File: figures//conll.png Graphic file (type png)
+<use figures//conll.png>
+Package pdftex.def Info: figures//conll.png  used on input line 339.
+(pdftex.def)             Requested size: 284.52756pt x 120.52103pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1373,11 +1382,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
-Chapter 8.
-[21
+[20 <./figures//conll.png>]
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1389,7 +1403,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22
 
 ]
-Appendix A.
+Chapter 8.
 [23]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1402,23 +1416,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [24
 
 ]
-Underfull \hbox (badness 3068) in paragraph at lines 388--389
+Appendix A.
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26
+
+]
+Underfull \hbox (badness 3068) in paragraph at lines 396--397
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
 
-[25] (./thesis_template.aux)
+[27] (./thesis_template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis_template.out' has not changed.
 (rerunfilecheck)             Checksum: EAAB4ECCD05835E76448C376D719D010;3760.
  ) 
 Here is how much of TeX's memory you used:
- 13622 strings out of 476025
- 221278 string characters out of 5790017
+ 13634 strings out of 476025
+ 221487 string characters out of 5790017
  1862388 words of memory out of 5000000
- 33686 multiletter control sequences out of 15000+600000
+ 33694 multiletter control sequences out of 15000+600000
  528600 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,79p,1542b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1443,10 +1473,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (45 pages, 408413 bytes).
+Output written on thesis_template.pdf (47 pages, 428354 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 476 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

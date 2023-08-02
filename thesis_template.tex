@@ -334,7 +334,15 @@ Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in
  je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika (NLP), zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
  Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet (NER) v obdelavi naravnega jezika (NLP). Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
-Dataset vsebuje angleške novičarske članke, pri čemer je vsaka beseda v teh člankih označena z ustreznim poimenovanim entitetnim oznako. Poimenovane entitete so razdeljene v štiri glavne kategorije:
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{conll.png}
+\end{center}
+\caption{CoNLL2003 dataset}
+\label{pic2}
+\end{figure}
+
+Poimenovane entitete so razdeljene v štiri glavne kategorije:
 \begin{enumerate}
  \item Oseba (PER): Posamezna imena ljudi.
  \item Organizacija (ORG): Imena podjetij, ustanov ali organizacij.
@@ -343,7 +351,7 @@ Dataset vsebuje angleške novičarske članke, pri čemer je vsaka beseda v teh 
  \end{enumerate}
  Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z belim prostorom.
  Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni benchmark za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER.
- 
+
 
  
 %----------------------------------------------------------------
