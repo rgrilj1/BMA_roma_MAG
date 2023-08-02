@@ -331,7 +331,7 @@ Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in
 
 \section{Uporabljeni dataseti}
 \subsection{CoNLL 2003}
- je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika (NLP), zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
+ Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika (NLP), zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
  Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet (NER) v obdelavi naravnega jezika (NLP). Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
  \begin{figure}[h!]
@@ -351,9 +351,45 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
  \end{enumerate}
  Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z belim prostorom.
  Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni benchmark za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER.
+Dataset je sestavljen/razdeljen na tri različne skupine in sicer:
+CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
+\begin{enumerate}
+ \item učni (train) z 14.000 vrsticami  primerov
+ \item validacijski (validation) z 3.250 vrsticami primerov
+ \item preizkusni (test) z 3.450 vrsticami primerov
+ \end{enumerate}
 
+\subsection{IMDB dataset}
+IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika (NLP). Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
+Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v NLP je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
+IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
+\begin{enumerate}
+ \item učni (train) z 25.000 vrsticami  primerov
+ \item preizkusni (test) z 25.000 vrsticami primerov
+ \end{enumerate}
+Vsak sklop vsebuje tisoče pregledov filmov. To je idealna podatkovna zbirka za naloge analize čustvenega tona besedil (sentiment analysis), kjer modeli ocenjujejo, ali je mnenje v besedilu pozitivno, negativno ali nevtralno.
+
+Text za analizo:
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{analiza.png}
+\end{center}
+\caption{Besedilo za analizo}
+\label{pic2}
+\end{figure}
  
+Rezultat analize:
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{rezultat.png}
+\end{center}
+\caption{Rezultat analize}
+\label{pic2}
+\end{figure}
+
+V tem kratkem primeru recenzent izraža negativno čustvo, kar kaže na razočaranje nad filmom in kritizira njegovo pomanjkanje izvirnosti. Nizka ocena 4 dodatno odraža negativno mnenje.
+
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
 %----------------------------------------------------------------
