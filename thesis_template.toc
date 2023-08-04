@@ -30,5 +30,8 @@
 \contentsline {section}{\numberline {7.2}Uporabljeni dataseti}{20}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}CoNLL 2003}{20}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}IMDB dataset}{21}{subsection.7.2.2}%
-\contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{23}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{25}{appendix.A}%
+\contentsline {subsection}{\numberline {7.2.3} COCO dataset}{22}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4} CNN/Daily Mail Dataset}{23}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5} INSPEC dataset}{24}{subsection.7.2.5}%
+\contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{25}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{27}{appendix.A}%
