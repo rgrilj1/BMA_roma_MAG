@@ -504,7 +504,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 Pri izdelavi povzetka je bil uporabljen dataset CNN/Daily Mail.
 
-Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI
+Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.
 \pagebreak 
 %----------------------------------------------------------------
 %Izvleček besedne zveze 
@@ -536,6 +536,7 @@ Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen podatkovni niz sem
 
 Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
+\pagebreak 
 %----------------------------------------------------------------
 % Klasifikacija besedila 
 %----------------------------------------------------------------
@@ -555,7 +556,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=8cm]{KEY.png}
+\includegraphics[width=8cm]{CLASSIFICATION.png}
 \end{center}
 \caption{ Klasifikacija besedila  F1 rezultat}
 \label{pic2}
@@ -576,25 +577,26 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 \caption{ Klasifikacija besedila  }
         \begin{tabular}{l|ccc}
              &  Accuracy   \\ \hline
-                        {\tt Transformers} & 0.930 & 0.926 & 0.928\\
-                        {\tt Vertex AI }   & 0. & 0.  & 0.  \\
-                         {\tt AWS SageMaker}   & 0. & 0. & 0. \\     
-                        {\tt Azure Cognitive Services}   &  \textbf {0.} & \textbf {0.}  & \textbf {0.}
+                        {\tt Transformers} & 0.968\\
+                        {\tt Vertex AI }   & 0.977   \\
+                         {\tt AWS SageMaker}   & \textbf {0.980}  \\     
+                        {\tt Azure Cognitive Services}   &  0.965
         \end{tabular}
 \label{tbl:1}
 \end{table}
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=8cm]{KEY.png}
+\includegraphics[width=8cm]{OBJECT.png}
 \end{center}
-\caption{ Klasifikacija besedila  F1 rezultat}
+\caption{ Zaznava objektov Accuracy rezultat}
 \label{pic2}
 \end{figure}
 
-Pri ustvarjanju povzetka je bil uporabljen dataset CNN/Daily Mail.
 
-Kot najboljša izbira za povzemanje pa se je izkazala storitev Vertex AI ponudnika Google Cloud.
+Pri zaznavi objektov je bil uporabljen COCO dataset.
+
+Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
 
 %----------------------------------------------------------------
