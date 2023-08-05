@@ -27,6 +27,7 @@
 \contentsline {subsection}{\numberline {7.2.2}IMDB dataset}{21}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3} COCO dataset}{22}{subsection.7.2.3}%
 \contentsline {subsection}{\numberline {7.2.4} CNN/Daily Mail Dataset}{23}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5} semeval- dataset}{24}{subsection.7.2.5}%
-\contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{25}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{27}{appendix.A}%
+\contentsline {subsection}{\numberline {7.2.5} semeval-2017 dataset}{24}{subsection.7.2.5}%
+\contentsline {chapter}{\numberline {8}Analiza raziskave}{25}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{27}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{29}{appendix.A}%
