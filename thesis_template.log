@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,6 +933,12 @@ LaTeX Warning: Label `tbl:1' multiply defined.
 
 LaTeX Warning: Label `pic2' multiply defined.
 
+
+LaTeX Warning: Label `tbl:1' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
 )
 \openout1 = `thesis_template.aux'.
 
@@ -1474,16 +1480,8 @@ File: figures//KP.png Graphic file (type png)
 Package pdftex.def Info: figures//KP.png  used on input line 473.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
+Underfull \vbox (badness 5403) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures//SUMM.png, id=500, 565.02pt x 310.104pt>
-File: figures//SUMM.png Graphic file (type png)
-<use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 501.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1494,6 +1492,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26 <./figures//KP.png>]
+<figures//SUMM.png, id=508, 565.02pt x 310.104pt>
+File: figures//SUMM.png Graphic file (type png)
+<use figures//SUMM.png>
+Package pdftex.def Info: figures//SUMM.png  used on input line 499.
+(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures//KEY.png, id=509, 565.02pt x 310.104pt>
+File: figures//KEY.png Graphic file (type png)
+<use figures//KEY.png>
+Package pdftex.def Info: figures//KEY.png  used on input line 529.
+(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1511,11 +1526,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28
+[28 <./figures//KEY.png>]
+Chapter 9.
+[29
 
 ]
-Chapter 9.
-[29]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1540,7 +1555,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [32
 
 ]
-Underfull \hbox (badness 3068) in paragraph at lines 551--552
+Underfull \hbox (badness 3068) in paragraph at lines 588--589
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
@@ -1556,10 +1571,10 @@ Package rerunfilecheck Info: File `thesis_template.out' has not changed.
 (rerunfilecheck)             Checksum: 733C0EFE1D4BAEF313828AA96488576F;3132.
  ) 
 Here is how much of TeX's memory you used:
- 13687 strings out of 476025
- 222125 string characters out of 5790017
+ 13699 strings out of 476025
+ 222334 string characters out of 5790017
  1861388 words of memory out of 5000000
- 33711 multiletter control sequences out of 15000+600000
+ 33719 multiletter control sequences out of 15000+600000
  528600 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,79p,554b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1584,10 +1599,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (51 pages, 1021061 bytes).
+Output written on thesis_template.pdf (51 pages, 1205779 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 519 compressed objects within 6 object streams
- 143 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -29,8 +29,9 @@
 \contentsline {subsection}{\numberline {7.2.4} CNN/Daily Mail Dataset}{23}{subsection.7.2.4}%
 \contentsline {subsection}{\numberline {7.2.5} semeval-2017 dataset}{24}{subsection.7.2.5}%
 \contentsline {chapter}{\numberline {8}Analiza raziskave}{25}{chapter.8}%
-\contentsline {subsection}{\numberline {8.0.1}Prepoznavanje imenskih entitet}{25}{subsection.8.0.1}%
-\contentsline {subsection}{\numberline {8.0.2}Analiza sentimenta}{26}{subsection.8.0.2}%
-\contentsline {subsection}{\numberline {8.0.3}Povzetek }{26}{subsection.8.0.3}%
+\contentsline {subsection}{\numberline {8.0.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{25}{subsection.8.0.1}%
+\contentsline {subsection}{\numberline {8.0.2}Analiza sentimenta (Sentiment Analaysis)}{26}{subsection.8.0.2}%
+\contentsline {subsection}{\numberline {8.0.3}Povzetek (Summarisation)}{27}{subsection.8.0.3}%
+\contentsline {subsection}{\numberline {8.0.4}Izvleček besedne zveze (Key Phrases)}{27}{subsection.8.0.4}%
 \contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{29}{chapter.9}%
 \contentsline {chapter}{\numberline {A}Title of the appendix 1}{31}{appendix.A}%

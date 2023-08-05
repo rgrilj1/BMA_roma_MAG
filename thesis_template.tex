@@ -431,7 +431,7 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
 \chapter{Analiza raziskave}
-\subsection{Prepoznavanje imenskih entitet}
+\subsection{Prepoznavanje imenskih entitet (Named Entity Recognition)}
 \begin{table}[h!]
 \caption{Prepoznavanje imenskih entitet}
         \begin{tabular}{l|ccc}
@@ -455,7 +455,7 @@ Pri analizi imenskih entitet je bil uporabljen CONLL-2003 dataset.
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
-\subsection{Analiza sentimenta}
+\subsection{Analiza sentimenta (Sentiment Analaysis)}
 \begin{table}[h!]
 \caption{Analiza sentimenta}
         \begin{tabular}{l|ccc}
@@ -479,15 +479,13 @@ Pri analizi imenskih entitet je bil uporabljen CNN/Daily Mail  dataset.
 
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
+\pagebreak 
 
-
-
-
-\subsection{Povzetek }
+\subsection{Povzetek (Summarisation)}
 \begin{table}[h!]
 \caption{Povzetek }
         \begin{tabular}{l|ccc}
-             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+             & {\tt ROUGE-1} & {\tt ROUGE-2}  & ROUGE-L   \\ \hline
                         {\tt Transformers} & 0.209 & 0.190 & 0.192 \\
                         {\tt Vertex AI }   & \textbf {0.429} & \textbf {0.208 } & \textbf {0.306}  \\
                          {\tt AWS SageMaker}   & 0.226 & 0.021 & 0.201 \\     
@@ -503,6 +501,45 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \caption{Povzetek F1 rezultat}
 \label{pic2}
 \end{figure}
+
+Pri povzetku  je bil uporabljen CNN/Daily Mail  dataset.
+
+Za povzemanje  je bila najboljša Vertex AI storitev.
+
+%----------------------------------------------------------------
+%Izvleček besedne zveze 
+
+%----------------------------------------------------------------
+
+\subsection{Izvleček besedne zveze  (Key Phrases)}
+\begin{table}[h!]
+\caption{Izvleček besedne zveze  }
+        \begin{tabular}{l|ccc}
+             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+                        {\tt Transformers} & 0.475 & 0.573 & 0.519\\
+                        {\tt Vertex AI }   & 0.637 & 0.543  & 0.586  \\
+                         {\tt AWS SageMaker}   & 0.513 & 0.622 & 0.562 \\     
+                        {\tt Azure Cognitive Services}   &  \textbf {0.530} & \textbf {0.670}  & \textbf {0.592}
+        \end{tabular}
+\label{tbl:1}
+\end{table}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{KEY.png}
+\end{center}
+\caption{Izvleček besedne zveze F1 rezultat}
+\label{pic2}
+\end{figure}
+
+
+%----------------------------------------------------------------
+% Klasifikacija besedila 
+%----------------------------------------------------------------
+
+%----------------------------------------------------------------
+% Zaznava objektov 
+%---------------------------------------------------------------
 
 Pri ustvarjanju povzetka je bil uporabljen dataset CNN/Daily Mail.
 
