@@ -4,11 +4,6 @@
 \babel@toc {slovene}{}\relax 
 \contentsline {chapter}{Povzetek}{}{section*.4}%
 \babel@toc {slovene}{}\relax 
-\contentsline {chapter}{Razširjeni povzetek}{i}{chapter*.7}%
-\contentsline {section}{\numberline {I}Kratek pregled sorodnih del}{i}{section.0.1}%
-\contentsline {section}{\numberline {II}Predlagana metoda}{i}{section.0.2}%
-\contentsline {section}{\numberline {III}Eksperimentalna evaluacija}{i}{section.0.3}%
-\contentsline {section}{\numberline {IV}Sklep}{i}{section.0.4}%
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Sklicevanje na besedilne konstrukte}{3}{chapter.2}%

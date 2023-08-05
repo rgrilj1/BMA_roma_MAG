@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 10:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -911,7 +911,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 89.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box57
-) (./thesis_template.aux)
+) (./thesis_template.aux
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+)
 \openout1 = `thesis_template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
@@ -932,8 +936,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
 LaTeX Font Info:    ... okay on input line 127.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
 LaTeX Font Info:    ... okay on input line 127.
-
-(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
 \scratchdimen=\dimen180
@@ -994,17 +997,17 @@ l.153 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/eng/copyright2.tex
-<cc-licenca/cc_cc_30.pdf, id=24, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=132, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=25, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=133, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=26, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=134, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1095,7 +1098,15 @@ l.160 ...ges/eng/dedication} \clearemptydoublepage
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 168.
 
-(./thesis_template.toc)
+(./thesis_template.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 ...}Izvleček besedne zveze}{15}{section.6.4}
+                                                  % [11
+
+])
 \tf@toc=\write5
 \openout5 = `thesis_template.toc'.
 
@@ -1105,23 +1116,14 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.171 	\clearemptydoublepage
-                             [11
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.171 	\clearemptydoublepage
-                             [12
-
-] (./front_pages/eng/acronyms.tex)
+                             [12] (./front_pages/eng/acronyms.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.181 ...pages/eng/acronyms} \clearemptydoublepage
                                                    [13
+
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -1171,22 +1173,8 @@ een already used, duplicate ignored
 l.16 \clearemptydoublepage
                            [4
 
-]) (./extended_abstract.tex) [1
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2])
+]))
 Chapter 1.
-
-LaTeX Warning: Reference `ch3' on page 1 undefined on input line 96.
-
 
 Overfull \hbox (10.28026pt too wide) in paragraph at lines 99--100
 []\OT1/cmr/m/n/12 Bodite po-zorni, da se v glavni mapi na-ha-jata ^^Tse da-tote
@@ -1220,12 +1208,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Chapter 3.
-<figures//pic1.pdf, id=142, 455.24379pt x 341.4326pt>
+<figures//pic1.pdf, id=261, 455.24379pt x 341.4326pt>
 File: figures//pic1.pdf Graphic file (type pdf)
 <use figures//pic1.pdf>
 Package pdftex.def Info: figures//pic1.pdf  used on input line 145.
 (pdftex.def)             Requested size: 284.52756pt x 213.40526pt.
-<figures//pic2.png, id=145, 405.515pt x 347.2975pt>
+<figures//pic2.png, id=264, 405.515pt x 347.2975pt>
 File: figures//pic2.png Graphic file (type png)
 <use figures//pic2.png>
 Package pdftex.def Info: figures//pic2.png  used on input line 170.
@@ -1263,12 +1251,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 4.
-
-LaTeX Warning: Reference `alg:primer' on page 9 undefined on input line 208.
-
-
-LaTeX Warning: Reference `tab:params' on page 9 undefined on input line 208.
-
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 211.
 [9]
@@ -1282,18 +1264,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 Chapter 5.
-
-LaTeX Warning: Citation `ubi' on page 11 undefined on input line 252.
-
-
-LaTeX Warning: Citation `Lamport' on page 11 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Knuth' on page 11 undefined on input line 253.
-
-
-LaTeX Warning: Citation `Fortnow' on page 11 undefined on input line 255.
-
 
 Overfull \hbox (0.35289pt too wide) in paragraph at lines 255--256
 []\OT1/cmr/m/n/12 Vsem razisko-val-cem s po-dro^^Tcja ra^^Tcunalni^^Tstva pa sv
@@ -1387,7 +1357,7 @@ Chapter 7.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-<figures//conll.png, id=337, 400.49625pt x 169.63374pt>
+<figures//conll.png, id=456, 400.49625pt x 169.63374pt>
 File: figures//conll.png Graphic file (type png)
 <use figures//conll.png>
 Package pdftex.def Info: figures//conll.png  used on input line 339.
@@ -1509,10 +1479,7 @@ Underfull \hbox (badness 3068) in paragraph at lines 470--471
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package rerunfilecheck Warning: File `thesis_template.out' has changed.
@@ -1520,42 +1487,78 @@ Package rerunfilecheck Warning: File `thesis_template.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis_template.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  EAAB4ECCD05835E76448C376D719D010;3760.
+(rerunfilecheck)             Before: EAAB4ECCD05835E76448C376D719D010;3760
+(rerunfilecheck)             After:  702E176C2C8CBB57D9DDD41D7F1CAB8E;3000.
  ) 
 Here is how much of TeX's memory you used:
- 13635 strings out of 476025
- 221393 string characters out of 5790017
- 1861388 words of memory out of 5000000
- 33666 multiletter control sequences out of 15000+600000
+ 13659 strings out of 476025
+ 221632 string characters out of 5790017
+ 1862388 words of memory out of 5000000
+ 33691 multiletter control sequences out of 15000+600000
  528600 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,79p,1542b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
-/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
-23/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (49 pages, 431119 bytes).
+ 80i,12n,79p,554b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{table.caption.11} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.8} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.0.4} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.0.3} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.0.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.0.1} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
+23/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on thesis_template.pdf (47 pages, 434030 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 136 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
