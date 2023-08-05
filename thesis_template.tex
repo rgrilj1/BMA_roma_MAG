@@ -260,7 +260,7 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
 \label{sec:ner}
-Prepoznavanje imenskih entitet je tehnika na področju obdelave naravnega jezika (NLP), ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
+Prepoznavanje imenskih entitet je tehnika na področju obdelave naravnega jezika, ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
 
 Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo. Na primer, v stavek "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
 
@@ -274,7 +274,7 @@ Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu 
 \section{Analiza sentimenta}
 Analiza sentimenta je proces določanja čustvenega odziva, nagnjenosti ali stališča zapisanega besedila. Cilj analize sentimenta je ugotoviti, ali je določeno besedilo pozitivno, negativno ali nevtralno. To je lahko koristno pri analizi mnenj strank, razumevanju čustvenega odziva na izdelke, blagovne znamke, dogodke in druge.
 Na primer, če imamo naslednji stavek: "Ta film je fantastičen, vreden ogleda!", bi analiza sentimenta prepoznala, da je izraz pozitiven.
-Ta analiza temelji na uporabi naravnojezikovnega procesiranja (NLP) in strojnega učenja. Obstaja več pristopov k analizi sentimenta, vključno z naslednjimi:
+Ta analiza temelji na uporabi naravnojezikovnega procesiranja in strojnega učenja. Obstaja več pristopov k analizi sentimenta, vključno z naslednjimi:
 \begin{enumerate}
  \item Pravilni pristopi: Uporabljajo se predvsem pravila in vzorci za identifikacijo pozitivnih in negativnih izrazov v besedilu. Na primer, besede, kot so "dobro", "fantastično", "radostno" itd., bi bile označene kot pozitivne, medtem ko bi bile besede, kot so "slabo", "žalostno", "neznosno" itd., označene kot negativne.
  \item Strojno učenje na podlagi besedila: Ta pristop vključuje uporabo algoritmov strojnega učenja, ki so naučeni prepoznati čustveni naboj besed v besedilu na podlagi velikega števila označenih podatkov (besedil s čustvenimi oznakami). 
@@ -317,15 +317,15 @@ Objektno zaznavanje se uporablja v številnih aplikacijah, kot so samovozeča vo
 \section{Kaj je dataset?}
 Dataset je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskav, učenja modelov ali drugih postopkov obdelave podatkov. Dataseti vsebujejo različne vrste podatkov, od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
 V kontekstu računalniškega znanstvenega modeliranja in strojnega učenja so dataseti ključnega pomena, saj služijo kot osnova za razvoj, treniranje in evalvacijo modelov. Modeli se učijo na teh podatkih, tako da prepoznajo vzorce in povezave med vhodnimi podatki in ciljnimi izhodi.
-Na primer, v naravnojezikovni obdelavi (NLP) dataset vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. Te podatke lahko uporabimo za različne naloge, kot je sentimentna analiza, klasifikacija tem, generiranje besedil itd.
+Na primer, v naravnojezikovni obdelavi  dataset vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. Te podatke lahko uporabimo za različne naloge, kot je sentimentna analiza, klasifikacija tem, generiranje besedil itd.
 V poslovnem okolju se dataseti uporabljajo za analizo strank, trženjske kampanje, obdelavo naravnega jezika v storitvah za stranke in še veliko drugih aplikacij.
 Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in so primerni za ciljno nalogo, da bi omogočili kakovostno analizo in doseganje uporabnih rezultatov.
 
 \section{Uporabljeni dataseti}
 \subsection{CoNLL 2003}
 \label{sec:my_subsection}
- Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika (NLP), zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
- Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet (NER) v obdelavi naravnega jezika (NLP). Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
+ Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika , zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
+ Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet naravnega jezika v obdelavi naravnega jezika. Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
  \begin{figure}[h!]
 \begin{center}
@@ -354,7 +354,7 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
 
 \subsection{IMDb Reviews dataset}
 \label{sec:imdb}
-IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika (NLP). Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
+IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika. Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
 Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
 IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
@@ -405,19 +405,19 @@ CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope:
  
  \subsection{ semeval-2017 dataset}
   \label{sec:semeval}
- SemEval podatkovne zbirke so zbirke besedilnih podatkov, ki so anotirane za različne naloge na področju obdelave naravnega jezika (NLP).
+ SemEval podatkovne zbirke so zbirke besedilnih podatkov, ki so anotirane za različne naloge na področju obdelave naravnega jezika.
  
 Tukaj je nekaj ključnih značilnosti SemEval podatkovnih zbirk:
 \begin{enumerate}
  \item Anotacije: Podatki v SemEval podatkovnih zbirkah so običajno anotirani, kar pomeni, da so označeni z dodatnimi informacijami. Na primer, v podatkovni zbirki za naloge razreševanja sentimenta bi bili vzorci besedil označeni s pozitivnimi, negativnimi ali nevtralnimi sentimenti.
 
- \item Naloge: Vsaka SemEval podatkovna zbirka je oblikovana za reševanje specifične naloge NLP. To lahko vključuje naloge, kot so analiza sentimenta, prepoznavanje imenovanih entitet, razreševanje koreference, klasifikacija besedil itd.
+ \item Naloge: Vsaka SemEval podatkovna zbirka je oblikovana za reševanje specifične naloge naravnega jezika. To lahko vključuje naloge, kot so analiza sentimenta, prepoznavanje imenovanih entitet, razreševanje koreference, klasifikacija besedil itd.
 
  \item Raznolikost: SemEval podatkovne zbirke zajemajo širok spekter nalog, jezikov in domen. To omogoča raziskovalcem primerjavo modelov in pristopov na različnih področjih.
 
  \item Uporaba v tekmovanjih: SemEval podatkovne zbirke se pogosto uporabljajo v tekmovanjih, imenovanih SemEval naloge. Tekmovalci tekmujejo za razvoj najboljših algoritmov za določeno nalogo in se primerjajo z drugimi udeleženci.
  \end{enumerate}
-Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del NLP raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov.
+Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov.
 SemEval  podatkovna zbirka je običajno razdeljena na tri sklope: 
 \begin{enumerate}
  \item učni (train) z 49.547 vrsticami  primerov

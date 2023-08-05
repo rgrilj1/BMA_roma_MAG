@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 19:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 19:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1322,12 +1322,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 6.
 
-Overfull \hbox (4.85286pt too wide) in paragraph at lines 263--264
-\OT1/cmr/m/n/12 jezika (NLP), ki se uporablja za pre-poz-na-vanje in klasi-fika
-cijo besed v besedilu.
- []
-
-
 Overfull \hbox (3.0987pt too wide) in paragraph at lines 265--266
 []\OT1/cmr/m/n/12 Cilj je pre-poz-nati in dolo^^Tciti za^^Tcetek in konec posam
 eznih en-titet v besedilu
@@ -1638,19 +1632,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `thesis_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis_template.out':
-(rerunfilecheck)             Before: 733C0EFE1D4BAEF313828AA96488576F;3132
-(rerunfilecheck)             After:  9F2AE2886F3CBB4C28EAAF3DBB0F78F2;3190.
+Package rerunfilecheck Info: File `thesis_template.out' has not changed.
+(rerunfilecheck)             Checksum: 9F2AE2886F3CBB4C28EAAF3DBB0F78F2;3190.
  ) 
 Here is how much of TeX's memory you used:
  13732 strings out of 476025
  222967 string characters out of 5790017
- 1861388 words of memory out of 5000000
+ 1862388 words of memory out of 5000000
  33740 multiletter control sequences out of 15000+600000
  528600 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1676,7 +1664,7 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (55 pages, 1587014 bytes).
+Output written on thesis_template.pdf (55 pages, 1586949 bytes).
 PDF statistics:
  710 PDF objects out of 1000 (max. 8388607)
  550 compressed objects within 6 object streams
