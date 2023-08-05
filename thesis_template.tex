@@ -436,14 +436,23 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 \caption{Prepoznavanje imenskih entitet}
         \begin{tabular}{l|ccc}
              & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
-                        {\tt Hugging Face - Transformers} & 0.949 & 0.953 & 0.951 \\
-                        {\tt Google Cloud}   & 0.920 & 0.919  & 0.919  \\
-                         {\tt Amazon Web Services}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
-                        {\tt Microsoft Azure}   & 0.858 & 0.824  & 0.840
-
+                        {\tt Transformers} & 0.949 & 0.953 & 0.951 \\
+                        {\tt Vertex AI }   & 0.920 & 0.919  & 0.919  \\
+                         {\tt AWS SageMaker}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
+                        {\tt Azure Cognitive Services}   & 0.858 & 0.824  & 0.840
         \end{tabular}
 \label{tbl:1}
 \end{table}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{NER.png}
+\end{center}
+\caption{Prepoznavanje imenskih entitet F1 rezultat}
+\label{pic2}
+\end{figure}
+
+Pri prepoznavanju oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
 
 
