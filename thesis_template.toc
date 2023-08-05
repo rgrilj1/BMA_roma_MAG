@@ -32,6 +32,8 @@
 \contentsline {subsection}{\numberline {8.0.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{25}{subsection.8.0.1}%
 \contentsline {subsection}{\numberline {8.0.2}Analiza sentimenta (Sentiment Analaysis)}{26}{subsection.8.0.2}%
 \contentsline {subsection}{\numberline {8.0.3}Povzetek (Summarisation)}{27}{subsection.8.0.3}%
-\contentsline {subsection}{\numberline {8.0.4}Izvleček besedne zveze (Key Phrases)}{27}{subsection.8.0.4}%
-\contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{29}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{31}{appendix.A}%
+\contentsline {subsection}{\numberline {8.0.4}Izvleček besedne zveze (Key Phrases)}{28}{subsection.8.0.4}%
+\contentsline {subsection}{\numberline {8.0.5}Klasifikacija besedila (Text Classification)}{28}{subsection.8.0.5}%
+\contentsline {subsection}{\numberline {8.0.6}Zaznava objektov (Object Detection)}{29}{subsection.8.0.6}%
+\contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{31}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{33}{appendix.A}%

@@ -502,10 +502,10 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \label{pic2}
 \end{figure}
 
-Pri povzetku  je bil uporabljen CNN/Daily Mail  dataset.
+Pri izdelavi povzetka je bil uporabljen dataset CNN/Daily Mail.
 
-Za povzemanje  je bila najboljša Vertex AI storitev.
-
+Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI
+\pagebreak 
 %----------------------------------------------------------------
 %Izvleček besedne zveze 
 
@@ -532,14 +532,65 @@ Za povzemanje  je bila najboljša Vertex AI storitev.
 \label{pic2}
 \end{figure}
 
+Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen podatkovni niz semeval-2017.
+
+Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
 %----------------------------------------------------------------
 % Klasifikacija besedila 
 %----------------------------------------------------------------
 
+\subsection{Klasifikacija besedila  (Text Classification)}
+\begin{table}[h!]
+\caption{ Klasifikacija besedila  }
+        \begin{tabular}{l|ccc}
+             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+                        {\tt Transformers} & \textbf {0.930} & \textbf {0.926} & \textbf {0.928} \\
+                        {\tt Vertex AI }   & 0.957 & 0.862  & 0.907  \\
+                         {\tt AWS SageMaker}   & 0.858 & 0.763 & 0. 807\\     
+                        {\tt Azure Cognitive Services}   & 0.880 & 0.920  & 0.900
+        \end{tabular}
+\label{tbl:1}
+\end{table}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{KEY.png}
+\end{center}
+\caption{ Klasifikacija besedila  F1 rezultat}
+\label{pic2}
+\end{figure}
+
+Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz SemEval-2017.
+
+Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
+
+\pagebreak 
 %----------------------------------------------------------------
 % Zaznava objektov 
 %---------------------------------------------------------------
+
+
+\subsection{Zaznava objektov  (Object Detection)}
+\begin{table}[h!]
+\caption{ Klasifikacija besedila  }
+        \begin{tabular}{l|ccc}
+             &  Accuracy   \\ \hline
+                        {\tt Transformers} & 0.930 & 0.926 & 0.928\\
+                        {\tt Vertex AI }   & 0. & 0.  & 0.  \\
+                         {\tt AWS SageMaker}   & 0. & 0. & 0. \\     
+                        {\tt Azure Cognitive Services}   &  \textbf {0.} & \textbf {0.}  & \textbf {0.}
+        \end{tabular}
+\label{tbl:1}
+\end{table}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{KEY.png}
+\end{center}
+\caption{ Klasifikacija besedila  F1 rezultat}
+\label{pic2}
+\end{figure}
 
 Pri ustvarjanju povzetka je bil uporabljen dataset CNN/Daily Mail.
 
