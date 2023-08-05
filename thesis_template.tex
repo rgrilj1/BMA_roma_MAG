@@ -431,16 +431,17 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
 \chapter{Analiza raziskave}
-
+\subsection{Prepoznavanje imenskih entitet}
 \begin{table}[h!]
-\caption{}
-    \begin{center}
+\caption{Prepoznavanje imenskih entitet}
         \begin{tabular}{l|ccc}
-            Prepoznavanje imenskih entitet& {\tt Transformers} & {\tt Google cloud} & AWS \\ \hline
-                        {\tt pdflatex} & da & ne & da \\
-                        {\tt latex}   & ne & da  & da
+             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+                        {\tt Hugging Face - Transformers} & 0.949 & 0.953 & 0.951 \\
+                        {\tt Google Cloud}   & 0.920 & 0.919  & 0.919  \\
+                         {\tt Amazon Web Services}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
+                        {\tt Microsoft Azure}   & 0.858 & 0.824  & 0.840
+
         \end{tabular}
-    \end{center}
 \label{tbl:1}
 \end{table}
 

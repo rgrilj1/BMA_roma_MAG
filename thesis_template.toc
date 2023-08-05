@@ -29,5 +29,6 @@
 \contentsline {subsection}{\numberline {7.2.4} CNN/Daily Mail Dataset}{23}{subsection.7.2.4}%
 \contentsline {subsection}{\numberline {7.2.5} semeval-2017 dataset}{24}{subsection.7.2.5}%
 \contentsline {chapter}{\numberline {8}Analiza raziskave}{25}{chapter.8}%
+\contentsline {subsection}{\numberline {8.0.1}Prepoznavanje imenskih entitet}{25}{subsection.8.0.1}%
 \contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{27}{chapter.9}%
 \contentsline {chapter}{\numberline {A}Title of the appendix 1}{29}{appendix.A}%
