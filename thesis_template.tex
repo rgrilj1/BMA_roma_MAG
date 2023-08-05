@@ -431,9 +431,44 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 \chapter{Dataseti}
 \label{ch5}
 \section{Metrike}
+\subsection{Opis spremelnjivk za izračun metrik}
+\textbf{Pravilno pozitivni (True Positive)}
+
+Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določen razred. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten.
+
+Predpostavimo, da razvijamo model za prepoznavanje spam sporočil v elektronski pošti. Model pravilno prepozna 25 sporočil kot nezaželena (spam), ki dejansko vsebujejo nezaželeno vsebino. To pomeni, da imamo 25 primerov "pravih pozitivnih". Te primere model pravilno prepozna kot spam, ker resnično vsebujejo neželeno vsebino.
+
+\textbf{Napačno pozitivni (False Positive)}
+
+Označuje situacijo, ko model napačno napove, da je nekaj pozitivno, medtem ko je v resnici negativno. Gre za vrsto napake, kjer model napačno identificira primer kot pripadajoč pozitivnemu razredu, čeprav dejansko pripada negativnemu razredu.
+
+Na primer, predpostavimo, da imamo model za prepoznavanje spam sporočil v elektronski pošti. Če model označi sporočilo kot "spam", čeprav ni dejansko spam, imamo situacijo lažno pozitivnega primera. Drugače povedano, model je napačno napovedal pozitiven primer (spam), ko je dejansko negativen primer (ni spam).
+
+\textbf{Napačno negativni (False Negatives)}
+
+Označuje napako, ki se pojavi v kontekstu klasifikacije ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov.
+
+V primeru analize besedila v naravni jezikovni obdelavi (NLP), false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer false negative.
+
+Predpostavimo, da imamo napreden sistem za filtriranje neželenih sporočil (spam), ki ga uporabljamo za preverjanje prihajajočih e-poštnih sporočil. Sistem je zasnovan tako, da prepoznava in premika neželena sporočila v mapo za neželeno pošto.
+
+Vendar pa se zgodi False Negative, ko sistem napačno presodi e-poštno sporočilo kot varno (ne-spam), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "False Negatives".
+
+V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere.
+
+
 \subsection{Precision}
- Je ena od osnovnih metrik, ki se uporabljajo za ocenjevanje uspešnosti modelov v različnih nalogah, kot je klasifikacija besedila. Natančnost nam pove, kolikšen delež pozitivno napovedanih primerov je dejansko pravilno napovedanih. Metrika se izračuna s formulo:
+
+Precision je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah, kot je klasifikacija, kjer se ukvarjamo z razdelitvijo podatkov v različne razrede. Poudarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
+
+V kontekstu naravne jezikovne obdelave (NLP), precision igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.
+
  
+ Formula za izračun:
+\begin{center}
+ Precision = \(\frac{True Positive}{True Positive + False Positive}\)
+\end{center}
+
  Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/
 
 \subsection{Recall}
