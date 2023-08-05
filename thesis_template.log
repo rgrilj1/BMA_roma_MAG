@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  5 AUG 2023 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1499,16 +1499,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 8.
-<figures//NER.png, id=498, 565.02pt x 310.104pt>
+[27]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28
+
+]
+Chapter 9.
+<figures//NER.png, id=512, 565.02pt x 310.104pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
-Package pdftex.def Info: figures//NER.png  used on input line 446.
+Package pdftex.def Info: figures//NER.png  used on input line 462.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
-[27 <./figures//NER.png>]
-<figures//KP.png, id=508, 565.02pt x 310.104pt>
+[29 <./figures//NER.png>]
+<figures//KP.png, id=522, 565.02pt x 310.104pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
-Package pdftex.def Info: figures//KP.png  used on input line 470.
+Package pdftex.def Info: figures//KP.png  used on input line 486.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
 Underfull \vbox (badness 5403) has occurred while \output is active []
@@ -1522,11 +1535,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28 <./figures//KP.png>]
-<figures//SUMM.png, id=518, 565.02pt x 310.104pt>
+[30 <./figures//KP.png>]
+<figures//SUMM.png, id=532, 565.02pt x 310.104pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 496.
+Package pdftex.def Info: figures//SUMM.png  used on input line 512.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1540,11 +1553,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29 <./figures//SUMM.png>]
-<figures//KEY.png, id=528, 565.02pt x 310.104pt>
+[31 <./figures//SUMM.png>]
+<figures//KEY.png, id=543, 565.02pt x 310.104pt>
 File: figures//KEY.png Graphic file (type png)
 <use figures//KEY.png>
-Package pdftex.def Info: figures//KEY.png  used on input line 526.
+Package pdftex.def Info: figures//KEY.png  used on input line 542.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1558,11 +1571,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30 <./figures//KEY.png>]
-<figures//CLASSIFICATION.png, id=538, 565.02pt x 310.104pt>
+[32 <./figures//KEY.png>]
+<figures//CLASSIFICATION.png, id=553, 565.02pt x 310.104pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
-Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 556.
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 572.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1576,11 +1589,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31 <./figures//CLASSIFICATION.png>]
-<figures//OBJECT.png, id=549, 565.02pt x 310.104pt>
+[33 <./figures//CLASSIFICATION.png>]
+<figures//OBJECT.png, id=563, 565.02pt x 310.104pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
-Package pdftex.def Info: figures//OBJECT.png  used on input line 586.
+Package pdftex.def Info: figures//OBJECT.png  used on input line 602.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
 
@@ -1591,24 +1604,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32 <./figures//OBJECT.png>]
-Chapter 9.
-[33
+[34 <./figures//OBJECT.png>]
+Chapter 10.
+[35
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[34
-
-]
-Appendix A.
-[35]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1620,24 +1620,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [36
 
 ]
-Underfull \hbox (badness 3068) in paragraph at lines 637--638
+Appendix A.
+[37]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38
+
+]
+Underfull \hbox (badness 3068) in paragraph at lines 653--654
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
 
-[37] (./thesis_template.aux)
+[39] (./thesis_template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `thesis_template.out' has not changed.
-(rerunfilecheck)             Checksum: 9F2AE2886F3CBB4C28EAAF3DBB0F78F2;3190.
+
+Package rerunfilecheck Warning: File `thesis_template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis_template.out':
+(rerunfilecheck)             Before: 9F2AE2886F3CBB4C28EAAF3DBB0F78F2;3190
+(rerunfilecheck)             After:  8111A2D57B72CBBA3C8BF52F11E90244;3365.
  ) 
 Here is how much of TeX's memory you used:
- 13732 strings out of 476025
- 222967 string characters out of 5790017
+ 13741 strings out of 476025
+ 223082 string characters out of 5790017
  1862388 words of memory out of 5000000
  33740 multiletter control sequences out of 15000+600000
  528600 words of font info for 92 fonts, out of 8000000 for 9000
@@ -1664,10 +1683,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 23/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (55 pages, 1586949 bytes).
+Output written on thesis_template.pdf (57 pages, 1587983 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 550 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 727 PDF objects out of 1000 (max. 8388607)
+ 565 compressed objects within 6 object streams
+ 165 named destinations out of 1000 (max. 500000)
  249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
