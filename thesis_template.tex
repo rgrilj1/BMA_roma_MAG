@@ -477,8 +477,36 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \end{figure}
 Pri analizi imenskih entitet je bil uporabljen CNN/Daily Mail  dataset.
 
-Pi analizi sentimenta  je bila najboljša Vertex AI storitev.
+Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
+
+
+
+
+\subsection{Povzetek }
+\begin{table}[h!]
+\caption{Povzetek }
+        \begin{tabular}{l|ccc}
+             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+                        {\tt Transformers} & 0.209 & 0.190 & 0.192 \\
+                        {\tt Vertex AI }   & \textbf {0.429} & \textbf {0.208 } & \textbf {0.306}  \\
+                         {\tt AWS SageMaker}   & 0.226 & 0.021 & 0.201 \\     
+                        {\tt Azure Cognitive Services}   & 0.426 & 0.220  & 0.330
+        \end{tabular}
+\label{tbl:1}
+\end{table}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{SUMM.png}
+\end{center}
+\caption{Povzetek F1 rezultat}
+\label{pic2}
+\end{figure}
+
+Pri ustvarjanju povzetka je bil uporabljen dataset CNN/Daily Mail.
+
+Kot najboljša izbira za povzemanje pa se je izkazala storitev Vertex AI ponudnika Google Cloud.
 
 
 %----------------------------------------------------------------
