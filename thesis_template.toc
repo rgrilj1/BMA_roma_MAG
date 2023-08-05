@@ -16,9 +16,9 @@
 \contentsline {chapter}{\numberline {6}Opis funkcionalnosti}{13}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{13}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analiza sentimenta}{14}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Povzetek}{15}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Povzemanje besedila}{15}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Izvleček besedne zveze}{15}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Klasifikacija besedila}{16}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Klasifikacija besedila}{15}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Zaznava objektov}{16}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Dataseti}{19}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Kaj je dataset?}{19}{section.7.1}%
@@ -28,12 +28,12 @@
 \contentsline {subsection}{\numberline {7.2.3} COCO dataset}{22}{subsection.7.2.3}%
 \contentsline {subsection}{\numberline {7.2.4} CNN/Daily Mail Dataset}{23}{subsection.7.2.4}%
 \contentsline {subsection}{\numberline {7.2.5} semeval-2017 dataset}{24}{subsection.7.2.5}%
-\contentsline {chapter}{\numberline {8}Analiza raziskave}{25}{chapter.8}%
-\contentsline {subsection}{\numberline {8.0.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{25}{subsection.8.0.1}%
-\contentsline {subsection}{\numberline {8.0.2}Analiza sentimenta (Sentiment Analaysis)}{26}{subsection.8.0.2}%
-\contentsline {subsection}{\numberline {8.0.3}Povzetek (Summarisation)}{27}{subsection.8.0.3}%
-\contentsline {subsection}{\numberline {8.0.4}Izvleček besedne zveze (Key Phrases)}{28}{subsection.8.0.4}%
-\contentsline {subsection}{\numberline {8.0.5}Klasifikacija besedila (Text Classification)}{29}{subsection.8.0.5}%
-\contentsline {subsection}{\numberline {8.0.6}Zaznava objektov (Object Detection)}{30}{subsection.8.0.6}%
-\contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{31}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{33}{appendix.A}%
+\contentsline {chapter}{\numberline {8}Analiza raziskave}{27}{chapter.8}%
+\contentsline {subsection}{\numberline {8.0.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{27}{subsection.8.0.1}%
+\contentsline {subsection}{\numberline {8.0.2}Analiza sentimenta (Sentiment Analaysis)}{28}{subsection.8.0.2}%
+\contentsline {subsection}{\numberline {8.0.3}Povzetek (Summarisation)}{29}{subsection.8.0.3}%
+\contentsline {subsection}{\numberline {8.0.4}Izvleček besedne zveze (Key Phrases)}{30}{subsection.8.0.4}%
+\contentsline {subsection}{\numberline {8.0.5}Klasifikacija besedila (Text Classification)}{31}{subsection.8.0.5}%
+\contentsline {subsection}{\numberline {8.0.6}Zaznava objektov (Object Detection)}{32}{subsection.8.0.6}%
+\contentsline {chapter}{\numberline {9}Sklepne ugotovitve}{33}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{35}{appendix.A}%

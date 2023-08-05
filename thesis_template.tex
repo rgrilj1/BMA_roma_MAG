@@ -260,20 +260,19 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
 \label{sec:ner}
-Prepoznavanje imenskih entitet je tehnika v področju obdelave naravnega jezika (NLP), ki se uporablja za prepoznavanje in klasifikacijo posebnih vrst besed v besedilu. Te posebne vrste besed so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
+Prepoznavanje imenskih entitet je tehnika na področju obdelave naravnega jezika (NLP), ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
 
-Cilj NER  je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo. Na primer, v stavek "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi NER sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
+Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo. Na primer, v stavek "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
 
-NER ima številne praktične uporabe, kot so:
+Številne praktične uporabe:
 \begin{enumerate}
  \item  Avtomatsko označevanje imenskih entitet v novicah, člankih in drugih besedilnih vsebinah.
  \item Razumevanje strukture in vsebine dokumentov za informacijsko iskanje in kategorizacijo.
  \item Pomoč pri analizi sentimenta, kjer se želimo razumeti, kako se osebe, organizacije ali druge entitete omenjene v besedilu nanašajo na določeno temo ali izdelek.
 \end{enumerate}
-Metode prepoznavanja imenskih entitet se razvijajo in izpopolnjujejo s pomočjo strojnega učenja in naprednih algoritmov obdelave jezika. Ti sistemi so lahko zelo koristni pri obvladovanju in razumevanju velikih količin besedil, kar ima širok spekter uporabe v različnih industrijskih panogah.
 
 \section{Analiza sentimenta}
-Analiza sentimenta se nanaša na proces določanja čustvenega odziva, nagnjenosti ali stališča zapisanega besedila. Cilj analize sentimenta je ugotoviti, ali je določeno besedilo pozitivno, negativno ali nevtralno. To je lahko koristno pri analizi mnenj strank, razumevanju čustvenega odziva na izdelke, blagovne znamke, dogodke itd.
+Analiza sentimenta je proces določanja čustvenega odziva, nagnjenosti ali stališča zapisanega besedila. Cilj analize sentimenta je ugotoviti, ali je določeno besedilo pozitivno, negativno ali nevtralno. To je lahko koristno pri analizi mnenj strank, razumevanju čustvenega odziva na izdelke, blagovne znamke, dogodke in druge.
 Na primer, če imamo naslednji stavek: "Ta film je fantastičen, vreden ogleda!", bi analiza sentimenta prepoznala, da je izraz pozitiven.
 Ta analiza temelji na uporabi naravnojezikovnega procesiranja (NLP) in strojnega učenja. Obstaja več pristopov k analizi sentimenta, vključno z naslednjimi:
 \begin{enumerate}
@@ -283,8 +282,8 @@ Ta analiza temelji na uporabi naravnojezikovnega procesiranja (NLP) in strojnega
  \item Algoritmi globokega učenja: V zadnjem času so se pojavili tudi pristopi, ki temeljijo na globokem učenju.
  \end{enumerate}
  
- \section{Povzetek}
-Pri povzetku gre za postopek avtomatskega ustvarjanja krajšega in jedrnatega povzetka izdaljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno v velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
+ \section{Povzemanje besedila}
+Pri povzermanju besedila gre za postopek ustvarjanja krajšega in jedrnatega povzetka izdaljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno v velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
 
 NLP tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporab, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več.
  
@@ -294,29 +293,23 @@ Nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za 
 Identifikacija ključnih besed je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen tekst. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
 
  \section{Klasifikacija besedila}
- Klasifikacija besedil je postopek, pri katerem avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. Na primer, lahko klasificiramo e-poštna sporočila kot "spam" ali "ne-spam", novice glede na tematiko, uporabniške komentarje glede na ton (pozitiven, negativen, nevtralen), itd.
+ Klasifikacija besedil je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. Na primer, lahko klasificiramo e-poštna sporočila kot "spam" ali "ne-spam", novice glede na tematiko, uporabniške komentarje glede na ton (pozitiven, negativen, nevtralen), itd.
 
 Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", "s", itd.).
 
-Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana "Bag-of-Words" (vreča besed), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja.
-
-Nato sledi faza učenja, kjer uporabimo različne metode strojnega učenja, kot so Naivni Bayes, Logistična regresija, podporne vektorje, globoke nevronske mreže itd. Za učenje uporabimo skupino že klasificiranih besedil, imenovano učna množica ali učni nabor. Model se nauči prepoznati vzorce in odnose med besedili ter pripadajočimi kategorijami.
-
-Ko je model uspešno naučen, ga preizkusimo na novih, neznanih besedilih, ki niso bila uporabljena med učenjem. S pomočjo naučenih vzorcev in odnosov model oceni, v katero kategorijo spada posamezno neznano besedilo.
+Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed ("Bag-of-Words"), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja.
  
   \section{Zaznava objektov}
-Je tehnika, ki se uporablja za avtomatsko zaznavanje in identifikacijo objektov na digitalnih slikah ali video posnetkih. Namen te tehnike je, da računalnik prepozna in označi različne objekte v podobi ter jih loči od ozadja ali drugih objektov.
+Je tehnika, ki se uporablja za avtomatsko zaznavanje in identifikacijo objektov na digitalnih slikah ali video posnetkih. Namen te tehnike je, da  prepozna in označi različne objekte v podobi ter jih loči od ozadja ali drugih objektov.
 
 Postopek objektnega zaznavanja običajno vključuje naslednje korake:
 \begin{enumerate}
- \item Zaznavanje: Računalnik preučuje sliko ali video posnetek in identificira regije, kjer bi se lahko nahajali objekti.
+ \item Zaznavanje: Model preučuje sliko ali video posnetek in identificira regije, kjer bi se lahko nahajali objekti.
  \item Lokalizacija: Po tem, ko so bile regije prepoznane, algoritem določi omejitveno okvirje (bounding boxes), ki natančno označujejo položaje in mejne točke objektov na sliki.
- \item Klasifikacija: Ko so objekti omejeni z omejitvenimi okviri, računalnik analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
+ \item Klasifikacija: Ko so objekti omejeni z omejitvenimi okviri, analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
  \item  Sledenje: V video posnetkih je lahko zaželeno, da algoritem sledi objektom skozi različne kadre in tako beleži njihovo gibanje.
  \end{enumerate}
-Objektno zaznavanje se uporablja v številnih aplikacijah, kot so samovozeča vozila za zaznavanje drugih vozil in pešcev, nadzorne kamere za varnostne namene, prepoznavanje obrazov, identifikacija prometnih znakov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence, ki omogoča računalnikom, da "vidijo" in razumejo okolje okoli sebe.
- 
- %----------------------------------------------------------------
+Objektno zaznavanje se uporablja v številnih aplikacijah, kot so samovozeča vozila za zaznavanje drugih vozil in pešcev, nadzorne kamere za varnostne namene, prepoznavanje obrazov, identifikacija prometnih znakov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. %----------------------------------------------------------------
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
 \chapter{Dataseti}
@@ -363,7 +356,7 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
 \label{sec:imdb}
 IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika (NLP). Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
-Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v NLP je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
+Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
 IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
 \begin{enumerate}
  \item učni (train) z 25.000 vrsticami  primerov
