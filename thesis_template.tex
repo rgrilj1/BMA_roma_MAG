@@ -360,6 +360,7 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
  \end{enumerate}
 
 \subsection{IMDb Reviews dataset}
+\label{sec:imdb}
 IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika (NLP). Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
 Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v NLP je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
@@ -371,6 +372,7 @@ IMDB podatkovna zbirka je običajno razdeljena na dva sklopa:
 Vsak sklop vsebuje tisoče pregledov filmov. To je idealna podatkovna zbirka za naloge analize čustvenega tona besedil (sentiment analysis), kjer modeli ocenjujejo, ali je mnenje v besedilu pozitivno, negativno ali nevtralno.
 
 \subsection{ COCO dataset}
+\label{sec:coco}
 COCO (Common Objects in Context) je široko uporabljen nabor podatkov v področju računalniškega vida in detekcije objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z detekcijo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
 
 Nabor podatkov COCO je obsežen in vsebuje deset tisoče slik z milijoni označenih posameznih objektov. Slike prihajajo iz različnih virov, zajemajo raznolike prizore, ozadja, svetlobne pogoje in velikosti objektov.
@@ -393,6 +395,7 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \end{enumerate}
  
  \subsection{ CNN/Daily Mail Dataset}
+ \label{sec:cnn}
  CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za avstraktivno povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge avstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
  Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno usposabljanje in preizkušanje modelov.
  Tukaj je nekaj ključnih značilnosti nabora podatkov CNN/Daily Mail:
@@ -408,6 +411,7 @@ CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope:
  \end{enumerate}
  
  \subsection{ semeval-2017 dataset}
+  \label{sec:semeval}
  SemEval podatkovne zbirke so zbirke besedilnih podatkov, ki so anotirane za različne naloge na področju obdelave naravnega jezika (NLP).
  
 Tukaj je nekaj ključnih značilnosti SemEval podatkovnih zbirk:
@@ -451,7 +455,7 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 \caption{Prepoznavanje imenskih entitet F1 rezultat}
 \label{pic2}
 \end{figure}
-Pri analizi imenskih entitet je bil uporabljen CONLL-2003 dataset.
+Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} dataset.
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
@@ -475,7 +479,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \caption{Analiza sentimenta F1 rezultat}
 \label{pic2}
 \end{figure}
-Pri analizi imenskih entitet je bil uporabljen IMDb Reviews dataset.
+Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} dataset.
 
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
@@ -502,7 +506,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \label{pic2}
 \end{figure}
 
-Pri izdelavi povzetka je bil uporabljen dataset CNN/Daily Mail.
+Pri izdelavi povzetka je bil uporabljen dataset  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
 
 Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.
 \pagebreak 
@@ -532,7 +536,7 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
 \label{pic2}
 \end{figure}
 
-Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen podatkovni niz semeval-2017.
+Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen podatkovni niz  \hyperref[sec:semeval]{\underline {semeval-2017}}.
 
 Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
@@ -562,7 +566,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \label{pic2}
 \end{figure}
 
-Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz IMDb Reviews.
+Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz  \hyperref[sec:imdb]{\underline {IMDb Reviews}}.
 
 Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
 
@@ -593,13 +597,7 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 \end{figure}
 
 
-Pri zaznavi objektov je bil uporabljen COCO dataset.
-
-\hyperref[sec:Uporabljeni dataseti]{Word of text}
-
-\hyperref[sec:Uporabljeni dataseti]{Uporabljeni dataseti}
-\hyperref[sec:my_subsection]{\underline {this subsection}} 
-
+Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} dataset.
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
