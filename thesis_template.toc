@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {7.1}Kaj je dataset?}{19}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Uporabljeni dataseti}{20}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}CoNLL 2003}{20}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}IMDB dataset}{21}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.2}IMDb Reviews dataset}{21}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3} COCO dataset}{22}{subsection.7.2.3}%
 \contentsline {subsection}{\numberline {7.2.4} CNN/Daily Mail Dataset}{23}{subsection.7.2.4}%
 \contentsline {subsection}{\numberline {7.2.5} semeval-2017 dataset}{24}{subsection.7.2.5}%

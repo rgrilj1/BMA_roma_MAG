@@ -77,7 +77,6 @@
 \newcommand{\tkeywordsEn}{Data analysis, Information Retrieval, structural data, Web Mining}
 \newcommand{\mysupervisor}{doc.~dr.\ Slavko Žitnik}
 \newcommand{\mycosupervisor}{akad.~prof.~dr.\ Martin Krpan}
-
 % include formatted front pages
 \input{style/thesis_front_pages}
 
@@ -331,6 +330,7 @@ Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in
 
 \section{Uporabljeni dataseti}
 \subsection{CoNLL 2003}
+\label{sec:my_subsection}
  Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika (NLP), zlasti za nalogo imenovanja imenovalnih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
  Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet (NER) v obdelavi naravnega jezika (NLP). Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
@@ -359,7 +359,7 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
  \item preizkusni (test) z 3.450 vrsticami primerov
  \end{enumerate}
 
-\subsection{IMDB dataset}
+\subsection{IMDb Reviews dataset}
 IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika (NLP). Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
 Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v NLP je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
@@ -475,7 +475,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \caption{Analiza sentimenta F1 rezultat}
 \label{pic2}
 \end{figure}
-Pri analizi imenskih entitet je bil uporabljen CNN/Daily Mail  dataset.
+Pri analizi imenskih entitet je bil uporabljen IMDb Reviews dataset.
 
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
@@ -562,7 +562,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \label{pic2}
 \end{figure}
 
-Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz SemEval-2017.
+Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz IMDb Reviews.
 
 Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
 
@@ -570,7 +570,6 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 %----------------------------------------------------------------
 % Zaznava objektov 
 %---------------------------------------------------------------
-
 
 \subsection{Zaznava objektov  (Object Detection)}
 \begin{table}[h!]
@@ -595,6 +594,12 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 
 
 Pri zaznavi objektov je bil uporabljen COCO dataset.
+
+\hyperref[sec:Uporabljeni dataseti]{Word of text}
+
+\hyperref[sec:Uporabljeni dataseti]{Uporabljeni dataseti}
+\hyperref[sec:my_subsection]{\underline {this subsection}} 
+
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
