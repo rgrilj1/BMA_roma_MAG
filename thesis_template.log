@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 11:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -916,15 +916,6 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Label `pic2' multiply defined.
 
 
-LaTeX Warning: Label `ch5' multiply defined.
-
-
-LaTeX Warning: Label `tbl:1' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
-
 LaTeX Warning: Label `tbl:1' multiply defined.
 
 
@@ -1036,17 +1027,17 @@ l.155 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/eng/copyright2.tex
-<cc-licenca/cc_cc_30.pdf, id=124, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=144, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=125, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=145, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=126, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=146, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1142,7 +1133,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ...7.2}Uporabljeni dataseti}{20}{section.7.2}
+l.31 ...}{\numberline {5.6}ROUGE}{23}{section.5.6}
                                                   % [11
 
 ])
@@ -1215,15 +1206,23 @@ l.16 \clearemptydoublepage
 ]))
 Chapter 1.
 
-Overfull \hbox (10.28026pt too wide) in paragraph at lines 98--99
-[]\OT1/cmr/m/n/12 Bodite po-zorni, da se v glavni mapi na-ha-jata ^^Tse da-tote
-ki [] []\OT1/cmtt/m/n/12 declaration.tex
+Overfull \hbox (3.20668pt too wide) in paragraph at lines 97--99
+\OT1/cmr/m/n/12 tov za uspe^^Tsno u^^Tcenje NLP mod-e-lov. Pre-gledali bomo ob-
+stoje^^Tce in priljubljene
  []
 
-[1
+
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [1
 
 
 ]
+Overfull \hbox (6.22237pt too wide) in paragraph at lines 106--107
+[]\OT1/cmr/m/n/12 V poglavju  [][]Metrike[][] bomo temeljito raziskali ra-zli^^
+Tcne metrike, ki omogo^^Tcajo
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1232,17 +1231,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2
-
-]
+[2]
 Chapter 2.
 
-Overfull \hbox (0.35289pt too wide) in paragraph at lines 120--121
+Overfull \hbox (0.35289pt too wide) in paragraph at lines 133--134
 []\OT1/cmr/m/n/12 Vsem razisko-val-cem s po-dro^^Tcja ra^^Tcunalni^^Tstva pa sv
 e-tu-jem v branje mnenje
  []
 
-[3]
+[3
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1256,13 +1255,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 3.
 
-Overfull \hbox (3.0987pt too wide) in paragraph at lines 131--132
+Overfull \hbox (3.0987pt too wide) in paragraph at lines 144--145
 []\OT1/cmr/m/n/12 Cilj je pre-poz-nati in dolo^^Tciti za^^Tcetek in konec posam
 eznih en-titet v besedilu
  []
 
 
-Overfull \hbox (7.68985pt too wide) in paragraph at lines 141--144
+Overfull \hbox (7.68985pt too wide) in paragraph at lines 154--157
 \OT1/cmr/m/n/12 stali^^Ts^^Tca za-pisanega besedila. Cilj anal-ize sen-ti-menta
  je ugo-toviti, ali je dolo^^Tceno
  []
@@ -1273,14 +1272,14 @@ Underfull \vbox (badness 4048) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [6]
-Overfull \hbox (2.07602pt too wide) in paragraph at lines 154--155
+Overfull \hbox (2.07602pt too wide) in paragraph at lines 167--168
 \OT1/cmr/m/n/12 bne in-for-ma-cije iz izvirnega besedila. Ta tehnologija ima ^^
 Tsirok spek-ter uporab,
  []
@@ -1296,11 +1295,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [8]
 
@@ -1314,24 +1313,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+
+[10
+
+]
+Chapter 4.
+[11]
+Overfull \hbox (7.207pt too wide) in paragraph at lines 211--212
+[]\OT1/cmr/m/n/12 Raziskovanje novih pristopov: Razisko-valci uporabl-jajo data
+sete za razisko-
+ []
+
+
+Overfull \hbox (1.93585pt too wide) in paragraph at lines 213--214
+\OT1/cmr/m/n/12 de-lo-vanje NLP mod-e-lov. Zato je pomem-bno, da so dataseti na
+tan^^Tcno ozna^^Tceni
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10
-
-]
-Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-<figures//conll.png, id=289, 400.49625pt x 169.63374pt>
+[12]
+<figures//conll.png, id=314, 400.49625pt x 169.63374pt>
 File: figures//conll.png Graphic file (type png)
 <use figures//conll.png>
-Package pdftex.def Info: figures//conll.png  used on input line 198.
+Package pdftex.def Info: figures//conll.png  used on input line 230.
 (pdftex.def)             Requested size: 284.52756pt x 120.52103pt.
 
 
@@ -1342,7 +1362,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <./figures//conll.png>]
+[13 <./figures//conll.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1351,14 +1371,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
-Overfull \hbox (9.364pt too wide) in paragraph at lines 246--247
+[14]
+Overfull \hbox (9.364pt too wide) in paragraph at lines 278--279
 \OT1/cmr/m/n/12 datkov COCO prav tako zago-tavlja maske seg-mentacije na ravni 
 slikovnih
  []
 
 
-Overfull \hbox (3.31628pt too wide) in paragraph at lines 246--247
+Overfull \hbox (3.31628pt too wide) in paragraph at lines 278--279
 \OT1/cmr/m/n/12 pik za vsak posamezen ob-jekt. To pomeni, da so ob-jekti ne le 
 lokalizirani
  []
@@ -1371,20 +1391,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]
-Overfull \hbox (11.14584pt too wide) in paragraph at lines 258--261
+[15]
+Overfull \hbox (11.14584pt too wide) in paragraph at lines 290--293
 \OT1/cmr/m/n/12 CNN/Daily Mail je zbirka novi^^Tcarskih ^^Tclankov sku-paj s po
 vzetki, ki se uporablja
  []
 
 
-Overfull \hbox (0.35706pt too wide) in paragraph at lines 258--261
+Overfull \hbox (0.35706pt too wide) in paragraph at lines 290--293
 \OT1/cmr/m/n/12 za us-pos-abl-janje in preizku^^Tsanje mod-e-lov za avs-trak-ti
 vno povze-manje besedil.
  []
 
 
-Overfull \hbox (2.53296pt too wide) in paragraph at lines 258--261
+Overfull \hbox (2.53296pt too wide) in paragraph at lines 290--293
 \OT1/cmr/m/n/12 omogo^^Tca razisko-val-cem obse^^Tzno us-pos-abl-janje in preiz
 ku^^Tsanje mod-e-lov. Tukaj
  []
@@ -1397,21 +1417,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15]
-Overfull \hbox (5.86673pt too wide) in paragraph at lines 284--285
+[16]
+Overfull \hbox (5.86673pt too wide) in paragraph at lines 316--317
 []\OT1/cmr/m/n/12 Uporaba v tek-movan-jih: Se-mEval po-datkovne zbirke se pogos
 to uporabl-
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1429,25 +1440,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18
-
-]
+[18]
 Chapter 5.
 
-Overfull \hbox (1.15797pt too wide) in paragraph at lines 307--308
+Overfull \hbox (1.15797pt too wide) in paragraph at lines 339--340
 \OT1/cmr/m/n/12 elek-tron-ski po^^Tsti. Model pravilno pre-pozna 25 sporo^^Tcil
  kot neza^^Tzelena (spam),
  []
 
-[19]
-Overfull \hbox (0.714pt too wide) in paragraph at lines 330--331
+[19
+
+]
+Overfull \hbox (0.714pt too wide) in paragraph at lines 362--363
 []\OT1/cmr/m/n/12 Predpostavimo, da imamo napre-den sis-tem za fil-tri-ranje ne
 ^^Tzelenih sporo^^Tcil
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1458,9 +1465,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
-Overfull \hbox (42.16496pt too wide) in paragraph at lines 349--350
+Overfull \hbox (42.16496pt too wide) in paragraph at lines 381--382
 []\OT1/cmr/m/n/12 Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metri
 cs-to-evaluate-
+ []
+
+
+Overfull \hbox (4.04314pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/12 F1-metrika je pomem-bna za ocen-je-vanje uspe^^Tsnosti mod-e-lo
+v v ob-delavi besedil
  []
 
 
@@ -1472,11 +1485,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
-Overfull \hbox (4.04314pt too wide) in paragraph at lines 361--362
-\OT1/cmr/m/n/12 F1-metrika je pomem-bna za ocen-je-vanje uspe^^Tsnosti mod-e-lo
-v v ob-delavi besedil
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1507,19 +1515,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 6.
-<figures//NER.png, id=389, 565.02pt x 310.104pt>
+<figures//NER.png, id=402, 565.02pt x 310.104pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
-Package pdftex.def Info: figures//NER.png  used on input line 408.
+Package pdftex.def Info: figures//NER.png  used on input line 441.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
-[25 <./figures//NER.png>]
-<figures//KP.png, id=400, 565.02pt x 310.104pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25]
+<figures//KP.png, id=411, 565.02pt x 310.104pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
-Package pdftex.def Info: figures//KP.png  used on input line 432.
+Package pdftex.def Info: figures//KP.png  used on input line 467.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
-Underfull \vbox (badness 5403) has occurred while \output is active []
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26 <./figures//NER.png> <./figures//KP.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1530,33 +1550,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26 <./figures//KP.png>]
-<figures//SUMM.png, id=412, 565.02pt x 310.104pt>
+[27]
+<figures//SUMM.png, id=427, 565.02pt x 310.104pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 458.
+Package pdftex.def Info: figures//SUMM.png  used on input line 493.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27 <./figures//SUMM.png>]
-<figures//KEY.png, id=423, 565.02pt x 310.104pt>
+<figures//KEY.png, id=429, 565.02pt x 310.104pt>
 File: figures//KEY.png Graphic file (type png)
 <use figures//KEY.png>
-Package pdftex.def Info: figures//KEY.png  used on input line 488.
+Package pdftex.def Info: figures//KEY.png  used on input line 523.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1566,15 +1576,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28 <./figures//KEY.png>]
-<figures//CLASSIFICATION.png, id=435, 565.02pt x 310.104pt>
+[28 <./figures//SUMM.png>]
+Overfull \hbox (2.74179pt too wide) in paragraph at lines 538--538
+[]\OT1/cmr/bx/n/17.28 Klasifikacija besedila (Text Clas-si-fi-ca-tion) 
+ []
+
+<figures//CLASSIFICATION.png, id=438, 565.02pt x 310.104pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
-Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 518.
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 553.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1584,11 +1597,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29 <./figures//CLASSIFICATION.png>]
-<figures//OBJECT.png, id=445, 565.02pt x 310.104pt>
+[29 <./figures//KEY.png>]
+<figures//OBJECT.png, id=448, 565.02pt x 310.104pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
-Package pdftex.def Info: figures//OBJECT.png  used on input line 548.
+Package pdftex.def Info: figures//OBJECT.png  used on input line 583.
 (pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
 
 
@@ -1599,11 +1612,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30 <./figures//OBJECT.png>]
-Chapter 7.
-[31
+[30 <./figures//CLASSIFICATION.png> <./figures//OBJECT.png>]
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1615,7 +1633,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [32
 
 ]
-Appendix A.
+Chapter 7.
 [33]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1628,121 +1646,60 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [34
 
 ]
-Underfull \hbox (badness 3068) in paragraph at lines 599--600
+Appendix A.
+[35]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36
+
+]
+Underfull \hbox (badness 3068) in paragraph at lines 635--636
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
 
-[35] (./thesis_template.aux)
+[37] (./thesis_template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `thesis_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis_template.out':
-(rerunfilecheck)             Before: 8111A2D57B72CBBA3C8BF52F11E90244;3365
-(rerunfilecheck)             After:  512E8D72683D2CC25D8CACE90432005B;2497.
+Package rerunfilecheck Info: File `thesis_template.out' has not changed.
+(rerunfilecheck)             Checksum: 2DBA340DE17BA1712FB72E1A87257FD0;4704.
  ) 
 Here is how much of TeX's memory you used:
- 13645 strings out of 476025
- 221930 string characters out of 5790017
- 1858388 words of memory out of 5000000
- 33671 multiletter control sequences out of 15000+600000
+ 13624 strings out of 476025
+ 221622 string characters out of 5790017
+ 1859388 words of memory out of 5000000
+ 33666 multiletter control sequences out of 15000+600000
  524131 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,79p,1093b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsection.7.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.7.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.7.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.7.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.7.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.10} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.9} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.8.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.6} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.5} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
-ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (53 pages, 1418801 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on thesis_template.pdf (55 pages, 1423627 bytes).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
- 151 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

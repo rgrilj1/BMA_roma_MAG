@@ -90,13 +90,26 @@
 \chapter{Uvod}
 \label{ch:uvod}
 
-Datoteka {\tt magistrska\_naloga.tex} na kratko opisuje, kako se pisanja magistrskega dela lotimo z uporabo programskega pateka \LaTeX. V tem dokumentu bomo predstavili nekaj njegovih prednosti in hib. Kar se slednjih tiče, mi pride na misel ena sama. Ko se srečamo z njim, nam izgleda kot kislo jabolko, nismo prepričani, da bi želeli vanj ugrizniti. Lahko pa z njim pripravimo odličen zavitek ali pa pridemo na okus.
+Naravnojezikovno procesiranje (NLP) je eno izmed najhitreje razvijajočih se področij v umetni inteligenci, ki se ukvarja z obdelavo, razumevanjem in generiranjem naravnega jezika, kot ga uporabljajo ljudje za komunikacijo. Napredne NLP tehnike in modeli so v zadnjem desetletju privedli do prebojev v številnih aplikacijah, ki segajo od avtomatskega prevajanja in analize čustev do odgovarjanja na vprašanja in samodejnega povzemanja besedil.
 
-V Poglavju~\ref{ch:uvod} bomo na hitro spoznali besedilne konstrukte kot so izreki, enačbe in dokazi. Naučili se bomo, kako se na njih sklicujemo. V Poglavju~\ref{ch:sklicevanje} se bomo srečali s sklicevanjem na besedilne konstrukte. Poglavje~\ref{ch:plovke} bo predstavilo vključevanje plovk: slik in tabel. V Poglavju~\ref{ch3} se bomo srečali s sklicevanjem na literaturo.
-Sledil bo samo še zaključek.
+Cilj te magistrske naloge je raziskati in analizirati različne pristope k NLP modelom, razpoložljive datasete, uporabljene metrike za evaluacijo modelov ter številna področja uporabe NLP tehnologij.
 
-Bodite pozorni, da se v glavni mapi nahajata še datoteki \verb+ declaration.tex+ in \verb+ izjava.tex+. Ti datoteki se ločeno prevedeta, ju podpišete in oddate v referat ločeno od magistrske naloge.
+V nadaljevanju se bomo osredotočili na pomembnost kakovostnih datasetov za uspešno učenje NLP modelov. Pregledali bomo obstoječe in priljubljene datasete, ki se uporabljajo za različne naloge.
+Metrike za evaluacijo modelov bomo proučili kot ključen element za oceno učinkovitosti modelov. Preučili bomo različne metrike, kot so natančnost, F1-score, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko ocenimo zmogljivost modelov.
 
+Nato se bomo posvetili raznolikim področjem uporabe NLP tehnologij. Raziskali bomo, kako se tehnologije uporabljajo v avtomatskem prevajanju, analizi čustev, odgovarjanju na vprašanja, generiranju besedil, iskanju informacij, biomedicinski analizi in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo NLP modeli pri uporabi na teh različnih področjih.
+
+V Poglavju~\nameref{ch4}  bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo AI/NLP modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. NLP modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, klasifikacija besedil in še več.
+
+V Poglavju~\nameref{ch5} bomo podrobneje spoznali uporabljene datasete, ki so ključnega pomena za uspešno razvoj, učenje in evalvacijo NLP modelov. Dataseti so zbirke besedilnih podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge NLP.
+
+V poglavju ~\nameref{ch6}  bomo temeljito raziskali različne metrike, ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog v področju obdelave naravnega jezika (NLP) zahteva prilagodljivost pri izbiri primernih meril. V nadaljevanju so navedene ključne metrike, ki se redno uporabljajo pri evalvaciji NLP modelov.
+
+V predzanjem poglavju ~\nameref{ch7}  so predstavljeni rezultati različnih storitev uporabljenih funkcionalnosti.
+
+Sledijo še ~\nameref{ch8}.
+
+Z predstavitvijo ključnih elementov v magistrski nalogi bomo pridobili celovit pregled nad uporabo modelov ter njihovo uporabo na različnih področij. Cilj je prispevati k razumevanju NLP  tehnologij ter predstaviti rezultate različnih storitev.
 %----------------------------------------------------------------
 % Poglavje (Chapter) 2
 %----------------------------------------------------------------
@@ -113,7 +126,7 @@ Bodite pozorni, da se v glavni mapi nahajata še datoteki \verb+ declaration.tex
 % Poglavje (Chapter) 5
 %----------------------------------------------------------------
 \chapter{Kaj pa literatura?}
-\label{ch3}
+\label{ch:literatura}
 Kot smo omenili že v uvodu, je pravi način za citiranje literature uporaba \BibTeX{}a~\cite{ubi}.
 Programski paket \LaTeX je prvotno predstavljen v priročniku~\cite{Lamport} in je v resnici nadgradnja sistema \TeX\ avtorja Donalda Knutha, znanega po denimo, če izpustim njegovo umetnost programiranja, Knuth-Bendixovem algoritmu~\cite{Knuth}.
 
@@ -122,7 +135,7 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
-\chapter{Opis funkcionalnosti}
+\chapter{Izbrana področja uporabe}
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
 \label{sec:ner}
@@ -183,7 +196,26 @@ Objektno zaznavanje se uporablja v številnih aplikacijah, kot so samovozeča vo
 \section{Kaj je dataset?}
 Dataset je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskav, učenja modelov ali drugih postopkov obdelave podatkov. Dataseti vsebujejo različne vrste podatkov, od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
 V kontekstu računalniškega znanstvenega modeliranja in strojnega učenja so dataseti ključnega pomena, saj služijo kot osnova za razvoj, treniranje in evalvacijo modelov. Modeli se učijo na teh podatkih, tako da prepoznajo vzorce in povezave med vhodnimi podatki in ciljnimi izhodi.
-Na primer, v naravnojezikovni obdelavi  dataset vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. Te podatke lahko uporabimo za različne naloge, kot je sentimentna analiza, klasifikacija tem, generiranje besedil itd.
+Na primer, v naravnojezikovni obdelavi  dataset vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. 
+UREDI PODATKE
+Nekatere ključne točke o uporabi datasetov v NLP:
+
+Učenje modelov: Dataseti se uporabljajo za učenje NLP modelov, pri čemer modeli na osnovi teh podatkov pridobivajo razumevanje jezika in njegove strukture. Čeprav obstajajo tudi nespremljani pristopi, večina uspešnih NLP modelov zahteva velike, kakovostne in označene datasete za doseganje najboljših rezultatov.
+
+Razvoj in optimizacija: Razvijalci NLP modelov uporabljajo različne datasete za optimizacijo modelov in prilagajanje hiperparametrov. Z vzorci podatkov iz datasetov se preizkušajo različne arhitekture modelov in strategije učenja.
+
+Evaluacija zmogljivosti: Dataseti se uporabljajo za evalvacijo zmogljivosti NLP modelov. Modeli se preizkušajo na ločenem testnem datasetu, ki modelom omogoča, da se oceni, kako dobro delujejo na novih, nevidenih podatkih.
+
+Preverjanje generalizacije: Dober NLP model mora dobro delovati na različnih besedilih in jezikovnih vzorcih. S preverjanjem modela na raznolikih datasetih se preveri, ali model pravilno generalizira naučeno znanje na različne podatke.
+
+Raziskovanje novih pristopov: Raziskovalci uporabljajo datasete za raziskovanje in razvoj novih pristopov k NLP nalogam. Ti pristopi lahko vključujejo kombinacijo različnih datasetov ali prilagoditev obstoječih modelov za nove naloge.
+
+Nadzor kakovosti: Kvaliteta datasetov je ključnega pomena za uspešno delovanje NLP modelov. Zato je pomembno, da so dataseti natančno označeni in urejeni. Nadzor kakovosti pomaga prepoznati morebitne napake ali pristranskosti v datasetih.
+
+Prilagajanje specifičnim aplikacijam: Včasih so potrebni specializirani NLP modeli za določene aplikacije ali domene. V takih primerih je morda potrebno ustvariti ali prilagoditi datasete, ki se bolje prilegajo ciljni uporabi.
+
+Razvoj modelov za redke jezike: Razvoj NLP modelov za redke jezike zahteva ustrezne datasete v ciljnem jeziku, kar je lahko izziv, saj so ti dataseti pogosto omejeni ali pa jih sploh ni na voljo. V takih primerih se lahko uporabijo prevedeni ali preneseni dataseti.
+
 V poslovnem okolju se dataseti uporabljajo za analizo strank, trženjske kampanje, obdelavo naravnega jezika v storitvah za stranke in še veliko drugih aplikacij.
 Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in so primerni za ciljno nalogo, da bi omogočili kakovostno analizo in doseganje uporabnih rezultatov.
 
@@ -294,10 +326,10 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
  %----------------------------------------------------------------
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
-\chapter{Dataseti}
-\label{ch5}
-\section{Metrike}
-\subsection{Opis spremelnjivk za izračun metrik}
+\chapter{Metrike}
+\label{ch6}
+
+\section{Opis spremelnjivk za izračun metrik}
 \textbf{Pravilno pozitivni (True Positive)}
 
 Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določen razred. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten.
@@ -334,7 +366,7 @@ Vendar pa se zgodi False Negative, ko sistem napačno presodi e-poštno sporoči
 V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere.
 
 
-\subsection{Precision}
+\section{Precision}
 
 Precision je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah, kot je klasifikacija, kjer se ukvarjamo z razdelitvijo podatkov v različne razrede. Poudarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
 
@@ -348,7 +380,7 @@ V kontekstu naravne jezikovne obdelave (NLP), precision igra ključno vlogo pri 
 
  Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/
 
-\subsection{Recall}
+\section{Recall}
 Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Recall se meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji recall pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med recallom in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe recalla  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih.
 
  Formula za izračun:
@@ -356,7 +388,7 @@ Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo nara
  Recall = \(\frac{True Positive}{True Positive + False Positive}\)
 \end{center}
 
-\subsection{F1}
+\section{F1}
 
 F1-metrika je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in naravnojezikovnem procesiranju. Združuje oceni natančnosti (precision) in prepoznavnosti (recall) v eno številko, ki odraža ravnotežje med temi dvema metrikama. Pri NLP nalogah, kot so klasifikacija besedil, izluščanje informacij ali identifikacija entitet, sta tako natančnost kot prepoznavnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visok recall zagotavlja prepoznavanje vseh resnično pozitivnih primerov. F1-metrika se izračuna kot povprečje med natančnostjo in prepoznavnostjo, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1-metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba F1-metrike je zlasti smiselna, ko sta natančnost in prepoznavnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
@@ -366,7 +398,7 @@ F1-metrika je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in 
  F1 = 2 x \(\frac{Precision \times Recal}{Precision + Recal}\)
 \end{center}
 
-\subsection{Accuracy}
+\section{Accuracy}
 Natančnost je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
 V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutra." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
@@ -376,7 +408,7 @@ V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije b
  Accuracy = \(\frac{True Positive + True Negative}{True Positive + True Negative +False Positive + False Negative}\)
 \end{center}
 
-\subsection{ROUGE}
+\section{ROUGE}
 ROUGE je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi s referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation" (ali v prevodu "ocena za podporo povzemanju z osrednjim poudarkom na priklicu"). Metrika ROUGE je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
 
 Metrika ROUGE primerja generirano besedilo s referenčnim besedilom (običajno človeško ustvarjenim besedilom) in oceni, kako dobro so se ujemale. Metrika upošteva različne vidike, kot so prekrivanje besed, besedni nizi in skupna dolžina besedil. Glavni cilj metrike ROUGE je merjenje stopnje, do katere je generirano besedilo sposobno pravilno povzeti pomembne informacije iz referenčnega besedila.
@@ -390,7 +422,8 @@ Metrika ROUGE je široko uporabljena v raziskavah in nalogah NLP, ki vključujej
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
 \chapter{Analiza raziskave}
-\subsection{Prepoznavanje imenskih entitet (Named Entity Recognition)}
+\label{ch7}
+\section{Prepoznavanje imenskih entitet (Named Entity Recognition)}
 \begin{table}[h!]
 \caption{Prepoznavanje imenskih entitet}
         \begin{tabular}{l|ccc}
@@ -410,11 +443,13 @@ Metrika ROUGE je široko uporabljena v raziskavah in nalogah NLP, ki vključujej
 \caption{Prepoznavanje imenskih entitet F1 rezultat}
 \label{pic2}
 \end{figure}
+
 Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} dataset.
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
-
-\subsection{Analiza sentimenta (Sentiment Analaysis)}
+ \newpage
+ 
+\section{Analiza sentimenta (Sentiment Analaysis)}
 \begin{table}[h!]
 \caption{Analiza sentimenta}
         \begin{tabular}{l|ccc}
@@ -434,13 +469,13 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \caption{Analiza sentimenta F1 rezultat}
 \label{pic2}
 \end{figure}
-Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} dataset.
 
+Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} dataset.
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 \pagebreak 
 
-\subsection{Povzetek (Summarisation)}
+\section{Povzetek (Summarisation)}
 \begin{table}[h!]
 \caption{Povzetek }
         \begin{tabular}{l|ccc}
@@ -464,13 +499,13 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 Pri izdelavi povzetka je bil uporabljen dataset  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
 
 Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.
-\pagebreak 
+
 %----------------------------------------------------------------
 %Izvleček besedne zveze 
 
 %----------------------------------------------------------------
 
-\subsection{Izvleček besedne zveze  (Key Phrases)}
+\section{Izvleček besedne zveze  (Key Phrases)}
 \begin{table}[h!]
 \caption{Izvleček besedne zveze  }
         \begin{tabular}{l|ccc}
@@ -500,7 +535,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 % Klasifikacija besedila 
 %----------------------------------------------------------------
 
-\subsection{Klasifikacija besedila  (Text Classification)}
+\section{Klasifikacija besedila  (Text Classification)}
 \begin{table}[h!]
 \caption{ Klasifikacija besedila  }
         \begin{tabular}{l|ccc}
@@ -530,7 +565,7 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 % Zaznava objektov 
 %---------------------------------------------------------------
 
-\subsection{Zaznava objektov  (Object Detection)}
+\section{Zaznava objektov  (Object Detection)}
 \begin{table}[h!]
 \caption{ Klasifikacija besedila  }
         \begin{tabular}{l|ccc}
@@ -561,6 +596,7 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
 % Poglavje (Chapter) 6
 %----------------------------------------------------------------
 \chapter{Sklepne ugotovitve}
+\label{ch8}
 Izbira \LaTeX\ ali ne \LaTeX\ je seveda prepuščena vam samim. Res je, da so prvi koraki v \LaTeX{}u težavni. Ta dokument naj vam služi kot začetna opora pri hoji.
 
 % ---------------------------------------------------------------
