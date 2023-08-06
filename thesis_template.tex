@@ -649,19 +649,29 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
 %----------------------------------------------------------------
 \chapter{Sklepne ugotovitve}
 \label{ch8}
-Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services, ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve  po reziltatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers ime najboljši rezultat. 
+Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services, ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve  po reziltatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers ima najboljši rezultat. 
 
-V preizkušanju imenovanje imenskih entitet (NER) je najvišjo uspešnost dosegla platforma AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna storitev Hugging Face - Transformers, medtem ko je tretje mesto zasedla platforma Vertex AI podjetja Google Cloud.
-
-
- 
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{tabela.png}
 \end{center}
-\caption{ Tabela analize}
+\caption{ Tabela analize (Rezultati so zaokroženi na 3 decimalna mesta)}
 \label{pic2}
 \end{figure}
+
+Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla platforma AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna storitev Hugging Face - Transformers, medtem ko je tretje mesto zasedla platforma Vertex AI podjetja Google Cloud.
+Pri testiranju sentimentalne analize je najboljše rezultate dosegla rešitev AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna platforma Hugging Face - Transformers, medtem ko je tretje mesto zasedla rešitev Vertex AI podjetja Google Cloud.
+Najboljši rezultati so bili doseženi pri povzemanju z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
+V ocenjevanju izvlečka besednih zvez je najvišje mesto osvojila storitev Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto zasedel AWS SageMaker.
+Pri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila rešitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
+
+Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo tesno skupaj, kakor pa lahko razberemo iz rezultatov so tudi odprtokodne rešitve  zasedle prvo mesto pri klasifikaciji besedila. 
+
+
+
+ 
+
 
 
 % ---------------------------------------------------------------
