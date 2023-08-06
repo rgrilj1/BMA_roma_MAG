@@ -426,6 +426,7 @@ Metrika ROUGE je široko uporabljena v raziskavah in nalogah NLP, ki vključujej
 \section{Prepoznavanje imenskih entitet (Named Entity Recognition)}
 \begin{table}[h!]
 \caption{Prepoznavanje imenskih entitet}
+\begin{center}
         \begin{tabular}{l|ccc}
              & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & 0.949 & 0.953 & 0.951 \\
@@ -433,6 +434,7 @@ Metrika ROUGE je široko uporabljena v raziskavah in nalogah NLP, ki vključujej
                          {\tt AWS SageMaker}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
                         {\tt Azure Cognitive Services}   & 0.858 & 0.824  & 0.840
         \end{tabular}
+        \end{center}
 \label{tbl:1}
 \end{table}
 
@@ -454,6 +456,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \section{Analiza sentimenta (Sentiment Analaysis)}
 \begin{table}[h!]
 \caption{Analiza sentimenta}
+\begin{center}
         \begin{tabular}{l|ccc}
              & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & 0.800 & 0.799 & 0.799 \\
@@ -461,6 +464,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
                          {\tt AWS SageMaker}   & 0.862 & 0.891 & 0.876 \\     
                         {\tt Azure Cognitive Services}   & 0.862 & 0.891  & 0.877
         \end{tabular}
+\end{center}        
 \label{tbl:1}
 \end{table}
 
@@ -479,6 +483,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \section{Povzetek (Summarisation)}
 \begin{table}[h!]
 \caption{Povzetek }
+\begin{center}
         \begin{tabular}{l|ccc}
              & {\tt ROUGE-1} & {\tt ROUGE-2}  & ROUGE-L   \\ \hline
                         {\tt Transformers} & 0.209 & 0.190 & 0.192 \\
@@ -486,6 +491,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
                          {\tt AWS SageMaker}   & 0.226 & 0.021 & 0.201 \\     
                         {\tt Azure Cognitive Services}   & 0.426 & 0.220  & 0.330
         \end{tabular}
+ \end{center}
 \label{tbl:1}
 \end{table}
 
@@ -509,6 +515,7 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
 \section{Izvleček besedne zveze  (Key Phrases)}
 \begin{table}[h!]
 \caption{Izvleček besedne zveze  }
+\begin{center}
         \begin{tabular}{l|ccc}
              & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & 0.475 & 0.573 & 0.519\\
@@ -516,6 +523,7 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
                          {\tt AWS SageMaker}   & 0.513 & 0.622 & 0.562 \\     
                         {\tt Azure Cognitive Services}   &  \textbf {0.530} & \textbf {0.670}  & \textbf {0.592}
         \end{tabular}
+\end{center}
 \label{tbl:1}
 \end{table}
 
@@ -539,6 +547,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \section{Klasifikacija besedila  (Text Classification)}
 \begin{table}[h!]
 \caption{ Klasifikacija besedila  }
+\begin{center}
         \begin{tabular}{l|ccc}
              & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & \textbf {0.930} & \textbf {0.926} & \textbf {0.928} \\
@@ -546,6 +555,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
                          {\tt AWS SageMaker}   & 0.858 & 0.763 & 0. 807\\     
                         {\tt Azure Cognitive Services}   & 0.880 & 0.920  & 0.900
         \end{tabular}
+\end{center}
 \label{tbl:1}
 \end{table}
 
@@ -569,6 +579,7 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 \section{Zaznava objektov  (Object Detection)}
 \begin{table}[h!]
 \caption{ Klasifikacija besedila  }
+\begin{center}
         \begin{tabular}{l|ccc}
              &  Accuracy   \\ \hline
                         {\tt Transformers} & 0.968\\
@@ -576,6 +587,7 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
                          {\tt AWS SageMaker}   & \textbf {0.980}  \\     
                         {\tt Azure Cognitive Services}   &  0.965
         \end{tabular}
+\end{center}
 \label{tbl:1}
 \end{table}
 
