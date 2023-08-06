@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -911,8 +911,44 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 91.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box57
+) (./thesis_template.aux
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+
+LaTeX Warning: Label `tbl:1' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+
+LaTeX Warning: Label `tbl:1' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+
+LaTeX Warning: Label `tbl:1' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+
+LaTeX Warning: Label `tbl:1' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+
+LaTeX Warning: Label `tbl:1' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
+
 )
-No file thesis_template.aux.
 \openout1 = `thesis_template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
@@ -933,7 +969,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
-(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
 \scratchdimen=\dimen180
@@ -961,6 +997,8 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 129.
+
+(./thesis_template.out) (./thesis_template.out)
 \@outlinefile=\write4
 \openout4 = `thesis_template.out'.
 
@@ -992,17 +1030,17 @@ l.155 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/eng/copyright2.tex
-<cc-licenca/cc_cc_30.pdf, id=24, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=164, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=25, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=165, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=26, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=166, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1093,7 +1131,15 @@ l.162 ...ges/eng/dedication} \clearemptydoublepage
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 170.
 
-No file thesis_template.toc.
+(./thesis_template.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 ...er}{\numberline {6}Metrike}{23}{chapter.6}
+                                                  % [11
+
+])
 \tf@toc=\write5
 \openout5 = `thesis_template.toc'.
 
@@ -1103,23 +1149,14 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.173 	\clearemptydoublepage
-                             [11
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.173 	\clearemptydoublepage
-                             [12
-
-] (./front_pages/eng/acronyms.tex)
+                             [12] (./front_pages/eng/acronyms.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.183 ...pages/eng/acronyms} \clearemptydoublepage
                                                    [13
+
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -1184,20 +1221,10 @@ Underfull \vbox (badness 1558) has occurred while \output is active []
 
 
 ]
-
-LaTeX Warning: Reference `ch4' on page 2 undefined on input line 102.
-
-
-LaTeX Warning: Reference `ch5' on page 2 undefined on input line 104.
-
-
-LaTeX Warning: Reference `ch6' on page 2 undefined on input line 106.
-
-
-LaTeX Warning: Reference `ch7' on page 2 undefined on input line 108.
-
-
-LaTeX Warning: Reference `ch8' on page 2 undefined on input line 110.
+Overfull \hbox (6.22237pt too wide) in paragraph at lines 106--107
+[]\OT1/cmr/m/n/12 V poglavju  [][]Metrike[][] bomo temeljito raziskali ra-zli^^
+Tcne metrike, ki omogo^^Tcajo
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1209,18 +1236,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Chapter 2.
-
-LaTeX Warning: Citation `ubi' on page 3 undefined on input line 130.
-
-
-LaTeX Warning: Citation `Lamport' on page 3 undefined on input line 131.
-
-
-LaTeX Warning: Citation `Knuth' on page 3 undefined on input line 131.
-
-
-LaTeX Warning: Citation `Fortnow' on page 3 undefined on input line 133.
-
 
 Overfull \hbox (0.35289pt too wide) in paragraph at lines 133--134
 []\OT1/cmr/m/n/12 Vsem razisko-val-cem s po-dro^^Tcja ra^^Tcunalni^^Tstva pa sv
@@ -1381,7 +1396,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-<figures//conll.png, id=188, 400.49625pt x 169.63374pt>
+<figures//conll.png, id=359, 400.49625pt x 169.63374pt>
 File: figures//conll.png Graphic file (type png)
 <use figures//conll.png>
 Package pdftex.def Info: figures//conll.png  used on input line 269.
@@ -1549,15 +1564,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 7.
 [29]
-<figures//NER.png, id=294, 565.02pt x 310.104pt>
+<figures//NER.png, id=455, 565.02pt x 310.104pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
 Package pdftex.def Info: figures//NER.png  used on input line 484.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
-
-
-LaTeX Warning: Hyper reference `sec:my_subsection' on page 30 undefined on inpu
-t line 490.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1568,16 +1579,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [30 <./figures//NER.png>]
-<figures//KP.png, id=301, 565.02pt x 310.104pt>
+<figures//KP.png, id=463, 565.02pt x 310.104pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
 Package pdftex.def Info: figures//KP.png  used on input line 512.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
-
-
-LaTeX Warning: Hyper reference `sec:imdb' on page 31 undefined on input line 51
-7.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1591,11 +1597,160 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31 <./figures//KP.png>]
-<figures//SUMM.png, id=311, 565.02pt x 310.104pt>
+<figures//SUMM.png, id=473, 565.02pt x 310.104pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
 Package pdftex.def Info: figures//SUMM.png  used on input line 539.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
-LaTeX Warning: Hyper reference `sec:cnn' on page 32 undefined on input 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32 <./figures//SUMM.png>]
+<figures//KEY.png, id=482, 565.02pt x 310.104pt>
+File: figures//KEY.png Graphic file (type png)
+<use figures//KEY.png>
+Package pdftex.def Info: figures//KEY.png  used on input line 571.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+
+[33 <./figures//KEY.png>]
+Overfull \hbox (2.74179pt too wide) in paragraph at lines 586--586
+[]\OT1/cmr/bx/n/17.28 Klasifikacija besedila (Text Clas-si-fi-ca-tion) 
+ []
+
+<figures//CLASSIFICATION.png, id=491, 565.02pt x 310.104pt>
+File: figures//CLASSIFICATION.png Graphic file (type png)
+<use figures//CLASSIFICATION.png>
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 603.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34 <./figures//CLASSIFICATION.png>]
+<figures//OBJECT.png, id=500, 565.02pt x 310.104pt>
+File: figures//OBJECT.png Graphic file (type png)
+<use figures//OBJECT.png>
+Package pdftex.def Info: figures//OBJECT.png  used on input line 635.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35 <./figures//OBJECT.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36
+
+]
+Chapter 8.
+<figures//tabela.png, id=513, 505.28775pt x 297.5115pt>
+File: figures//tabela.png Graphic file (type png)
+<use figures//tabela.png>
+Package pdftex.def Info: figures//tabela.png  used on input line 656.
+(pdftex.def)             Requested size: 284.52756pt x 167.52686pt.
+[37 <./figures//tabela.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38
+
+]
+Appendix A.
+[39]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40
+
+]
+Underfull \hbox (badness 3068) in paragraph at lines 696--697
+[]\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
+/ ucilnica . fri . uni-[]lj . si /
+ []
+
+[41] (./thesis_template.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `thesis_template.out' has not changed.
+(rerunfilecheck)             Checksum: CB12DF845AD85EFA0483C6642A3C5B68;5298.
+ ) 
+Here is how much of TeX's memory you used:
+ 13671 strings out of 476025
+ 222296 string characters out of 5790017
+ 1858388 words of memory out of 5000000
+ 33699 multiletter control sequences out of 15000+600000
+ 527679 words of font info for 90 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,12n,79p,1085b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on thesis_template.pdf (59 pages, 1478363 bytes).
+PDF statistics:
+ 644 PDF objects out of 1000 (max. 8388607)
+ 527 compressed objects within 6 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+
