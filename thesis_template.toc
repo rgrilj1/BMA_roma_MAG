@@ -45,4 +45,3 @@
 \contentsline {section}{\numberline {7.5}Klasifikacija besedila (Text Classification)}{34}{section.7.5}%
 \contentsline {section}{\numberline {7.6}Zaznava objektov (Object Detection)}{35}{section.7.6}%
 \contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{37}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{39}{appendix.A}%
