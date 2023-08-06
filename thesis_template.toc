@@ -7,34 +7,42 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Kaj pa literatura?}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Prepoznavanje imenskih entitet}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Analiza sentimenta}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Povzemanje besedila}{7}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Izvleček besedne zveze}{7}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Klasifikacija besedila}{7}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Zaznava objektov}{8}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Dataseti}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Kaj je dataset?}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Uporabljeni dataseti}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}CoNLL 2003}{13}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}IMDb Reviews dataset}{14}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3} COCO dataset}{15}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail Dataset}{16}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5} semeval-2017 dataset}{17}{subsection.4.2.5}%
-\contentsline {chapter}{\numberline {5}Metrike}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Opis spremelnjivk za izračun metrik}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Precision}{20}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Recall}{21}{section.5.3}%
-\contentsline {section}{\numberline {5.4}F1}{22}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Accuracy}{22}{section.5.5}%
-\contentsline {section}{\numberline {5.6}ROUGE}{23}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Analiza raziskave}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{25}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta (Sentiment Analaysis)}{27}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Povzetek (Summarisation)}{28}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Izvleček besedne zveze (Key Phrases)}{29}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Klasifikacija besedila (Text Classification)}{30}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov (Object Detection)}{31}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Sklepne ugotovitve}{33}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Title of the appendix 1}{35}{appendix.A}%
+\contentsline {chapter}{\numberline {3}Opis ponudnikov}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Transformers}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Google Cloud}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Vertex AI }{6}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Amazon Web Services }{6}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Amazon SageMaker}{7}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Azure}{7}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Azure Cognitive Services }{7}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Izbrana področja uporabe}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Prepoznavanje imenskih entitet}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Analiza sentimenta}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Povzemanje besedila}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Izvleček besedne zveze}{11}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Klasifikacija besedila}{11}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Zaznava objektov}{12}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Dataseti}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kaj je dataset?}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Uporabljeni dataseti}{17}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}CoNLL 2003}{17}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}IMDb Reviews dataset}{18}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3} COCO dataset}{19}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4} CNN/Daily Mail Dataset}{20}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5} semeval-2017 dataset}{21}{subsection.5.2.5}%
+\contentsline {chapter}{\numberline {6}Metrike}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Opis spemenljivk za izračun metrik}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Precision}{24}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Recall}{25}{section.6.3}%
+\contentsline {section}{\numberline {6.4}F1}{26}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Accuracy}{26}{section.6.5}%
+\contentsline {section}{\numberline {6.6}ROUGE}{27}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Analiza raziskave}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{29}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Analiza sentimenta (Sentiment Analaysis)}{31}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Povzetek (Summarisation)}{32}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Izvleček besedne zveze (Key Phrases)}{33}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Klasifikacija besedila (Text Classification)}{34}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Zaznava objektov (Object Detection)}{35}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Sklepne ugotovitve}{37}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Title of the appendix 1}{39}{appendix.A}%

@@ -135,6 +135,45 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
+\chapter{Opis ponudnikov}
+\label{ch3}
+\section{Transformers}
+\label{sec:transformers}
+
+Hugging Face Transformers je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za naravno obdelavo jezika (NLP) in strojno učenje. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov strojnega učenja za razumevanje naravnega jezika. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju NLP in razvoja inteligentnih aplikacij.
+
+Ena od ključnih prednosti Hugging Face Transformers je enostavnost uporabe. Razvijalci lahko z nekaj vrsticami Python kode dostopajo do pred-treniranih modelov in jih uporabijo za različne naloge v NLP. Poleg tega knjižnica omogoča tudi prilagajanje modelov in ponuja odprtokodno skupnost, ki nenehno prispeva z novimi modeli, izboljšavami in rešitvami.
+
+Knjižnica ponuja tudi funkcionalnosti za preprosto prenosljivost modelov med različnimi platformami in orodji za povečanje učinkovitosti uporabe modelov na stvarnih sistemih. Poleg tega Hugging Face Transformers omogoča tudi preprosto združevanje z drugimi knjižnicami za strojno učenje in obdelavo podatkov.
+
+\section{Google Cloud}
+\label{sec:google}
+Google Cloud je celovita platforma za računalništvo v oblaku, ki jo zagotavlja Google. Ponuja različne storitve, vključno s računalništvom, shranjevanjem, bazami podatkov, strojnim učenjem in omrežjem, kar omogoča podjetjem, da gradijo in uvajajo aplikacije ter storitve v globalnem obsegu. Google Cloud zagotavlja prilagodljivo in razširljivo infrastrukturo, ki organizacijam omogoča inovacije ter optimizacijo operacij prek rešitev v oblaku. S svojimi podatkovnimi centri po vsem svetu Google Cloud zagotavlja zanesljivo zmogljivost, varnost in dostopnost za podjetja vseh velikosti.
+
+\subsection{Vertex AI }
+Vertex AI je napredna platforma za umetno inteligenco v oblaku, ki jo ponuja Google Cloud. S podporo za številne priljubljene okvire za strojno učenje, kot so TensorFlow, PyTorch in scikit-learn, je Vertex AI odlična izbira za razvijalce z različnimi potrebami in izkušnjami.
+Platforma Vertex AI ponuja tudi številne napredne storitve in orodja za razvoj in optimizacijo modelov. Vključuje integrirano orodje, ki omogoča hitro in enostavno oceno uspešnosti modelov na različnih primerih rabe. Prav tako ponuja samodejno prilagajanje hiperparametrov, kar omogoča avtomatsko iskanje najboljših hiperparametrov za izboljšanje zmogljivosti modelov.
+
+Ena od ključnih funkcij Vertex AI je tudi funkcija Vertex Data Labeling, ki omogoča enostavno označevanje podatkov za usposabljanje modelov. Ta funkcija omogoča sodelovanje z ljudmi ali uporabo naprednih algoritmov za označevanje podatkov, kar olajša postopek priprave podatkov za učenje modelov.
+
+
+\section{Amazon Web Services }
+\label{sec:aws}
+Amazon Web Services (AWS) je oblak storitve, ki jih ponuja Amazon. Uporabnikom omogoča najem računalniških virov, kot so strežniki in shramba, preko interneta. To omogoča organizacijam, da prilagodljivo in učinkovito gradijo, upravljajo ter skalirajo svoje aplikacije in storitve brez potrebe po fizični strojni opremi. AWS je mednarodno priznan za svojo zanesljivost in širok nabor storitev za obdelavo podatkov, analitiko, umetno inteligenco ter druge poslovne potrebe.
+
+\subsection{Amazon SageMaker}
+Amazon SageMaker je storitev za strojno učenje, ki jo ponuja Amazon Web Services (AWS). Omogoča hitro in enostavno izgradnjo, usposabljanje in razporejanje zmogljivih modelov, kar omogoča razvoj naprednih rešitev in izboljšanje procesov. Ponuja intuitiven uporabniški vmesnik in API-je, ki omogočajo hitro postavitev in upravljanje. SageMaker ponuja tudi integrirano okolje Jupyter, ki omogoča uporabo interaktivnih beležnic za raziskovanje in analizo podatkov.
+
+\section{Azure}
+\label{sec:azure}
+Azure je oblačna platforma, ki jo ponuja Microsoft, namenjena podjetjem za razvoj, upravljanje in gostovanje njihovih aplikacij in storitev prek interneta. Ponuja širok nabor storitev, vključno s spletnim gostovanjem, shranjevanjem podatkov, analitiko, umetno inteligenco in spletnimi storitvami. Uporabniki lahko ustvarjajo virtualne strežnike in omrežja ter jih prilagajajo glede na svoje potrebe. Azure zagotavlja visoko stopnjo varnosti in skladnosti, kar je ključno za zaščito podatkov in zagotavljanje zasebnosti strank.
+
+\subsection{Azure Cognitive Services }
+Azure Cognitive Services je celovita in napredna platforma za umetno inteligenco (AI), ki jo ponuja Microsoftova oblak platforma Azure. Ponuja storitve za razumevanje naravnega jezika (NLP). Ta storiteve omogočajo analizo in razumevanje naravnega jezika v besedilu, kar omogoča razvoj aplikacij za avtomatsko razvrščanje besedil, odgovarjanje na vprašanja, prevajanje besedil in analizo sentimenta. Ponuja širok nabor naprednih storitev in API-jev, ki omogočajo prepoznavanje, razumevanje in generiranje naravnega jezika, prepoznavanje obrazov, prepoznavanje govora, analizo besedil, prevedbo med jeziki in še veliko več. Te storitve omogočajo razvoj pametnih aplikacij, ki temeljijo na umetni inteligenci, in reševanje različnih izzivov na področju razumevanja in analize podatkov.
+
+%----------------------------------------------------------------
+% Poglavje (Opis funkciionalnosti) 5
+%----------------------------------------------------------------
 \chapter{Izbrana področja uporabe}
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
@@ -329,10 +368,10 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 \chapter{Metrike}
 \label{ch6}
 
-\section{Opis spremelnjivk za izračun metrik}
+\section{Opis spemenljivk za izračun metrik}
 \textbf{Pravilno pozitivni (True Positive)}
 
-Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določen razred. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten.
+Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določeno skupino. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten.
 
 \emph{Primer:}
 
@@ -361,7 +400,7 @@ V primeru analize besedila v naravni jezikovni obdelavi (NLP), false negative se
 
 Predpostavimo, da imamo napreden sistem za filtriranje neželenih sporočil (spam), ki ga uporabljamo za preverjanje prihajajočih e-poštnih sporočil. Sistem je zasnovan tako, da prepoznava in premika neželena sporočila v mapo za neželeno pošto.
 
-Vendar pa se zgodi False Negative, ko sistem napačno presodi e-poštno sporočilo kot varno (ne-spam), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "False Negatives".
+Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-poštno sporočilo kot varno (ne-spam), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "False Negatives".
 
 V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere.
 
@@ -390,7 +429,7 @@ Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo nara
 
 \section{F1}
 
-F1-metrika je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in naravnojezikovnem procesiranju. Združuje oceni natančnosti (precision) in prepoznavnosti (recall) v eno številko, ki odraža ravnotežje med temi dvema metrikama. Pri NLP nalogah, kot so klasifikacija besedil, izluščanje informacij ali identifikacija entitet, sta tako natančnost kot prepoznavnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visok recall zagotavlja prepoznavanje vseh resnično pozitivnih primerov. F1-metrika se izračuna kot povprečje med natančnostjo in prepoznavnostjo, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1-metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba F1-metrike je zlasti smiselna, ko sta natančnost in prepoznavnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
+F1 je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in naravnojezikovnem procesiranju. Združuje oceni natančnosti (precision) in prepoznavnosti (recall) v eno številko, ki odraža ravnotežje med temi dvema metrikama. Pri NLP nalogah, kot so klasifikacija besedil, izluščanje informacij ali identifikacija entitet, sta tako natančnost kot prepoznavnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visok recall zagotavlja prepoznavanje vseh resnično pozitivnih primerov. F1-metrika se izračuna kot povprečje med natančnostjo in prepoznavnostjo, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1-metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba F1-metrike je zlasti smiselna, ko sta natančnost in prepoznavnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
 
  Formula za izračun:
@@ -401,7 +440,7 @@ F1-metrika je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in 
 \section{Accuracy}
 Natančnost je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
-V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutra." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralni." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
 
  Formula za izračun:
 \begin{center}
