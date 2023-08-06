@@ -501,8 +501,23 @@ F1-metrika je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in 
 \end{center}
 
 \subsection{Accuracy}
-\subsection{ROUGE}
+Natančnost je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
+V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutra." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+
+ Formula za izračun:
+\begin{center}
+ Accuracy = \(\frac{True Positive + True Negative}{True Positive + True Negative +False Positive + False Negative}\)
+\end{center}
+
+\subsection{ROUGE}
+ROUGE je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi s referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation" (ali v prevodu "ocena za podporo povzemanju z osrednjim poudarkom na priklicu"). Metrika ROUGE je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
+
+Metrika ROUGE primerja generirano besedilo s referenčnim besedilom (običajno človeško ustvarjenim besedilom) in oceni, kako dobro so se ujemale. Metrika upošteva različne vidike, kot so prekrivanje besed, besedni nizi in skupna dolžina besedil. Glavni cilj metrike ROUGE je merjenje stopnje, do katere je generirano besedilo sposobno pravilno povzeti pomembne informacije iz referenčnega besedila.
+
+Obstajajo različne različice metrike ROUGE, kot so ROUGE-1, ROUGE-2, ROUGE-L itd. Vsaka različica meri različne vidike podobnosti med generiranim besedilom in referenčnim besedilom. Na primer, ROUGE-1 meri prekrivanje eno-besednih nizov med generiranim in referenčnim besedilom, medtem ko ROUGE-2 meri prekrivanje dvo-besednih nizov.
+
+Metrika ROUGE je široko uporabljena v raziskavah in nalogah NLP, ki vključujejo avtomatsko povzemanje besedil, strojno prevajanje in druge naloge, kjer je pomembno oceniti kakovost generiranih besedil v primerjavi z referenčnimi besedili. Metrika ROUGE lahko pomaga raziskovalcem in razvijalcem oceniti učinkovitost svojih modelov in tehnik ter izboljšati rezultate pri generiranju besedil.
 
 
   %----------------------------------------------------------------
