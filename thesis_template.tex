@@ -135,10 +135,13 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
-\chapter{Opis ponudnikov}
+\chapter{Opis ponudnikov in storitev}
 \label{ch3}
 \section{Transformers}
 \label{sec:transformers}
+!manjka opis hugging face
+
+
 
 Hugging Face Transformers je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za naravno obdelavo jezika (NLP) in strojno učenje. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov strojnega učenja za razumevanje naravnega jezika. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju NLP in razvoja inteligentnih aplikacij.
 
@@ -649,7 +652,7 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
 %----------------------------------------------------------------
 \chapter{Sklepne ugotovitve}
 \label{ch8}
-Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services, ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve  po reziltatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers ima najboljši rezultat. 
+Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
 
  \begin{figure}[h!]
 \begin{center}
@@ -659,11 +662,16 @@ Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblak
 \label{pic2}
 \end{figure}
 
-Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla platforma AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna storitev Hugging Face - Transformers, medtem ko je tretje mesto zasedla platforma Vertex AI podjetja Google Cloud.
-Pri testiranju sentimentalne analize je najboljše rezultate dosegla rešitev AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna platforma Hugging Face - Transformers, medtem ko je tretje mesto zasedla rešitev Vertex AI podjetja Google Cloud.
+Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla storitev AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna storitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI ponudnika Google Cloud.
+
+Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugem mestu se je uvrstila odprtokodna rešitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google Cloud.
+
 Najboljši rezultati so bili doseženi pri povzemanju z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
+
 V ocenjevanju izvlečka besednih zvez je najvišje mesto osvojila storitev Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto zasedel AWS SageMaker.
-Pri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila rešitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+
+Pri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+
 V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
 
 Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo tesno skupaj, kakor pa lahko razberemo iz rezultatov so tudi odprtokodne rešitve  zasedle prvo mesto pri klasifikaciji besedila. 
