@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1515,20 +1515,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 6.
-<figures//NER.png, id=402, 565.02pt x 310.104pt>
+[25]
+<figures//NER.png, id=409, 565.02pt x 310.104pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
-Package pdftex.def Info: figures//NER.png  used on input line 441.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[25]
-<figures//KP.png, id=411, 565.02pt x 310.104pt>
-File: figures//KP.png Graphic file (type png)
-<use figures//KP.png>
-Package pdftex.def Info: figures//KP.png  used on input line 467.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
+Package pdftex.def Info: figures//NER.png  used on input line 443.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1538,7 +1530,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26 <./figures//NER.png> <./figures//KP.png>]
+[26 <./figures//NER.png>]
+<figures//KP.png, id=417, 565.02pt x 310.104pt>
+File: figures//KP.png Graphic file (type png)
+<use figures//KP.png>
+Package pdftex.def Info: figures//KP.png  used on input line 469.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1550,23 +1548,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27]
+[27 <./figures//KP.png>]
 <figures//SUMM.png, id=427, 565.02pt x 310.104pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 493.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures//KEY.png, id=429, 565.02pt x 310.104pt>
-File: figures//KEY.png Graphic file (type png)
-<use figures//KEY.png>
-Package pdftex.def Info: figures//KEY.png  used on input line 523.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package pdftex.def Info: figures//SUMM.png  used on input line 494.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1577,17 +1564,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28 <./figures//SUMM.png>]
-Overfull \hbox (2.74179pt too wide) in paragraph at lines 538--538
+<figures//KEY.png, id=436, 565.02pt x 310.104pt>
+File: figures//KEY.png Graphic file (type png)
+<use figures//KEY.png>
+Package pdftex.def Info: figures//KEY.png  used on input line 524.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+
+[29 <./figures//KEY.png>]
+Overfull \hbox (2.74179pt too wide) in paragraph at lines 539--539
 []\OT1/cmr/bx/n/17.28 Klasifikacija besedila (Text Clas-si-fi-ca-tion) 
  []
 
-<figures//CLASSIFICATION.png, id=438, 565.02pt x 310.104pt>
+<figures//CLASSIFICATION.png, id=445, 565.02pt x 310.104pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
-Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 553.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 554.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1597,12 +1603,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29 <./figures//KEY.png>]
-<figures//OBJECT.png, id=448, 565.02pt x 310.104pt>
+[30 <./figures//CLASSIFICATION.png>]
+<figures//OBJECT.png, id=454, 565.02pt x 310.104pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
-Package pdftex.def Info: figures//OBJECT.png  used on input line 583.
-(pdftex.def)             Requested size: 227.62204pt x 124.92424pt.
+Package pdftex.def Info: figures//OBJECT.png  used on input line 584.
+(pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1612,16 +1618,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30 <./figures//CLASSIFICATION.png> <./figures//OBJECT.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[31]
+[31 <./figures//OBJECT.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1659,7 +1656,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [36
 
 ]
-Underfull \hbox (badness 3068) in paragraph at lines 635--636
+Underfull \hbox (badness 3068) in paragraph at lines 636--637
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
@@ -1696,7 +1693,7 @@ xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
 ve/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (55 pages, 1423627 bytes).
+Output written on thesis_template.pdf (55 pages, 1423876 bytes).
 PDF statistics:
  588 PDF objects out of 1000 (max. 8388607)
  480 compressed objects within 5 object streams
