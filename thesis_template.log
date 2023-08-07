@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  7 AUG 2023 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  7 AUG 2023 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1370,20 +1370,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 5.
 [15]
-Overfull \hbox (7.207pt too wide) in paragraph at lines 270--271
-[]\OT1/cmr/m/n/12 Raziskovanje novih pristopov: Razisko-valci uporabl-jajo data
-sete za razisko-
+Overfull \hbox (1.88899pt too wide) in paragraph at lines 274--275
+[]\OT1/cmr/m/n/12 Pomembno je, da so dataseti pravilno pripravl-jeni, imajo us-
+trezne metapo-
  []
 
+<figures//conll.png, id=351, 400.49625pt x 169.63374pt>
+File: figures//conll.png Graphic file (type png)
+<use figures//conll.png>
+Package pdftex.def Info: figures//conll.png  used on input line 284.
+(pdftex.def)             Requested size: 284.52756pt x 120.52103pt.
 
-Overfull \hbox (1.93585pt too wide) in paragraph at lines 272--273
-\OT1/cmr/m/n/12 de-lo-vanje NLP mod-e-lov. Zato je pomem-bno, da so dataseti na
-tan^^Tcno ozna^^Tceni
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1394,12 +1392,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-<figures//conll.png, id=355, 400.49625pt x 169.63374pt>
-File: figures//conll.png Graphic file (type png)
-<use figures//conll.png>
-Package pdftex.def Info: figures//conll.png  used on input line 289.
-(pdftex.def)             Requested size: 284.52756pt x 120.52103pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1418,39 +1410,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-Overfull \hbox (9.364pt too wide) in paragraph at lines 337--338
+Overfull \hbox (9.364pt too wide) in paragraph at lines 332--333
 \OT1/cmr/m/n/12 datkov COCO prav tako zago-tavlja maske seg-mentacije na ravni 
 slikovnih
  []
 
 
-Overfull \hbox (3.31628pt too wide) in paragraph at lines 337--338
+Overfull \hbox (3.31628pt too wide) in paragraph at lines 332--333
 \OT1/cmr/m/n/12 pik za vsak posamezen ob-jekt. To pomeni, da so ob-jekti ne le 
 lokalizirani
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19]
-Overfull \hbox (11.14584pt too wide) in paragraph at lines 349--352
+Overfull \hbox (11.14584pt too wide) in paragraph at lines 344--347
 \OT1/cmr/m/n/12 CNN/Daily Mail je zbirka novi^^Tcarskih ^^Tclankov sku-paj s po
 vzetki, ki se uporablja
  []
 
 
-Overfull \hbox (0.35706pt too wide) in paragraph at lines 349--352
+Overfull \hbox (0.35706pt too wide) in paragraph at lines 344--347
 \OT1/cmr/m/n/12 za us-pos-abl-janje in preizku^^Tsanje mod-e-lov za avs-trak-ti
 vno povze-manje besedil.
  []
 
 
-Overfull \hbox (2.53296pt too wide) in paragraph at lines 349--352
+Overfull \hbox (2.53296pt too wide) in paragraph at lines 344--347
 \OT1/cmr/m/n/12 omogo^^Tca razisko-val-cem obse^^Tzno us-pos-abl-janje in preiz
 ku^^Tsanje mod-e-lov. Tukaj
  []
@@ -1463,8 +1447,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[19]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [20]
-Overfull \hbox (5.86673pt too wide) in paragraph at lines 375--376
+Overfull \hbox (5.86673pt too wide) in paragraph at lines 370--371
 []\OT1/cmr/m/n/12 Uporaba v tek-movan-jih: Se-mEval po-datkovne zbirke se pogos
 to uporabl-
  []
@@ -1486,24 +1479,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[22
+
+]
 Chapter 6.
 
-Overfull \hbox (1.15797pt too wide) in paragraph at lines 398--399
+Overfull \hbox (1.15797pt too wide) in paragraph at lines 393--394
 \OT1/cmr/m/n/12 elek-tron-ski po^^Tsti. Model pravilno pre-pozna 25 sporo^^Tcil
  kot neza^^Tzelena (spam),
  []
 
-[23
-
-]
-Overfull \hbox (0.714pt too wide) in paragraph at lines 421--422
+[23]
+Overfull \hbox (0.714pt too wide) in paragraph at lines 416--417
 []\OT1/cmr/m/n/12 Predpostavimo, da imamo napre-den sis-tem za fil-tri-ranje ne
 ^^Tzelenih sporo^^Tcil
  []
 
 
-Overfull \hbox (3.9473pt too wide) in paragraph at lines 423--424
+Overfull \hbox (3.9473pt too wide) in paragraph at lines 418--419
 \OT1/cmr/m/n/12 sodi e-po^^Tstno sporo^^Tcilo kot varno (ne-spam), ^^Tceprav vs
 e-buje vse znake ne^^Tzelene
  []
@@ -1517,7 +1510,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-Overfull \hbox (42.16496pt too wide) in paragraph at lines 440--441
+Overfull \hbox (42.16496pt too wide) in paragraph at lines 435--436
 []\OT1/cmr/m/n/12 Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metri
 cs-to-evaluate-
  []
@@ -1565,7 +1558,7 @@ Chapter 7.
 <figures//NER.png, id=451, 565.02pt x 310.104pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
-Package pdftex.def Info: figures//NER.png  used on input line 504.
+Package pdftex.def Info: figures//NER.png  used on input line 499.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
@@ -1580,7 +1573,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <figures//KP.png, id=459, 565.02pt x 310.104pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
-Package pdftex.def Info: figures//KP.png  used on input line 532.
+Package pdftex.def Info: figures//KP.png  used on input line 527.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1598,7 +1591,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <figures//SUMM.png, id=469, 565.02pt x 310.104pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 559.
+Package pdftex.def Info: figures//SUMM.png  used on input line 554.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
@@ -1613,7 +1606,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <figures//KEY.png, id=478, 565.02pt x 310.104pt>
 File: figures//KEY.png Graphic file (type png)
 <use figures//KEY.png>
-Package pdftex.def Info: figures//KEY.png  used on input line 591.
+Package pdftex.def Info: figures//KEY.png  used on input line 586.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1628,14 +1621,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [33 <./figures//KEY.png>]
-Overfull \hbox (2.74179pt too wide) in paragraph at lines 606--606
+Overfull \hbox (2.74179pt too wide) in paragraph at lines 601--601
 []\OT1/cmr/bx/n/17.28 Klasifikacija besedila (Text Clas-si-fi-ca-tion) 
  []
 
 <figures//CLASSIFICATION.png, id=487, 565.02pt x 310.104pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
-Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 623.
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 618.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1653,7 +1646,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <figures//OBJECT.png, id=496, 565.02pt x 310.104pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
-Package pdftex.def Info: figures//OBJECT.png  used on input line 655.
+Package pdftex.def Info: figures//OBJECT.png  used on input line 650.
 (pdftex.def)             Requested size: 284.52756pt x 156.16359pt.
 
 
@@ -1678,7 +1671,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 8.
 
-Overfull \hbox (16.85783pt too wide) in paragraph at lines 672--673
+Overfull \hbox (16.85783pt too wide) in paragraph at lines 667--668
 \OT1/cmr/m/n/12 Google Cloud, Ama-zon Web Ser-vices ter Mi-crosoft Azure. Pri i
 zbiri odprtokodne
  []
@@ -1686,10 +1679,10 @@ zbiri odprtokodne
 <figures//tabela.png, id=509, 505.28775pt x 297.5115pt>
 File: figures//tabela.png Graphic file (type png)
 <use figures//tabela.png>
-Package pdftex.def Info: figures//tabela.png  used on input line 676.
+Package pdftex.def Info: figures//tabela.png  used on input line 671.
 (pdftex.def)             Requested size: 284.52756pt x 167.52686pt.
 
-Overfull \hbox (6.71533pt too wide) in paragraph at lines 682--683
+Overfull \hbox (6.71533pt too wide) in paragraph at lines 677--678
 \OT1/cmr/m/n/12 storitev Hug-ging Face Trans-form-ers, medtem ko je tretje mest
 o zas-edla storitev
  []
@@ -1698,13 +1691,13 @@ o zas-edla storitev
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
  [37 <./figures//tabela.png>]
-Overfull \hbox (13.24721pt too wide) in paragraph at lines 690--691
+Overfull \hbox (13.24721pt too wide) in paragraph at lines 685--686
 []\OT1/cmr/m/n/12 Pri klasi-fikaciji besedila se je na-jbolj^^Tsa u^^Tcinkovito
 st pokazala pri odprtokodni
  []
 
 
-Overfull \hbox (13.47775pt too wide) in paragraph at lines 694--695
+Overfull \hbox (13.47775pt too wide) in paragraph at lines 689--690
 \OT1/cmr/m/n/12 zelo tesno sku-paj, kakor pa lahko razber-emo iz rezul-ta-tov p
 a je tudi odprtokodna
  []
@@ -1718,7 +1711,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38]
-Underfull \hbox (badness 3068) in paragraph at lines 735--736
+Underfull \hbox (badness 3068) in paragraph at lines 730--731
 []\OT1/cmr/m/n/12 licence-cc.pdf. Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / ucilnica . fri . uni-[]lj . si /
  []
@@ -1738,7 +1731,7 @@ Package rerunfilecheck Info: File `thesis_template.out' has not changed.
 Here is how much of TeX's memory you used:
  13667 strings out of 476025
  222261 string characters out of 5790017
- 1858388 words of memory out of 5000000
+ 1859388 words of memory out of 5000000
  33697 multiletter control sequences out of 15000+600000
  527679 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1758,7 +1751,7 @@ exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (57 pages, 1479748 bytes).
+Output written on thesis_template.pdf (57 pages, 1479193 bytes).
 PDF statistics:
  632 PDF objects out of 1000 (max. 8388607)
  517 compressed objects within 6 object streams

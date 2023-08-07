@@ -25,12 +25,12 @@
 \contentsline {section}{\numberline {4.6}Zaznava objektov}{12}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Dataseti}{15}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Kaj je dataset?}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Uporabljeni dataseti}{17}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}CoNLL 2003}{17}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.2}Uporabljeni dataseti}{16}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}CoNLL 2003}{16}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}IMDb Reviews dataset}{18}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3} COCO dataset}{19}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4} CNN/Daily Mail Dataset}{20}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5} semeval-2017 dataset}{21}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.3} COCO dataset}{18}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4} CNN/Daily Mail Dataset}{19}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5} semeval-2017 dataset}{20}{subsection.5.2.5}%
 \contentsline {chapter}{\numberline {6}Metrike}{23}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Opis spemenljivk za izračun metrik}{23}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Precision}{24}{section.6.2}%
