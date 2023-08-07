@@ -294,9 +294,10 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
  \item Lokacija (LOC): Imena geografskih lokacij, kot so mesta, države ali regije.
  \item Razno (MISC): Druge poimenovane entitete, ki ne spadajo v zgoraj navedene kategorije, na primer datumi, odstotki ali denar.
  \end{enumerate}
- Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z belim prostorom.
- Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni benchmark za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER.
-Dataset je sestavljen/razdeljen na tri različne skupine in sicer:
+ Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z presledkom.
+ Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni "benchmark" za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER.
+
+
 CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
 \begin{enumerate}
  \item učni (train) z 14.000 vrsticami  primerov
@@ -306,9 +307,10 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
 
 \subsection{IMDb Reviews dataset}
 \label{sec:imdb}
-IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset, je priljubljen benchmark podatkovni niz v področju obdelave naravnega jezika. Ta niz je sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
+IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
 Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo.
+
 IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
 \begin{enumerate}
  \item učni (train) z 25.000 vrsticami  primerov
@@ -318,7 +320,7 @@ Vsak sklop vsebuje tisoče pregledov filmov. To je idealna podatkovna zbirka za 
 
 \subsection{ COCO dataset}
 \label{sec:coco}
-COCO (Common Objects in Context) je široko uporabljen nabor podatkov v področju računalniškega vida in detekcije objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z detekcijo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
+COCO (Common Objects in Context) je široko uporabljen nabor podatkov v področju računalniškega vida in zaznave objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z zaznavo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
 
 Nabor podatkov COCO je obsežen in vsebuje deset tisoče slik z milijoni označenih posameznih objektov. Slike prihajajo iz različnih virov, zajemajo raznolike prizore, ozadja, svetlobne pogoje in velikosti objektov.
 
@@ -331,7 +333,7 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
 
  \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik.
 
- \item Izzivi in tekmovanja: Nabor podatkov COCO je spodbudil številne izzive in tekmovanja v skupnosti računalniškega vida. COCO izziv je priljubljen dogodek, na katerem raziskovalci in inženirji predstavijo svoje modele za detekcijo objektov, segmentacijo in podnaslavljanje, s čimer premikajo meje tega, kar je mogoče v teh področjih.
+
  \end{enumerate}
  COCO podatkovna zbirka je običajno razdeljena na dva sklopa: 
 \begin{enumerate}
@@ -341,12 +343,13 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  
  \subsection{ CNN/Daily Mail Dataset}
  \label{sec:cnn}
- CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za avstraktivno povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge avstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
- Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno usposabljanje in preizkušanje modelov.
+ CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge abstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
+ Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno treniranje in evaluiranje modelov.
+ 
  Tukaj je nekaj ključnih značilnosti nabora podatkov CNN/Daily Mail:
  \begin{enumerate}
   \item Novičarski Članki in Povzetki: Nabor podatkov vsebuje novičarske članke iz medijskih virov, kot sta CNN (Cable News Network) in Daily Mail, skupaj s pripadajočimi povzetki. Ti članki pokrivajo različne teme in dogodke ter so različnih dolžin.
- \item Avstraktivno Povzemanje: Za razliko od ekstraktivnega povzemanja, kjer se izvlečejo in združijo stavki iz izvornega besedila, avstraktivno povzemanje vključuje ustvarjanje povzetka v povsem novih besedah. Nabor podatkov CNN/Daily Mail je priljubljen za tovrstno naloge avstraktivnega povzemanja.
+ \item Abstraktno Povzemanje: Vključuje ustvarjanje povzetka v povsem novih besedah. 
   \end{enumerate}
 CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope: 
 \begin{enumerate}
@@ -366,8 +369,7 @@ Tukaj je nekaj ključnih značilnosti SemEval podatkovnih zbirk:
  \item Naloge: Vsaka SemEval podatkovna zbirka je oblikovana za reševanje specifične naloge naravnega jezika. To lahko vključuje naloge, kot so analiza sentimenta, prepoznavanje imenovanih entitet, razreševanje koreference, klasifikacija besedil itd.
 
  \item Raznolikost: SemEval podatkovne zbirke zajemajo širok spekter nalog, jezikov in domen. To omogoča raziskovalcem primerjavo modelov in pristopov na različnih področjih.
-
- \item Uporaba v tekmovanjih: SemEval podatkovne zbirke se pogosto uporabljajo v tekmovanjih, imenovanih SemEval naloge. Tekmovalci tekmujejo za razvoj najboljših algoritmov za določeno nalogo in se primerjajo z drugimi udeleženci.
+.
  \end{enumerate}
 Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov.
 SemEval  podatkovna zbirka je običajno razdeljena na tri sklope: 
