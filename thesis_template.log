@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  6 AUG 2023 22:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  7 AUG 2023 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1136,7 +1136,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 ...er}{\numberline {6}Metrike}{23}{chapter.6}
+l.34 ...er}{\numberline {6}Metrike}{23}{chapter.6}
                                                   % [11
 
 ])
@@ -1740,20 +1740,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `thesis_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis_template.out':
-(rerunfilecheck)             Before: A4CE238F903DA793C6302ACC669D5FAE;5192
-(rerunfilecheck)             After:  F1CA461043CC8C5F47A1847E9B4F9D0F;5195.
+Package rerunfilecheck Info: File `thesis_template.out' has not changed.
+(rerunfilecheck)             Checksum: F1CA461043CC8C5F47A1847E9B4F9D0F;5195.
  ) 
 Here is how much of TeX's memory you used:
- 13668 strings out of 476025
- 222275 string characters out of 5790017
+ 13667 strings out of 476025
+ 222261 string characters out of 5790017
  1858388 words of memory out of 5000000
- 33698 multiletter control sequences out of 15000+600000
+ 33697 multiletter control sequences out of 15000+600000
  527679 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,79p,1085b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1772,7 +1766,7 @@ exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (57 pages, 1480270 bytes).
+Output written on thesis_template.pdf (57 pages, 1480081 bytes).
 PDF statistics:
  632 PDF objects out of 1000 (max. 8388607)
  517 compressed objects within 6 object streams
