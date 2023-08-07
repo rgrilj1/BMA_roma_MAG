@@ -397,6 +397,8 @@ Predpostavimo, da razvijamo model za prepoznavanje spam sporočil v elektronski 
 
 
 
+
+
 \textbf{Napačno pozitivni (False Positive)}
 
 Označuje situacijo, ko model napačno napove, da je nekaj pozitivno, medtem ko je v resnici negativno. Gre za vrsto napake, kjer model napačno identificira primer kot pripadajoč pozitivnemu razredu, čeprav dejansko pripada negativnemu razredu.
@@ -405,6 +407,9 @@ Označuje situacijo, ko model napačno napove, da je nekaj pozitivno, medtem ko 
 \emph{Primer:}
 
 Predpostavimo, da imamo model za prepoznavanje spam sporočil v elektronski pošti. Če model označi sporočilo kot "spam", čeprav ni dejansko spam, imamo situacijo lažno pozitivnega primera. Drugače povedano, model je napačno napovedal pozitiven primer (spam), ko je dejansko negativen primer (ni spam).
+
+
+
 
 
 \textbf{Napačno negativni (False Negatives)}
@@ -425,9 +430,9 @@ V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzroč
 
 \section{Precision}
 
-Precision je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah, kot je klasifikacija, kjer se ukvarjamo z razdelitvijo podatkov v različne razrede. Poudarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
+Precision je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah. Povdarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
 
-V kontekstu naravne jezikovne obdelave (NLP), precision igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.
+V kontekstu naravne jezikovne obdelave, precision igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.
 
  
  Formula za izračun:
@@ -438,7 +443,7 @@ V kontekstu naravne jezikovne obdelave (NLP), precision igra ključno vlogo pri 
  Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/
 
 \section{Recall}
-Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Recall se meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji recall pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med recallom in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe recalla  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih.
+Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji recall pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med recallom in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe recalla  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih.
 
  Formula za izračun:
 \begin{center}
@@ -447,7 +452,7 @@ Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo nara
 
 \section{F1}
 
-F1 je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in naravnojezikovnem procesiranju. Združuje oceni natančnosti (precision) in prepoznavnosti (recall) v eno številko, ki odraža ravnotežje med temi dvema metrikama. Pri NLP nalogah, kot so klasifikacija besedil, izluščanje informacij ali identifikacija entitet, sta tako natančnost kot prepoznavnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visok recall zagotavlja prepoznavanje vseh resnično pozitivnih primerov. F1-metrika se izračuna kot povprečje med natančnostjo in prepoznavnostjo, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1-metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba F1-metrike je zlasti smiselna, ko sta natančnost in prepoznavnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
+F1 je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje "precision" in "recall" v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako "precision" kot "recall" ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visok recall zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med "precision" in "recall", dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki "precision" in "recall" pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
 
  Formula za izračun:
@@ -456,9 +461,9 @@ F1 je pomembna za ocenjevanje uspešnosti modelov v obdelavi besedil in naravnoj
 \end{center}
 
 \section{Accuracy}
-Natančnost je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
+Accuracy  je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
-V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralni." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
 
  Formula za izračun:
 \begin{center}
@@ -466,7 +471,7 @@ V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije b
 \end{center}
 
 \section{ROUGE}
-ROUGE je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi s referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation" (ali v prevodu "ocena za podporo povzemanju z osrednjim poudarkom na priklicu"). Metrika ROUGE je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
+ROUGE je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi z referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation". Metrika ROUGE je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
 
 Metrika ROUGE primerja generirano besedilo s referenčnim besedilom (običajno človeško ustvarjenim besedilom) in oceni, kako dobro so se ujemale. Metrika upošteva različne vidike, kot so prekrivanje besed, besedni nizi in skupna dolžina besedil. Glavni cilj metrike ROUGE je merjenje stopnje, do katere je generirano besedilo sposobno pravilno povzeti pomembne informacije iz referenčnega besedila.
 
