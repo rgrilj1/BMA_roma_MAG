@@ -90,20 +90,20 @@
 \chapter{Uvod}
 \label{ch:uvod}
 
-Naravnojezikovno procesiranje (NLP) je eno izmed najhitreje razvijajočih se področij v umetni inteligenci, ki se ukvarja z obdelavo, razumevanjem in generiranjem naravnega jezika, kot ga uporabljajo ljudje za komunikacijo. Napredne NLP tehnike in modeli so v zadnjem desetletju privedli do prebojev v številnih aplikacijah, ki segajo od avtomatskega prevajanja in analize čustev do odgovarjanja na vprašanja in samodejnega povzemanja besedil.
+Obdelava naravnega jezika je eno izmed najhitreje razvijajočih se področij v umetni inteligenci, ki se ukvarja z obdelavo, razumevanjem in generiranjem naravnega jezika, kot ga uporabljajo ljudje za komunikacijo. Napredne tehnike obdelave naravnega jezika in modeli so v zadnjem desetletju privedli do prebojev v številnih aplikacijah, ki segajo od avtomatskega prevajanja in analize čustev do odgovarjanja na vprašanja in samodejnega povzemanja besedil.
 
-Cilj te magistrske naloge je raziskati in analizirati različne pristope k NLP modelom, razpoložljive datasete, uporabljene metrike za evaluacijo modelov ter številna področja uporabe.
+Cilj te magistrske naloge je raziskati in analizirati različne pristope k modelom obdelave naravnega jezika, razpoložljive datasete, uporabljene metrike za evaluacijo modelov ter številna področja uporabe.
 
 V nadaljevanju se bomo osredotočili na pomembnost kakovostnih datasetov za uspešno učenje modelov. Pregledali bomo obstoječe in priljubljene datasete, ki se uporabljajo za različne naloge.
 Kot kljušen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so natančnost, F1-score, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko ocenimo zmogljivost modelov.
 
-Nato se bomo posvetili raznolikim področjem uporabe NLP tehnologij. Raziskali bomo, kako se tehnologije uporabljajo v avtomatskem prevajanju, analizi čustev, odgovarjanju na vprašanja, generiranju besedil, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
+Nato se bomo posvetili raznolikim področjem uporabe tehnologij obdelave naravnega jezika. Raziskali bomo, kako se tehnologije uporabljajo v avtomatskem prevajanju, analizi čustev, odgovarjanju na vprašanja, generiranju besedil, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
 
 V Poglavju~\nameref{ch4}  bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo AI/NLP modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, klasifikacija besedil in še več.
 
 V Poglavju~\nameref{ch5} bomo podrobneje spoznali uporabljene datasete, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Dataseti so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
 
-V poglavju ~\nameref{ch6}  bomo temeljito raziskali različne metrike, ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog v področju obdelave naravnega jezika (NLP) zahteva prilagodljivost pri izbiri primernih meril. V nadaljevanju so navedene ključne metrike, ki se redno uporabljajo pri evalvaciji modelov.
+V poglavju ~\nameref{ch6}  bomo temeljito raziskali različne metrike, ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog v področju obdelave naravnega jezika zahteva prilagodljivost pri izbiri primernih meril. V nadaljevanju so navedene ključne metrike, ki se redno uporabljajo pri evalvaciji modelov.
 
 V predzanjem poglavju ~\nameref{ch7}  so predstavljeni rezultati različnih ponudnikov ter njihovih storitev.
 
@@ -111,7 +111,7 @@ Sledijo še ~\nameref{ch8}.
 
 
 
-Z predstavitvijo ključnih elementov v magistrski nalogi bomo pridobili celovit pregled nad uporabo modelov ter njihovo uporabo na različnih področij. Cilj je prispevati k razumevanju NLP  tehnologij ter predstaviti rezultate različnih storitev.
+Z predstavitvijo ključnih elementov v magistrski nalogi bomo pridobili celovit pregled nad uporabo modelov ter njihovo uporabo na različnih področij. Cilj je prispevati k razumevanju   tehnologij obdelave naravnega jezika ter predstaviti rezultate različnih storitev.
 %----------------------------------------------------------------
 % Poglavje (Chapter) 2
 %----------------------------------------------------------------
@@ -143,12 +143,12 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 \label{sec:transformers}
 Hugging Face je platforma na področju obdelave naravnega jezika in strojnega učenja. Njihova inovativna rešitev je postala sinonim za napredne dosežke in izjemno uporabnost na področju raziskav, razvoja in uporabe strojnega učenja.
 
-Njihova glavna odprtokodna knjižnica "Transformers" je postala temelj NLP raziskav, saj ponuja obsežen nabor naprednih modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
+Njihova glavna odprtokodna knjižnica "Transformers" je postala temelj raziskav obdelave naravnega jezika, saj ponuja obsežen nabor naprednih modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
 
 Hugging Face Hub je dinamična platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno deljenje in odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do že pripravljenih modelov.
 
 \subsection{Hugging Face Transformers }
-Hugging Face Transformers je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za obdelavo naravnega  jezika in strojnega učenja. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju NLP in razvoja aplikacij ter storitev.
+Hugging Face Transformers je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za obdelavo naravnega  jezika in strojnega učenja. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju obdelave naravnega jezika in razvoja aplikacij ter storitev.
 
 Ena od ključnih prednosti Hugging Face Transformers je enostavnost uporabe. Razvijalci lahko z nekaj vrsticami kode dostopajo do pred-treniranih modelov in jih takoj uporabljajo. Poleg tega knjižnica omogoča tudi prilagajanje modelov in ponuja odprtokodno skupnost, ki nenehno prispeva z novimi modeli, izboljšavami in rešitvami.
 
@@ -269,7 +269,7 @@ Nadzor kakovosti: Kvaliteta datasetov je ključnega pomena za uspešno delovanje
 
 Prilagajanje specifičnim aplikacijam: Včasih so potrebni specializirani modeli za določene aplikacije ali domene. V takih primerih je morda potrebno ustvariti ali prilagoditi datasete, ki se bolje prilegajo ciljni uporabi.
 
-Razvoj modelov za redke jezike: Razvoj NLP modelov za redke jezike zahteva ustrezne datasete v ciljnem jeziku, kar je lahko izziv, saj so ti dataseti pogosto omejeni ali pa jih sploh ni na voljo.
+Razvoj modelov za redke jezike: Razvoj  modelov obdelave naravnega jezika za redke jezike zahteva ustrezne datasete v ciljnem jeziku, kar je lahko izziv, saj so ti dataseti pogosto omejeni ali pa jih sploh ni na voljo.
 
 Pomembno je, da so dataseti pravilno pripravljeni, imajo ustrezne metapodatke in so primerni za ciljno nalogo, da bi omogočili kakovostno analizo in doseganje uporabnih rezultatov.
 
@@ -416,7 +416,7 @@ Predpostavimo, da imamo model za prepoznavanje spam sporočil v elektronski poš
 
 Označuje napako, ki se pojavi v kontekstu klasifikacije ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov.
 
-V primeru analize besedila v naravni jezikovni obdelavi (NLP), false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer false negative.
+V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer false negative.
 
 \emph{Primer:}
 
@@ -463,7 +463,7 @@ F1 je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Zd
 \section{Accuracy}
 Accuracy  je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
-V kontekstu NLP se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
 
  Formula za izračun:
 \begin{center}
