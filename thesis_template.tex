@@ -127,12 +127,19 @@ Z predstavitvijo ključnih elementov v magistrski nalogi bomo pridobili celovit 
 %----------------------------------------------------------------
 % Poglavje (Chapter) 5
 %----------------------------------------------------------------
-\chapter{Kaj pa literatura?}
-\label{ch:literatura}
-Kot smo omenili že v uvodu, je pravi način za citiranje literature uporaba \BibTeX{}a~\cite{ubi}.
-Programski paket \LaTeX je prvotno predstavljen v priročniku~\cite{Lamport} in je v resnici nadgradnja sistema \TeX\ avtorja Donalda Knutha, znanega po denimo, če izpustim njegovo umetnost programiranja, Knuth-Bendixovem algoritmu~\cite{Knuth}.
+\chapter{Povzetek}
+\label{ch:povzetek}
+Magistrsko delo obravnava obdelavo naravnega jezika z uporabo različnih ponudnikov oblačnih storitev, vključno z Vertex AI, AWS Sagemaker, Azure Cognitive Services ter Hugging Face Transformers. Namen dela je analizirati in primerjati njihove značilnosti, zmogljivosti ter primernost za različna področja uporabe obdelave naravnega jezika, kot so prepoznava imenskih entit, analiza sentimenta, prepoznava objektov, povzemanje besedila, klasifikacija ter izvleček besedne zveze.
 
-Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ Fortnowa~\cite{Fortnow}.
+V delu so bili podrobno predstavljeni vsi trije ponudniki oblačnih storitev ter odprtokodne platforme Hugging Face Transformers. Vertex AI je Googlova platforma za strojno učenje in obdelavo podatkov, AWS Sagemaker je Amazonova storitev za razvoj, usposabljanje ter razpostavljanje modelov strojnega učenja, Azure Cognitive Services so Microsoftove storitve, ki omogočajo integracijo funkcionalnosti obdelave naravnega jezika v aplikacije, Hugging Face Transformers pa je platforma s prenatreniranimi modeli za različne naloge obdelave naravnega jezika.
+
+Različna področja uporabe so bila preučena v kontekstu vsakega ponudnika. Delo je vključevalo prepoznavo imenskih entit, kjer se modeli naučijo prepoznavati imena oseb, krajev, organizacij itd. Analiza sentimenta je vključevala ocenjevanje čustvenega tona besedila, medtem ko je prepoznava objektov zahtevala zmožnost modela, da identificira predmete ali entitete v sliki. Povzemanje besedila je zajemalo ustvarjanje krajšega povzetka daljšega besedila, medtem ko je klasifikacija vključevala razvrščanje besedila v določene kategorije. Izvleček besedne zveze je naloga, kjer model izlušči ključne besede ali besedne zveze iz podanega besedila.
+
+Za primerjavo uspešnosti modelov so bili uporabljeni različne metrike kot so Recall, Precision, F1, ROUGE ter Accuracy. Korpusi  uporabljeni za testiranje modelov, so vključevali CoNLL 2003 za prepoznavo imenskih entit, IMdb Reviews za analizo sentimenta, COCO za prepoznavo objektov v slikah, CNN/Daily Mail za povzemanje besedila ter semeval-2017 za klasifikacijo ter izvleček besedne zveze.
+
+Skupaj s predstavitvijo ponudnikov oblačnih storitev, njihovih zmogljivosti in rezultatov evalvacije na različnih področjih uporabe, je magistrsko delo prispevalo k boljšemu razumevanju primernosti ter učinkovitosti teh orodij za različne naloge obdelave naravnega jezika.
+
+
 
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
@@ -141,11 +148,11 @@ Vsem raziskovalcem s področja računalništva pa svetujem v branje mnenje L.\ F
 \label{ch3}
 \section{Hugging Face}
 \label{sec:transformers}
-Hugging Face je platforma na področju obdelave naravnega jezika in strojnega učenja. Njihova inovativna rešitev je postala sinonim za napredne dosežke in izjemno uporabnost na področju raziskav, razvoja in uporabe strojnega učenja.
+Hugging Face je platforma na področju obdelave naravnega jezika in strojnega učenja. Njihova rešitev je ppostala zelo uporabna na področju raziskav, razvoja in uporabe strojnega učenja. 
 
 Njihova glavna odprtokodna knjižnica "Transformers" je postala temelj raziskav obdelave naravnega jezika, saj ponuja obsežen nabor naprednih modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
 
-Hugging Face Hub je dinamična platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno deljenje in odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do že pripravljenih modelov.
+Hugging Face Hub je platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno deljenje in odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do že pripravljenih modelov.
 
 \subsection{Hugging Face Transformers }
 Hugging Face Transformers je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za obdelavo naravnega  jezika in strojnega učenja. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju obdelave naravnega jezika in razvoja aplikacij ter storitev.
@@ -670,7 +677,7 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
 %----------------------------------------------------------------
-\chapter{Sklepne ugotovitve}
+\chapter{Zaključek}
 \label{ch8}
 Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
 
