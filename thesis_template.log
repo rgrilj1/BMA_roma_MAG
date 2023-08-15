@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  15 AUG 2023 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  15 AUG 2023 14:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1370,16 +1370,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 5.
 [15]
-Overfull \hbox (1.88899pt too wide) in paragraph at lines 274--275
-[]\OT1/cmr/m/n/12 Pomembno je, da so dataseti pravilno pripravl-jeni, imajo us-
-trezne metapo-
- []
-
 <figures//conll.png, id=351, 400.49625pt x 169.63374pt>
 File: figures//conll.png Graphic file (type png)
 <use figures//conll.png>
 Package pdftex.def Info: figures//conll.png  used on input line 284.
 (pdftex.def)             Requested size: 284.52756pt x 120.52103pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1729,13 +1725,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `thesis_template.out' has not changed.
-(rerunfilecheck)             Checksum: F1CA461043CC8C5F47A1847E9B4F9D0F;5195.
+
+Package rerunfilecheck Warning: File `thesis_template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis_template.out':
+(rerunfilecheck)             Before: F1CA461043CC8C5F47A1847E9B4F9D0F;5195
+(rerunfilecheck)             After:  3E8AD485D26A82620F1A7269D6687A83;5180.
  ) 
 Here is how much of TeX's memory you used:
  13664 strings out of 476025
  222240 string characters out of 5790017
- 1858388 words of memory out of 5000000
+ 1859388 words of memory out of 5000000
  33697 multiletter control sequences out of 15000+600000
  527679 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1755,7 +1757,7 @@ exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (57 pages, 1476997 bytes).
+Output written on thesis_template.pdf (57 pages, 1476992 bytes).
 PDF statistics:
  626 PDF objects out of 1000 (max. 8388607)
  512 compressed objects within 6 object streams

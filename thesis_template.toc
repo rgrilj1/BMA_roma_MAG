@@ -23,9 +23,9 @@
 \contentsline {section}{\numberline {4.4}Izvleček besedne zveze}{11}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Klasifikacija besedila}{11}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Zaznava objektov}{12}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Dataseti}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kaj je dataset?}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Uporabljeni dataseti}{16}{section.5.2}%
+\contentsline {chapter}{\numberline {5}Korpusi}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kaj je korpus?}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Uporabljeni korpusi}{16}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}CoNLL 2003}{16}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}IMDb Reviews dataset}{18}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3} COCO dataset}{18}{subsection.5.2.3}%
