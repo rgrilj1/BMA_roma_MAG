@@ -35,7 +35,7 @@
 \contentsline {section}{\numberline {6.1}Opis spemenljivk za izračun metrik}{25}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Natančnost (Precision)}{26}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Odzivnost (Recall)}{27}{section.6.3}%
-\contentsline {section}{\numberline {6.4}F1}{28}{section.6.4}%
+\contentsline {section}{\numberline {6.4}F1 ocena (F1-score)}{28}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Accuracy}{28}{section.6.5}%
 \contentsline {section}{\numberline {6.6}ROUGE}{29}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Analiza raziskave}{31}{chapter.7}%

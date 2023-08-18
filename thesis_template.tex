@@ -95,7 +95,7 @@ Obdelava naravnega jezika je eno izmed najhitreje razvijajočih se področij v u
 Cilj te magistrske naloge je raziskati in analizirati različne pristope k modelom obdelave naravnega jezika, razpoložljive datasete, uporabljene metrike za evaluacijo modelov ter številna področja uporabe.
 
 V nadaljevanju se bomo osredotočili na pomembnost kakovostnih datasetov za uspešno učenje modelov. Pregledali bomo obstoječe in priljubljene datasete, ki se uporabljajo za različne naloge.
-Kot kljušen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so natančnost, F1-score, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko ocenimo zmogljivost modelov.
+Kot kljušen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so natančnost, F1-ocena, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko ocenimo zmogljivost modelov.
 
 Nato se bomo posvetili raznolikim področjem uporabe tehnologij obdelave naravnega jezika. Raziskali bomo, kako se tehnologije uporabljajo v avtomatskem prevajanju, analizi čustev, odgovarjanju na vprašanja, generiranju besedil, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
 
@@ -135,7 +135,7 @@ V delu so bili podrobno predstavljeni vsi trije ponudniki oblačnih storitev ter
 
 Različna področja uporabe so bila preučena v kontekstu vsakega ponudnika. Delo je vključevalo prepoznavo imenskih entit, kjer se modeli naučijo prepoznavati imena oseb, krajev, organizacij itd. Analiza sentimenta je vključevala ocenjevanje čustvenega tona besedila, medtem ko je prepoznava objektov zahtevala zmožnost modela, da identificira predmete ali entitete v sliki. Povzemanje besedila je zajemalo ustvarjanje krajšega povzetka daljšega besedila, medtem ko je klasifikacija vključevala razvrščanje besedila v določene kategorije. Izvleček besedne zveze je naloga, kjer model izlušči ključne besede ali besedne zveze iz podanega besedila.
 
-Za primerjavo uspešnosti modelov so bili uporabljeni različne metrike kot so Recall, Natančnost, F1, ROUGE ter Accuracy. Korpusi  uporabljeni za testiranje modelov, so vključevali CoNLL 2003 za prepoznavo imenskih entit, IMdb Reviews za analizo sentimenta, COCO za prepoznavo objektov v slikah, CNN/Daily Mail za povzemanje besedila ter semeval-2017 za klasifikacijo ter izvleček besedne zveze.
+Za primerjavo uspešnosti modelov so bili uporabljeni različne metrike kot so Recall, Natančnost, F1 ocena, ROUGE ter Accuracy. Korpusi  uporabljeni za testiranje modelov, so vključevali CoNLL 2003 za prepoznavo imenskih entit, IMdb Reviews za analizo sentimenta, COCO za prepoznavo objektov v slikah, CNN/Daily Mail za povzemanje besedila ter semeval-2017 za klasifikacijo ter izvleček besedne zveze.
 
 Skupaj s predstavitvijo ponudnikov oblačnih storitev, njihovih zmogljivosti in rezultatov evalvacije na različnih področjih uporabe, je magistrsko delo prispevalo k boljšemu razumevanju primernosti ter učinkovitosti teh orodij za različne naloge obdelave naravnega jezika.
 
@@ -482,14 +482,14 @@ Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo nara
  \Large{Odzivnost = \(\frac{True Positive}{True Positive + False Positive}\)}
 \end{center}
 
-\section{F1}
+\section{F1 ocena (F1-score)}
 
-F1 je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in odzivnost v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot odzivnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoka odzivnost zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in odzivnost, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in odzivnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
+F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in odzivnost v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot odzivnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoka odzivnost zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in odzivnost, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 ocena kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in odzivnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
 
  Formula za izračun:
 \begin{center}
- \Large{F1 = 2 x \(\frac{Natancnost \times Odzivnost}{Natancnost + Odzivnost}\)}
+ \Large{F1 ocena = 2 x \(\frac{Natancnost \times Odzivnost}{Natancnost + Odzivnost}\)}
 \end{center}
 
 \section{Accuracy}
