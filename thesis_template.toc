@@ -33,16 +33,16 @@
 \contentsline {subsection}{\numberline {5.2.5} semeval-2017 dataset}{22}{subsection.5.2.5}%
 \contentsline {chapter}{\numberline {6}Metrike}{25}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Opis spemenljivk za izračun metrik}{25}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Precision}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Natančnost (Precision)}{26}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Recall}{27}{section.6.3}%
 \contentsline {section}{\numberline {6.4}F1}{28}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Accuracy}{28}{section.6.5}%
 \contentsline {section}{\numberline {6.6}ROUGE}{29}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Analiza raziskave}{31}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{31}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Analiza sentimenta (Sentiment Analaysis)}{33}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Povzetek (Summarisation)}{34}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Izvleček besedne zveze (Key Phrases)}{35}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Klasifikacija besedila (Text Classification)}{36}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Zaznava objektov (Object Detection)}{37}{section.7.6}%
+\contentsline {section}{\numberline {7.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{32}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Analiza sentimenta (Sentiment Analaysis)}{34}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Povzetek (Summarisation)}{35}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Izvleček besedne zveze (Key Phrases)}{36}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Klasifikacija besedila (Text Classification)}{37}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Zaznava objektov (Object Detection)}{38}{section.7.6}%
 \contentsline {chapter}{\numberline {8}Zaključek}{39}{chapter.8}%

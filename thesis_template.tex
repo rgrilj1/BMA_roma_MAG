@@ -460,16 +460,16 @@ Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-po
 V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere.
 
 
-\section{Precision}
+\section{Natančnost (Precision)}
 
-Precision je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah. Povdarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
+Natančnost je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah. Povdarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
 
-V kontekstu naravne jezikovne obdelave, precision igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.
+V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.
 
  
  Formula za izračun:
 \begin{center}
-  \Large{Precision = \(\frac{True Positive}{True Positive + False Negatives}\)}
+  \Large{Natančnost = \(\frac{True Positive}{True Positive + False Negatives}\)}
 \end{center}
 
  Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/
@@ -489,7 +489,7 @@ F1 je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Zd
 
  Formula za izračun:
 \begin{center}
- \Large{F1 = 2 x \(\frac{Precision \times Recal}{Precision + Recal}\)}
+ \Large{F1 = 2 x \(\frac{Natancnost \times Recal}{Natancnost + Recal}\)}
 \end{center}
 
 \section{Accuracy}
@@ -517,12 +517,35 @@ Metrika ima širok nabor uporabe v raziskavah in nalogah, ki vključujejo avtoma
 %----------------------------------------------------------------
 \chapter{Analiza raziskave}
 \label{ch7}
+Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{tabela.png}
+\end{center}
+\caption{ Tabela analize (Rezultati so zaokroženi na 3 decimalna mesta)}
+\label{pic2}
+\end{figure}
+
+Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla storitev AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna storitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI ponudnika Google Cloud.
+
+Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugem mestu se je uvrstila odprtokodna rešitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google Cloud.
+
+Najboljši rezultati so bili doseženi pri povzemanju z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
+
+V ocenjevanju izvlečka besednih zvez je najvišje mesto osvojila storitev Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto zasedel AWS SageMaker.
+
+Pri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+
+V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
+
+
 \section{Prepoznavanje imenskih entitet (Named Entity Recognition)}
 \begin{table}[h!]
 \caption{Prepoznavanje imenskih entitet}
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & 0.949 & 0.953 & 0.951 \\
                         {\tt Vertex AI }   & 0.920 & 0.919  & 0.919  \\
                          {\tt AWS SageMaker}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
@@ -552,7 +575,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \caption{Analiza sentimenta}
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & 0.800 & 0.799 & 0.799 \\
                         {\tt Vertex AI }   & \textbf {0.924} & \textbf {0.924 } & \textbf {0.924}  \\
                          {\tt AWS SageMaker}   & 0.862 & 0.891 & 0.876 \\     
@@ -611,7 +634,7 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
 \caption{Izvleček besedne zveze  }
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & 0.475 & 0.573 & 0.519\\
                         {\tt Vertex AI }   & 0.637 & 0.543  & 0.586  \\
                          {\tt AWS SageMaker}   & 0.513 & 0.622 & 0.562 \\     
@@ -643,7 +666,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \caption{ Klasifikacija besedila  }
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Precision} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
                         {\tt Transformers} & \textbf {0.930} & \textbf {0.926} & \textbf {0.928} \\
                         {\tt Vertex AI }   & 0.957 & 0.862  & 0.907  \\
                          {\tt AWS SageMaker}   & 0.858 & 0.763 & 0. 807\\     
@@ -704,27 +727,6 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
 %----------------------------------------------------------------
 \chapter{Zaključek}
 \label{ch8}
-Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
-
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{tabela.png}
-\end{center}
-\caption{ Tabela analize (Rezultati so zaokroženi na 3 decimalna mesta)}
-\label{pic2}
-\end{figure}
-
-Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla storitev AWS Sage Maker. Na drugem mestu se je uvrstila odprtokodna storitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI ponudnika Google Cloud.
-
-Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugem mestu se je uvrstila odprtokodna rešitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google Cloud.
-
-Najboljši rezultati so bili doseženi pri povzemanju z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
-
-V ocenjevanju izvlečka besednih zvez je najvišje mesto osvojila storitev Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto zasedel AWS SageMaker.
-
-Pri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
-
-V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
 
 Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo tesno skupaj, kakor pa lahko razberemo iz rezultatov pa je tudi odprtokodna rešitev zasedla prvo mesto.
 
