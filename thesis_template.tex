@@ -135,7 +135,7 @@ V delu so bili podrobno predstavljeni vsi trije ponudniki oblačnih storitev ter
 
 Različna področja uporabe so bila preučena v kontekstu vsakega ponudnika. Delo je vključevalo prepoznavo imenskih entit, kjer se modeli naučijo prepoznavati imena oseb, krajev, organizacij itd. Analiza sentimenta je vključevala ocenjevanje čustvenega tona besedila, medtem ko je prepoznava objektov zahtevala zmožnost modela, da identificira predmete ali entitete v sliki. Povzemanje besedila je zajemalo ustvarjanje krajšega povzetka daljšega besedila, medtem ko je klasifikacija vključevala razvrščanje besedila v določene kategorije. Izvleček besedne zveze je naloga, kjer model izlušči ključne besede ali besedne zveze iz podanega besedila.
 
-Za primerjavo uspešnosti modelov so bili uporabljeni različne metrike kot so Recall, Precision, F1, ROUGE ter Accuracy. Korpusi  uporabljeni za testiranje modelov, so vključevali CoNLL 2003 za prepoznavo imenskih entit, IMdb Reviews za analizo sentimenta, COCO za prepoznavo objektov v slikah, CNN/Daily Mail za povzemanje besedila ter semeval-2017 za klasifikacijo ter izvleček besedne zveze.
+Za primerjavo uspešnosti modelov so bili uporabljeni različne metrike kot so Recall, Natančnost, F1, ROUGE ter Accuracy. Korpusi  uporabljeni za testiranje modelov, so vključevali CoNLL 2003 za prepoznavo imenskih entit, IMdb Reviews za analizo sentimenta, COCO za prepoznavo objektov v slikah, CNN/Daily Mail za povzemanje besedila ter semeval-2017 za klasifikacijo ter izvleček besedne zveze.
 
 Skupaj s predstavitvijo ponudnikov oblačnih storitev, njihovih zmogljivosti in rezultatov evalvacije na različnih področjih uporabe, je magistrsko delo prispevalo k boljšemu razumevanju primernosti ter učinkovitosti teh orodij za različne naloge obdelave naravnega jezika.
 
@@ -474,22 +474,22 @@ V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razu
 
  Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/
 
-\section{Recall}
-Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji recall pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med recallom in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe recalla  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih.
+\section{Odzivnost (Recall)}
+Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višja odzivnost pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med odzivnostjo in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe odzivnosti  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih.
 
  Formula za izračun:
 \begin{center}
- \Large{Recall = \(\frac{True Positive}{True Positive + False Positive}\)}
+ \Large{Odzivnost = \(\frac{True Positive}{True Positive + False Positive}\)}
 \end{center}
 
 \section{F1}
 
-F1 je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje "precision" in "recall" v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako "precision" kot "recall" ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visok recall zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med "precision" in "recall", dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki "precision" in "recall" pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
+F1 je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in odzivnost v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot odzivnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoka odzivnost zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in odzivnost, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 metrike kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in odzivnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
 
  Formula za izračun:
 \begin{center}
- \Large{F1 = 2 x \(\frac{Natancnost \times Recal}{Natancnost + Recal}\)}
+ \Large{F1 = 2 x \(\frac{Natancnost \times Odzivnost}{Natancnost + Odzivnost}\)}
 \end{center}
 
 \section{Accuracy}
@@ -545,7 +545,7 @@ V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services
 \caption{Prepoznavanje imenskih entitet}
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
                         {\tt Transformers} & 0.949 & 0.953 & 0.951 \\
                         {\tt Vertex AI }   & 0.920 & 0.919  & 0.919  \\
                          {\tt AWS SageMaker}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
@@ -575,7 +575,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \caption{Analiza sentimenta}
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
                         {\tt Transformers} & 0.800 & 0.799 & 0.799 \\
                         {\tt Vertex AI }   & \textbf {0.924} & \textbf {0.924 } & \textbf {0.924}  \\
                          {\tt AWS SageMaker}   & 0.862 & 0.891 & 0.876 \\     
@@ -634,7 +634,7 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
 \caption{Izvleček besedne zveze  }
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
                         {\tt Transformers} & 0.475 & 0.573 & 0.519\\
                         {\tt Vertex AI }   & 0.637 & 0.543  & 0.586  \\
                          {\tt AWS SageMaker}   & 0.513 & 0.622 & 0.562 \\     
@@ -666,7 +666,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \caption{ Klasifikacija besedila  }
 \begin{center}
         \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Recall}  & F1   \\ \hline
+             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
                         {\tt Transformers} & \textbf {0.930} & \textbf {0.926} & \textbf {0.928} \\
                         {\tt Vertex AI }   & 0.957 & 0.862  & 0.907  \\
                          {\tt AWS SageMaker}   & 0.858 & 0.763 & 0. 807\\     
