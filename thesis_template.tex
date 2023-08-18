@@ -224,11 +224,7 @@ Uporabljamo ga lahko z pomočjo dveh različnih programskih jezikov C\#, Java, J
 \label{sec:ner}
 Prepoznavanje imenskih entitet je tehnika na področju obdelave naravnega jezika, ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
 
-Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo.
- 
- Primer:
- 
- V stavku "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
+Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo.\cite{ner}
 
 Številne praktične uporabe:
 \begin{enumerate}
@@ -236,14 +232,16 @@ Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu 
  \item Razumevanje strukture in vsebine dokumentov za informacijsko iskanje in kategorizacijo.
  \item Pomoč pri analizi sentimenta, kjer želimo razumeti, kako se osebe, organizacije ali druge entitete omenjene v besedilu nanašajo na določeno temo ali izdelek.
 \end{enumerate}
+ 
+ Primer:
+ 
+ V stavku "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
+
+
 
 \section{Analiza sentimenta}
-Analiza sentimenta je proces določanja čustvenega odziva, nagnjenosti ali stališča zapisanega besedila. Cilj analize sentimenta je ugotoviti, ali je določeno besedilo pozitivno, negativno ali nevtralno. To je lahko koristno pri analizi mnenj strank, razumevanju čustvenega odziva na izdelke, blagovne znamke, dogodke in druge.
+Analiza sentimenta je proces določanja čustvenega odziva, nagnjenosti ali stališča zapisanega besedila. Cilj analize sentimenta je ugotoviti, ali je določeno besedilo pozitivno, negativno ali nevtralno. To je lahko koristno pri analizi mnenj strank, razumevanju čustvenega odziva na izdelke, blagovne znamke, dogodke in druge. \cite{sentiment}
 
-Primer:
-
-Če imamo naslednji stavek: "Ta film je fantastičen, vreden ogleda!", bi analiza sentimenta prepoznala, da je izraz pozitiven.
-Ta analiza temelji na uporabi naravnojezikovnega procesiranja in strojnega učenja.
 
  Obstaja več pristopov k analizi sentimenta:
 \begin{enumerate}
@@ -253,26 +251,32 @@ Ta analiza temelji na uporabi naravnojezikovnega procesiranja in strojnega učen
  \item Algoritmi globokega učenja.
  \end{enumerate}
  
+ Primer:
+
+Če imamo naslednji stavek: "Ta film je fantastičen, vreden ogleda!", bi analiza sentimenta prepoznala, da je izraz pozitiven.
+Ta analiza temelji na uporabi naravnojezikovnega procesiranja in strojnega učenja.
+
+
  \section{Povzemanje besedila}
 Pri povzermanju besedila gre za postopek ustvarjanja krajšega in jedrnatega povzetka iz daljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno pri velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
 
-Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporab, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več.
+Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporab, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več. \cite{povzetek}
  
  \section{Luščenje ključnih besed}
 Nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
 
-Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
+Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila. \cite{luscenje}
 
  \section{Klasifikacija besedila}
  Klasifikacija besedil je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
- 
-Primer:
-
- Lahko klasificiramo e-poštna sporočila kot "spam" ali "ne-spam", novice glede na tematiko, uporabniške komentarje glede na ton (pozitiven, negativen, nevtralen), itd.
 
 Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", "s", itd.).
 
-Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed ("Bag-of-Words"), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja.
+Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed ("Bag-of-Words"), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. \cite{klasifikacija}
+
+Primer:
+
+ Lahko klasificiramo e-poštna sporočila kot "spam" ali "ne-spam", novice glede na tematiko, uporabniške komentarje glede na ton (pozitiven, negativen, nevtralen), itd.
  
   \section{Zaznava objektov}
 Je tehnika, ki se uporablja za avtomatsko zaznavanje in identifikacijo objektov na digitalnih slikah ali video posnetkih. Namen te tehnike je, da  prepozna in označi različne objekte v podobi ter jih loči od ozadja ali drugih objektov.
@@ -284,7 +288,9 @@ Postopek objektnega zaznavanja običajno vključuje naslednje korake:
  \item Klasifikacija: Ko so objekti omejeni z omejitvenimi okviri, analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
  \item  Sledenje: V video posnetkih je lahko zaželeno, da algoritem sledi objektom skozi različne kadre in tako beleži njihovo gibanje.
  \end{enumerate}
-Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacija prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. %----------------------------------------------------------------
+Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacija prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. \cite{object}
+
+ %----------------------------------------------------------------
 % Poglavje (Uporabljeni dataseti) 6
 %----------------------------------------------------------------
 \chapter{Korpusi}
@@ -766,12 +772,6 @@ Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo t
 %----------------------------------------------------------------
 
 \begin{thebibliography}{99}
-\bibitem{Fortnow} L.\ Fortnow, ``Viewpoint: Time for computer science to grow up'',
-{\it Communications of the ACM}, št.\ 52, zv.\ 8, str.\ 33--35, 2009.
-\bibitem{Knuth} D.\ E.\ Knuth, P. Bendix. ``Simple word problems in universal algebras'', v zborniku: Computational Problems in Abstract Algebra (ur. J. Leech), 1970, str. 263--297.
-\bibitem{Lamport} L.\ Lamport. {\it LaTEX: A Document Preparation System}. Addison-Wesley, 1986.
-\bibitem{ubi} O.\ Patashnik (1998) \BibTeX{}ing.
-
 \bibitem{hugging} Hugging Face. Dostopno na: \url{https://huggingface.co/learn/nlp-course/chapter1/4}  [Dostopano 10. 06. 2023].
 \bibitem{transformers} Transformers. Dostopno na: \url{https://huggingface.co/learn/nlp-course/chapter2/1?fw=pt}  [Dostopano 10. 06. 2023].
 \bibitem{google} Google Cloud. Dostopno na: \url{https://cloud.google.com/natural-language#section-1}  [Dostopano 10. 06. 2023].
@@ -780,14 +780,18 @@ Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo t
 \bibitem{sage} Amazon SageMaker.  Dostopno na: \url{https://aws.amazon.com/sagemaker/}  [Dostopano 10. 06. 2023].
 \bibitem{azure} Azure. Dostopno na: \url{https://azure.microsoft.com/en-us}  [Dostopano 10. 06. 2023].
 \bibitem{cognitive} Azure Cognitive Services. Dostopno na: \url{https://azure.microsoft.com/en-gb/products/cognitive-services}  [Dostopano 10. 06. 2023].
+\bibitem{ner} Named Entity Recognition. Dostopno na: \url{https://www.shaip.com/blog/named-entity-recognition-and-its-types/}  [Dostopano 10. 06. 2023].
+\bibitem{sentiment} Sentiment Analysis. Dostopno na: \url{https://aws.amazon.com/what-is/sentiment-analysis/}  [Dostopano 10. 06. 2023].
+\bibitem{povzetek} Summarization. Dostopno na: \url{https://huggingface.co/tasks/summarization}  [Dostopano 10. 06. 2023].
+\bibitem{luscenje} Keyphrase Extraction. Dostopno na: \url{https://www.geeksforgeeks.org/keyphrase-extraction-in-nlp/}  [Dostopano 10. 06. 2023].
+\bibitem{klasifikacija} Text Classification. Dostopno na: \url{https://huggingface.co/tasks/text-classification}  [Dostopano 10. 06. 2023].
+\bibitem{object} Object Detection. Dostopno na: \url{https://huggingface.co/tasks/object-detection}  [Dostopano 10. 06. 2023].
 \bibitem{truevsfalse} True vs. False and Positive vs. Negative. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative}  [Dostopano
 10. 06. 2023].
 \bibitem{accuracy} Accuracy. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/accuracy}  [Dostopano
 10. 06. 2023].
 \bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano
 10. 06. 2023].
-
-\bibitem{licence} licence-cc.pdf. Dostopno na: \url{https://ucilnica.fri.uni-lj.si/course/view.php?id=274}
 \end{thebibliography}
 
 \end{document}
