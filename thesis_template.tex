@@ -153,7 +153,7 @@ Hugging Face je platforma na področju obdelave naravnega jezika in strojnega u�
 Njihova glavna odprtokodna knjižnica "Transformers" je postala temelj raziskav obdelave naravnega jezika, saj ponuja obsežen nabor naprednih modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
 
 Hugging Face Hub je platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno deljenje in odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do že pripravljenih modelov.
-Področje obdelave naravnega jezika je prvič bilo na voljo leta 2017. //https://huggingface.co/learn/nlp-course/chapter1/4 //
+Področje obdelave naravnega jezika je prvič bilo na voljo leta 2017.  \cite{hugging}
 
 \subsection{Hugging Face Transformers }
 Hugging Face Transformers je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za obdelavo naravnega  jezika in strojnega učenja. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju obdelave naravnega jezika in razvoja aplikacij ter storitev.
@@ -421,7 +421,7 @@ SemEval  podatkovna zbirka je običajno razdeljena na tri sklope:
 \section{Opis spemenljivk za izračun metrik}
 \textbf{Pravilno pozitivni (True Positive)}
 
-Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določeno skupino. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten.
+Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določeno skupino. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten. \cite{truevsfalse}
 
 \emph{Primer:}
 
@@ -433,12 +433,12 @@ Predpostavimo, da razvijamo model za prepoznavanje spam sporočil v elektronski 
 
 \textbf{Napačno pozitivni (False Positive)}
 
-Označuje situacijo, ko model napačno napove, da je nekaj pozitivno, medtem ko je v resnici negativno. Gre za vrsto napake, kjer model napačno identificira primer kot pripadajoč pozitivnemu razredu, čeprav dejansko pripada negativnemu razredu.
+Označuje situacijo, ko model napačno napove, da je nekaj pozitivno, medtem ko je v resnici negativno. Gre za vrsto napake, kjer model napačno identificira primer kot pripadajoč pozitivnemu razredu, čeprav dejansko pripada negativnemu razredu.\cite{truevsfalse}
 
 
 \emph{Primer:}
 
-Predpostavimo, da imamo model za prepoznavanje spam sporočil v elektronski pošti. Če model označi sporočilo kot "spam", čeprav ni dejansko spam, imamo situacijo lažno pozitivnega primera. Drugače povedano, model je napačno napovedal pozitiven primer (spam), ko je dejansko negativen primer (ni spam).
+Predpostavimo, da imamo model za prepoznavanje spam sporočil v elektronski pošti. Če model označi sporočilo kot "spam", čeprav ni dejansko spam, imamo situacijo lažno pozitivnega primera. Drugače povedano, model je napačno napovedal pozitiven primer (spam), ko je dejansko negativen primer (ni spam). 
 
 
 
@@ -446,9 +446,8 @@ Predpostavimo, da imamo model za prepoznavanje spam sporočil v elektronski poš
 
 \textbf{Napačno negativni (False Negatives)}
 
-Označuje napako, ki se pojavi v kontekstu klasifikacije ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov.
-
-V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer false negative.
+Označuje napako, ki se pojavi v kontekstu klasifikacije ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov. 
+V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer false negative. \cite{truevsfalse}
 
 \emph{Primer:}
 
@@ -457,14 +456,14 @@ Predpostavimo, da imamo napreden sistem za filtriranje neželenih sporočil (spa
 
 Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-poštno sporočilo kot varno (ne-spam), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "False Negatives".
 
-V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere.
+V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere. \cite{truevsfalse}
 
 
 \section{Natančnost (Precision)}
 
 Natančnost je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah. Povdarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
 
-V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.
+V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razumevanju besedila. Na primer, pri analizi sentimenta želimo natančno ugotoviti, ali je izraz pozitiven ali negativen. Visoka preciznost v tem primeru pomeni, da so napovedi modela o sentimentu točne in se malo zmotijo.\cite{percision}
 
  
  Formula za izračun:
@@ -472,10 +471,9 @@ V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razu
   \Large{Natančnost = \(\frac{True Positive}{True Positive + False Negatives}\)}
 \end{center}
 
- Povzeto po:https://www.analyticsvidhya.com/blog/2021/07/metrics-to-evaluate-your-classification-model-to-take-the-right-decisions/
 
 \section{Odzivnost (Recall)}
-Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višja odzivnost pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med odzivnostjo in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe odzivnosti  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih.
+Nanaša se na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višja odzivnost pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med odzivnostjo in natančnostjo (precision) pri oceni uspešnosti modelov. Primer uporabe odzivnosti  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. \cite{percision}
 
  Formula za izračun:
 \begin{center}
@@ -495,7 +493,7 @@ F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besed
 \section{Accuracy}
 Accuracy  je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
-V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.\cite{accuracy}
 
  Formula za izračun:
 \begin{center}
@@ -768,7 +766,15 @@ Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo t
 \bibitem{Knuth} D.\ E.\ Knuth, P. Bendix. ``Simple word problems in universal algebras'', v zborniku: Computational Problems in Abstract Algebra (ur. J. Leech), 1970, str. 263--297.
 \bibitem{Lamport} L.\ Lamport. {\it LaTEX: A Document Preparation System}. Addison-Wesley, 1986.
 \bibitem{ubi} O.\ Patashnik (1998) \BibTeX{}ing.
-Dostopno na: \url{http://ftp.univie.ac.at/packages/tex/biblio/bibtex/contrib/doc/btxdoc.pdf}
+
+\bibitem{hugging} Hugging Face. Dostopno na: \url{https://huggingface.co/learn/nlp-course/chapter1/4}  [Dostopano 10. 06. 2023].
+\bibitem{truevsfalse} True vs. False and Positive vs. Negative. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative}  [Dostopano
+10. 06. 2023].
+\bibitem{accuracy} Accuracy. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/accuracy}  [Dostopano
+10. 06. 2023].
+\bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano
+10. 06. 2023].
+
 \bibitem{licence} licence-cc.pdf. Dostopno na: \url{https://ucilnica.fri.uni-lj.si/course/view.php?id=274}
 \end{thebibliography}
 
