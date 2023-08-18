@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {4.1}Prepoznavanje imenskih entitet}{11}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Analiza sentimenta}{12}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Povzemanje besedila}{13}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Izvleček besedne zveze}{13}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Luščenje ključnih besed}{13}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Klasifikacija besedila}{13}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Zaznava objektov}{14}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Korpusi}{17}{chapter.5}%
