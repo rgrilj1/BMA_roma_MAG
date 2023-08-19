@@ -568,19 +568,32 @@ V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services
 
 
 \section{Prepoznavanje imenskih entitet (Named Entity Recognition)}
-\begin{table}[h!]
+\begin{table}[t!]
+\centering
 \caption{Prepoznavanje imenskih entitet}
-\begin{center}
-        \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
-                        {\tt Transformers} & 0.949 & 0.953 & 0.951 \\
-                        {\tt Vertex AI }   & 0.920 & 0.919  & 0.919  \\
-                         {\tt AWS SageMaker}   & \textbf {0.954} & \textbf {0.961}& \textbf {0.958}  \\     
-                        {\tt Azure Cognitive Services}   & 0.858 & 0.824  & 0.840
-        \end{tabular}
-        \end{center}
-\label{tbl:1}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\hline
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & Odzivnost  & 0.929              & 0.912                  & 0.917              & 0.919                                      \\
+				    &  Natančnost  & 0.924              & 0.945                  & 0.901               & 0.923   \\
+                                     & F1 ocena    & 0.927                 & 0.928                  & 0.909             & 0.921    \\
+
+\textbf{Vertex AI}         & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+\textbf{SageMaker}.   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
+\textbf{ICognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                       &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                          
+\end{tabular}}
 \end{table}
+
+
+
 
  \newpage
  
@@ -689,18 +702,28 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 %----------------------------------------------------------------
 
 \section{Klasifikacija besedila  (Text Classification)}
-\begin{table}[h!]
-\caption{ Klasifikacija besedila  }
-\begin{center}
-        \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
-                        {\tt Transformers} & \textbf {0.930} & \textbf {0.926} & \textbf {0.928} \\
-                        {\tt Vertex AI }   & 0.957 & 0.862  & 0.907  \\
-                         {\tt AWS SageMaker}   & 0.858 & 0.763 & 0. 807\\     
-                        {\tt Azure Cognitive Services}   & 0.880 & 0.920  & 0.900
-        \end{tabular}
-\end{center}
-\label{tbl:1}
+\begin{table}[t!]
+\centering
+\caption{Klasifikacija besedilat}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\hline
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & Odzivnost  & 0.897              & 0.940                  & 0.877              & 0.904                                         \\
+				    &  Natančnost  & 0.956               & 0.903                  & 0.914               & 0.924    \\
+                                     & F1 ocena    & 0.926                  & 0.921                  & 0.985              & 0.913    \\
+
+\textbf{Vertex AI}         & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+\textbf{SageMaker}.   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
+\textbf{ICognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                       &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                          
+\end{tabular}}
 \end{table}
 
  \begin{figure}[h!]
@@ -721,19 +744,21 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 %---------------------------------------------------------------
 
 \section{Zaznava objektov  (Object Detection)}
-\begin{table}[h!]
-\caption{ Klasifikacija besedila  }
-\begin{center}
-        \begin{tabular}{l|ccc}
-             &  Accuracy   \\ \hline
-                        {\tt Transformers} & 0.968\\
-                        {\tt Vertex AI }   & 0.977   \\
-                         {\tt AWS SageMaker}   & \textbf {0.980}  \\     
-                        {\tt Azure Cognitive Services}   &  0.965
-        \end{tabular}
-\end{center}
-\label{tbl:1}
+\begin{table}[t!]
+\centering
+\caption{Prepoznavanje imenskih entitet}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\hline
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & Accuracy  & 0.90              & 0.97                  & 0.94              & 0.94                                      \\
+\textbf{Vertex AI}         & Accuracy  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+\textbf{SageMaker}.   & Accuracy  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+\textbf{ICognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                                                                   
+\end{tabular}}
 \end{table}
+
 
  \begin{figure}[h!]
 \begin{center}
