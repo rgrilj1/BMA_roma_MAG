@@ -338,7 +338,7 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
  \item Razno (MISC): Druge poimenovane entitete, ki ne spadajo v zgoraj navedene kategorije, na primer datumi, odstotki ali denar.
  \end{enumerate}
  Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z presledkom.
- Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni "benchmark" za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER. 
+ Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni "benchmark" za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER. \cite{conll}
 
 
 CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
@@ -352,7 +352,7 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
 \label{sec:imdb}
 IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
-Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo. \cite{conll}
+Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo. \cite{imdb}
 
 IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
 \begin{enumerate}
@@ -374,7 +374,7 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
 
  \item Anotacije: Vsaka slika v naboru podatkov COCO je opremljena z oznakami na ravni objekta in koordinatami  okvirja. To pomeni, da je vsak posamezen objekt določene kategorije znotraj slike označen, okoli njega pa je narisano območje z okvirjem, ki označuje njegovo lokacijo. Informacije o anotacijah so ključnega pomena za usposabljanje modelov za detekcijo objektov in segmentacijo.
 
- \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik.
+ \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik. \cite{coco}
 
 
  \end{enumerate}
@@ -387,7 +387,7 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \subsection{ CNN/Daily Mail Dataset}
  \label{sec:cnn}
  CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge abstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
- Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno treniranje in evaluiranje modelov.
+ Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno treniranje in evaluiranje modelov.\cite{cnn}
  
  Tukaj je nekaj ključnih značilnosti nabora podatkov CNN/Daily Mail:
  \begin{enumerate}
@@ -412,7 +412,7 @@ Tukaj je nekaj ključnih značilnosti SemEval podatkovnih zbirk:
  \item Raznolikost: SemEval podatkovne zbirke zajemajo širok spekter nalog, jezikov in domen. To omogoča raziskovalcem primerjavo modelov in pristopov na različnih področjih.
 
  \end{enumerate}
-Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov.
+Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov. \cite{semeval}
 
 
 
@@ -786,11 +786,13 @@ Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo t
 \bibitem{luscenje} Keyphrase Extraction. Dostopno na: \url{https://www.geeksforgeeks.org/keyphrase-extraction-in-nlp/}  [Dostopano 10. 06. 2023].
 \bibitem{klasifikacija} Text Classification. Dostopno na: \url{https://huggingface.co/tasks/text-classification}  [Dostopano 10. 06. 2023].
 \bibitem{object} Object Detection. Dostopno na: \url{https://huggingface.co/tasks/object-detection}  [Dostopano 10. 06. 2023].
-\bibitem{truevsfalse} True vs. False and Positive vs. Negative. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative}  [Dostopano
-10. 06. 2023].
-
+\bibitem{truevsfalse} True vs. False and Positive vs. Negative. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative}  [Dostopano10. 06. 2023].
 \bibitem{conll}Erik F. Tjong Kim Sang and Fien De Meulder  ``Introduction to the CoNLL-2003''. Dostopno na: \url{https://aclanthology.org/W03-0419.pdf}  [Dostopano
 10. 06. 2023].
+\bibitem{imdb} IMDB Dataset Reviews. Dostopno na: \url{https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews}  [Dostopano 10. 06. 2023].
+\bibitem{coco} COCO 2017 Dataset. Dostopno na: \url{https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset}  [Dostopano 10. 06. 2023].
+\bibitem{cnn} CNN dailymail Dataset. Dostopno na: \url{https://huggingface.co/datasets/cnn_dailymail}  [Dostopano 10. 06. 2023].
+\bibitem{semeval} SemEval-datasetst. Dostopno na: \url{https://www.kaggle.com/datasets/azzouza2018/semevaldatadets?resource=download}  [Dostopano 10. 06. 2023].
 \bibitem{accuracy} Accuracy. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/accuracy}  [Dostopano
 10. 06. 2023].
 \bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano
