@@ -591,10 +591,6 @@ V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services
 \end{tabular}}
 \end{table}
 
-
-
-
- \newpage
  
  \begin{figure}[h!]
 \begin{center}
@@ -608,23 +604,7 @@ Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\und
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
-  \newpage
-\section{Analiza sentimenta (Sentiment Analaysis)}
 \begin{table}[h!]
-\caption{Analiza sentimenta}
-\begin{center}
-        \begin{tabular}{l|ccc}
-             & {\tt Natančnost} & {\tt Odzivnost}  & F1   \\ \hline
-                        {\tt Transformers} & 0.800 & 0.799 & 0.799 \\
-                        {\tt Vertex AI }   & \textbf {0.924} & \textbf {0.924 } & \textbf {0.924}  \\
-                         {\tt AWS SageMaker}   & 0.862 & 0.891 & 0.876 \\     
-                        {\tt Azure Cognitive Services}   & 0.862 & 0.891  & 0.877
-        \end{tabular}
-\end{center}        
-\label{tbl:1}
-\end{table}
-
-\begin{table}[t!]
 \centering
 \caption{Analiza sentimenta (Sentiment Analaysis)}
 \label{my-label}
@@ -635,13 +615,12 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \textbf{Transformers}   & Odzivnost  & 0.937              & 0.912                 & 0.930              & 0.929                                     \\
 				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928   \\
                                      & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929    \\
-
-\textbf{Vertex AI}         & Odzivnost  & 0,895              & 0,923              & 0,942              & 0,920                                            \\
-                                   &  Natančnost & 0,946             & 0,914              & 0,896              & 0,919                                          \\
-                                   & F1 ocena   & 0,920              & 0,918              & 0,918              & 0,919                                            \\
-\textbf{SageMaker}.   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
+\textbf{Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                                            \\
+                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                                         \\
+                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                           \\
+\textbf{SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891                                            \\
+                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                                            \\
+                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876     \\
 \textbf{ICognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
                        &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
                         & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                          
