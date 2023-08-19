@@ -39,10 +39,10 @@
 \contentsline {section}{\numberline {6.5}Accuracy}{28}{section.6.5}%
 \contentsline {section}{\numberline {6.6}ROUGE}{29}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Analiza raziskave}{31}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{32}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Analiza sentimenta (Sentiment Analaysis)}{34}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Povzetek (Summarisation)}{35}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Izvleček besedne zveze (Key Phrases)}{36}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Klasifikacija besedila (Text Classification)}{37}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Zaznava objektov (Object Detection)}{38}{section.7.6}%
-\contentsline {chapter}{\numberline {8}Zaključek}{39}{chapter.8}%
+\contentsline {section}{\numberline {7.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{33}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Analiza sentimenta (Sentiment Analaysis)}{35}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Povzetek (Summarisation)}{36}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Izvleček besedne zveze (Key Phrases)}{37}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Klasifikacija besedila (Text Classification)}{38}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Zaznava objektov (Object Detection)}{39}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Zaključek}{41}{chapter.8}%
