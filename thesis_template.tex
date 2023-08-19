@@ -604,6 +604,9 @@ Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\und
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
+\newpage
+\section{Analiza sentimenta (Sentiment Analaysis)}
+
 \begin{table}[h!]
 \centering
 \caption{Analiza sentimenta (Sentiment Analaysis)}
@@ -653,6 +656,30 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev./Users/r.grilj/Desk
         \end{tabular}
  \end{center}
 \label{tbl:1}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\caption{Analiza sentimenta (Sentiment Analaysis)}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\hline
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & ROUGE-1  & 0.937              & 0.912                 & 0.930              & 0.929                                     \\
+				    &  ROUGE-2t  & 0.938              & 0.987                  & 0.860               & 0.928   \\
+                                     & ROUGE-L    & 0.937                 & 0.952                  & 0.893             & 0.929    \\
+\textbf{Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                                            \\
+                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                                         \\
+                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                           \\
+\textbf{SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891                                            \\
+                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                                            \\
+                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876     \\
+\textbf{ICognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                       &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                          
+\end{tabular}}
 \end{table}
 
  \begin{figure}[h!]
