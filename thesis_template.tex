@@ -609,7 +609,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 
 \begin{table}[h!]
 \centering
-\caption{Analiza sentimenta (Sentiment Analaysis)}
+\caption{Analiza sentimenta}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -621,15 +621,14 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex A
 \textbf{Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                                            \\
                                    &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                                         \\
                                    & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                           \\
-\textbf{SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891                                            \\
+\textbf{Amazon SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891                                            \\
                                    &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                                            \\
                                    & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876     \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                          
+\textbf{Azure Cognitive Services}   & Odzivnost  & 0.881              & 0.905              & 0.887              & 0.981                                            \\
+                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                            \\
+                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                                                          
 \end{tabular}}
 \end{table}
-
 
  \begin{figure}[h!]
 \begin{center}
@@ -645,40 +644,17 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev./Users/r.grilj/Desk
 
 \section{Povzetek (Summarisation)}
 \begin{table}[h!]
-\caption{Povzetek }
-\begin{center}
-        \begin{tabular}{l|ccc}
-             & {\tt ROUGE-1} & {\tt ROUGE-2}  & ROUGE-L   \\ \hline
-                        {\tt Transformers} & 0.209 & 0.190 & 0.192 \\
-                        {\tt Vertex AI }   & \textbf {0.429} & \textbf {0.208 } & \textbf {0.306}  \\
-                         {\tt AWS SageMaker}   & 0.226 & 0.021 & 0.201 \\     
-                        {\tt Azure Cognitive Services}   & 0.426 & 0.220  & 0.330
-        \end{tabular}
- \end{center}
-\label{tbl:1}
-\end{table}
-
-
-\begin{table}[h!]
 \centering
-\caption{Analiza sentimenta (Sentiment Analaysis)}
+\caption{Povzetek}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.937              & 0.912                 & 0.930              & 0.929                                     \\
-				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928   \\
-                                     & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929    \\
-\textbf{Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                                            \\
-                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                                         \\
-                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                           \\
-\textbf{SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891                                            \\
-                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                                            \\
-                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876     \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.881              & 0.905              & 0.887              & 0.981                                            \\
-                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                            \\
-                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                                                          
+\textbf{Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192                                     \\
+\textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306                                           \\
+\textbf{Amazon SageMaker}.   & ROUGE-L   & 0.203             & 0.184              & 0.2016             & 0.201                                          \\
+\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & 0.330                                                                                                                
 \end{tabular}}
 \end{table}
 
@@ -710,19 +686,19 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.              & 0.                  & 0.              & 0.                                         \\
-				    &  Natančnost  & 0.               & 0.                 & 0.               & 0.    \\
-                                     & F1 ocena    & 0.                  & 0.                  & 0.              & 0.    \\
+\textbf{Transformers}   & Odzivnost  & 0.523              & 0.640                  & 0.556              & 0.573                                         \\
+				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475    \\
+                                     & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519    \\
 
-\textbf{Vertex AI}         & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-\textbf{SageMaker}.   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                                   &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                                   & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                          
+\textbf{Vertex AI}         & Odzivnost  & 0.499              & 0.541              & 0.589              & 0.543                                            \\
+                                   &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637                                            \\
+                                   & F1 ocena   & 0.578             & 0.584              & 0.589              & 0.586                                          \\
+\textbf{Amazon SageMaker}.   & Odzivnost  & 0.675              & 0.605              & 0.587              & 0.622                                           \\
+                                   &  Natančnost & 0.520              & 0.492             & 0.526             & 0.513                                           \\
+                                   & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562    \\
+\textbf{Azure Cognitive Services}   & Odzivnost  & 0.532              & 0.559             & 0.500              & 0.530                                           \\
+                       &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670                                          \\
+                        & F1 ocena   & 0.595              & 0.600              & 0.579              & 0.592                                                                     
 \end{tabular}}
 \end{table}
 
@@ -759,7 +735,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \textbf{Vertex AI}         & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
                                    &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
                                    & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-\textbf{SageMaker}.   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+\textbf{Amazon SageMaker}.   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
                                    &  Natančnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
                                    & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
 \textbf{Azure Cognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
@@ -796,7 +772,7 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Accuracy  & 0.90              & 0.97                  & 0.94              & 0.94                                      \\
 \textbf{Vertex AI}         & Accuracy  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-\textbf{SageMaker}.   & Accuracy  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
+\textbf{Amazon SageMaker}.   & Accuracy  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
 \textbf{Azure Cognitive Services}   & Odzivnost  & 193.815              & 188.888              & 506.999              & 15.074                                                                                   
 \end{tabular}}
 \end{table}

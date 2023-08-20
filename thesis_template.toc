@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{31}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analiza sentimenta (Sentiment Analaysis)}{32}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Povzetek (Summarisation)}{33}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Izvleček besedne zveze (Key Phrases)}{34}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Klasifikacija besedila (Text Classification)}{35}{section.6.5}%
+\contentsline {section}{\numberline {6.4}Izvleček besedne zveze (Key Phrases)}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Klasifikacija besedila (Text Classification)}{36}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Zaznava objektov (Object Detection)}{37}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Zaključek}{39}{chapter.7}%
