@@ -310,14 +310,6 @@ Pomembno je, da so korpusi pravilno pripravljeni, imajo ustrezne metapodatke in 
  Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika, prevsem za nalogo imenskih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
  Korpus CoNLL 2003 je priljubljen referenčni korpus za prepoznavanje poimenovanih entitet naravnega jezika v obdelavi naravnega jezika. Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{conll.png}
-\end{center}
-\caption{CoNLL2003 korpus}
-\label{pic2}
-\end{figure}
-
 Poimenovane entitete so razdeljene v štiri glavne kategorije:
 \begin{enumerate}
  \item Oseba (PER): Posamezna imena ljudi.
@@ -327,6 +319,25 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
  \end{enumerate}
  Podatki v korpusu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z presledkom.
  Korpus CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni "benchmark" za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER. \cite{conll}
+
+\begin{table}[h!]
+\caption{Primer CoNLL 2003 korpusa}
+    \begin{center}
+        \begin{tabular}{l|ccc}
+                        {He PRP B-NP O} \\
+{will MD B-VP O} \\
+{probably RB I-VP O} \\
+{be VB I-VP O} \\
+{replaced VBN I-VP O} \\
+{by IN B-PP O} \\
+{Shearer NNP B-NP B-PER} \\
+{'s POS B-NP O} \\
+{Newcastle NNP I-NP B-ORG} 
+                        
+        \end{tabular}
+    \end{center}
+\label{tbl:1}
+\end{table}
 
 
 CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
@@ -399,7 +410,7 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  
  \begin{table}[h!]
 \centering
-\caption{Primer cnn\_dailymai korpusa }
+\caption{Primer cnn\_dailymail korpusa }
 \resizebox{\textwidth}{!}{%
  \begin{tabular}{l|ccc}
 \hline
