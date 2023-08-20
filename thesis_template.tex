@@ -351,7 +351,7 @@ Vsak sklop vsebuje tisoče pregledov filmov. To je idealna podatkovna zbirka za 
 
 \subsection{ COCO }
 \label{sec:coco}
-COCO (Common Objects in Context) je široko uporabljen nabor podatkov v področju računalniškega vida in zaznave objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z zaznavo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
+COCO (Common Objects in Context) je nabor podatkov v področju računalniškega vida in zaznave objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z zaznavo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
 
 Nabor podatkov COCO je obsežen in vsebuje deset tisoče slik z milijoni označenih posameznih objektov. Slike prihajajo iz različnih virov, zajemajo raznolike prizore, ozadja, svetlobne pogoje in velikosti objektov.
 
@@ -556,16 +556,6 @@ Napaka v kontekstu: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno
 
 Napaka v viru: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno identificira ime, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da poimenovanje entitete ne bo uporabno za namen, za katerega je bil namenjen. 
 
-
-
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{tabela.png}
-\end{center}
-\caption{ Tabela analize (Rezultati so zaokroženi na 3 decimalna mesta)}
-\label{pic2}
-\end{figure}
-
 \begin{table}[t!]
 \centering
 \caption{Tabela analize}
@@ -612,7 +602,7 @@ V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services
 
 
 V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
-\newpage
+
 
 
 \section{Prepoznavanje imenskih entitet (Named Entity Recognition)}
@@ -848,7 +838,18 @@ Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz  \h
 
 Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
 
-\pagebreak 
+\vspace{\baselineskip}
+  \newpage
+\textbf{Analiza napak} 
+
+Najpogosteje opažene napake pri text classification:  
+
+\begin{enumerate}
+  \item Napačna klasifikacija razredov: zaradi pomanjkanja jasnih ločnic med razredi ali zaradi podobnosti med besedili različnih razredov. 
+    \item Nezaznavanje: kadar se izpustijo pomembne informacije iz besedila, kar la povzroči, da je klasifikacija netočna ali nepopolna. 
+
+Paragraph locked by Gregor Kocmut
+ \end{enumerate}
 %----------------------------------------------------------------
 % Zaznava objektov 
 %---------------------------------------------------------------
@@ -883,9 +884,10 @@ Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} k
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
-\vspace{\baselineskip}
+
 
 \textbf{Analiza napak} 
+
 
 Do napak pri zazvanju objektov prihaja zaradi različnih razlogov, na primer zaradi napak v algoritmu za zaznavanje objektov, zaradi slabe kakovosti slik ali zaradi prisotnosti motenj v okolju. 
 
@@ -902,8 +904,15 @@ Najpogosteje opažene napake pri zaznavi objektov:
 \chapter{Zaključek}
 \label{ch8}
 
-Zaključimo lahko, da so trije največji ponudniki v oblaku po rezultatih zelo tesno skupaj, kakor pa lahko razberemo iz rezultatov pa je tudi odprtokodna rešitev zasedla prvo mesto.
+V okviru te magistrske naloge smo se posvetili analizi in primerjavi zmogljivosti treh vodilnih ponudnikov oblačnih storitev v področju obdelave naravnega jezika. Glavni cilj naše raziskave je bil ugotoviti, kateri izmed teh ponudnikov Google, AWS, Azure in Hugging Face izstopa na različnih področjih obdelave naravnega jezika, kot so prepoznavanje imenskih entitet, analiza sentimenta, povzemanje besedil, luščenje ključnih besed, klasifikacija besedila in zaznava objektov.
 
+Iz rezultatov naše raziskave je jasno razvidno, da ima vsak izmed teh ponudnikov svoje edinstvene prednosti in zmogljivosti v različnih področjih obdelave naravnega jezika. AWS se je izkazal kot izjemno učinkovit pri prepoznavanju imenskih entitet, kar je ključno za razumevanje strukture besedil in njihovega konteksta. Hugging Face je prevzel vodilno vlogo pri analizi sentimenta, saj ponuja široko paleto prednatreniranih modelov za natančno določanje čustvenega tona besedil. Azure se je izkazal kot odličen pri povzemanju besedil, kar je ključno za hitro razumevanje vsebine daljših dokumentov.
+
+Prav tako smo ugotovili, da ima vsak ponudnik svoje prednosti v specifičnih nalogah. Azure je izstopal pri luščenju ključnih besed, kar je pomembno za hitro opredelitev glavnih tem v besedilih. Hugging Face je bil izjemno uspešen pri klasifikaciji besedila, kar omogoča avtomatizirano razvrščanje besedil v različne kategorije. AWS pa se je izkazal kot močan v zaznavanju objektov, kar je ključno za obogatitev besedil z vizualnimi elementi.
+
+V prihodnosti se pričakuje še večji napredek v obdelavi naravnega jezika in razvoj novih tehnik ter modelov. S temi spoznanji lahko podjetja in raziskovalci izberejo pravi oblačni ponudnik za svoje specifične naloge v obdelavi naravnega jezika, ob upoštevanju njihovih potreb in zahtev.
+
+V zaključku lahko trdimo, da je vsak izmed izbranih ponudnikov oblačnih storitev Google, AWS, Hugging Face in Azure prinesel svoje inovacije in odličnost na področje obdelave naravnega jezika. Izbor med njimi je odvisen od specifičnih nalog in potreb uporabnikov. V prihodnosti se obeta še večja konkurenčnost in raznolikost rešitev, kar bo prispevalo k še naprednejši in učinkovitejši obdelavi naravnega jezika.
  
 
 
