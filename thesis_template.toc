@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {5.5}Accuracy}{26}{section.5.5}%
 \contentsline {section}{\numberline {5.6}ROUGE}{27}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Analiza raziskave}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{32}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{31}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analiza sentimenta (Sentiment Analaysis)}{34}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Povzetek (Summarisation)}{36}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Izvleček besedne zveze (Key Phrases)}{38}{section.6.4}%
