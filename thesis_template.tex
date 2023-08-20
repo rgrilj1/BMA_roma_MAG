@@ -651,26 +651,16 @@ Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\und
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
+\newpage
 \textbf{Analiza napak} 
 
-
- Nepravilna identifikacija entitete: To je najpogostejša vrsta napake, ki se pojavi pri poimenovanju entitete. Napaki se lahko zgodijo zaradi številnih razlogov, kot so: 
-
- 
-
-Ime se ne ujema z nobenim od modelov, ki se uporabljajo za poimenovanje entitete. 
-
-Ime je nepravilno zapisano, tako da se uporabljajo majhne črke, zapletene besede ali tuje besede. To lahko oteži identifikacijo imena in njegovo kategorizacijo. 
-
-Ime je zapleteno ali dvoumno zato, ker imajo zapletena imena lahko več kot eno pomensko področje. 
-
-Nepravilna kategorizacija entitete: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno identificira ime, vendar ga napačno kategorizira. To lahko povzroči, da poimenovanje entitete ne bo uporabno za namen, za katerega je bil namenjen. 
-
-Napaka v kontekstu: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno identificira ime in ga pravilno kategorizira, vendar ga napačno razvrsti v kontekstu. To lahko povzroči, da poimenovanje entitete ne bo uporabno za namen, za katerega je bil namenjen. 
-
- 
-
-Napaka v viru: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno identificira ime, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da poimenovanje entitete ne bo uporabno za namen, za katerega je bil namenjen. 
+Najpogosteje opažene napake pri prepoznavi imenskih entitet:  
+\begin{enumerate}
+ \item Napake imen: To so napake v imenu imenske entitete, na primer napačna črka ali napačen zlog, zapletene besede ali tuje besede. To lahko oteži identifikacijo imena in njegovo kategorizacijo. 
+ \item Napake v tipu: napaka v tipu imenske entitete, na primer napačno označitev osebe kot kraja ali obratno. Ime je zapleteno ali dvoumno zato, ker imajo zapletena imena lahko več kot eno pomensko področje. 
+ \item Izpuščanje/nekategorizacija: napaka, pri katerih se imenska entiteta izpusti iz besedila. 
+ \item Ponavljanje:napaka, pri katerih se imenska entiteta ponovi v besedilu. 
+ \end{enumerate}
 
 \newpage
 \section{Analiza sentimenta (Sentiment Analaysis)}
@@ -682,19 +672,19 @@ Napaka v viru: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno iden
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.937              & 0.912                 & 0.930              & 0.929                                     \\
-				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928   \\
-                                     & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929    \\
-\textbf{Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                                            \\
-                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                                         \\
-                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                           \\
-\textbf{Amazon SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891                                            \\
-                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                                            \\
-                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876     \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.881              & 0.905              & 0.887              & 0.981                                            \\
-                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                            \\
-                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                                                          
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & Odzivnost  & 0.937              & 0.912                 & 0.930              & 0.926                      & 0.013                \\
+				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928                & 0.064                      \\
+                                     & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929                  & 0.031   \\
+\textbf{Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                          & 0.014                   \\
+                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                          & 0.031                \\
+                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                & 0.012            \\
+\textbf{Amazon SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891              & 0.010                               \\
+                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                         & 0.046                   \\
+                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876                            & 0.022                        \\
+\textbf{Azure Cognitive Services}   & Odzivnost  & 0.881              & 0.905              & 0.887              & 0.981        & 0.012                                     \\
+                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                      & 0.019       \\
+                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                        & 0.015                                   
 \end{tabular}}
 \end{table}
 
@@ -706,7 +696,7 @@ Napaka v viru: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno iden
 \label{pic2}
 \end{figure}
 Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} dataset.
-Za analizo sentimenta  je bila najboljša Vertex AI storitev./Users/r.grilj/Desktop/Screenshot 2023-08-19 at 08.01.49.png
+Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 \pagebreak 
 
