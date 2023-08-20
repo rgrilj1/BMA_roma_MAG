@@ -342,6 +342,20 @@ IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset. Sestavljen iz
 
 Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo. \cite{imdb}
 
+\begin{table}[h!]
+\centering
+\caption{Primer IMDB korpusa }
+\resizebox{\textwidth}{!}{%
+ \begin{tabular}{l|ccc}
+\hline
+{review}            & sentiment             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+If you like original gut wrenching laughter you will like movie.   & positive            \\
+A rating of "1", depressing and relentlessly bad this movie is.  & negative                                                                     
+\end{tabular}}
+\end{table}
+
+
+
 IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
 \begin{enumerate}
  \item učni (train) z 25.000 vrsticami  primerov
@@ -382,19 +396,19 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
   \item Novičarski Članki in Povzetki: Nabor podatkov vsebuje novičarske članke iz medijskih virov, kot sta CNN (Cable News Network) in Daily Mail, skupaj s pripadajočimi povzetki. Ti članki pokrivajo različne teme in dogodke ter so različnih dolžin.
  \item Abstraktno Povzemanje: Vključuje ustvarjanje povzetka v povsem novih besedah. 
   \end{enumerate}
-  
-  
-   \begin{table}[h!]
-\caption{Primer cnn\_dailymail korpusa}
-    \begin{center}
-        \begin{tabular}{l|ccc}
-            label & {\tt text} & {\tt highlights} \\ \hline
-                        {\tt 002509a...} &Fears are growing that Britain's jails are becoming... & Athens pushes through... \\
-                        {\tt 7526a1...}   & It was a farce that would lead to... &AZ Alkmaar were playing....\\
-        \end{tabular}
-    \end{center}
-\label{tbl:1}
+ 
+ \begin{table}[h!]
+\centering
+\caption{Primer cnn\_dailymai korpusa }
+\resizebox{\textwidth}{!}{%
+ \begin{tabular}{l|ccc}
+\hline
+{label}            & text     & highlights          \\ \hline                                                                                                                                                                                                                                                                                                                                           
+002509a...   &Fears are growing that Britain's jails are becoming... & Athens pushes through...            \\
+7526a1...  &  It was a farce that would lead to... &AZ Alkmaar were playing....                                                                     
+\end{tabular}}
 \end{table}
+ 
  
   
   
@@ -430,9 +444,6 @@ Tukaj je nekaj ključnih značilnosti SemEval podatkovnih zbirk:
     \end{center}
 \label{tbl:1}
 \end{table}
- 
-
-
 
 
 SemEval  podatkovna zbirka je običajno razdeljena na tri sklope: 
