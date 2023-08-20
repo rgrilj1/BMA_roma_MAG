@@ -568,31 +568,32 @@ Napaka v viru: Ta vrsta napake se pojavi, ko poimenovanje entitete pravilno iden
 
 \begin{table}[t!]
 \centering
-\caption{Tabela analize (Rezultati so zaokroženi na 3 decimalna mesta)}
+\caption{Tabela analize}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Transformers}             & \textbf{Vertex AI}                & \textbf{SageMaker}               & \textbf{Cognitive Services}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Prepoznavanje imenskih entitet}                         & Natančnost  & 16.274                & 332                  & 16.274               & -6.521                                         \\
-				&  Odzivnost.  & 1.088                & 332                  & 16.274               & -6.521    \\
-                                 & F1 ocena    & 1.088                & 332                  & 16.274               & -6.521    \\
+\multicolumn{1}{r}{} &                                                & \textbf{Transformers}             & \textbf{Vertex AI}                & \textbf{SageMaker}               & \textbf{Cognitive Services}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Prepoznavanje imenskih entitet}                         &  Odzivnost  & 0.919               & 0.919                           & 0.961               & 0.824 \\
+										   & Natančnost  & 0.923                & 0.920                  &0.954              & 0.858                                         \\
+                                                                                       & F1 ocena    & 0.921                & 0.919                  & \textbf{0.958}               & 0.841    \\
 
-\textbf{Analiza sentimenta}                           & Natančnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Odzivnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-\textbf{Povzetek} & Natančnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Odzivnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
-\textbf{Izvleček besedne zveze}   & Natančnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Odzivnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\       
-\textbf{Klasifikacija besedila} & Natančnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Odzivnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074     \\
-\textbf{Zaznava objektov} & Natančnost  & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                       &  Odzivnost & 193.815              & 188.888              & 506.999              & 15.074                                            \\
-                        & F1 ocena   & 193.815              & 188.888              & 506.999              & 15.074                                                                   
+\textbf{Analiza sentimenta}                         		 &  Odzivnost  & 0.926              & 0.936                  & 0.891               & 0.981       \\
+										   & Natančnost  & 0.928               & 0.924                  & 0.862               & 0.862    \\
+                                                                                       & F1 ocena    & \textbf{ 0.929}               & 0.930                  & 0.876               & 0.876      \\            
+                                                                                                     
+\textbf{Povzetek}                                      &  ROUGE-L  & 0.192                & 0.306                  & 0.201               & \textbf{0.330}    \\
+                                                                                       
+\textbf{Izvleček besedne zveze}  	                           &  Odzivnost  & 0.573                & 0.543                  & 0.622              & 0.530 \\
+										   & Natančnost  & 0.475                & 0.637                  & 0.513              & 0.670 \\
+                                                                                       & F1 ocena    & 0.519                & 0.586                  & 0.562               &\textbf{0.592}   \\   
+                                                                                       
+\textbf{Klasifikacija besedila}                                         &  Odzivnost  & 0.926                &  0.962                   &  0.763                &  0.920  \\  
+										   & Natančnost  & 0.930                &  0.957                   &  0.858                &  0.880  \\
+                                                                                       & F1 ocena    & \textbf{0.928}                &  0.907                   &  0.808                &  0.900     \\
+                                                                                       
+\textbf{Zaznava objektov}  					    &  Accuracy  & 0.940                & 0.977                  & \textbf{0.980}               & 0.965  
+                                                             
 \end{tabular}}
 \end{table}
 
@@ -610,7 +611,7 @@ V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services
 
 
 
-V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti.
+V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 \newpage
 
 
@@ -698,7 +699,15 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} dataset.
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
-\pagebreak 
+
+
+\textbf{Analiza napak} 
+\begin{enumerate}
+ \item Nepravilna identifikacija sentimenta: To je najpogostejša vrsta napake, ki se je pojavila pri analizi sentimenta, kar je lahko ko je ali besedna zveza je dvoumna in lahko pomeni tako pozitiven kot negativen sentiment.LAhko je tudi napaka v zapisu same besede ali besedne zveze, kot tudi da je model premalo naučen za določeno področje 
+ \item Nepravilna kategorizacija sentimenta: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, vendar ga napačno kategorizira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
+ \item Napaka v kontekstu: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment in ga pravilno kategorizira, vendar ga napačno razvrsti v kontekstu. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
+ \item Napaka v viru: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
+ \end{enumerate}
 
 \section{Povzetek (Summarisation)}
 \begin{table}[h!]
@@ -726,7 +735,20 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 Pri izdelavi povzetka je bil uporabljen dataset  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
 
-Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.
+Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.aaaaaaBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCC
+
+\newpage
+
+\textbf{Analiza napak} 
+
+Najpogosteje opažene napake pri povzemanju besedila:  
+
+\begin{enumerate}
+ \item Izpuščanje pomembnih informacij: kar pomeni, da je povzetek netočen ali nepopoln. To se lahko zgodi iz več razlogov, na primer zaradi tega, da model ne prepozna pomembnih informacij ali pa ne more pravilno razumeti pomena besedila. 
+ \item Nepravilna kategorizacija sentimenta: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, vendar ga napačno kategorizira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
+ \item Napaka v kontekstu: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment in ga pravilno kategorizira, vendar ga napačno razvrsti v kontekstu. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
+ \item Napaka v viru: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
+ \end{enumerate}
 
 %----------------------------------------------------------------
 %Izvleček besedne zveze 
@@ -748,14 +770,14 @@ Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex A
 				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475  	          	 & 0.068  \\
                                      & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519  			 & 0.058  \\
 \textbf{Vertex AI}         & Odzivnost  & 0.499              & 0.541              & 0.589              & 0.543                                       & 0.045      \\
-                                   &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637                                      & 0.049       \\
+                                   &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637                                      & 0.050       \\
                                    & F1 ocena   & 0.578             & 0.584              & 0.589              & 0.586                                        & 0.005   \\
 \textbf{Amazon SageMaker}.   & Odzivnost  & 0.675              & 0.605              & 0.587              & 0.622                         & 0.046                   \\
                                    &  Natančnost & 0.520              & 0.492             & 0.526             & 0.513                                       & 0.018     \\
-                                   & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562   					 & 0.023\\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.532              & 0.559             & 0.500              & 0.530                    & 0.029                        \\
-                       &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670                                         	 & 0.020 \\
-                        & F1 ocena   & 0.595              & 0.600              & 0.579              & 0.592                                                  & 0.010                    
+                                   & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562   					 & 0.023 \\
+\textbf{Azure Cognitive Services}   & Odzivnost  & 0.532              & 0.559             & 0.500              & 0.530                    & 0.030                        \\
+                       &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670                                         	 & 0.021 \\
+                        & F1 ocena   & 0.595              & 0.600              & 0.579              & 0.592                                                  & 0.011                    
 \end{tabular}}
 \end{table}
 
@@ -784,19 +806,19 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.933             & 0.948                  &  0.896             &  0.926                                         \\
-				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930    \\
-                                     & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  0.928    \\
-\textbf{Vertex AI}         & Odzivnost  &  0.842              &  0.901              &  0.844             &  0.962                                            \\
-                                   &  Natančnost &  0.989              &  0.924              &  0.959              &  0.957                                            \\
-                                   & F1 ocena   &  0.910              &  0.912              &  0.989              &  0.907                                           \\
-\textbf{Amazon SageMaker}.   & Odzivnost  &  0.789              &  0.802             &  0.697              &  0.763                                           \\
-                                   &  Natančnost &  0.879              &  0.799              &  0.895              &  0.858                                            \\
-                                   & F1 ocena   &  0.832              &  0.800              &  0.784              &  0.808    \\
-\textbf{Azure Cognitive Services}   & Odzivnost  &  0.935              &  0.925             &  0.900              &  0.920                                           \\
-                       &  Natančnost &  0.827              &  0.888              &  0.925             &  0.880                                            \\
-                        & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900                                                                         
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}          & \textbf{St. odklon}                   \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & Odzivnost  & 0.933             & 0.948                  &  0.896             &  0.926                            & 0.027              \\
+				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930   		     & 0.030  \\
+                                     & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  0.928 		& 0.013     \\
+\textbf{Vertex AI}         & Odzivnost  &  0.842              &  0.901              &  0.844             &  0.962                          & 0.034                   \\
+                                   &  Natančnost &  0.989              &  0.924              &  0.959              &  0.957                        & 0.033                     \\
+                                   & F1 ocena   &  0.910              &  0.912              &  0.989              &  0.907                           & 0.008                 \\
+\textbf{Amazon SageMaker}.   & Odzivnost  &  0.789              &  0.802             &  0.697              &  0.763              & 0.057                              \\
+                                   &  Natančnost &  0.879              &  0.799              &  0.895              &  0.858                          & 0.051                   \\
+                                   & F1 ocena   &  0.832              &  0.800              &  0.784              &  0.808   			& 0.024    \\
+\textbf{Azure Cognitive Services}   & Odzivnost  &  0.935              &  0.925             &  0.900              &  0.920      & 0.018                                      \\
+                       &  Natančnost &  0.827              &  0.888              &  0.925             &  0.880                                      & 0.049       \\
+                        & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900                                        & 0.018                                  
 \end{tabular}}
 \end{table}
 
@@ -825,11 +847,11 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Accuracy  & 0.900             & 0.970                  & 0.940              & 0.940                                      \\
-\textbf{Vertex AI}         & Accuracy  & 0.963              & 0.991              & 0.977             & 0.977                                            \\
-\textbf{Amazon SageMaker}.   & Accuracy  & 0.995              & 0.963              & 0.982              & 0.980                                            \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.960             & 0.950              & 0.985             & 0.965                                                                                   
+\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }            & \textbf{St. odklon}                  \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\textbf{Transformers}   & Accuracy  & 0.900             & 0.970                  & 0.940              & 0.940                            & 0.018             \\
+\textbf{Vertex AI}         & Accuracy  & 0.963              & 0.991              & 0.977             & 0.977                                 & 0.014             \\
+\textbf{Amazon SageMaker}.   & Accuracy  & 0.995              & 0.963              & 0.982              & 0.980                   & 0.016                         \\
+\textbf{Azure Cognitive Services}   & Odzivnost  & 0.960             & 0.950              & 0.985             & 0.965              & 0.017                                                                    
 \end{tabular}}
 \end{table}
 
