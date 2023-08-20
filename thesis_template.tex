@@ -700,6 +700,7 @@ Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 
+\newpage
 
 \textbf{Analiza napak} 
 \begin{enumerate}
@@ -708,6 +709,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
  \item Napaka v kontekstu: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment in ga pravilno kategorizira, vendar ga napačno razvrsti v kontekstu. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \item Napaka v viru: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \end{enumerate}
+ \newpage
 
 \section{Povzetek (Summarisation)}
 \begin{table}[h!]
@@ -735,14 +737,14 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 Pri izdelavi povzetka je bil uporabljen dataset  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
 
-Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.aaaaaaBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCC
+Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.
 
-\newpage
+
+\vspace{\baselineskip}
 
 \textbf{Analiza napak} 
 
 Najpogosteje opažene napake pri povzemanju besedila:  
-
 \begin{enumerate}
  \item Izpuščanje pomembnih informacij: kar pomeni, da je povzetek netočen ali nepopoln. To se lahko zgodi iz več razlogov, na primer zaradi tega, da model ne prepozna pomembnih informacij ali pa ne more pravilno razumeti pomena besedila. 
  \item Nepravilna kategorizacija sentimenta: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, vendar ga napačno kategorizira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
@@ -754,7 +756,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 %Izvleček besedne zveze 
 
 %----------------------------------------------------------------
-  \newpage
+ \newpage
 \section{Izvleček besedne zveze  (Key Phrases)}
 
 
@@ -793,7 +795,18 @@ Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen podatkovni niz  \h
 
 Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
-\pagebreak 
+ \newpage
+\textbf{Analiza napak} 
+
+Najpogosteje opažene napake pri izvlečeku besedne zveze:  
+\begin{enumerate}
+ \item Napačne oznake: napake v oznaki besednih zvez, na primer napačno označitev besedne zveze kot pomembne, čeprav ni pomembna ali obratno. 
+  \item Izpuščanje: napake, pri katerih se besedna zveza izpusti iz izvlečka, na primer zaradi napake pri prepoznavanju besednih zvez ali zaradi napake pri razdelitvi besedila na stavke. 
+  \item   Ponavljanje: To so napake, pri katerih se besedna zveza ponovi v izvlečku, na primer zaradi napake pri razdelitvi besedila na stavke ali zaradi napake pri ohranitvi besedne zveze. 
+ \end{enumerate}
+
+
+  \newpage
 %----------------------------------------------------------------
 % Klasifikacija besedila 
 %----------------------------------------------------------------
@@ -829,6 +842,7 @@ Kot najboljša rešitev za naloge izvlečka besedne zveze pa se je izkazala stor
 \caption{ Klasifikacija besedila  F1 rezultat}
 \label{pic2}
 \end{figure}
+
 
 Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz  \hyperref[sec:imdb]{\underline {IMDb Reviews}}.
 
@@ -869,6 +883,18 @@ Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} d
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
+\vspace{\baselineskip}
+
+\textbf{Analiza napak} 
+
+Do napak pri zazvanju objektov prihaja zaradi različnih razlogov, na primer zaradi napak v algoritmu za zaznavanje objektov, zaradi slabe kakovosti slik ali zaradi prisotnosti motenj v okolju. 
+
+Najpogosteje opažene napake pri zaznavi objektov:
+\begin{enumerate}
+ \item  Napačne oznake: napake v oznaki besednih zvez, na primer napačno označitev besedne zveze kot pomembne, čeprav ni pomembna ali obratno. 
+  \item Izpuščanje: napake, pri katerih se besedna zveza izpusti iz izvlečka, na primer zaradi napake pri prepoznavanju besednih zvez ali zaradi napake pri razdelitvi besedila na stavke. 
+   \item Ponavljanje: To so napake, pri katerih se besedna zveza ponovi v izvlečku, na primer zaradi napake pri razdelitvi besedila na stavke ali zaradi napake pri ohranitvi besedne zveze. 
+ \end{enumerate}
 
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
