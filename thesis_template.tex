@@ -92,16 +92,16 @@
 
 Obdelava naravnega jezika je eno izmed najhitreje razvijajočih se področij v umetni inteligenci, ki se ukvarja z obdelavo, razumevanjem in generiranjem naravnega jezika, kot ga uporabljajo ljudje za komunikacijo. Napredne tehnike obdelave naravnega jezika in modeli so v zadnjem desetletju privedli do prebojev v številnih aplikacijah, ki segajo od avtomatskega prevajanja in analize čustev do odgovarjanja na vprašanja in samodejnega povzemanja besedil.
 
-Cilj te magistrske naloge je raziskati in analizirati različne pristope k modelom obdelave naravnega jezika, razpoložljive datasete, uporabljene metrike za evaluacijo modelov ter številna področja uporabe.
+Cilj te magistrske naloge je raziskati in analizirati različne pristope k modelom obdelave naravnega jezika, razpoložljive korpuse, uporabljene metrike za evaluacijo modelov ter številna področja uporabe.
 
-V nadaljevanju se bomo osredotočili na pomembnost kakovostnih datasetov za uspešno učenje modelov. Pregledali bomo obstoječe in priljubljene datasete, ki se uporabljajo za različne naloge.
+V nadaljevanju se bomo osredotočili na pomembnost kakovostnih korpusov za uspešno učenje modelov. Pregledali bomo obstoječe in priljubljene korpuse, ki se uporabljajo za različne naloge.
 Kot kljušen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so natančnost, F1-ocena, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko ocenimo zmogljivost modelov.
 
 Nato se bomo posvetili raznolikim področjem uporabe tehnologij obdelave naravnega jezika. Raziskali bomo, kako se tehnologije uporabljajo v avtomatskem prevajanju, analizi čustev, odgovarjanju na vprašanja, generiranju besedil, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
 
 V Poglavju~\nameref{ch4}  bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo AI/NLP modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, klasifikacija besedil in še več.
 
-V Poglavju~\nameref{ch5} bomo podrobneje spoznali uporabljene datasete, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Korpusi so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
+V Poglavju~\nameref{ch5} bomo podrobneje spoznali uporabljene korpuse, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Korpusi so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
 
 V poglavju ~\nameref{ch6}  bomo temeljito raziskali različne metrike, ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog v področju obdelave naravnega jezika zahteva prilagodljivost pri izbiri primernih meril. V nadaljevanju so navedene ključne metrike, ki se redno uporabljajo pri evalvaciji modelov.
 
@@ -286,21 +286,21 @@ Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih 
 \section{Kaj je korpus?}
 Korpus je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskav, učenja modelov ali drugih postopkov obdelave podatkov. Korpusi vsebujejo različne vrste podatkov, od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
 V kontekstu računalniškega znanstvenega modeliranja in strojnega učenja so korpusi ključnega pomena, saj služijo kot osnova za razvoj, treniranje in evalvacijo modelov. Modeli se učijo na teh podatkih, tako da prepoznajo vzorce in povezave med vhodnimi podatki in ciljnimi izhodi.
-Na primer, v naravnojezikovni obdelavi  dataset vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. 
+Na primer, v naravnojezikovni obdelavi  korpusov vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. 
 
-Nekatere ključne točke o uporabi datasetov:
+Nekatere ključne točke o uporabi korpusov:
 
-Učenje modelov: Korpusi se uporabljajo za učenje modelov, pri čemer modeli na osnovi teh podatkov pridobivajo razumevanje jezika in njegove strukture. Čeprav obstajajo tudi nespremljani pristopi, večina uspešnih modelov zahteva velike, kakovostne in označene datasete za doseganje najboljših rezultatov.
+Učenje modelov: Korpusi se uporabljajo za učenje modelov, pri čemer modeli na osnovi teh podatkov pridobivajo razumevanje jezika in njegove strukture. Čeprav obstajajo tudi nespremljani pristopi, večina uspešnih modelov zahteva velike, kakovostne in označene korpuse za doseganje najboljših rezultatov.
 
-Razvoj in optimizacija: Razvijalci modelov uporabljajo različne datasete za optimizacijo modelov in prilagajanje hiperparametrov. Z vzorci podatkov iz datasetov se preizkušajo različne arhitekture modelov in strategije učenja.
+Razvoj in optimizacija: Razvijalci modelov uporabljajo različne korpuse za optimizacijo modelov in prilagajanje hiperparametrov. Z vzorci podatkov iz korpusov se preizkušajo različne arhitekture modelov in strategije učenja.
 
-Evaluacija: Korpusi se uporabljajo za evalvacijo modelov. Preizkušajo se na ločenem testnem datasetu, ki modelom omogoča, da se oceni, kako dobro delujejo na novih, nevidenih podatkih.
+Evaluacija: Korpusi se uporabljajo za evalvacijo modelov. Preizkušajo se na ločenem testnem korpusu, ki modelom omogoča, da se oceni, kako dobro delujejo na novih, nevidenih podatkih.
 
-Nadzor kakovosti: Kvaliteta datasetov je ključnega pomena za uspešno delovanje modelov. Zato je pomembno, da so korpusi natančno označeni in urejeni. Nadzor kakovosti pomaga prepoznati morebitne napake ali pristranskosti v korpusih.
+Nadzor kakovosti: Kvaliteta korpusov je ključnega pomena za uspešno delovanje modelov. Zato je pomembno, da so korpusi natančno označeni in urejeni. Nadzor kakovosti pomaga prepoznati morebitne napake ali pristranskosti v korpusih.
 
-Prilagajanje specifičnim aplikacijam: Včasih so potrebni specializirani modeli za določene aplikacije ali domene. V takih primerih je morda potrebno ustvariti ali prilagoditi datasete, ki se bolje prilegajo ciljni uporabi.
+Prilagajanje specifičnim aplikacijam: Včasih so potrebni specializirani modeli za določene aplikacije ali domene. V takih primerih je morda potrebno ustvariti ali prilagoditi korpuse, ki se bolje prilegajo ciljni uporabi.
 
-Razvoj modelov za redke jezike: Razvoj  modelov obdelave naravnega jezika za redke jezike zahteva ustrezne datasete v ciljnem jeziku, kar je lahko izziv, saj so ti korpusi pogosto omejeni ali pa jih sploh ni na voljo.
+Razvoj modelov za redke jezike: Razvoj  modelov obdelave naravnega jezika za redke jezike zahteva ustrezne korpuse v ciljnem jeziku, kar je lahko izziv, saj so ti korpusi pogosto omejeni ali pa jih sploh ni na voljo.
 
 Pomembno je, da so korpusi pravilno pripravljeni, imajo ustrezne metapodatke in so primerni za ciljno nalogo, da bi omogočili kakovostno analizo in doseganje uporabnih rezultatov.
 
@@ -308,13 +308,13 @@ Pomembno je, da so korpusi pravilno pripravljeni, imajo ustrezne metapodatke in 
 \subsection{CoNLL 2003}
 \label{sec:my_subsection}
  Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika, prevsem za nalogo imenskih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
- Dataset CoNLL 2003 je priljubljen referenčni dataset za prepoznavanje poimenovanih entitet naravnega jezika v obdelavi naravnega jezika. Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
+ Korpus CoNLL 2003 je priljubljen referenčni korpus za prepoznavanje poimenovanih entitet naravnega jezika v obdelavi naravnega jezika. Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{conll.png}
 \end{center}
-\caption{CoNLL2003 dataset}
+\caption{CoNLL2003 korpus}
 \label{pic2}
 \end{figure}
 
@@ -325,8 +325,8 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
  \item Lokacija (LOC): Imena geografskih lokacij, kot so mesta, države ali regije.
  \item Razno (MISC): Druge poimenovane entitete, ki ne spadajo v zgoraj navedene kategorije, na primer datumi, odstotki ali denar.
  \end{enumerate}
- Podatki v datasetu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z presledkom.
- Dataset CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni "benchmark" za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER. \cite{conll}
+ Podatki v korpusu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z presledkom.
+ Korpus CoNLL 2003 se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardni "benchmark" za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za NER. \cite{conll}
 
 
 CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
@@ -336,7 +336,7 @@ CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
  \item preizkusni (test) z 3.450 vrsticami primerov
  \end{enumerate}
 
-\subsection{IMDb Reviews dataset}
+\subsection{IMDb Reviews}
 \label{sec:imdb}
 IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
 
@@ -349,7 +349,7 @@ IMDB podatkovna zbirka je običajno razdeljena na dva sklopa:
  \end{enumerate}
 Vsak sklop vsebuje tisoče pregledov filmov. To je idealna podatkovna zbirka za naloge analize čustvenega tona besedil (sentiment analysis), kjer modeli ocenjujejo, ali je mnenje v besedilu pozitivno, negativno ali nevtralno.
 
-\subsection{ COCO dataset}
+\subsection{ COCO }
 \label{sec:coco}
 COCO (Common Objects in Context) je široko uporabljen nabor podatkov v področju računalniškega vida in zaznave objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z zaznavo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
 
@@ -372,7 +372,7 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \item preizkusni (test) z 4.950 primeri
  \end{enumerate}
  
- \subsection{ CNN/Daily Mail Dataset}
+ \subsection{ CNN/Daily Mail }
  \label{sec:cnn}
  CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge abstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
  Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno treniranje in evaluiranje modelov.\cite{cnn}
@@ -389,7 +389,7 @@ CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope:
  \item preizkusni (test) z 11.500 vrsticami primerov
  \end{enumerate}
  
- \subsection{ semeval-2017 dataset}
+ \subsection{ semeval-2017}
   \label{sec:semeval}
  SemEval podatkovna zbirka je zbirka besedilnih podatkov, ki je anotirana za različne naloge na področju obdelave naravnega jezika.
  
@@ -519,7 +519,7 @@ Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblak
 \textbf{Analiza napak}
 
 
-Pri raziskovanju modelov in ter “datasetov”, hitro spoznamo da so lahko modeli celo preveč prilagojeni(overfit) določenemu področju, kar pomeni da preveč podrobno pozna eno področje, na katerem je bil model treniran in ne more dobro generalizirati novih podatkov/primerov, kakor tudi da so premalo podrobni ali premalo raznoliki. 
+Pri raziskovanju modelov in ter korpusov, hitro spoznamo da so lahko modeli celo preveč prilagojeni(overfit) določenemu področju, kar pomeni da preveč podrobno pozna eno področje, na katerem je bil model treniran in ne more dobro generalizirati novih podatkov/primerov, kakor tudi da so premalo podrobni ali premalo raznoliki. 
 
 Zato so najbolj poznani in razširjeni modeli, učeni na širokem naboru različnih podatkov, da je možnost napake manjša. 
 
@@ -648,7 +648,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 \label{pic2}
 \end{figure}
 
-Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} dataset.
+Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} korpus.
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazal Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker storitev.
 
@@ -696,7 +696,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \caption{Analiza sentimenta F1 rezultat}
 \label{pic2}
 \end{figure}
-Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} dataset.
+Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} korpus.
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 
@@ -735,7 +735,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \label{pic2}
 \end{figure}
 
-Pri izdelavi povzetka je bil uporabljen dataset  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
+Pri izdelavi povzetka je bil uporabljen korpus  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
 
 Kot vrhunska izbira za ustvarjanje povzetkov pa se je izkazala storitev Vertex AI.
 
@@ -879,7 +879,7 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 \end{figure}
 
 
-Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} dataset.
+Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} korpus.
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 

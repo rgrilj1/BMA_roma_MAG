@@ -26,10 +26,10 @@
 \contentsline {section}{\numberline {4.1}Kaj je korpus?}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Uporabljeni korpusi}{16}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}CoNLL 2003}{16}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}IMDb Reviews dataset}{18}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3} COCO dataset}{18}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail Dataset}{19}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5} semeval-2017 dataset}{20}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.2}IMDb Reviews}{18}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3} COCO }{18}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail }{19}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5} semeval-2017}{20}{subsection.4.2.5}%
 \contentsline {chapter}{\numberline {5}Metrike}{23}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Opis spemenljivk za izračun metrik}{23}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Natančnost (Precision)}{25}{section.5.2}%
