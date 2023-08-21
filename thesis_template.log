@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  21 AUG 2023 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  21 AUG 2023 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1621,10 +1621,6 @@ o zas-edla storitev
  []
 
 
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1650,9 +1646,6 @@ Overfull \hbox (23.79153pt too wide) in paragraph at lines 693--694
 -teri je mer-ilo razpr^^Tsenosti
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <figures//NER.png, id=504, 729.72626pt x 383.4325pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
@@ -1670,11 +1663,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.85004pt}.
 
 [33]
-Overfull \hbox (4.98756pt too wide) in paragraph at lines 739--740
-[]\OT1/cmr/m/n/12 Napake imen: To so na-pake v imenu imenske en-titete, na prim
-er napa^^Tcna
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1684,6 +1672,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34 <./figures//NER.png>]
+Overfull \hbox (4.98756pt too wide) in paragraph at lines 739--740
+[]\OT1/cmr/m/n/12 Napake imen: To so na-pake v imenu imenske en-titete, na prim
+er napa^^Tcna
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 27.85004pt, for example:
@@ -1794,6 +1787,12 @@ File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
 Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 918.
 (pdftex.def)             Requested size: 284.52756pt x 149.50296pt.
+
+Overfull \hbox (35.69005pt too wide) in paragraph at lines 925--926
+[]\OT1/cmr/m/n/12 Pri iz-va-janju naloge klasi-fikacije besedila je bil uporabl
+jen ko-r-pus [][]$[]$[][]. 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2024,7 +2023,7 @@ xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (67 pages, 929260 bytes).
+Output written on thesis_template.pdf (67 pages, 929237 bytes).
 PDF statistics:
  785 PDF objects out of 1000 (max. 8388607)
  660 compressed objects within 7 object streams
