@@ -392,6 +392,20 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik. \cite{coco}
  \end{enumerate}
  
+  COCO podatkovna zbirka je običajno razdeljena na dva sklopa: 
+\begin{enumerate}
+ \item učni (train) z 117.000 primeri
+ \item preizkusni (test) z 4.950 primeri
+ \end{enumerate}
+ 
+   \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=7cm]{000000502136.jpg}
+\end{center}
+\caption{000000502136.jpg}
+\label{pic2}
+\end{figure}
+ 
  
 \begin{figure}[h!]
  \centering
@@ -434,26 +448,10 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
 \end{tiny}
 \caption{COCO .json primer}
 \end{figure}
-
-
-  \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{000000502136.jpg}
-\end{center}
-\caption{000000502136.jpg}
-\label{pic2}
-\end{figure}
-
-
-
- COCO podatkovna zbirka je običajno razdeljena na dva sklopa: 
-\begin{enumerate}
- \item učni (train) z 117.000 primeri
- \item preizkusni (test) z 4.950 primeri
- \end{enumerate}
- 
  
  \newpage
+ 
+ 
  \subsection{ CNN/Daily Mail }
  \label{sec:cnn}
  CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge abstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.

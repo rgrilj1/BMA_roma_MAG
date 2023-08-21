@@ -28,8 +28,8 @@
 \contentsline {subsection}{\numberline {4.2.1}CoNLL 2003}{16}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}IMDb Reviews}{18}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3} COCO }{18}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail }{20}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5} SemEval -2017}{22}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail }{21}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5} SemEval -2017}{21}{subsection.4.2.5}%
 \contentsline {chapter}{\numberline {5}Metrike}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Opis spemenljivk za izračun metrik}{25}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Natančnost (Precision)}{27}{section.5.2}%
