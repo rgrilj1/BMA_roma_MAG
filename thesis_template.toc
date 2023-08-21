@@ -1,11 +1,10 @@
 \babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{}{chapter*.2}%
 \babel@toc {slovene}{}\relax 
-\contentsline {chapter}{Povzetek}{}{section*.4}%
-\contentsline {chapter}{Povzetek}{}{chapter*.5}%
-\babel@toc {slovene}{}\relax 
+\contentsline {chapter}{Povzetek}{}{chapter*.2}%
+\contentsline {chapter}{Povzetek}{}{chapter*.3}%
 \babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{}{section*.4}%
+\babel@toc {slovene}{}\relax 
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Opis ponudnikov in storitev}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Hugging Face}{3}{section.2.1}%
