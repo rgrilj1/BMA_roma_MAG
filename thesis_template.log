@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  21 AUG 2023 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  21 AUG 2023 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -911,47 +911,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 91.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box57
-) (./thesis_template.aux
-
-LaTeX Warning: Label `tbl:1' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-
-LaTeX Warning: Label `pic2' multiply defined.
-
 )
+No file thesis_template.aux.
 \openout1 = `thesis_template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
@@ -972,7 +933,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
- (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
 \scratchdimen=\dimen180
@@ -1000,8 +961,6 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 129.
-
-(./thesis_template.out) (./thesis_template.out)
 \@outlinefile=\write4
 \openout4 = `thesis_template.out'.
 
@@ -1033,17 +992,17 @@ l.155 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/eng/copyright2.tex
-<cc-licenca/cc_cc_30.pdf, id=160, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=24, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=161, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=25, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=162, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=26, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1134,15 +1093,7 @@ l.162 ...ges/eng/dedication} \clearemptydoublepage
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 170.
 
-(./thesis_template.toc
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 ...er}{\numberline {5}Metrike}{25}{chapter.5}
-                                                  % [11
-
-])
+No file thesis_template.toc.
 \tf@toc=\write5
 \openout5 = `thesis_template.toc'.
 
@@ -1152,14 +1103,23 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.173 	\clearemptydoublepage
-                             [12] (./front_pages/eng/acronyms.tex)
+                             [11
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 	\clearemptydoublepage
+                             [12
+
+] (./front_pages/eng/acronyms.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.183 ...pages/eng/acronyms} \clearemptydoublepage
                                                    [13
-
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -1219,6 +1179,9 @@ l.26 \clearemptydoublepage
                            [4]))
 Chapter 1.
 
+LaTeX Warning: Reference `ch4' on page 1 undefined on input line 102.
+
+
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
  [1
@@ -1226,10 +1189,17 @@ Underfull \vbox (badness 1558) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (6.22237pt too wide) in paragraph at lines 106--107
-[]\OT1/cmr/m/n/12 V poglavju  [][]Metrike[][] bomo temeljito raziskali ra-zli^^
-Tcne metrike, ki omogo^^Tcajo
- []
+
+LaTeX Warning: Reference `ch5' on page 2 undefined on input line 104.
+
+
+LaTeX Warning: Reference `ch6' on page 2 undefined on input line 106.
+
+
+LaTeX Warning: Reference `ch7' on page 2 undefined on input line 108.
+
+
+LaTeX Warning: Reference `ch8' on page 2 undefined on input line 110.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1241,6 +1211,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Chapter 2.
+
+LaTeX Warning: Citation `hugging' on page 3 undefined on input line 144.
+
 [3
 
 ]
@@ -1250,10 +1223,16 @@ Overfull \hbox (2.49825pt too wide) in paragraph at lines 149--150
  []
 
 
+LaTeX Warning: Citation `transformers' on page 4 undefined on input line 151.
+
+
 Overfull \hbox (4.48296pt too wide) in paragraph at lines 151--152
 \OT1/cmr/m/n/12 mod-e-lov na stvarnih sis-temih. Po-leg tega Hug-ging Face Tran
 s-form-ers omogo^^Tca
  []
+
+
+LaTeX Warning: Citation `google' on page 4 undefined on input line 159.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1264,6 +1243,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
+
+LaTeX Warning: Citation `vertex' on page 5 undefined on input line 173.
+
+
+LaTeX Warning: Citation `aws' on page 5 undefined on input line 177.
+
+
 Overfull \hbox (2.20657pt too wide) in paragraph at lines 176--178
 \OT1/cmr/m/n/12 in shramba. To omogo^^Tca or-ga-ni-zaci-jam, da pri-lagodljivo 
 in u^^Tcinkovito gradijo,
@@ -1279,6 +1265,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+LaTeX Warning: Citation `sage' on page 6 undefined on input line 184.
+
+
+LaTeX Warning: Citation `azure' on page 6 undefined on input line 192.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1291,6 +1283,9 @@ Overfull \hbox (17.3342pt too wide) in paragraph at lines 199--200
 \OT1/cmr/m/n/12 teligenco (AI), ki jo ponuja Mi-crosoft-ova plat-forma Azure. T
 e storitve omogo^^Tcajo
  []
+
+
+LaTeX Warning: Citation `cognitive' on page 7 undefined on input line 201.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1314,12 +1309,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 3.
 
+LaTeX Warning: Citation `ner' on page 9 undefined on input line 214.
+
+
 Overfull \hbox (3.0987pt too wide) in paragraph at lines 214--215
 []\OT1/cmr/m/n/12 Cilj je pre-poz-nati in dolo^^Tciti za^^Tcetek in konec posam
 eznih en-titet v besedilu
  []
 
 [9]
+
+LaTeX Warning: Citation `sentiment' on page 10 undefined on input line 230.
+
+
 Overfull \hbox (7.68985pt too wide) in paragraph at lines 230--231
 \OT1/cmr/m/n/12 stali^^Ts^^Tca za-pisanega besedila. Cilj anal-ize sen-ti-menta
  je ugo-toviti, ali je dolo^^Tceno
@@ -1334,6 +1336,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [10]
+
+LaTeX Warning: Citation `povzetek' on page 11 undefined on input line 250.
+
+
 Overfull \hbox (25.09708pt too wide) in paragraph at lines 250--251
 []\OT1/cmr/m/n/12 Tehnike za povze-manje uporabl-jajo ra-zli^^Tcne al-go-ritme 
 in metode, ki vklju^^Tcujejo
@@ -1346,6 +1352,9 @@ e v izvornem besedilu.
  []
 
 
+LaTeX Warning: Citation `luscenje' on page 11 undefined on input line 255.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1355,6 +1364,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 
+LaTeX Warning: Citation `klasifikacija' on page 12 undefined on input line 262.
+
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.92502pt}.
@@ -1363,6 +1376,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [12]
+
+LaTeX Warning: Citation `object' on page 13 undefined on input line 278.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1395,6 +1411,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 
+LaTeX Warning: Citation `conll' on page 17 undefined on input line 321.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1403,6 +1422,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
+
+LaTeX Warning: Citation `imdb' on page 18 undefined on input line 354.
+
+
 Overfull \hbox (30.1874pt too wide) in paragraph at lines 379--380
 \OT1/cmr/m/n/12 COCO (Com-mon Ob-jects in Con-text) je na-bor po-datkov v po-dr
 o^^Tcju ra^^Tcunalni^^Tskega
@@ -1417,6 +1440,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
+
+LaTeX Warning: Citation `coco' on page 19 undefined on input line 392.
+
+
 Overfull \hbox (9.364pt too wide) in paragraph at lines 392--393
 \OT1/cmr/m/n/12 datkov COCO prav tako zago-tavlja maske seg-mentacije na ravni 
 slikovnih
@@ -1428,7 +1455,7 @@ Overfull \hbox (3.31628pt too wide) in paragraph at lines 392--393
 lokalizirani
  []
 
-<figures//000000502136.jpg, id=401, 501.875pt x 424.58624pt>
+<figures//000000502136.jpg, id=211, 501.875pt x 424.58624pt>
 File: figures//000000502136.jpg Graphic file (type jpg)
 <use figures//000000502136.jpg>
 Package pdftex.def Info: figures//000000502136.jpg  used on input line 403.
@@ -1460,6 +1487,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <./figures//000000502136.jpg>]
+
+LaTeX Warning: Citation `cnn' on page 21 undefined on input line 458.
+
+
 Overfull \hbox (11.14584pt too wide) in paragraph at lines 457--459
 \OT1/cmr/m/n/12 CNN/Daily Mail je zbirka novi^^Tcarskih ^^Tclankov sku-paj s po
 vzetki, ki se uporablja
@@ -1480,6 +1511,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
+
+LaTeX Warning: Citation `semeval' on page 22 undefined on input line 498.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1511,12 +1545,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 5.
 
+LaTeX Warning: Citation `truevsfalse' on page 25 undefined on input line 531.
+
+
 Overfull \hbox (1.15797pt too wide) in paragraph at lines 535--536
 \OT1/cmr/m/n/12 elek-tron-ski po^^Tsti. Model pravilno pre-pozna 25 sporo^^Tcil
  kot neza^^Tzelena (spam),
  []
 
+
+LaTeX Warning: Citation `truevsfalse' on page 25 undefined on input line 543.
+
 [25]
+
+LaTeX Warning: Citation `truevsfalse' on page 26 undefined on input line 557.
+
+
 Overfull \hbox (0.714pt too wide) in paragraph at lines 562--563
 []\OT1/cmr/m/n/12 Predpostavimo, da imamo napre-den sis-tem za fil-tri-ranje ne
 ^^Tzelenih sporo^^Tcil
@@ -1527,6 +1571,9 @@ Overfull \hbox (3.9473pt too wide) in paragraph at lines 564--565
 \OT1/cmr/m/n/12 sodi e-po^^Tstno sporo^^Tcilo kot varno (ne-spam), ^^Tceprav vs
 e-buje vse znake ne^^Tzelene
  []
+
+
+LaTeX Warning: Citation `truevsfalse' on page 26 undefined on input line 566.
 
 
 Overfull \hbox (11.89815pt too wide) in paragraph at lines 571--572
@@ -1548,6 +1595,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26]
 
+LaTeX Warning: Citation `percision' on page 27 undefined on input line 573.
+
+
+LaTeX Warning: Citation `percision' on page 27 undefined on input line 583.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.92502pt}.
@@ -1556,6 +1609,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [27]
+
+LaTeX Warning: Citation `accuracy' on page 28 undefined on input line 603.
+
+
 Overfull \hbox (3.09323pt too wide) in paragraph at lines 603--604
 []\OT1/cmr/m/n/12 V kon-tek-stu ob-delave nar-avnega jezika se natan^^Tcnost up
 orablja, na primer,
@@ -1647,13 +1704,17 @@ Overfull \hbox (23.79153pt too wide) in paragraph at lines 693--694
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures//NER.png, id=504, 729.72626pt x 383.4325pt>
+<figures//NER.png, id=307, 729.72626pt x 383.4325pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
 Package pdftex.def Info: figures//NER.png  used on input line 724.
 (pdftex.def)             Requested size: 284.52756pt x 149.50296pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Hyper reference `sec:my_subsection' on page 33 undefined on inpu
+t line 730.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1687,11 +1748,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.85004pt}.
 
 [35]
-<figures//KP.png, id=526, 729.72626pt x 383.4325pt>
+<figures//KP.png, id=329, 729.72626pt x 383.4325pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
 Package pdftex.def Info: figures//KP.png  used on input line 773.
 (pdftex.def)             Requested size: 284.52756pt x 149.50296pt.
+
+
+LaTeX Warning: Hyper reference `sec:imdb' on page 36 undefined on input line 77
+8.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1716,11 +1781,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37]
-<figures//SUMM.png, id=544, 665.48625pt x 347.2975pt>
+<figures//SUMM.png, id=347, 665.48625pt x 347.2975pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
 Package pdftex.def Info: figures//SUMM.png  used on input line 811.
 (pdftex.def)             Requested size: 284.52756pt x 148.48712pt.
+
+
+LaTeX Warning: Hyper reference `sec:cnn' on page 38 undefined on input line 817
+.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1745,11 +1814,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39]
-<figures//KEY.png, id=561, 729.72626pt x 383.4325pt>
+<figures//KEY.png, id=363, 729.72626pt x 383.4325pt>
 File: figures//KEY.png Graphic file (type png)
 <use figures//KEY.png>
 Package pdftex.def Info: figures//KEY.png  used on input line 866.
 (pdftex.def)             Requested size: 284.52756pt x 149.50296pt.
+
+
+LaTeX Warning: Hyper reference `sec:semeval' on page 40 undefined on input line
+ 872.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1778,11 +1851,15 @@ Overfull \hbox (2.74179pt too wide) in paragraph at lines 892--892
 []\OT1/cmr/bx/n/17.28 Klasifikacija besedila (Text Clas-si-fi-ca-tion) 
  []
 
-<figures//CLASSIFICATION.png, id=577, 729.72626pt x 383.4325pt>
+<figures//CLASSIFICATION.png, id=379, 729.72626pt x 383.4325pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
 Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 918.
 (pdftex.def)             Requested size: 284.52756pt x 149.50296pt.
+
+LaTeX Warning: Hyper reference `sec:imdb' on page 42 undefined on input line 92
+5.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1792,11 +1869,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42 <./figures//CLASSIFICATION.png>]
-<figures//OBJECT.png, id=586, 716.6775pt x 366.36874pt>
+<figures//OBJECT.png, id=388, 716.6775pt x 366.36874pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
 Package pdftex.def Info: figures//OBJECT.png  used on input line 964.
 (pdftex.def)             Requested size: 284.52756pt x 145.45477pt.
+
+
+LaTeX Warning: Hyper reference `sec:coco' on page 43 undefined on input line 97
+1.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1984,19 +2065,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `thesis_template.out' has not changed.
-(rerunfilecheck)             Checksum: 4075357671C8293D57CF1882B59CD782;5387.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `thesis_template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis_template.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  4075357671C8293D57CF1882B59CD782;5387.
  ) 
 Here is how much of TeX's memory you used:
- 13727 strings out of 476025
- 222795 string characters out of 5790017
+ 13684 strings out of 476025
+ 222208 string characters out of 5790017
  1865388 words of memory out of 5000000
- 33709 multiletter control sequences out of 15000+600000
+ 33674 multiletter control sequences out of 15000+600000
  527847 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,79p,1006b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,12n,79p,1008b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
@@ -2013,10 +2103,10 @@ xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (67 pages, 930113 bytes).
+Output written on thesis_template.pdf (67 pages, 922261 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 660 compressed objects within 7 object streams
+ 609 PDF objects out of 1000 (max. 8388607)
+ 486 compressed objects within 5 object streams
  193 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
