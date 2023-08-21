@@ -709,8 +709,8 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 \textbf{Google Vertex AI}         & Odzivnost  & 0.946             & 0.914              & 0.896              & 0.919     & 0.025                                        \\
                                    &  Natančnost & 0.895              & 0.923              & 0.942              & 0.920              & 0.024                             \\
                                    & F1 ocena   & 0.920              & 0.918              & 0.918              & 0.919                  & 0.001                          \\
-\textbf{AWS SageMaker}.   & Odzivnost & 0.981              & 0.962              & 0.941              & \textbf{0.961}       & 0.020                                     \\
-                                   &  Natančnost & 0.962              & 0.980              & 0.921              & \textbf{0.954}                 & 0.030                             \\
+\textbf{AWS SageMaker}.   & Odzivnost & 0.981              & 0.962              & 0.941              & 0.961       & 0.020                                     \\
+                                   &  Natančnost & 0.962              & 0.980              & 0.921              & 0.954                & 0.030                             \\
                                    & F1 ocena   & 0.971              & 0.971              & 0.931              & \textbf{0.958}      & 0.023 \\
 \textbf{Azure Cognitive Services}   & Odzivnost  & 0.821              & 0.831             & 0.821              & 0.824   & 0.006                                           \\
                        &  Natančnost & 0.831              & 0.841              & 0.903              & 0.858                                   & 0.039        \\
@@ -758,7 +758,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
                                      & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929                  & 0.031   \\
 \textbf{Google Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                          & 0.014                   \\
                                    &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                          & 0.031                \\
-                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & 0.930                                & 0.012            \\
+                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & \textbf{0.930}                                & 0.012            \\
 \textbf{AWS SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891              & 0.010                               \\
                                    &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                         & 0.046                   \\
                                    & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876                            & 0.022                        \\
@@ -802,7 +802,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \textbf{Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192                        & 0.018               \\
 \textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306                             & 0.013                \\
 \textbf{AWS SageMaker}.   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201                   & 0.016                        \\
-\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & 0.330             & 0.052                                                                                                     
+\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & \textbf{0.330}             & 0.052                                                                                                     
 \end{tabular}}
 \end{table}
 
@@ -857,7 +857,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
                                    & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562   					 & 0.023 \\
 \textbf{Azure Cognitive Services}   & Odzivnost  & 0.532              & 0.559             & 0.500              & 0.530                    & 0.030                        \\
                        &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670                                         	 & 0.021 \\
-                        & F1 ocena   & 0.595              & 0.600              & 0.579              & 0.592                                                  & 0.011                    
+                        & F1 ocena   & 0.595              & 0.600              & 0.579              & \textbf{0.592}                                                  & 0.011                    
 \end{tabular}}
 \end{table}
 
@@ -900,7 +900,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}          & \textbf{St. odklon}                   \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Odzivnost  & 0.933             & 0.948                  &  0.896             &  0.926                            & 0.027              \\
 				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930   		     & 0.030  \\
-                                     & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  0.928 		& 0.013     \\
+                                     & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  \textbf{0.928} 		& 0.013     \\
 \textbf{Google Vertex AI}         & Odzivnost  &  0.842              &  0.901              &  0.844             &  0.962                          & 0.034                   \\
                                    &  Natančnost &  0.989              &  0.924              &  0.959              &  0.957                        & 0.033                     \\
                                    & F1 ocena   &  0.910              &  0.912              &  0.989              &  0.907                           & 0.008                 \\
@@ -953,7 +953,7 @@ Paragraph locked by Gregor Kocmut
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }            & \textbf{St. odklon}                  \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Accuracy  & 0.900             & 0.970                  & 0.940              & 0.940                            & 0.018             \\
 \textbf{Google Vertex AI}         & Accuracy  & 0.963              & 0.991              & 0.977             & 0.977                                 & 0.014             \\
-\textbf{AWS SageMaker}.   & Accuracy  & 0.995              & 0.963              & 0.982              & 0.980                   & 0.016                         \\
+\textbf{AWS SageMaker}.   & Accuracy  & 0.995              & 0.963              & 0.982              & \textbf{0.980}                   & 0.016                         \\
 \textbf{Azure Cognitive Services}   & Odzivnost  & 0.960             & 0.950              & 0.985             & 0.965              & 0.017                                                                    
 \end{tabular}}
 \end{table}
