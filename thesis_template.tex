@@ -381,6 +381,8 @@ COCO (Common Objects in Context) je nabor podatkov v področju računalniškega 
 Nabor podatkov COCO je obsežen in vsebuje deset tisoče slik z milijoni označenih posameznih objektov. Slike prihajajo iz različnih virov, zajemajo raznolike prizore, ozadja, svetlobne pogoje in velikosti objektov.
 
 
+
+
 Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
 \begin{enumerate}
  \item Kategorije slik: Nabor podatkov COCO vsebuje slike, ki zajemajo 80 različnih kategorij objektov, od splošnih objektov, kot so "oseba," "avto" in "pes," do bolj specifičnih objektov, kot so "mobilni telefon," "zobna ščetka" in "zmaj."
@@ -390,13 +392,49 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik. \cite{coco}
  \end{enumerate}
  
-  \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{json.png}
-\end{center}
-\caption{Primer COCO .json dokumenta}
-\label{pic2}
+ 
+\begin{figure}[h!]
+ \centering
+ \begin{tiny}
+\begin{verbatim}
+        {
+            "license": 3,
+            "file_name": "000000502136.jpg",
+            "coco_url": "http://images.cocodataset.org/val2017/000000502136.jpg",
+            "height": 423,
+            "width": 500,
+            "date_captured": "2013-11-15 17:08:30",
+            "flickr_url": "http://farm3.staticflickr.com/2253/1755223462_fabbeb8dc3_z.jpg",
+            "id": 502136
+        },
+                {
+            "segmentation": [
+                [
+                    54.74,
+                    350.34,
+                    53.75,
+                    353.33,
+                    ...
+                    349.35
+                ]
+            ],
+            "area": 4651.359250000001,
+            "iscrowd": 0,
+            "image_id": 502136,
+            "bbox": [
+                3.98,
+                289.63,
+                120.43,
+                103.51
+            ],
+            "category_id": 64,
+            "id": 21011
+        }
+\end{verbatim}
+\end{tiny}
+\caption{COCO .json primer}
 \end{figure}
+
 
   \begin{figure}[h!]
 \begin{center}
@@ -414,6 +452,8 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \item preizkusni (test) z 4.950 primeri
  \end{enumerate}
  
+ 
+ \newpage
  \subsection{ CNN/Daily Mail }
  \label{sec:cnn}
  CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge abstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
