@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  21 AUG 2023 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  21 AUG 2023 19:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1033,17 +1033,17 @@ l.155 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/eng/copyright2.tex
-<cc-licenca/cc_cc_30.pdf, id=156, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=160, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=157, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=161, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=158, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=162, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1139,7 +1139,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...}Natančnost (Precision)}{27}{section.5.2}
+l.34 ...er}{\numberline {5}Metrike}{25}{chapter.5}
                                                   % [11
 
 ])
@@ -1198,7 +1198,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 
+l.19 
       [3
 
 ]
@@ -1215,7 +1215,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \clearemptydoublepage
+l.26 \clearemptydoublepage
                            [4]))
 Chapter 1.
 
@@ -1428,7 +1428,7 @@ Overfull \hbox (3.31628pt too wide) in paragraph at lines 392--393
 lokalizirani
  []
 
-<figures//000000502136.jpg, id=397, 501.875pt x 424.58624pt>
+<figures//000000502136.jpg, id=401, 501.875pt x 424.58624pt>
 File: figures//000000502136.jpg Graphic file (type jpg)
 <use figures//000000502136.jpg>
 Package pdftex.def Info: figures//000000502136.jpg  used on input line 403.
@@ -1647,7 +1647,7 @@ Overfull \hbox (23.79153pt too wide) in paragraph at lines 693--694
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures//NER.png, id=500, 729.72626pt x 383.4325pt>
+<figures//NER.png, id=504, 729.72626pt x 383.4325pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
 Package pdftex.def Info: figures//NER.png  used on input line 724.
@@ -1687,7 +1687,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-15.85004pt}.
 
 [35]
-<figures//KP.png, id=522, 729.72626pt x 383.4325pt>
+<figures//KP.png, id=526, 729.72626pt x 383.4325pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
 Package pdftex.def Info: figures//KP.png  used on input line 773.
@@ -1716,7 +1716,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37]
-<figures//SUMM.png, id=540, 665.48625pt x 347.2975pt>
+<figures//SUMM.png, id=544, 665.48625pt x 347.2975pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
 Package pdftex.def Info: figures//SUMM.png  used on input line 811.
@@ -1745,7 +1745,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39]
-<figures//KEY.png, id=556, 729.72626pt x 383.4325pt>
+<figures//KEY.png, id=561, 729.72626pt x 383.4325pt>
 File: figures//KEY.png Graphic file (type png)
 <use figures//KEY.png>
 Package pdftex.def Info: figures//KEY.png  used on input line 866.
@@ -1778,7 +1778,7 @@ Overfull \hbox (2.74179pt too wide) in paragraph at lines 892--892
 []\OT1/cmr/bx/n/17.28 Klasifikacija besedila (Text Clas-si-fi-ca-tion) 
  []
 
-<figures//CLASSIFICATION.png, id=573, 729.72626pt x 383.4325pt>
+<figures//CLASSIFICATION.png, id=577, 729.72626pt x 383.4325pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
 Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 918.
@@ -1792,7 +1792,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42 <./figures//CLASSIFICATION.png>]
-<figures//OBJECT.png, id=582, 716.6775pt x 366.36874pt>
+<figures//OBJECT.png, id=586, 716.6775pt x 366.36874pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
 Package pdftex.def Info: figures//OBJECT.png  used on input line 964.
@@ -1987,16 +1987,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis_template.out' has not changed.
-(rerunfilecheck)             Checksum: 3A7E8544A7AFA59BF6105F8EBD094EE2;5302.
+(rerunfilecheck)             Checksum: 4075357671C8293D57CF1882B59CD782;5387.
  ) 
 Here is how much of TeX's memory you used:
- 13726 strings out of 476025
- 222783 string characters out of 5790017
+ 13727 strings out of 476025
+ 222795 string characters out of 5790017
  1865388 words of memory out of 5000000
- 33708 multiletter control sequences out of 15000+600000
+ 33709 multiletter control sequences out of 15000+600000
  527847 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,79p,1006b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,12n,79p,1006b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
@@ -2013,10 +2013,10 @@ xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (67 pages, 929993 bytes).
+Output written on thesis_template.pdf (67 pages, 930146 bytes).
 PDF statistics:
- 781 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
+ 785 PDF objects out of 1000 (max. 8388607)
+ 660 compressed objects within 7 object streams
  193 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,6 +3,7 @@
 \contentsline {chapter}{Abstract}{}{chapter*.2}%
 \babel@toc {slovene}{}\relax 
 \contentsline {chapter}{Povzetek}{}{section*.4}%
+\contentsline {chapter}{Povzetek}{}{chapter*.5}%
 \babel@toc {slovene}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
