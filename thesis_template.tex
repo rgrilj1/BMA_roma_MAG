@@ -489,9 +489,9 @@ CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope:
   \label{sec:semeval}
  SemEval podatkovna zbirka je zbirka besedilnih podatkov, ki je anotirana za različne naloge na področju obdelave naravnega jezika.
  
-Tukaj je nekaj ključnih značilnosti SemEval podatkovnih zbirk:
+Tukaj je nekaj ključnih značilnosti korpusa SemEval:
 \begin{enumerate}
- \item Anotacije: Podatki v SemEval podatkovnih zbirkah so običajno anotirani, kar pomeni, da so označeni z dodatnimi informacijami. Na primer, v podatkovni zbirki za naloge razreševanja sentimenta bi bili vzorci besedil označeni s pozitivnimi, negativnimi ali nevtralnimi sentimenti.
+ \item Anotacije: Podatki v SemEval korpusov so običajno anotirani, kar pomeni, da so označeni z dodatnimi informacijami. Na primer, v korpus zbirki za naloge razreševanja sentimenta bi bili vzorci besedil označeni s pozitivnimi, negativnimi ali nevtralnimi sentimenti.
  \item Raznolikost: SemEval podatkovne zbirke zajemajo širok spekter nalog, jezikov in domen. To omogoča raziskovalcem primerjavo modelov in pristopov na različnih področjih.
  \end{enumerate}
  
@@ -561,7 +561,7 @@ V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi
 
 Predpostavimo, da imamo napreden sistem za filtriranje neželenih sporočil (spam), ki ga uporabljamo za preverjanje prihajajočih e-poštnih sporočil. Sistem je zasnovan tako, da prepoznava in premika neželena sporočila v mapo za neželeno pošto.
 
-Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-poštno sporočilo kot varno (ne-spam), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "False Negatives".
+Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-poštno sporočilo kot varno (ne-spam), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "Napačno Negativni".
 
 V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere. \cite{truevsfalse}
 
@@ -598,7 +598,7 @@ F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besed
 \end{center}
 
 \section{Accuracy}
-Accuracy  je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
+Je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
 V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.\cite{accuracy}
 
@@ -608,7 +608,7 @@ V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri n
 \end{center}
 
 \section{ROUGE}
-ROUGE je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi z referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation". Metrika ROUGE je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
+Je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi z referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation". Metrika ROUGE je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
 
 Primerja generirano besedilo z referenčnim besedilom (običajno človeško ustvarjenim besedilom) in oceni, kako dobro so se ujemale. Metrika upošteva različne vidike, kot so prekrivanje besed, besedni nizi in skupna dolžina besedil. Glavni cilj metrike je merjenje stopnje, do katere je generirano besedilo sposobno pravilno povzeti pomembne informacije iz referenčnega besedila.
 
@@ -729,7 +729,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} korpus.
 
-Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala Vertex AI storitev. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker.
+Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker.
 
 \newpage
 \textbf{Analiza napak} 
@@ -783,7 +783,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 \textbf{Analiza napak} 
 \begin{enumerate}
- \item Nepravilna identifikacija sentimenta: To je najpogostejša vrsta napake, ki se je pojavila pri analizi sentimenta, kar je lahko ko je ali besedna zveza je dvoumna in lahko pomeni tako pozitiven kot negativen sentiment.LAhko je tudi napaka v zapisu same besede ali besedne zveze, kot tudi da je model premalo naučen za določeno področje 
+ \item Nepravilna identifikacija sentimenta: To je najpogostejša vrsta napake, ki se je pojavila pri analizi sentimenta, kar je lahko ko je ali besedna zveza je dvoumna in lahko pomeni tako pozitiven kot negativen sentiment.Lahko je tudi napaka v zapisu same besede ali besedne zveze, kot tudi da je model premalo naučen za določeno področje 
  \item Nepravilna kategorizacija sentimenta: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, vendar ga napačno kategorizira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \item Napaka v kontekstu: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment in ga pravilno kategorizira, vendar ga napačno razvrsti v kontekstu. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \item Napaka v viru: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
@@ -869,7 +869,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \label{pic2}
 \end{figure}
 
-Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen podatkovni niz  \hyperref[sec:semeval]{\underline {semeval-2017}}.
+Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus  \hyperref[sec:semeval]{\underline {SemEval-2017}}.
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
@@ -922,7 +922,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \end{figure}
 
 
-Pri izvajanju naloge klasifikacije besedila je bil uporabljen podatkovni niz  \hyperref[sec:imdb]{\underline {IMDb Reviews}}.
+Pri izvajanju naloge klasifikacije besedila je bil uporabljen korpus  \hyperref[sec:imdb]{\underline {IMDb Reviews}}.
 
 Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
 
@@ -999,7 +999,7 @@ Na podlagi raziskave smo ugotovili, da se je vsak ponudnik specializiral in izka
 
 Vendar pa je pomembno poudariti, da ima vsak ponudnik v oblaku svoje prednosti in omejitve ter da izbira med njimi temelji na specifičnih potrebah in zahtevah uporabnika. Pri izbiri pravega ponudnika je treba upoštevati faktorje, kot so natančnost, hitrost, stroške, prilagodljivost in integracija z obstoječimi sistemi.
 
-Dodati je potrebno, da so rezultati analize odvisni od specifičnih nalog in podatkovnih zbirk, ki so bili uporabljeni v tej študiji. Prav tako se tehnologije in zmogljivosti ponudnikov v oblaku nenehno razvijajo, zato je pomembno, da podjetja in raziskovalci ostanejo pozorni na nove in izboljšane metode za obdelavo naravnega jezika.
+Dodati je potrebno, da so rezultati analize odvisni od specifičnih nalog in korpusov, ki so bili uporabljeni v tej študiji. Prav tako se tehnologije in zmogljivosti ponudnikov v oblaku nenehno razvijajo, zato je pomembno, da podjetja in raziskovalci ostanejo pozorni na nove in izboljšane metode za obdelavo naravnega jezika.
 
 V sklepni fazi je jasno, da noben ponudnik v oblaku ne izstopa kot absolutno najboljši na vseh področjih. Različni ponudniki imajo svoje prednosti in posebne zmogljivosti glede na določene naloge obdelave naravnega jezika. Izbiro ustrezne platforme je torej smiselno prilagoditi specifičnim potrebam in zahtevam projekta. Hkrati pa je obetavno opaziti, kako odprtokodne rešitve, kot je Hugging Face Transformers, pridobivajo na veljavi in omogočajo raziskovalcem in razvijalcem, da izkoristijo najboljše iz več različnih tehnologij.
 
