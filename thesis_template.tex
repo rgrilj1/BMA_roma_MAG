@@ -388,9 +388,26 @@ Tukaj je nekaj ključnih značilnosti nabora podatkov COCO:
  \item Anotacije: Vsaka slika v naboru podatkov COCO je opremljena z oznakami na ravni objekta in koordinatami  okvirja. To pomeni, da je vsak posamezen objekt določene kategorije znotraj slike označen, okoli njega pa je narisano območje z okvirjem, ki označuje njegovo lokacijo. Informacije o anotacijah so ključnega pomena za usposabljanje modelov za detekcijo objektov in segmentacijo.
 
  \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik. \cite{coco}
-
-
  \end{enumerate}
+ 
+  \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{json.png}
+\end{center}
+\caption{Primer COCO .json dokumenta}
+\label{pic2}
+\end{figure}
+
+  \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{000000502136.jpg}
+\end{center}
+\caption{000000502136.jpg}
+\label{pic2}
+\end{figure}
+
+
+
  COCO podatkovna zbirka je običajno razdeljena na dva sklopa: 
 \begin{enumerate}
  \item učni (train) z 117.000 primeri
