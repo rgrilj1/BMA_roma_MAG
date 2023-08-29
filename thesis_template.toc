@@ -1,7 +1,6 @@
 \babel@toc {english}{}\relax 
 \babel@toc {slovene}{}\relax 
 \contentsline {chapter}{Povzetek}{}{chapter*.2}%
-\contentsline {chapter}{Povzetek}{}{chapter*.3}%
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Abstract}{}{section*.4}%
 \babel@toc {slovene}{}\relax 
@@ -30,18 +29,18 @@
 \contentsline {subsection}{\numberline {4.2.3} COCO }{18}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail }{21}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5} SemEval -2017}{21}{subsection.4.2.5}%
-\contentsline {chapter}{\numberline {5}Metrike}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Opis spemenljivk za izračun metrik}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Natančnost (Precision)}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Odzivnost (Recall)}{27}{section.5.3}%
-\contentsline {section}{\numberline {5.4}F1 ocena (F1-score)}{28}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Accuracy}{28}{section.5.5}%
-\contentsline {section}{\numberline {5.6}ROUGE}{29}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Analiza raziskave}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{33}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta (Sentiment Analaysis)}{36}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Povzetek (Summarisation)}{38}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Izvleček besedne zveze (Key Phrases)}{40}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Klasifikacija besedila (Text Classification)}{42}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov (Object Detection)}{43}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Zaključek}{45}{chapter.7}%
+\contentsline {chapter}{\numberline {5}Metrike}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Opis spemenljivk za izračun metrik}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Natančnost (Precision)}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Odzivnost (Recall)}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}F1 ocena (F1-score)}{26}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Točnost}{26}{section.5.5}%
+\contentsline {section}{\numberline {5.6}ROUGE}{27}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Analiza raziskave}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (Named Entity Recognition)}{32}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Analiza sentimenta (Sentiment Analaysis)}{33}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Povzetek (Summarisation)}{35}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Izvleček besedne zveze (Key Phrases)}{36}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Klasifikacija besedila (Text Classification)}{38}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov (Object Detection)}{39}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Zaključek}{41}{chapter.7}%

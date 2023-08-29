@@ -173,8 +173,8 @@ Vertex Ai lahko uporabljamo z več programskimi jeziki kot so: Go, Java, Node.js
 Ena od ključnih funkcij Vertex AI je tudi funkcija Vertex Data Labeling, ki omogoča enostavno označevanje podatkov za učenje modelov. \cite{vertex}
 
 \section{Amazon Web Services }
-\label{sec:aws}f
-Amazon Web Services (AWS) je ponudnik storitev v oblaku, ki jih ponuja Amazon. Uporabnikom omogoča najem računalniških virov, kot so strežniki in shramba. To omogoča organizacijam, da prilagodljivo in učinkovito gradijo, upravljajo ter skalirajo svoje aplikacije in storitve brez potrebe po fizični strojni opremi. AWS je mednarodno priznan za svojo zanesljivost in širok nabor storitev za obdelavo podatkov, analitiko, umetno inteligenco ter druge poslovne potrebe. \cite{aws}
+\label{sec:aws}
+Je ponudnik storitev v oblaku, ki jih ponuja Amazon. Uporabnikom omogoča najem računalniških virov, kot so strežniki in shramba. To omogoča organizacijam, da prilagodljivo in učinkovito gradijo, upravljajo ter skalirajo svoje aplikacije in storitve brez potrebe po fizični strojni opremi. AWS je mednarodno priznan za svojo zanesljivost in širok nabor storitev za obdelavo podatkov, analitiko, umetno inteligenco ter druge poslovne potrebe. \cite{aws}
 
 Področje obdelave naravnega jezika je bilo dodano leta 2017. V Evropi pa je bil dostopen šele leto kasneje.  
 
@@ -257,7 +257,7 @@ Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen
  \section{Klasifikacija besedila}
  Klasifikacija besedil je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
 
-Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", "s", itd.).
+Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", itd.).
 
 Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed ("Bag-of-Words"), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. \cite{klasifikacija}
 
@@ -496,7 +496,7 @@ Tukaj je nekaj ključnih značilnosti korpusa SemEval:
  \end{enumerate}
  
  Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov. \cite{semeval}
- \newpage
+
  
  \begin{table}[h!]
 \caption{Primer Semeval-2017 korpusa}
@@ -597,14 +597,14 @@ F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besed
  \Large{F1 ocena = 2 x \(\frac{Natancnost \times Odzivnost}{Natancnost + Odzivnost}\)}
 \end{center}
 
-\section{Accuracy}
+\section{Točnost}
 Je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
 V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.\cite{accuracy}
 
  Formula za izračun:
 \begin{center}
-  \large{Accuracy = \(\frac{True Positive + True Negative}{True Positive + True Negative +False Positive + False Negative}\)}
+  \large{Točnost = \(\frac{Pravilno Pozitivni + Pravilno Negativni}{Pravilno Pozitivni + Pravilno Negativni + Napacno Pozitivni + Napacno Negativni}\)}
 \end{center}
 
 \section{ROUGE}
@@ -632,8 +632,7 @@ Pri raziskovanju modelov in ter korpusov, hitro spoznamo da so lahko modeli celo
 Zato so najbolj poznani in razširjeni modeli, učeni na širokem naboru različnih podatkov, da je možnost napake manjša. 
 
  
-
-Vrste napak, ki jih lahko prepoznamo pri NLP modelih: 
+Prepoznane pogoste napake modelov:
 
 \emph{Nezadostni podatki:} Za gradnjo natančnega modela je potrebna velika količina podatkov. Če ni dovolj podatkov, bo model morda težko naučil vzorce v podatkih. 
 
@@ -645,7 +644,7 @@ Vrste napak, ki jih lahko prepoznamo pri NLP modelih:
 
 \emph{Napačna nastavitev parametrov:} Večina algoritmov stojnega učenja ima parametre, ki jih je mogoče prilagoditi za izboljšanje natančnosti modela. Če niso pravilno nastavljeni parametri, bo morda težko zgraditi natančen model. 
 
-\begin{table}[t!]
+\begin{table}[h!]
 \centering
 \caption{Tabela analize}
 \label{my-label}
@@ -671,7 +670,7 @@ Vrste napak, ki jih lahko prepoznamo pri NLP modelih:
 										   & Natančnost  & 0.930                &  0.957                   &  0.858                &  0.880  \\
                                                                                        & F1 ocena    & \textbf{0.928}                &  0.907                   &  0.808                &  0.900     \\
                                                                                        
-\textbf{Zaznava objektov}  					    &  Accuracy  & 0.940                & 0.977                  & \textbf{0.980}               & 0.965  
+\textbf{Zaznava objektov}  					    & Točnost  & 0.940                & 0.977                  & \textbf{0.980}               & 0.965  
                                                              
 \end{tabular}}
 \end{table}
@@ -692,7 +691,7 @@ V zaznavanju objektov je najvišje mesto zasedla storitev AWS Cognitive Services
 
 V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
-
+\newpage
 
 \section{Prepoznavanje imenskih entitet (Named Entity Recognition)}
 \begin{table}[h!]
@@ -731,7 +730,6 @@ Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\und
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker.
 
-\newpage
 \textbf{Analiza napak} 
 
 Najpogosteje opažene napake pri prepoznavi imenskih entitet:  
@@ -742,7 +740,6 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
  \item Ponavljanje:napaka, pri katerih se imenska entiteta ponovi v besedilu. 
  \end{enumerate}
 
-\newpage
 \section{Analiza sentimenta (Sentiment Analaysis)}
 
 \begin{table}[h!]
@@ -775,11 +772,13 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \caption{Analiza sentimenta F1 rezultat}
 \label{pic2}
 \end{figure}
+
+\newpage
 Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} korpus.
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 
-\newpage
+
 
 \textbf{Analiza napak} 
 \begin{enumerate}
@@ -788,7 +787,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
  \item Napaka v kontekstu: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment in ga pravilno kategorizira, vendar ga napačno razvrsti v kontekstu. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \item Napaka v viru: Ta vrsta napake se pojavi, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \end{enumerate}
- \newpage
+
 
 \section{Povzetek (Summarisation)}
 \begin{table}[h!]
@@ -834,7 +833,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 %Izvleček besedne zveze 
 
 %----------------------------------------------------------------
- \newpage
+
 \section{Izvleček besedne zveze  (Key Phrases)}
 
 
@@ -869,11 +868,12 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \label{pic2}
 \end{figure}
 
+\newpage
 Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus  \hyperref[sec:semeval]{\underline {SemEval-2017}}.
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
- \newpage
+
 \textbf{Analiza napak} 
 
 Najpogosteje opažene napake pri izvlečeku besedne zveze:  
@@ -951,10 +951,10 @@ Paragraph locked by Gregor Kocmut
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }            & \textbf{St. odklon}                  \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Accuracy  & 0.900             & 0.970                  & 0.940              & 0.940                            & 0.018             \\
-\textbf{Google Vertex AI}         & Accuracy  & 0.963              & 0.991              & 0.977             & 0.977                                 & 0.014             \\
-\textbf{AWS SageMaker}.   & Accuracy  & 0.995              & 0.963              & 0.982              & \textbf{0.980}                   & 0.016                         \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.960             & 0.950              & 0.985             & 0.965              & 0.017                                                                    
+\textbf{Transformers}   & Točnost  & 0.900             & 0.970                  & 0.940              & 0.940                            & 0.018             \\
+\textbf{Google Vertex AI}         & Točnost  & 0.963              & 0.991              & 0.977             & 0.977                                 & 0.014             \\
+\textbf{AWS SageMaker}.   & Točnost  & 0.995              & 0.963              & 0.982              & \textbf{0.980}                   & 0.016                         \\
+\textbf{Azure Cognitive Services}   & Točnost  & 0.960             & 0.950              & 0.985             & 0.965              & 0.017                                                                    
 \end{tabular}}
 \end{table}
 
@@ -963,7 +963,7 @@ Paragraph locked by Gregor Kocmut
 \begin{center}
 \includegraphics[width=10cm]{OBJECT.png}
 \end{center}
-\caption{ Zaznava objektov Accuracy rezultat}
+\caption{ Zaznava objektov rezultat}
 \label{pic2}
 \end{figure}
 
