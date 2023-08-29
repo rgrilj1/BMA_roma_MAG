@@ -387,10 +387,10 @@ Ključne značilnosti:
 
  \item Anotacije: Vsaka slika v korpusu je opremljena z oznakami na ravni objekta in koordinatami  okvirja. To pomeni, da je vsak posamezen objekt določene kategorije znotraj slike označen, okoli njega pa je narisano območje z okvirjem, ki označuje njegovo lokacijo. Informacije o anotacijah so ključnega pomena za usposabljanje modelov za detekcijo objektov in segmentacijo.
 
- \item Segmentacija objektov: Poleg anotacij območja z okviri nabor podatkov COCO prav tako zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik. \cite{coco}
+ \item Segmentacija objektov: zagotavlja maske segmentacije na ravni slikovnih pik za vsak posamezen objekt. To pomeni, da so objekti ne le lokalizirani z okviri, ampak so natančno določene tudi meje objektov na ravni slikovnih pik. \cite{coco}
  \end{enumerate}
  
-  COCO podatkovna zbirka je običajno razdeljena na dva sklopa: 
+ Korpus je razdeljen na dva sklopa: 
 \begin{enumerate}
  \item učni (train) z 117.000 primeri
  \item preizkusni (test) z 4.950 primeri
@@ -455,7 +455,7 @@ Ključne značilnosti:
  CNN/Daily Mail je zbirka novičarskih člankov skupaj s povzetki, ki se uporablja za usposabljanje in preizkušanje modelov za povzemanje besedil. Ta nabor podatkov vsebuje različne novičarske članke in njihove povzetke, zaradi česar je primeren za naloge abstraktivnega povzemanja, kjer se ustvarijo povzetki v lastnih besedah, ne le izbirajo stavke iz izvornega besedila.
  Nabor podatkov vsebuje na tisoče člankov s pripadajočimi povzetki, kar omogoča raziskovalcem obsežno treniranje in evaluiranje modelov.\cite{cnn}
  
- Tukaj je nekaj ključnih značilnosti nabora podatkov CNN/Daily Mail:
+Ključne značilnosti korpusa:
  \begin{enumerate}
   \item Novičarski Članki in Povzetki: Nabor podatkov vsebuje novičarske članke iz medijskih virov, kot sta CNN (Cable News Network) in Daily Mail, skupaj s pripadajočimi povzetki. Ti članki pokrivajo različne teme in dogodke ter so različnih dolžin.
  \item Abstraktno Povzemanje: Vključuje ustvarjanje povzetka v povsem novih besedah. 
@@ -476,7 +476,7 @@ Ključne značilnosti:
  
   
   
-CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope: 
+Korpus jerazdeljen na tri sklope: 
 \begin{enumerate}
  \item učni (train) z 287.000 vrsticami  primerov
  \item validacijski (validation) z 13.400 vrsticami primerov
@@ -485,20 +485,20 @@ CNN/Daily Mail podatkovna zbirka je običajno razdeljena na tri sklope:
  
  \subsection{ SemEval -2017}
   \label{sec:semeval}
- SemEval podatkovna zbirka je zbirka besedilnih podatkov, ki je anotirana za različne naloge na področju obdelave naravnega jezika.
+Je zbirka besedilnih podatkov, ki je anotirana za različne naloge na področju obdelave naravnega jezika.
  
-Tukaj je nekaj ključnih značilnosti korpusa SemEval:
+Ključne značilnosti korpusa SemEval:
 \begin{enumerate}
- \item Anotacije: Podatki v SemEval korpusov so običajno anotirani, kar pomeni, da so označeni z dodatnimi informacijami. Na primer, v korpus zbirki za naloge razreševanja sentimenta bi bili vzorci besedil označeni s pozitivnimi, negativnimi ali nevtralnimi sentimenti.
- \item Raznolikost: SemEval podatkovne zbirke zajemajo širok spekter nalog, jezikov in domen. To omogoča raziskovalcem primerjavo modelov in pristopov na različnih področjih.
+ \item Anotacije: Podatki so anotirani, kar pomeni, da so označeni z dodatnimi informacijami. Na primer, v korpus zbirki za naloge razreševanja sentimenta bi bili vzorci besedil označeni s pozitivnimi, negativnimi ali nevtralnimi sentimenti.
+ \item Raznolikost: Zajemajo širok spekter nalog, jezikov in domen. To omogoča raziskovalcem primerjavo modelov in pristopov na različnih področjih.
  \end{enumerate}
  
- Raziskovalna skupnost: SemEval podatkovne zbirke so postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov. \cite{semeval}
+ Raziskovalna skupnost: So postale pomemben del naravnega jezika raziskovalne skupnosti, saj omogočajo primerjavo najnovejših pristopov in tehnologij na enotnem naboru podatkov. \cite{semeval}
 
  
  \begin{table}[h!]
 \caption{Primer Semeval-2017 korpusa}
-    \begin{center}f
+    \begin{center}
         \begin{tabular}{l|ccc}
             label & {\tt text}  \\ \hline
                         {\tt -1} & I missed the Barcelona game yesterday. http://t.co/AqpknXC  \\
@@ -510,7 +510,7 @@ Tukaj je nekaj ključnih značilnosti korpusa SemEval:
 \end{table}
 
 
-SemEval  podatkovna zbirka je običajno razdeljena na tri sklope: 
+Korpus razdeljen na tri sklope: 
 \begin{enumerate}
  \item učni (train) z 49.547 vrsticami  primerov
  \item validacijski (dev) z 12.285 vrsticami primerov
@@ -530,7 +530,7 @@ Je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kje
 
 \emph{Primer:}
 
-Predpostavimo, da razvijamo model za prepoznavanje spam sporočil v elektronski pošti. Model pravilno prepozna 25 sporočil kot nezaželena (spam), ki dejansko vsebujejo nezaželeno vsebino. To pomeni, da imamo 25 primerov "pravih pozitivnih". Te primere model pravilno prepozna kot spam, ker resnično vsebujejo neželeno vsebino.
+Predpostavimo, da razvijamo model za prepoznavanje spam sporočil v elektronski pošti. Model pravilno prepozna 25 sporočil kot nezaželena (spam), ki dejansko vsebujejo nezaželeno vsebino. To pomeni, da imamo 25 primerov "pravilno pozitivnih". Te primere model pravilno prepozna kot spam, ker resnično vsebujejo neželeno vsebino.
 
 
 
