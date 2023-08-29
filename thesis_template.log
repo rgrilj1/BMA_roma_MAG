@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  29 AUG 2023 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  29 AUG 2023 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1450,18 +1450,6 @@ Poglavje 5.
 [23
 
 ]
-Overfull \hbox (0.714pt too wide) in paragraph at lines 560--561
-[]\OT1/cmr/m/n/12 Predpostavimo, da imamo na-pre-den sis-tem za fil-tri-ra-nje 
-ne^^Tzelenih sporo^^Tcil
- []
-
-
-Overfull \hbox (3.9473pt too wide) in paragraph at lines 562--563
-\OT1/cmr/m/n/12 sodi e-po^^Tstno sporo^^Tcilo kot varno (ne-spam), ^^Tceprav vs
-e-buje vse znake ne^^Tzelene
- []
-
-
 Overfull \hbox (11.05833pt too wide) in paragraph at lines 569--570
 \OT1/cmr/m/n/12 Natan^^Tcnost je po-membna me-trika za oce-nje-va-nje uspe^^Tsn
 osti mo-de-lov v razli^^Tcnih
@@ -1857,7 +1845,7 @@ xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis_template.pdf (61 pages, 925151 bytes).
+Output written on thesis_template.pdf (61 pages, 925134 bytes).
 PDF statistics:
  757 PDF objects out of 1000 (max. 8388607)
  638 compressed objects within 7 object streams
