@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {3.2}Analiza sentimenta}{10}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Povzemanje besedila}{11}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Luščenje ključnih besed}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Klasifikacija besedila}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Uvrščanje besedil}{11}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Zaznava objektov}{12}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Korpusi}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kaj je korpus?}{15}{section.4.1}%
@@ -41,6 +41,6 @@
 \contentsline {section}{\numberline {6.2}Analiza sentimenta (Sentiment Analaysis)}{33}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Povzemanje (Summarisation)}{35}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (Key Phrases)}{36}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Klasifikacija besedila (Text Classification)}{38}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil (Text Classification)}{38}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Zaznava objektov (Object Detection)}{39}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Zaključek}{41}{chapter.7}%

@@ -99,7 +99,7 @@ Kot ključen element bomo preučili metrike za ocenjevanje učinkovitosti modelo
 
 Nato se bomo posvetili raznolikim področjem uporabe tehnologij obdelave naravnega jezika. Raziskali bomo, kako se tehnologije uporabljajo v  analizi čustev, povzemanje, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
 
-V poglavju~\nameref{ch4}  bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, klasifikacija besedil in še več.
+V poglavju~\nameref{ch4}  bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, uvrščanje besedil in še več.
 
 V poglavju~\nameref{ch5} bomo podrobneje spoznali uporabljene korpuse, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Korpusi so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
 
@@ -149,7 +149,7 @@ Ena od ključnih prednosti Hugging Face Transformers je enostavnost uporabe. Raz
 Knjižnica ponuja tudi funkcionalnosti za preprosto prenosljivost modelov med različnimi platformami in orodji za povečanje učinkovitosti uporabe modelov na stvarnih sistemih. Poleg tega Hugging Face Transformers omogoča tudi preprosto združevanje z drugimi knjižnicami za strojno učenje in obdelavo podatkov.  
 
 Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
-Transforjerji ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: klasifikacija besedila, prevajanje, povzemanje, znakovna klasifikacija, tabela vprašanj odgovorov, odgovori na vprašanja, razvrščanje brez vzorcev, klepet, generiranje besedila, dodajanje mankajočih besed, podobnost besed  
+Transforjerji ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanje besedil, prevajanje, povzemanje, znakovno uvrščanje, tabela vprašanj odgovorov, odgovori na vprašanja, razvrščanje brez vzorcev, klepet, generiranje besedila, dodajanje mankajočih besed, podobnost besed  
 
 
 \section{Google Cloud}
@@ -165,7 +165,7 @@ Platforma Vertex AI ponuja tudi številne napredne storitve in orodja za razvoj 
 Prvotno je bila izdana leta 2020 in ima že več kot 100.000 uporabnikov po vsem svetu. Uporabljajo jo raznolika podjetja, od majhnih startupov do velikih korporacij, kot so Walmart, Pfizer in Coca-Cola.
 Podpirajo kar 11 različnih jezikov in sicer: Angleščina, Francoščina, Nemščina, Španščina, Kitajščina (poenostavljena), Kitajščina (tradicionalna), Japonščina, Korejščina,Portugalščina ter Ruščina. 
 
-Vertex AI ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: sentimentalna analiza, analiza entitete, analiza sentimenta entitete, analiza sintakse, vsebinska klasifikacija.  
+Vertex AI ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: sentimentalna analiza, analiza entitete, analiza sentimenta entitete, analiza sintakse, vsebinsko uvrščanje.  
 Vertex Ai lahko uporabljamo z več programskimi jeziki kot so: Go, Java, Node.js, Python. 
 
 Ena od ključnih funkcij Vertex AI je tudi funkcija Vertex Data Labeling, ki omogoča enostavno označevanje podatkov za učenje modelov. 
@@ -181,7 +181,7 @@ Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
 \subsection{Amazon SageMaker}
 Amazon SageMaker \cite{sage} je storitev za strojno učenje, ki jo ponuja Amazon Web Services (AWS). Omogoča hitro in enostavno izgradnjo, usposabljanje in razporejanje zmogljivih modelov, kar omogoča razvoj naprednih rešitev in izboljšanje procesov. Ponuja intuitiven uporabniški vmesnik in API-je, ki omogočajo hitro postavitev in upravljanje. SageMaker ponuja tudi integrirano okolje Jupyter, ki omogoča uporabo interaktivnih beležnic za raziskovanje in analizo podatkov. 
 
-Amazon SageMaker ponujaja širok nabor storitev za obdelavo naravnega jezika in sicer: klasifikacija besedila, analiza sentimenta, prepoznavanje imenskih entitet, prevanjanje, povzemanje ter druge. 
+Amazon SageMaker ponujaja širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanje besedil, analiza sentimenta, prepoznavanje imenskih entitet, prevanjanje, povzemanje ter druge. 
 
 Uporabljamo ga lahko z pomočjo dveh različnih programskih jezikov R ter Python. 
 
@@ -252,8 +252,8 @@ Luščenje ključnih besed  \cite{luscenje}Nanaša se na besede ali izraze, ki s
 
 Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
 
- \section{Klasifikacija besedila}
- Klasifikacija besedil \cite{klasifikacija} je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
+ \section{Uvrščanje besedil}
+ Uvrščanje besedil \cite{klasifikacija} je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
 
 Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", itd.).
 
@@ -270,7 +270,7 @@ Postopek objektnega zaznavanja običajno vključuje naslednje korake:
 \begin{enumerate}
  \item Zaznavanje: Model preučuje sliko ali video posnetek in identificira regije, kjer bi se lahko nahajali objekti.
  \item Zaznava lokacije: Po tem, ko so bile regije prepoznane, algoritem določi omejitveno okvirje (bounding boxes), ki natančno označujejo položaje in mejne točke objektov na sliki.
- \item Klasifikacija: Ko so objekti omejeni z omejitvenimi okviri, analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
+ \item Uvrščanje: Ko so objekti omejeni z omejitvenimi okviri, analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
  \item  Sledenje: V video posnetkih je lahko zaželeno, da algoritem sledi objektom skozi različne kadre in tako beleži njihovo gibanje.
  \end{enumerate}
 Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacija prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. 
@@ -585,7 +585,7 @@ Priklic se \cite{recall} nanaša na eno od metrik uspešnosti pri vrednotenju mo
 
 \section{Ocena F1 (F1-score)}
 
-F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in priklic v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot priklic ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoki priklic zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in priklicom, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 ocene kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in priklic pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
+F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in priklic v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so uvrščanje besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot priklic ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoki priklic zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in priklicom, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 ocene kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in priklic pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
 
  Formula za izračun:
@@ -662,7 +662,7 @@ Prepoznane pogoste napake modelov:
 										   & Natančnost  & 0.475                & 0.637                  & 0.513              & 0.670 \\
                                                                                        & F1 ocena    & 0.519                & 0.586                  & 0.562               &\textbf{0.592}   \\   
                                                                                        
-\textbf{Klasifikacija besedila}                                         &  Priklic  & 0.926                &  0.962                   &  0.763                &  0.920  \\  
+\textbf{Uvrščanje besedil}                                         &  Priklic  & 0.926                &  0.962                   &  0.763                &  0.920  \\  
 										   & Natančnost  & 0.930                &  0.957                   &  0.858                &  0.880  \\
                                                                                        & F1 ocena    & \textbf{0.928}                &  0.907                   &  0.808                &  0.900     \\
                                                                                        
@@ -885,10 +885,10 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 % Klasifikacija besedila 
 %----------------------------------------------------------------
 
-\section{Klasifikacija besedila  (Text Classification)}
+\section{Uvrščanje besedil  (Text Classification)}
 \begin{table}[h!]
 \centering
-\caption{Klasifikacija besedila}
+\caption{Uvrščanje besedil}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -913,7 +913,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \begin{center}
 \includegraphics[width=10cm]{CLASSIFICATION.png}
 \end{center}
-\caption{ Klasifikacija besedila  Ocena F1}
+\caption{Uvrščanje besedil  Ocena F1}
 \label{pic2}
 \end{figure}
 
@@ -929,8 +929,8 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 Najpogosteje opažene napake pri klasifikaciji besedila:  
 
 \begin{enumerate}
-  \item Napačna klasifikacija razredov: zaradi pomanjkanja jasnih ločnic med razredi ali zaradi podobnosti med besedili različnih razredov. 
-    \item Nezaznavanje: kadar se izpustijo pomembne informacije iz besedila, kar la povzroči, da je klasifikacija netočna ali nepopolna. 
+  \item Napačno uvrščanje razredov: zaradi pomanjkanja jasnih ločnic med razredi ali zaradi podobnosti med besedili različnih razredov. 
+    \item Nezaznavanje: kadar se izpustijo pomembne informacije iz besedila, kar la povzroči, da je uvrščanje netočno ali nepopolno. 
 
 Paragraph locked by Gregor Kocmut
  \end{enumerate}
