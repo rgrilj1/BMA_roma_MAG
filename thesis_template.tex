@@ -521,7 +521,7 @@ Korpus razdeljen na tri sklope:
 \chapter{Metrike}
 \label{ch6}
 
-\section{Opis spemenljivk za izračun metrik}
+\section{Spremenljivke za izračun metrik}
 \textbf{Pravilno pozitivni (True Positive)}
 
 Pravilno pozitivni \cite{truevsfalse} je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določeno skupino. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten. 
@@ -575,22 +575,22 @@ V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razu
 \end{center}
 
 
-\section{Odzivnost (Recall)}
-Odzivnost se \cite{recall} nanaša na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višja odzivnost pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med odzivnostjo in natančnostjo pri oceni uspešnosti modelov. Primer uporabe odzivnosti  je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. 
+\section{Priklic (Recall)}
+Priklic se \cite{recall} nanaša na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji priklic pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med priklicom in natančnostjo pri oceni uspešnosti modelov. Primer uporabe priklic je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoki kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. 
 
  Formula za izračun:
 \begin{center}
- \Large{Odzivnost = \(\frac{Pravilno Pozitivni}{Pravilno Pozitivni + Napacno Pozitivni}\)}
+ \Large{Priklic = \(\frac{Pravilno Pozitivni}{Pravilno Pozitivni + Napacno Pozitivni}\)}
 \end{center}
 
-\section{F1 ocena (F1-score)}
+\section{Ocena F1 (F1-score)}
 
-F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in odzivnost v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot odzivnost ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoka odzivnost zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in odzivnost, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 ocene kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in odzivnost pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
+F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in priklic v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so klasifikacija besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot priklic ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoki priklic zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in priklicom, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 ocene kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in priklic pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
 
  Formula za izračun:
 \begin{center}
- \Large{F1 ocena = 2 x \(\frac{Natancnost \times Odzivnost}{Natancnost + Odzivnost}\)}
+ \Large{ Ocena F1= 2 x \(\frac{Natancnost \times Priklic }{Natancnost + Priklic}\)}
 \end{center}
 
 \section{Točnost}
@@ -648,21 +648,21 @@ Prepoznane pogoste napake modelov:
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &                                                & \textbf{Transformers}             & \textbf{Google Vertex AI}                & \textbf{AWS SageMaker}               & \textbf{Azure Cognitive Services}                             \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Prepoznavanje imenskih entitet}                         &  Odzivnost  & 0.919               & 0.919                           & 0.961               & 0.824 \\
+\textbf{Prepoznavanje imenskih entitet}                         &  Priklic  & 0.919               & 0.919                           & 0.961               & 0.824 \\
 										   & Natančnost  & 0.923                & 0.920                  &0.954              & 0.858                                         \\
                                                                                        & F1 ocena    & 0.921                & 0.919                  & \textbf{0.958}               & 0.841    \\
 
-\textbf{Analiza sentimenta}                         		 &  Odzivnost  & 0.926              & 0.936                  & 0.891               & 0.981       \\
+\textbf{Analiza sentimenta}                         		 &  Priklic  & 0.926              & 0.936                  & 0.891               & 0.981       \\
 										   & Natančnost  & 0.928               & 0.924                  & 0.862               & 0.862    \\
                                                                                        & F1 ocena    &  0.929              & \textbf{0.930}                   & 0.876               & 0.876      \\            
                                                                                                      
 \textbf{Povzetek}                                      &  ROUGE-L  & 0.192                & 0.306                  & 0.201               & \textbf{0.330}    \\
                                                                                        
-\textbf{Izvleček besedne zveze}  	                           &  Odzivnost  & 0.573                & 0.543                  & 0.622              & 0.530 \\
+\textbf{Izvleček besedne zveze}  	                           &  Priklic  & 0.573                & 0.543                  & 0.622              & 0.530 \\
 										   & Natančnost  & 0.475                & 0.637                  & 0.513              & 0.670 \\
                                                                                        & F1 ocena    & 0.519                & 0.586                  & 0.562               &\textbf{0.592}   \\   
                                                                                        
-\textbf{Klasifikacija besedila}                                         &  Odzivnost  & 0.926                &  0.962                   &  0.763                &  0.920  \\  
+\textbf{Klasifikacija besedila}                                         &  Priklic  & 0.926                &  0.962                   &  0.763                &  0.920  \\  
 										   & Natančnost  & 0.930                &  0.957                   &  0.858                &  0.880  \\
                                                                                        & F1 ocena    & \textbf{0.928}                &  0.907                   &  0.808                &  0.900     \\
                                                                                        
@@ -698,16 +698,16 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}       & \textbf{St. odklon}                         \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.929              & 0.912                  & 0.917              & 0.919  & 0.009                                    \\
+\textbf{Transformers}   & Priklic  & 0.929              & 0.912                  & 0.917              & 0.919  & 0.009                                    \\
 				    &  Natančnost  & 0.924              & 0.945                  & 0.901               & 0.923 & 0.022  \\
                                      & F1 ocena    & 0.927                 & 0.928                  & 0.909             & 0.921   & 0.011 \\
-\textbf{Google Vertex AI}         & Odzivnost  & 0.946             & 0.914              & 0.896              & 0.919     & 0.025                                        \\
+\textbf{Google Vertex AI}         & Priklic  & 0.946             & 0.914              & 0.896              & 0.919     & 0.025                                        \\
                                    &  Natančnost & 0.895              & 0.923              & 0.942              & 0.920              & 0.024                             \\
                                    & F1 ocena   & 0.920              & 0.918              & 0.918              & 0.919                  & 0.001                          \\
-\textbf{AWS SageMaker}.   & Odzivnost & 0.981              & 0.962              & 0.941              & 0.961       & 0.020                                     \\
+\textbf{AWS SageMaker}.   & Priklic & 0.981              & 0.962              & 0.941              & 0.961       & 0.020                                     \\
                                    &  Natančnost & 0.962              & 0.980              & 0.921              & 0.954                & 0.030                             \\
                                    & F1 ocena   & 0.971              & 0.971              & 0.931              & \textbf{0.958}      & 0.023 \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.821              & 0.831             & 0.821              & 0.824   & 0.006                                           \\
+\textbf{Azure Cognitive Services}   & Priklic  & 0.821              & 0.831             & 0.821              & 0.824   & 0.006                                           \\
                        &  Natančnost & 0.831              & 0.841              & 0.903              & 0.858                                   & 0.039        \\
                         & F1 ocena   & 0.826              & 0.836              & 0.860              & 0.841                                    & 0.017                                       
 \end{tabular}}
@@ -746,16 +746,16 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.937              & 0.912                 & 0.930              & 0.926                      & 0.013                \\
+\textbf{Transformers}   & Priklic  & 0.937              & 0.912                 & 0.930              & 0.926                      & 0.013                \\
 				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928                & 0.064                      \\
                                      & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929                  & 0.031   \\
-\textbf{Google Vertex AI}         & Odzivnost  & 0.921              & 0.948              & 0.938              & 0.936                          & 0.014                   \\
+\textbf{Google Vertex AI}         & Priklic  & 0.921              & 0.948              & 0.938              & 0.936                          & 0.014                   \\
                                    &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                          & 0.031                \\
                                    & F1 ocena   & 0.931            & 0.917            & 0.940              & \textbf{0.930}                                & 0.012            \\
-\textbf{AWS SageMaker}.   & Odzivnost  & 0.901              & 0.882              & 0.891              & 0.891              & 0.010                               \\
+\textbf{AWS SageMaker}.   & Priklic  & 0.901              & 0.882              & 0.891              & 0.891              & 0.010                               \\
                                    &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                         & 0.046                   \\
                                    & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876                            & 0.022                        \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.881              & 0.905              & 0.887              & 0.981        & 0.012                                     \\
+\textbf{Azure Cognitive Services}   & Priklic  & 0.881              & 0.905              & 0.887              & 0.981        & 0.012                                     \\
                        &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                      & 0.019       \\
                         & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                        & 0.015                                   
 \end{tabular}}
@@ -841,16 +841,16 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}        & \textbf{St. odklon}                       \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.523              & 0.640                  & 0.556              & 0.573                             & 0.060             \\
+\textbf{Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573                             & 0.060             \\
 				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475  	          	 & 0.068  \\
                                      & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519  			 & 0.058  \\
-\textbf{Google Vertex AI}         & Odzivnost  & 0.499              & 0.541              & 0.589              & 0.543                                       & 0.045      \\
+\textbf{Google Vertex AI}         & Priklic  & 0.499              & 0.541              & 0.589              & 0.543                                       & 0.045      \\
                                    &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637                                      & 0.050       \\
                                    & F1 ocena   & 0.578             & 0.584              & 0.589              & 0.586                                        & 0.005   \\
-\textbf{AWS SageMaker}.   & Odzivnost  & 0.675              & 0.605              & 0.587              & 0.622                         & 0.046                   \\
+\textbf{AWS SageMaker}.   & Priklic  & 0.675              & 0.605              & 0.587              & 0.622                         & 0.046                   \\
                                    &  Natančnost & 0.520              & 0.492             & 0.526             & 0.513                                       & 0.018     \\
                                    & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562   					 & 0.023 \\
-\textbf{Azure Cognitive Services}   & Odzivnost  & 0.532              & 0.559             & 0.500              & 0.530                    & 0.030                        \\
+\textbf{Azure Cognitive Services}   & Priklic  & 0.532              & 0.559             & 0.500              & 0.530                    & 0.030                        \\
                        &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670                                         	 & 0.021 \\
                         & F1 ocena   & 0.595              & 0.600              & 0.579              & \textbf{0.592}                                                  & 0.011                    
 \end{tabular}}
@@ -894,16 +894,16 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \begin{tabular}{lrrrrrr}
 \hline
 \multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}          & \textbf{St. odklon}                   \\ \hline                                                                                                                                                                                                                                                                                                                                           
-\textbf{Transformers}   & Odzivnost  & 0.933             & 0.948                  &  0.896             &  0.926                            & 0.027              \\
+\textbf{Transformers}   & Priklic  & 0.933             & 0.948                  &  0.896             &  0.926                            & 0.027              \\
 				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930   		     & 0.030  \\
                                      & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  \textbf{0.928} 		& 0.013     \\
-\textbf{Google Vertex AI}         & Odzivnost  &  0.842              &  0.901              &  0.844             &  0.962                          & 0.034                   \\
+\textbf{Google Vertex AI}         & Priklic  &  0.842              &  0.901              &  0.844             &  0.962                          & 0.034                   \\
                                    &  Natančnost &  0.989              &  0.924              &  0.959              &  0.957                        & 0.033                     \\
                                    & F1 ocena   &  0.910              &  0.912              &  0.989              &  0.907                           & 0.008                 \\
-\textbf{AWS SageMaker}.   & Odzivnost  &  0.789              &  0.802             &  0.697              &  0.763              & 0.057                              \\
+\textbf{AWS SageMaker}.   & Priklic  &  0.789              &  0.802             &  0.697              &  0.763              & 0.057                              \\
                                    &  Natančnost &  0.879              &  0.799              &  0.895              &  0.858                          & 0.051                   \\
                                    & F1 ocena   &  0.832              &  0.800              &  0.784              &  0.808   			& 0.024    \\
-\textbf{Azure Cognitive Services}   & Odzivnost  &  0.935              &  0.925             &  0.900              &  0.920      & 0.018                                      \\
+\textbf{Azure Cognitive Services}   & Priklic  &  0.935              &  0.925             &  0.900              &  0.920      & 0.018                                      \\
                        &  Natančnost &  0.827              &  0.888              &  0.925             &  0.880                                      & 0.049       \\
                         & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900                                        & 0.018                                  
 \end{tabular}}
