@@ -181,7 +181,7 @@ Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
 \subsection{Amazon SageMaker}
 Amazon SageMaker \cite{sage} je storitev za strojno učenje, ki jo ponuja Amazon Web Services (AWS). Omogoča hitro in enostavno izgradnjo, usposabljanje in razporejanje zmogljivih modelov, kar omogoča razvoj naprednih rešitev in izboljšanje procesov. Ponuja intuitiven uporabniški vmesnik in API-je, ki omogočajo hitro postavitev in upravljanje. SageMaker ponuja tudi integrirano okolje Jupyter, ki omogoča uporabo interaktivnih beležnic za raziskovanje in analizo podatkov. 
 
-Amazon SageMaker ponujaja širok nabor storitev za obdelavo naravnega jezika in sicer: klasifikacija besedila, analiza sentimenta, prepoznavanje imenskih entitet, prevanjanje, povzetek ter druge. 
+Amazon SageMaker ponujaja širok nabor storitev za obdelavo naravnega jezika in sicer: klasifikacija besedila, analiza sentimenta, prepoznavanje imenskih entitet, prevanjanje, povzemanje ter druge. 
 
 Uporabljamo ga lahko z pomočjo dveh različnih programskih jezikov R ter Python. 
 
@@ -616,7 +616,7 @@ Metrika ima širok nabor uporabe v raziskavah in nalogah, ki vključujejo avtoma
   %----------------------------------------------------------------
 % Poglavje (Analiza raziskave) 6
 %----------------------------------------------------------------
-\chapter{Analiza raziskave}
+\chapter{Primerjava orodij}
 \label{ch7}
 Pri analizi raziskave so bili izbrani trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
 
@@ -656,9 +656,9 @@ Prepoznane pogoste napake modelov:
 										   & Natančnost  & 0.928               & 0.924                  & 0.862               & 0.862    \\
                                                                                        & F1 ocena    &  0.929              & \textbf{0.930}                   & 0.876               & 0.876      \\            
                                                                                                      
-\textbf{Povzetek}                                      &  ROUGE-L  & 0.192                & 0.306                  & 0.201               & \textbf{0.330}    \\
+\textbf{Povzemanje}                                      &  ROUGE-L  & 0.192                & 0.306                  & 0.201               & \textbf{0.330}    \\
                                                                                        
-\textbf{Izvleček besedne zveze}  	                           &  Priklic  & 0.573                & 0.543                  & 0.622              & 0.530 \\
+\textbf{Prepoznavanje besednih zvez}  	                           &  Priklic  & 0.573                & 0.543                  & 0.622              & 0.530 \\
 										   & Natančnost  & 0.475                & 0.637                  & 0.513              & 0.670 \\
                                                                                        & F1 ocena    & 0.519                & 0.586                  & 0.562               &\textbf{0.592}   \\   
                                                                                        
@@ -697,7 +697,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}       & \textbf{St. odklon}                         \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}       & \textbf{St. odklon}                         \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Priklic  & 0.929              & 0.912                  & 0.917              & 0.919  & 0.009                                    \\
 				    &  Natančnost  & 0.924              & 0.945                  & 0.901               & 0.923 & 0.022  \\
                                      & F1 ocena    & 0.927                 & 0.928                  & 0.909             & 0.921   & 0.011 \\
@@ -718,7 +718,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 \begin{center}
 \includegraphics[width=10cm]{NER.png}
 \end{center}
-\caption{Prepoznavanje imenskih entitet F1 rezultat}
+\caption{Prepoznavanje imenskih entitet Ocena F1}
 \label{pic2}
 \end{figure}
 
@@ -745,7 +745,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Priklic  & 0.937              & 0.912                 & 0.930              & 0.926                      & 0.013                \\
 				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928                & 0.064                      \\
                                      & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929                  & 0.031   \\
@@ -765,7 +765,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \begin{center}
 \includegraphics[width=10cm]{KP.png}
 \end{center}
-\caption{Analiza sentimenta F1 rezultat}
+\caption{Analiza sentimenta Ocena F1}
 \label{pic2}
 \end{figure}
 
@@ -785,7 +785,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
  \end{enumerate}
 
 
-\section{Povzetek (Summarisation)}
+\section{Povzemanje (Summarisation)}
 \begin{table}[h!]
 \centering
 \caption{Povzetek}
@@ -793,7 +793,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192                        & 0.018               \\
 \textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306                             & 0.013                \\
 \textbf{AWS SageMaker}.   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201                   & 0.016                        \\
@@ -805,7 +805,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 \begin{center}
 \includegraphics[width=10cm]{SUMM.png}
 \end{center}
-\caption{Povzetek F1 rezultat}
+\caption{Povzemanje Ocena F1}
 \label{pic2}
 \end{figure}
 
@@ -830,17 +830,17 @@ Najpogosteje opažene napake pri povzemanju besedila:
 
 %----------------------------------------------------------------
 
-\section{Izvleček besedne zveze  (Key Phrases)}
+\section{Prepoznavanje besednih zvez (Key Phrases)}
 
 
 \begin{table}[h!]
 \centering
-\caption{Izvleček besedne zveze}
+\caption{Prepoznavanje besednih zvez}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}        & \textbf{St. odklon}                       \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}        & \textbf{St. odklon}                       \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573                             & 0.060             \\
 				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475  	          	 & 0.068  \\
                                      & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519  			 & 0.058  \\
@@ -860,7 +860,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \begin{center}
 \includegraphics[width=10cm]{KEY.png}
 \end{center}
-\caption{Izvleček besedne zveze F1 rezultat}
+\caption{Prepoznavanje besednih zvez Ocena F1}
 \label{pic2}
 \end{figure}
 
@@ -893,7 +893,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje}          & \textbf{St. odklon}                   \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}          & \textbf{St. odklon}                   \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Priklic  & 0.933             & 0.948                  &  0.896             &  0.926                            & 0.027              \\
 				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930   		     & 0.030  \\
                                      & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  \textbf{0.928} 		& 0.013     \\
@@ -913,7 +913,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \begin{center}
 \includegraphics[width=10cm]{CLASSIFICATION.png}
 \end{center}
-\caption{ Klasifikacija besedila  F1 rezultat}
+\caption{ Klasifikacija besedila  Ocena F1}
 \label{pic2}
 \end{figure}
 
@@ -946,7 +946,7 @@ Paragraph locked by Gregor Kocmut
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \hline
-\multicolumn{1}{r}{} &   & \textbf{Iteracija 1}             & \textbf{Iteracija 2}                & \textbf{Iteracija 3}               & \textbf{Povprečje }            & \textbf{St. odklon}                  \\ \hline                                                                                                                                                                                                                                                                                                                                           
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje }            & \textbf{St. odklon}                  \\ \hline                                                                                                                                                                                                                                                                                                                                           
 \textbf{Transformers}   & Točnost  & 0.900             & 0.970                  & 0.940              & 0.940                            & 0.018             \\
 \textbf{Google Vertex AI}         & Točnost  & 0.963              & 0.991              & 0.977             & 0.977                                 & 0.014             \\
 \textbf{AWS SageMaker}.   & Točnost  & 0.995              & 0.963              & 0.982              & \textbf{0.980}                   & 0.016                         \\
@@ -959,7 +959,7 @@ Paragraph locked by Gregor Kocmut
 \begin{center}
 \includegraphics[width=10cm]{OBJECT.png}
 \end{center}
-\caption{ Zaznava objektov rezultat}
+\caption{ Zaznava objektov Ocena F1}
 \label{pic2}
 \end{figure}
 
