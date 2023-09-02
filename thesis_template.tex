@@ -792,7 +792,7 @@ Rezultati iz čankov so bili povzeti iz \cite{ner_clanek}.
                                    &  Natančnost & 0.895              & 0.923              & 0.942              & 0.920 (± 0.024  )                                   \\
                                    & F1 ocena   & 0.920              & 0.918              & 0.918              & 0.919 (± 0.001 )                                          \\
   \hline  
-\textbf{AWS SageMaker}.   & Priklic & 0.981              & 0.962              & 0.941              & 0.961 (± 0.020)                                          \\
+\textbf{AWS SageMaker}   & Priklic & 0.981              & 0.962              & 0.941              & 0.961 (± 0.020)                                          \\
                                    &  Natančnost & 0.962              & 0.980              & 0.921              & 0.954 (± 0.030  )                                 \\
                                    & F1 ocena   & 0.971              & 0.971              & 0.931              & \textbf{0.958} (±0.023 )      \\
   \hline
@@ -800,7 +800,7 @@ Rezultati iz čankov so bili povzeti iz \cite{ner_clanek}.
                        &  Natančnost & 0.831              & 0.841              & 0.903              & 0.858  (±0.039 )                                        \\
                         & F1 ocena   & 0.826              & 0.836              & 0.860              & 0.841 (± 0.017 )                                   \\  
   \hline
-  \textbf{Najboljši rezultat poročani z članka}   & Priklic    &               &             &               & 0.918                                           \\
+  \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.918                                           \\
                        &  Natančnost &               &               &             & 0.913                                          \\
                         & F1 ocena   &              &             &               & 0.916 (± 0.33)                                           \\  
      \hline
@@ -840,27 +840,26 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 
-\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline     \hline                                                                                                                                                                                                                                                                                                                                      
-\textbf{Transformers}   & Priklic  & 0.937              & 0.912                 & 0.930              & 0.926                      & 0.013                \\
-				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928                & 0.064                      \\
-                                     & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929                  & 0.031   \\
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                              \\ \hline     \hline                                                                                                                                                                                                                                                                                                                                      
+\textbf{Transformers}   & Priklic  & 0.937              & 0.912                 & 0.930              & 0.926 (±0.013)                                     \\
+				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & 0.928 (±0.064)                                     \\
+                                     & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929 (±0.031)                    \\
 \hline
-\textbf{Google Vertex AI}         & Priklic  & 0.921              & 0.948              & 0.938              & 0.936                          & 0.014                   \\
-                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924                          & 0.031                \\
-                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & \textbf{0.930}                                & 0.012            \\
+\textbf{Google Vertex AI}         & Priklic  & 0.921              & 0.948              & 0.938              & 0.936 (±0.014)                                           \\
+                                   &  Natančnost & 0.942             & 0.888              & 0.943              & 0.924 (±0.031)                                         \\
+                                   & F1 ocena   & 0.931            & 0.917            & 0.940              & \textbf{0.930}  (±0.012)                                        \\
 \hline
-\textbf{AWS SageMaker}.   & Priklic  & 0.901              & 0.882              & 0.891              & 0.891              & 0.010                               \\
-                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862                         & 0.046                   \\
-                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876                            & 0.022                        \\
+\textbf{AWS SageMaker}   & Priklic  & 0.901              & 0.882              & 0.891              & 0.891 (±0.010)                                           \\
+                                   &  Natančnost & 0.821              & 0.853              & 0.912              & 0.862 (±0.046 )                                           \\
+                                   & F1 ocena   & 0.859              & 0.867              & 0.901              & 0.876 (±0.022)                                                  \\
   \hline                                 
-\textbf{Azure Cognitive Services}   & Priklic  & 0.881              & 0.905              & 0.887              & 0.981        & 0.012                                     \\
-                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                      & 0.019       \\
-                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                        & 0.015     \\  
+\textbf{Azure Cognitive Services}   & Priklic  & 0.881              & 0.905              & 0.887              & 0.981 (±0.012)                                            \\
+                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862 (±0.019)                                          \\
+                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876  (±0.015)                                          \\  
   \hline                            
-\textbf{Najboljši rezultat poročani z članka}   & Priklic  &               &               &               & 0.981        & 0.012                                     \\
-                       &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862                                      & 0.019       \\
-                        & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876                                        & 0.015     \\  
-
+  \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.918                                           \\
+                       &  Natančnost &               &               &             & 0.913                                          \\
+                        & F1 ocena   &              &             &               & 0.916 (± 0.33)                                           \\  
                          
 \hline
 \hline                            
@@ -1176,7 +1175,8 @@ Zaključno lahko rečemo, da je obdelava naravnega jezika v oblaku zelo dinamič
 10. 06. 2023].
 \bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano
 10. 06. 2023].
-\bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER). 25.01.2021
+\bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano
+10. 06. 2023].
 \end{thebibliography}
 
 \end{document}
