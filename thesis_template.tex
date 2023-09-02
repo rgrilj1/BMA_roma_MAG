@@ -832,6 +832,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
  \end{enumerate}
 
 \section{Analiza sentimenta}
+Rezultati iz čankov so bili povzeti iz \cite{sent_clanek}.
 
 \begin{table}[h!]
 \centering
@@ -857,9 +858,9 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
                        &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862 (±0.019)                                          \\
                         & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876  (±0.015)                                          \\  
   \hline                            
-  \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.918                                           \\
-                       &  Natančnost &               &               &             & 0.913                                          \\
-                        & F1 ocena   &              &             &               & 0.916 (± 0.33)                                           \\  
+  \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.980                                           \\
+                       &  Natančnost &               &               &             & 0.650                                          \\
+                        & F1 ocena   &              &             &               & 0.782                                         \\  
                          
 \hline
 \hline                            
@@ -891,20 +892,25 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 
 \section{Povzemanje}
+
+Rezultati iz čankov so bili povzeti iz \cite{povz_clanek}.
+
 \begin{table}[h!]
 \centering
 \caption{Povzetek}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
-\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}   & \textbf{St. odklon}                           \\ \hline   \hline                                                                                                                                                                                                                                                                                                                                        
-\textbf{Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192                        & 0.018               \\
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                          \\ \hline   \hline                                                                                                                                                                                                                                                                                                                                        
+\textbf{Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192 (±0.018)                                    \\
 \hline
-\textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306                             & 0.013                \\
+\textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306 (±0.013)                                          \\
 \hline
-\textbf{AWS SageMaker}.   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201                   & 0.016                        \\
+\textbf{AWS SageMaker}   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201 (±0.016)                                           \\
 \hline
-\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & \textbf{0.330}             & 0.052       \\
+\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & 0.330 (±0.052)                  \\
+\hline
+\textbf{Rezultati članka}   & ROUGE-L   &               &              &             & \textbf{0.392}                    \\
 \hline
 \hline                                                                                              
 \end{tabular}}
@@ -941,6 +947,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 
 \section{Prepoznavanje besednih zvez}
 
+Rezultati iz čankov so bili povzeti iz \cite{pharses_clanek}.
 
 \begin{table}[h!]
 \centering
@@ -949,22 +956,26 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 
-\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}        & \textbf{St. odklon}                       \\ \hline \hline                                                                                                                                                                                                                                                                                                                                            
-\textbf{Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573                             & 0.060             \\
-				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475  	          	 & 0.068  \\
-                                     & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519  			 & 0.058  \\
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                        \\ \hline \hline                                                                                                                                                                                                                                                                                                                                            
+\textbf{Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573 (±0.060)                                        \\
+				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475 (±0.068 )  	          	   \\
+                                     & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519 (±0.058)  			   \\
                                      \hline  
-\textbf{Google Vertex AI}         & Priklic  & 0.499              & 0.541              & 0.589              & 0.543                                       & 0.045      \\
-                                   &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637                                      & 0.050       \\
-                                   & F1 ocena   & 0.578             & 0.584              & 0.589              & 0.586                                        & 0.005   \\
+\textbf{Google Vertex AI}         & Priklic  & 0.499              & 0.541              & 0.589              & 0.543 (±0.045)                                            \\
+                                   &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637 (±0.050 )                                          \\
+                                   & F1 ocena   & 0.578             & 0.584              & 0.589              & 0.586 (±0.005)                                          \\
                                    \hline  
-\textbf{AWS SageMaker}.   & Priklic  & 0.675              & 0.605              & 0.587              & 0.622                         & 0.046                   \\
-                                   &  Natančnost & 0.520              & 0.492             & 0.526             & 0.513                                       & 0.018     \\
-                                   & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562   					 & 0.023 \\
+\textbf{AWS SageMaker}   & Priklic  & 0.675              & 0.605              & 0.587              & 0.622  (±0.046)                                         \\
+                                   &  Natančnost & 0.520              & 0.492             & 0.526             & 0.513 (±0.018)                                            \\
+                                   & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562 (±0.023)   					  \\
                                    \hline  
-\textbf{Azure Cognitive Services}   & Priklic  & 0.532              & 0.559             & 0.500              & 0.530                    & 0.030                        \\
-                       &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670                                         	 & 0.021 \\
-                        & F1 ocena   & 0.595              & 0.600              & 0.579              & \textbf{0.592}                                                  & 0.011    \\
+\textbf{Azure Cognitive Services}   & Priklic  & 0.532              & 0.559             & 0.500              & 0.530 (±0.030 )                                        \\
+                       &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670 (±0.021)                                         	  \\
+                        & F1 ocena   & 0.595              & 0.600              & 0.579              & \textbf{0.592}  (±0.011)                                                   \\
+                                   \hline  
+\textbf{Rezultati članka}   & Priklic  &              &              &               &0.543                                            \\
+                       &  Natančnost &             &             &               &0.637                                        	  \\
+                        & F1 ocena   &               &              &               &0.519                                                     \\
                         \hline  
                         \hline                  
 \end{tabular}}
@@ -978,7 +989,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \label{pic2}
 \end{figure}
 
-\newpage
+
 Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus  \hyperref[sec:semeval]{\underline {SemEval-2017}}.
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
@@ -1000,28 +1011,36 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 %----------------------------------------------------------------
 
 \section{Uvrščanje besedil}
+
+Rezultati iz čankov so bili povzeti iz \cite{uvrscanje_clanek}.
+
 \begin{table}[h!]
 \centering
 \caption{Uvrščanje besedil}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
-\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}          & \textbf{St. odklon}                   \\ \hline      \hline                                                                                                                                                                                                                                                                                                                                       
-\textbf{Transformers}   & Priklic  & 0.933             & 0.948                  &  0.896             &  0.926                            & 0.027              \\
-				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930   		     & 0.030  \\
-                                     & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  \textbf{0.928} 		& 0.013     \\
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}      
+                 \\ \hline      \hline                                                                                                                                                                                                                                                                                                                                       
+\textbf{Transformers}   & Priklic  & 0.933             & 0.948                  &  0.896             &  0.926 (±0.027)                                         \\
+				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930 (±0.030)   		      \\
+                                     & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  \textbf{0.928} (±0.013) 		     \\
                                      \hline  
-\textbf{Google Vertex AI}         & Priklic  &  0.842              &  0.901              &  0.844             &  0.962                          & 0.034                   \\
-                                   &  Natančnost &  0.989              &  0.924              &  0.959              &  0.957                        & 0.033                     \\
-                                   & F1 ocena   &  0.910              &  0.912              &  0.989              &  0.907                           & 0.008                 \\
+\textbf{Google Vertex AI}         & Priklic  &  0.842              &  0.901              &  0.844             &  0.962 (±0.034)                                             \\
+                                   &  Natančnost &  0.989              &  0.924              &  0.959              &  0.957 (±0.033)                                             \\
+                                   & F1 ocena   &  0.910              &  0.912              &  0.989              &  0.907 (± 0.008)                                            \\
                                    \hline  
-\textbf{AWS SageMaker}.   & Priklic  &  0.789              &  0.802             &  0.697              &  0.763              & 0.057                              \\
-                                   &  Natančnost &  0.879              &  0.799              &  0.895              &  0.858                          & 0.051                   \\
-                                   & F1 ocena   &  0.832              &  0.800              &  0.784              &  0.808   			& 0.024    \\
+\textbf{AWS SageMaker}   & Priklic  &  0.789              &  0.802             &  0.697              &  0.763 (±0.057)                                            \\
+                                   &  Natančnost &  0.879              &  0.799              &  0.895              &  0.858  (±0.051)                                           \\
+                                   & F1 ocena   &  0.832              &  0.800              &  0.784              &  0.808 (±0.024)   			    \\
                                    \hline  
-\textbf{Azure Cognitive Services}   & Priklic  &  0.935              &  0.925             &  0.900              &  0.920      & 0.018                                      \\
-                       &  Natančnost &  0.827              &  0.888              &  0.925             &  0.880                                      & 0.049       \\
-                        & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900                                        & 0.018   \\
+\textbf{Azure Cognitive Services}   & Priklic  &  0.935              &  0.925             &  0.900              &  0.920  (±0.018)                                           \\
+                       &  Natančnost &  0.827              &  0.888              &  0.925             &  0.880 (±0.049)                                            \\
+                        & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900(±0.018)                                           \\
+                                   \hline  
+\textbf{Rezultati članka}   & Priklic  &                &               &              &  0.757                                            \\
+                       &  Natančnost &                &               &             &  0.707                                            \\
+                        & F1 ocena   &                &                &                &  0.735                                        \\
                         \hline  
                         \hline                                  
 \end{tabular}}
@@ -1041,7 +1060,6 @@ Pri izvajanju naloge klasifikacije besedila je bil uporabljen korpus  \hyperref[
 Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
 
 \vspace{\baselineskip}
-  \newpage
 \textbf{Analiza napak} 
 
 Najpogosteje opažene napake pri klasifikaciji besedila:  
@@ -1050,7 +1068,7 @@ Najpogosteje opažene napake pri klasifikaciji besedila:
   \item Napačno uvrščanje razredov: zaradi pomanjkanja jasnih ločnic med razredi ali zaradi podobnosti med besedili različnih razredov. 
     \item Nezaznavanje: kadar se izpustijo pomembne informacije iz besedila, kar la povzroči, da je uvrščanje netočno ali nepopolno. 
 
-Paragraph locked by Gregor Kocmut
+
  \end{enumerate}
 %----------------------------------------------------------------
 % Zaznava objektov 
@@ -1063,14 +1081,16 @@ Paragraph locked by Gregor Kocmut
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
-\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje }            & \textbf{St. odklon}                  \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
-\textbf{Transformers}   & Točnost  & 0.900             & 0.970                  & 0.940              & 0.940                            & 0.018             \\
+\multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje }                            \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
+\textbf{Transformers}   & Točnost  & 0.900             & 0.970                  & 0.940              & 0.940 (±0.018 )                                    \\
 \hline
-\textbf{Google Vertex AI}         & Točnost  & 0.963              & 0.991              & 0.977             & 0.977                                 & 0.014             \\
+\textbf{Google Vertex AI}         & Točnost  & 0.963              & 0.991              & 0.977             & 0.977 (±0.014)                                           \\
 \hline
-\textbf{AWS SageMaker}.   & Točnost  & 0.995              & 0.963              & 0.982              & \textbf{0.980}                   & 0.016                         \\
+\textbf{AWS SageMaker}  & Točnost  & 0.995              & 0.963              & 0.982              & \textbf{0.980} (±0.016)                                    \\
 \hline
-\textbf{Azure Cognitive Services}   & Točnost  & 0.960             & 0.950              & 0.985             & 0.965              & 0.017 \\
+\textbf{Azure Cognitive Services}   & Točnost  & 0.960             & 0.950              & 0.985             & 0.965 (±0.017)               \\
+\hline
+\textbf{Rezultati članka}   & Točnost  &             &               &              & 0.780               \\
 \hline\hline                                                                   
 \end{tabular}}
 \end{table}
@@ -1177,6 +1197,13 @@ Zaključno lahko rečemo, da je obdelava naravnega jezika v oblaku zelo dinamič
 10. 06. 2023].
 \bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano
 10. 06. 2023].
+\bibitem{sent_clanek} Mayur Wankhade, Annavarapu Chandra Sekhara Rao, Chaitanya Kulkarni: A survey on sentiment analysis methods, applications,
+and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s10462-022-10144-1}  [Dostopano10. 06. 2023].
+\bibitem{povz_clanek} Divakar Yadav, Jalpa Desai, Arun Kumar Yadav: Automatic Text Summarization Methods: A Comprehensive Review. Dostopno na: \url{https://arxiv.org/pdf/2204.01849.pdf}  [Dostopano10. 06. 2023].
+\bibitem{uvrscanje_clanek} Xiaoyu Luo: Efficient English text classification using selected Machine Learning Techniques. Dostopno na: \url{https://www.sciencedirect.com/science/article/pii/S1110016821000806}  [Dostopano10. 06. 2023].
+\bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano10. 06. 2023].
+
+
 \end{thebibliography}
 
 \end{document}
