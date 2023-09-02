@@ -218,9 +218,15 @@ Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu 
  \item Pomoč pri analizi sentimenta, kjer želimo razumeti, kako se osebe, organizacije ali druge entitete omenjene v besedilu nanašajo na določeno temo ali izdelek.
 \end{enumerate}
  
- Primer:
  
- V stavku "Janez Novak je rojen 10. avgusta 1985 v Ljubljani" bi sistem prepoznal "Janez Novak" kot ime osebe, "10. avgust 1985" kot datum in "Ljubljana" kot lokacijo.
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{named.png}
+\end{center}
+\caption{Primer prepoznavanja imenskih entitet}
+\label{pic2}
+\end{figure}
+
 
 
 
@@ -236,10 +242,13 @@ Analiza sentimenta \cite{sentiment} je proces določanja čustvenega odziva, nag
  \item Algoritmi globokega učenja.
  \end{enumerate}
  
- Primer:
-
-Če imamo naslednji stavek: "Ta film je fantastičen, vreden ogleda!", bi analiza sentimenta prepoznala, da je izraz pozitiven.
-Ta analiza temelji na uporabi naravnojezikovnega procesiranja in strojnega učenja.
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{sentiment.png}
+\end{center}
+\caption{Primer analize sentimenta}
+\label{pic2}
+\end{figure}
 
 
  \section{Povzemanje besedila}
@@ -247,10 +256,27 @@ Pri povzermanju besedila \cite{povzetek} gre za postopek ustvarjanja krajšega i
 
 Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporab, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več. 
  
- \section{Luščenje ključnih besed}
-Luščenje ključnih besed  \cite{luscenje}Nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
+  \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{povzetek.png}
+\end{center}
+\caption{Primer povzemanja besedila}
+\label{pic2}
+\end{figure}
+ 
+ \section{Prepoznavanje besedih zvez}
+Prepoznavanje besedih zvez  \cite{luscenje}Nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
 
 Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{kljucne.png}
+\end{center}
+\caption{Primer prepoznavanja besedih zvez}
+\label{pic2}
+\end{figure}
+
 
  \section{Uvrščanje besedil}
  Uvrščanje besedil \cite{klasifikacija} je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
@@ -259,9 +285,15 @@ Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem be
 
 Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed ("Bag-of-Words"), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. 
 
-Primer:
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{uvrscanje.png}
+\end{center}
+\caption{Primer uvrščanja besedil}
+\label{pic2}
+\end{figure}
 
- Lahko klasificiramo e-poštna sporočila kot nezaželjena ali nasprotno, novice glede na tematiko, uporabniške komentarje glede na ton (pozitiven, negativen, nevtralen), itd.
+ 
  
   \section{Zaznava objektov}
 Zaznava objektov \cite{object} je tehnika, ki se uporablja za avtomatsko zaznavanje in identifikacijo objektov na digitalnih slikah ali video posnetkih. Namen te tehnike je, da  prepozna in označi različne objekte v podobi ter jih loči od ozadja ali drugih objektov.
@@ -274,6 +306,13 @@ Postopek objektnega zaznavanja običajno vključuje naslednje korake:
  \item  Sledenje: V video posnetkih je lahko zaželeno, da algoritem sledi objektom skozi različne kadre in tako beleži njihovo gibanje.
  \end{enumerate}
 Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacija prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. 
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{objectDT.png}
+\end{center}
+\caption{Primer zaznave objektov}
+\label{pic2}
+\end{figure}
 
  %----------------------------------------------------------------
 % Poglavje (Uporabljeni dataseti) 6
