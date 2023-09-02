@@ -8,39 +8,39 @@
 \contentsline {chapter}{\numberline {2}Opis ponudnikov in storitev}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Hugging Face}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Hugging Face Transformers }{4}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Google Cloud}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Vertex AI }{5}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.2}Google Cloud}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Vertex AI }{6}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Amazon Web Services }{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{6}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Microsoft Azure}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{7}{subsection.2.4.1}%
-\contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Prepoznavanje imenskih entitet}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Analiza sentimenta}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Povzemanje besedila}{11}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Prepoznavanje besedih zvez}{12}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Uvrščanje besedil}{13}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Zaznava objektov}{14}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Korpusi}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Kaj je korpus?}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Uporabljeni korpusi}{18}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}CoNLL 2003}{18}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}IMDb Reviews}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3} COCO }{20}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail }{23}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5} SemEval - 2017}{23}{subsection.4.2.5}%
-\contentsline {chapter}{\numberline {5}Metrike}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Spremenljivke za izračun metrik}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Natančnost (Precision)}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Priklic (Recall)}{27}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ocena F1 (F1-score)}{28}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Točnost}{28}{section.5.5}%
-\contentsline {section}{\numberline {5.6}ROUGE}{29}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Primerjava orodij}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{34}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta}{35}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Povzemanje}{37}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{38}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{40}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov}{41}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Zaključek}{43}{chapter.7}%
+\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{8}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Microsoft Azure}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{9}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Prepoznavanje imenskih entitet}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Analiza sentimenta}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Povzemanje besedila}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Prepoznavanje besedih zvez}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Uvrščanje besedil}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Zaznava objektov}{16}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Korpusi}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Kaj je korpus?}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Uporabljeni korpusi}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}CoNLL 2003}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}IMDb Reviews}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3} COCO }{22}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4} CNN/Daily Mail }{25}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5} SemEval - 2017}{25}{subsection.4.2.5}%
+\contentsline {chapter}{\numberline {5}Metrike}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Spremenljivke za izračun metrik}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Natančnost (Precision)}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Priklic (Recall)}{29}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ocena F1 (F1-score)}{30}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Točnost}{30}{section.5.5}%
+\contentsline {section}{\numberline {5.6}ROUGE}{31}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Primerjava orodij}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{36}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Analiza sentimenta}{37}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Povzemanje}{39}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{40}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{42}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov}{43}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Zaključek}{45}{chapter.7}%
