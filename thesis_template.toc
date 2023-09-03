@@ -15,12 +15,13 @@
 \contentsline {section}{\numberline {2.4}Microsoft Azure}{8}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{9}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Prepoznavanje imenskih entitet}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Analiza sentimenta}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Povzemanje besedila}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Prepoznavanje besedih zvez}{14}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Uvrščanje besedil}{15}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Zaznava objektov}{16}{section.3.6}%
+\contentsline {section}{\numberline {3.1}Najpogosteje uporabljeni algoritmi po področjih}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analiza sentimenta}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Povzemanje besedila}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Prepoznavanje besedih zvez}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Uvrščanje besedil}{16}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Zaznava objektov}{17}{section.3.7}%
 \contentsline {chapter}{\numberline {4}Korpusi}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kaj je korpus?}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Uporabljeni korpusi}{20}{section.4.2}%
@@ -38,10 +39,10 @@
 \contentsline {section}{\numberline {5.6}ROUGE}{31}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Primerjava orodij}{33}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{35}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta}{36}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Analiza sentimenta}{37}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Povzemanje}{38}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{39}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{41}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov}{42}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Diskusija}{43}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Zaključek}{45}{chapter.7}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{40}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{42}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov}{43}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Diskusija}{44}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Zaključek}{47}{chapter.7}%

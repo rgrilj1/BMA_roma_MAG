@@ -253,6 +253,22 @@ Uporabljamo ga lahko z pomočjo več različnih programskih jezikov C\#, Java, J
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
 \chapter{Izbrana področja uporabe}
+
+
+\section{Najpogosteje uporabljeni algoritmi po področjih}
+
+ Različni algoritmi strojnega učenja se uporabljajo za različne naloge, najboljši algoritem za uporabo pa je odvisen od specifičnega problema. Na primer, linearna regresija je dobra izbira za naloge, pri katerih morate napovedati stalno vrednost, kot je cena hiše. Logistična regresija je dobra izbira za naloge, pri katerih morate predvideti kategorično vrednost, na primer, ali je e-poštno sporočilo vsiljena pošta ali ne. Odločitvena drevesa so dobra izbira za naloge, pri katerih se morate odločiti na podlagi niza funkcij, na primer, ali odobriti posojilo ali ne. SVM-ji so dobra izbira za naloge, pri katerih morate ločiti podatkovne točke v različne razrede, kot je razvrščanje slik kot mačk ali psov. K najbližjih sosedov je dobra izbira za naloge, kjer morate poiskati podobne podatkovne točke, kot je priporočanje izdelkov strankam. 
+ 
+ Za prepoznavanje imenskih entitet  v naravnem jeziku je najbolj poznan algoritem CRF (Conditional Random Field) \cite{ner_clanek}, ki se uporablja zaradi svoje visoke natančnosti in učinkovitosti. Uporablja se v številnih aplikacijah, ki zahtevajo identifikacijo imenskih entitet, kot so prepoznavanje imen oseb, krajev, organizacij itd.
+ 
+
+Pri analizi sentimenta so med najbolj znanimi algoritmi Naive Bayes, Support Vector Machine,  Logistic Regression, Decision Tree, Maximum Entropy  ter K-nearest Neighbors\cite{sent_clanek}. Ti algoritmi se uporabljajo za določanje čustvenega tona v besedilnih podatkih, kot so pozitivni, negativni ali nevtralni. Pri izbiri ustreznega algoritma za analizo sentimenta je ključno upoštevati specifične potrebe naloge in naravo podatkov. 
+
+Za povzemanje je najpogosteje uporabljen algoritem SVM supervised machine learning. --- DODAJ
+Luščenje ključnih besed
+Klasifikacija besedila
+Zazava objektov
+
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
 \label{sec:ner}
@@ -733,6 +749,10 @@ Prepoznane pogoste napake modelov:
 
 V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
+\textbf{Izbrani testni podatki}
+Za analizo obdelave naravnega jezika so bile izbrane tri testne testnih podatkov, vsaka od njih je vsebovala 50 primerov. Razdeljene so bile v tri različne kategorije: novice, finance ter šport. 
+Pri zaznavi objektov pa so bile kategorije: osebe, živali ter vozila.
+
 \newpage
 
 \section{Prepoznavanje imenskih entitet}
@@ -784,6 +804,25 @@ Rezultati iz čankov so bili povzeti iz \cite{ner_clanek}.
 Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} korpus.
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker.
+
+\begin{table}
+\caption{Primeri napak pri prepoznavanje imenskih entitet}
+\begin{tabular}{ | m{10em} | m{8em}| m{5em} | m{7em} |} 
+  \hline
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{AWS SageMaker}   &  \textbf{Transformers} \\ 
+  \hline
+  John Doe je živel v San Franciscu.  & John Doe, San Francisco  & John Doe, San Francisco  & John Doe, San Fran  \\ 
+  \hline
+  Apple je bila ustanovljena leta 1976. & Apple, 1976  & Apple, 1976   & Apple, ustanovljena \\ 
+    \hline
+  To je velikanski robot. & robot &   & robot\\ 
+  \hline
+\end{tabular}
+\end{table}
+
+
+Kot je razvidno iz tabele so pri prvem primeru Transformers naredil napako pri zvezi "San Franciscu", kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto "ustanovljena". V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
+
 
 \textbf{Analiza napak} 
 
