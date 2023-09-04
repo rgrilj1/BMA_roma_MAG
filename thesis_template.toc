@@ -40,9 +40,9 @@
 \contentsline {chapter}{\numberline {6}Primerjava orodij}{33}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{35}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Analiza sentimenta}{37}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Povzemanje}{38}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{40}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{42}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov}{43}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Diskusija}{44}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Zaključek}{47}{chapter.7}%
+\contentsline {section}{\numberline {6.3}Povzemanje}{39}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{41}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{43}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov}{46}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Diskusija}{46}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Zaključek}{49}{chapter.7}%

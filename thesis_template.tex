@@ -805,21 +805,27 @@ Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\und
 
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker.
 
-\begin{table}
-\caption{Primeri napak pri prepoznavanje imenskih entitet}
-\begin{tabular}{ | m{10em} | m{8em}| m{5em} | m{7em} |} 
-  \hline
-  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{AWS SageMaker}   &  \textbf{Transformers} \\ 
-  \hline
-  John Doe je živel v San Franciscu.  & John Doe, San Francisco  & John Doe, San Francisco  & John Doe, San Fran  \\ 
-  \hline
+\begin{table}[h!]
+\begin{center}
+\caption {Primeri napak pri prepoznavanje imenskih entitet} \label{tab:title}
+\begin{tabularx}{1.1\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X |}
+ \hline
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{AWS SageMaker} &  \textbf{Transformers}    \\
+ \hline
+ John Doe je živel v San Franciscu.  & John Doe, San Francisco  & John Doe, San Francisco  & John Doe, San Fran  \\ 
+\hline
   Apple je bila ustanovljena leta 1976. & Apple, 1976  & Apple, 1976   & Apple, ustanovljena \\ 
     \hline
-  To je velikanski robot. & robot &   & robot\\ 
-  \hline
-\end{tabular}
+     To je velikanski robot. & robot  &    & robot \\ 
+    \hline
+\end{tabularx}
+\end{center}
 \end{table}
-
 
 Kot je razvidno iz tabele so pri prvem primeru Transformers naredil napako pri zvezi "San Franciscu", kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto "ustanovljena". V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
 
@@ -882,7 +888,27 @@ Rezultati iz čankov so bili povzeti iz \cite{sent_clanek}.
 Pri analizi imenskih entitet je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} korpus.
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
-
+\begin{table}[h!]
+\begin{center}
+\caption {Primeri napak pri analizi sentimenta} \label{tab:title}
+\begin{tabularx}{1.1\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X |}
+ \hline
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{AWS SageMaker} &  \textbf{Transformers}    \\
+ \hline
+Ta film je odličen.  &Positive   & Positive  &Positive   \\ 
+\hline
+  Ta hrana je zanič. &Negative  &Negative    &Negative  \\ 
+    \hline
+     Nisem siguren kako se počitim ob tem. &Neutral    & Neutral & Neutral \\ 
+    \hline
+\end{tabularx}
+\end{center}
+\end{table}
 
 
 \textbf{Analiza napak} 
@@ -911,7 +937,7 @@ Rezultati iz čankov so bili povzeti iz \cite{povz_clanek}.
 \hline
 \textbf{AWS SageMaker}.   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201 (±0.016)                                           \\
 \hline
-\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & 0.330 (±0.052)                  \\
+\textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & \textbf{0.330} (±0.052)                  \\
 \hline
 \textbf{Rezultati članka}   & ROUGE-L   &               &              &             & \textbf{0.392}                    \\
 \hline
@@ -931,10 +957,37 @@ Pri izdelavi povzetka je bil uporabljen korpus  \hyperref[sec:cnn]{\underline {C
 
 Kot najboljša izbira za ustvarjanje povzetkov je storitev Vertex AI.
 
+\newpage
+
+\textbf{Analiza napak} 
+
+\begin{table}[h!]
+\begin{center}
+\caption {Primeri napak pri analizi sentimenta} \label{tab:title}
+\begin{tabularx}{1.1\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X |}
+ \hline
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Transformers}    \\
+ \hline
+John Doe je živel v San Franciscu. Bil je uspešen poslovnež.   &John Doe, uspešen poslovnež iz San Francisca.    &John Doe je živel v San Franciscu in bil poslovnež. & John Doe, poslovnež, živel v San Franciscu.       \\ 
+\hline
+Apple je bila ustanovljena leta 1976. Je ena največjih tehnoloških podjetij na svetu.  &Apple, ustanovljeno leta 1976, je eno največjih tehnoloških podjetij na svetu.  &Apple, ustanovljeno leta 1976, je največje tehnološko podjetje na svetu. &Apple, tehnološko podjetje, ustanovljeno leta 1976.        \\ 
+    \hline
+     To je velikanski robot.  &Robot je velikanski.    & To je velikanski robot, ki je zelo močan.  & Velikanski, robot.   \\ 
+    \hline
+\end{tabularx}
+\end{center}
+\end{table}
+
+Kot je razvidno iz tabele je Transformers vse stavke zelo slabo oblikoval in so zelo nepovezani. 
 
 \vspace{\baselineskip}
 
-\textbf{Analiza napak} 
+
 
 Najpogosteje opažene napake pri povzemanju besedila:  
 \begin{enumerate}
@@ -997,8 +1050,33 @@ Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus  \hyperref[
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
+  \newpage
 
 \textbf{Analiza napak} 
+
+\begin{table}[h!]
+\begin{center}
+\caption {Primeri napak pri izvlečeku besedne zveze} \label{tab:title}
+\begin{tabularx}{1.1\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X |}
+ \hline
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Transformers}    \\
+ \hline
+John Doe je živel v San Franciscu. Bil je uspešen poslovnež.    &John Doe, uspešen poslovnež, uspešen, poslovnež, San Francisco     &John Doe, San Francisco  & John Doe, Francisco        \\ 
+\hline
+Apple je bila ustanovljena leta 1976. Je ena največjih tehnoloških podjetij na svetu.   &Apple, podjetje, tehnološko, ustanovljeno leta 1976  &Apple, tehnološko podjetje, ustanovljeno  1976  &Apple, podjetje, ustanovljeno leta 1976, tehnološko        \\ 
+    \hline
+     To je velikanski robot.     & velikanski robot &velikanski, robot  &velikanski, robot, ki je zelo močan  \\ 
+    \hline
+\end{tabularx}
+\end{center}
+\end{table}
+
+Iz tabele lahko razberemo, da je do napak prišlo pri uporabi obeh storitev, kot pri  Transformers kakor tudi pri Azure Cognitive Services. Opazimo lahko makajoči  del ključne besede kateri je zelo pomemben, napačno povezovanje besed ter dodajanje neresničnih podatkov.
 
 Najpogosteje opažene napake pri izvlečeku besedne zveze:  
 \begin{enumerate}
@@ -1064,6 +1142,31 @@ Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala stori
 
 \vspace{\baselineskip}
 \textbf{Analiza napak} 
+
+
+\begin{table}[h!]
+\begin{center}
+\caption {Primeri napak pri izvlečeku besedne zveze} \label{tab:title}
+\begin{tabularx}{1.1\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X  
+    | >{\centering\arraybackslash}X |}
+ \hline
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Google Vertex AI } &  \textbf{Transformers}    \\
+ \hline
+John Doe je živel v San Franciscu.     &Novice     &Novice  & Novice        \\ 
+\hline
+Apple je bila ustanovljena leta 1976.    &Novice  &Novice   &Novice        \\ 
+    \hline
+     Ta koncert je bil zelo ganljiv.      & Umetnost  &Glasba  &Glasba  \\ 
+    \hline
+\end{tabularx}
+\end{center}
+\end{table}
+
+Iz tabele lahko razberemo da so bile narejene napake pri obeh ponudnikih, vendar je Google Vertex AI imel manj napak. 
 
 Najpogosteje opažene napake pri klasifikaciji besedila:  
 
