@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  4 SEP 2023 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  4 SEP 2023 20:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1004,7 +1004,16 @@ LaTeX Warning: Label `my-label' multiply defined.
 LaTeX Warning: Label `pic2' multiply defined.
 
 
+LaTeX Warning: Label `tab:title' multiply defined.
+
+
 LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `pic2' multiply defined.
 
 )
 \openout1 = `thesis_template.aux'.
@@ -1073,17 +1082,17 @@ l.139 ...ges/slo/naslovnica} \clearemptydoublepage
 
 ]
 (./front_pages/slo/avtorske_pravice2.tex
-<cc-licenca/cc_cc_30.pdf, id=158, 25.27844pt x 25.27844pt>
+<cc-licenca/cc_cc_30.pdf, id=162, 25.27844pt x 25.27844pt>
 File: cc-licenca/cc_cc_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_cc_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_cc_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74585pt x 18.74585pt.
-<cc-licenca/cc_by_30.pdf, id=159, 18.74034pt x 18.73953pt>
+<cc-licenca/cc_by_30.pdf, id=163, 18.74034pt x 18.73953pt>
 File: cc-licenca/cc_by_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_by_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_by_30.pdf  used on input line 17.
 (pdftex.def)             Requested size: 18.74028pt x 18.73947pt.
-<cc-licenca/cc_sa_30.pdf, id=160, 18.73955pt x 18.73994pt>
+<cc-licenca/cc_sa_30.pdf, id=164, 18.73955pt x 18.73994pt>
 File: cc-licenca/cc_sa_30.pdf Graphic file (type pdf)
 <use cc-licenca/cc_sa_30.pdf>
 Package pdftex.def Info: cc-licenca/cc_sa_30.pdf  used on input line 17.
@@ -1301,7 +1310,7 @@ Hu-gging Face Trans-
 [3
 
 ]
-<figures//transf.png, id=277, 503.38063pt x 326.72063pt>
+<figures//transf.png, id=282, 503.38063pt x 326.72063pt>
 File: figures//transf.png Graphic file (type png)
 <use figures//transf.png>
 Package pdftex.def Info: figures//transf.png  used on input line 151.
@@ -1316,7 +1325,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4 <./figures//transf.png>]
-<figures//cloud.png, id=289, 602.25pt x 341.275pt>
+<figures//cloud.png, id=294, 602.25pt x 341.275pt>
 File: figures//cloud.png Graphic file (type png)
 <use figures//cloud.png>
 Package pdftex.def Info: figures//cloud.png  used on input line 177.
@@ -1340,7 +1349,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-<figures//amazonAWS.png, id=306, 501.875pt x 282.05376pt>
+<figures//amazonAWS.png, id=311, 501.875pt x 282.05376pt>
 File: figures//amazonAWS.png Graphic file (type png)
 <use figures//amazonAWS.png>
 Package pdftex.def Info: figures//amazonAWS.png  used on input line 205.
@@ -1355,7 +1364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./figures//amazonAWS.png>]
-<figures//MSAzure.png, id=315, 1563.8425pt x 872.25874pt>
+<figures//MSAzure.png, id=320, 1563.8425pt x 872.25874pt>
 File: figures//MSAzure.png Graphic file (type png)
 <use figures//MSAzure.png>
 Package pdftex.def Info: figures//MSAzure.png  used on input line 231.
@@ -1388,7 +1397,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9 <./figures//MSAzure.png>]
-<figures//tabela_ponudniki.png, id=334, 793.96625pt x 982.67125pt>
+<figures//tabela_ponudniki.png, id=339, 793.96625pt x 982.67125pt>
 File: figures//tabela_ponudniki.png Graphic file (type png)
 <use figures//tabela_ponudniki.png>
 Package pdftex.def Info: figures//tabela_ponudniki.png  used on input line 247.
@@ -1423,7 +1432,7 @@ menta je klju^^Tcno upo^^Tstevati
 [11
 
 ]
-<figures//named.png, id=349, 804.00375pt x 225.84375pt>
+<figures//named.png, id=354, 804.00375pt x 225.84375pt>
 File: figures//named.png Graphic file (type png)
 <use figures//named.png>
 Package pdftex.def Info: figures//named.png  used on input line 289.
@@ -1441,7 +1450,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [12]
-<figures//sentiment.png, id=361, 813.0375pt x 409.53pt>
+<figures//sentiment.png, id=366, 813.0375pt x 409.53pt>
 File: figures//sentiment.png Graphic file (type png)
 <use figures//sentiment.png>
 Package pdftex.def Info: figures//sentiment.png  used on input line 312.
@@ -1464,7 +1473,7 @@ Overfull \hbox (25.09708pt too wide) in paragraph at lines 322--323
 e in me-tode, ki vklju^^Tcujejo
  []
 
-<figures//povzetek.png, id=373, 813.0375pt x 409.53pt>
+<figures//povzetek.png, id=378, 813.0375pt x 409.53pt>
 File: figures//povzetek.png Graphic file (type png)
 <use figures//povzetek.png>
 Package pdftex.def Info: figures//povzetek.png  used on input line 326.
@@ -1485,7 +1494,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [14 <./figures//sentiment.png>]
-<figures//kljucne.png, id=382, 809.0225pt x 153.57375pt>
+<figures//kljucne.png, id=387, 809.0225pt x 153.57375pt>
 File: figures//kljucne.png Graphic file (type png)
 <use figures//kljucne.png>
 Package pdftex.def Info: figures//kljucne.png  used on input line 339.
@@ -1503,7 +1512,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15 <./figures//povzetek.png> <./figures//kljucne.png>]
-<figures//uvrscanje.png, id=394, 688.5725pt x 428.60126pt>
+<figures//uvrscanje.png, id=399, 688.5725pt x 428.60126pt>
 File: figures//uvrscanje.png Graphic file (type png)
 <use figures//uvrscanje.png>
 Package pdftex.def Info: figures//uvrscanje.png  used on input line 355.
@@ -1521,7 +1530,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [16 <./figures//uvrscanje.png>]
-<figures//objectDT.png, id=403, 144.54pt x 75.1608pt>
+<figures//objectDT.png, id=408, 144.54pt x 75.1608pt>
 File: figures//objectDT.png Graphic file (type png)
 <use figures//objectDT.png>
 Package pdftex.def Info: figures//objectDT.png  used on input line 376.
@@ -1590,7 +1599,7 @@ Overfull \hbox (0.814pt too wide) in paragraph at lines 488--489
 a ^^Ts^^Tcetka"in ^^Tzmaj." 
  []
 
-<figures//000000502136.jpg, id=456, 501.875pt x 424.58624pt>
+<figures//000000502136.jpg, id=462, 501.875pt x 424.58624pt>
 File: figures//000000502136.jpg Graphic file (type jpg)
 <use figures//000000502136.jpg>
 Package pdftex.def Info: figures//000000502136.jpg  used on input line 503.
@@ -1710,13 +1719,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34]
-<figures//NER.png, id=547, 628.311pt x 336.165pt>
+<figures//NER.png, id=551, 628.311pt x 336.165pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
-Package pdftex.def Info: figures//NER.png  used on input line 798.
+Package pdftex.def Info: figures//NER.png  used on input line 797.
 (pdftex.def)             Requested size: 284.52756pt x 152.23718pt.
 
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 826--827
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 827--828
  [] 
  []
 
@@ -1729,7 +1738,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [35 <./figures//NER.png>]
-Overfull \hbox (2.0501pt too wide) in paragraph at lines 837--838
+Overfull \hbox (2.0501pt too wide) in paragraph at lines 835--836
 []\OT1/cmr/m/n/12 Napake imen: to so na-pake v imenu imen-ske en-ti-tete, na pr
 i-mer napa^^Tcna
  []
@@ -1743,10 +1752,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36]
-<figures//KP.png, id=567, 593.052pt x 337.26pt>
+<figures//KP.png, id=571, 593.052pt x 337.26pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
-Package pdftex.def Info: figures//KP.png  used on input line 881.
+Package pdftex.def Info: figures//KP.png  used on input line 878.
 (pdftex.def)             Requested size: 284.52756pt x 161.81091pt.
 
 
@@ -1758,12 +1767,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37 <./figures//KP.png>]
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 909--910
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 911--912
  [] 
  []
 
 
-Overfull \hbox (5.05284pt too wide) in paragraph at lines 916--917
+Overfull \hbox (5.05284pt too wide) in paragraph at lines 919--920
 []\OT1/cmr/m/n/12 Nepravilna iden-ti-fi-ka-cija sen-ti-menta: je ena iz-med naj
 -po-go-steje opa^^Tzenih
  []
@@ -1777,10 +1786,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38]
-<figures//SUMM.png, id=587, 593.052pt x 337.26pt>
+<figures//SUMM.png, id=590, 593.052pt x 337.26pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 950.
+Package pdftex.def Info: figures//SUMM.png  used on input line 951.
 (pdftex.def)             Requested size: 284.52756pt x 161.81091pt.
 
 
@@ -1792,7 +1801,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39 <./figures//SUMM.png>]
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 982--983
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 983--984
  [] 
  []
 
@@ -1805,17 +1814,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [40]
-<figures//KEY.png, id=606, 566.115pt x 337.26pt>
+<figures//KEY.png, id=609, 566.115pt x 337.26pt>
 File: figures//KEY.png Graphic file (type png)
 <use figures//KEY.png>
-Package pdftex.def Info: figures//KEY.png  used on input line 1042.
+Package pdftex.def Info: figures//KEY.png  used on input line 1041.
 (pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (38.01779pt too wide) in paragraph at lines 1049--1050
+Overfull \hbox (38.01779pt too wide) in paragraph at lines 1048--1049
 []\OT1/cmr/m/n/12 Pri iz-va-ja-nju na-loge zvle^^Tcka be-se-dne zveze je bil up
 o-ra-bljen kor-pus [][]$[]$[][]. 
  []
@@ -1829,7 +1838,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41]
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 1075--1076
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 1074--1075
  [] 
  []
 
@@ -1848,22 +1857,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures//CLASSIFICATION.png, id=625, 566.115pt x 337.26pt>
+<figures//CLASSIFICATION.png, id=627, 566.115pt x 337.26pt>
 File: figures//CLASSIFICATION.png Graphic file (type png)
 <use figures//CLASSIFICATION.png>
-Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 1132.
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 1129.
 (pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (35.69005pt too wide) in paragraph at lines 1139--1140
-[]\OT1/cmr/m/n/12 Pri iz-va-ja-nju na-loge kla-si-fi-ka-cije be-se-dila je bil 
-upo-ra-bljen kor-pus [][]$[]$[][]. 
+Overfull \hbox (18.06523pt too wide) in paragraph at lines 1136--1137
+\OT1/cmr/m/n/12 Pri iz-va-ja-nju na-loge kla-si-fi-ka-cije be-se-dila je bil up
+o-ra-bljen kor-pus [][]$[]$[][]. 
  []
 
 
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 1165--1166
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 1162--1163
  [] 
  []
 
@@ -1879,19 +1888,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
 [43]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures//OBJECT.png, id=634, 566.115pt x 337.26pt>
-File: figures//OBJECT.png Graphic file (type png)
-<use figures//OBJECT.png>
-Package pdftex.def Info: figures//OBJECT.png  used on input line 1206.
-(pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1127) has occurred while \output is active []
 
 
 
@@ -1903,8 +1900,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44 <./figures//CLASSIFICATION.png>]
+<figures//OBJECT.png, id=644, 566.115pt x 337.26pt>
+File: figures//OBJECT.png Graphic file (type png)
+<use figures//OBJECT.png>
+Package pdftex.def Info: figures//OBJECT.png  used on input line 1204.
+(pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
 
-LaTeX Warning: Text page 45 contains only floats.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 1243--1244
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1914,7 +1925,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45 <./figures//OBJECT.png>]
+[45]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1923,7 +1934,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
+[46 <./figures//OBJECT.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1933,6 +1944,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [47]
+<figures//graf.png, id=669, 598.089pt x 281.853pt>
+File: figures//graf.png Graphic file (type png)
+<use figures//graf.png>
+Package pdftex.def Info: figures//graf.png  used on input line 1332.
+(pdftex.def)             Requested size: 284.52756pt x 134.088pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1941,14 +1961,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48
-
-]
-Poglavje 7.
-
-Underfull \vbox (badness 2689) has occurred while \output is active []
-
- [49]
+[48]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -1957,94 +1970,119 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[50]
-Underfull \hbox (badness 5064) in paragraph at lines 1328--1329
+[49 <./figures//graf.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[50
+
+]
+Poglavje 7.
+
+Underfull \vbox (badness 2689) has occurred while \output is active []
+
+ [51]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+
+[52]
+Underfull \hbox (badness 5064) in paragraph at lines 1386--1387
 []\OT1/cmr/m/n/12 Hugging Face. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / huggingface . co / learn /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1329--1330
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1388
 []\OT1/cmr/m/n/12 Transformers. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / huggingface . co / learn /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1330--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1388--1389
 []\OT1/cmr/m/n/12 Google Cloud. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 https : / 
 / cloud . google . com /
  []
 
 
-Underfull \hbox (badness 7415) in paragraph at lines 1333--1334
+Underfull \hbox (badness 7415) in paragraph at lines 1391--1392
 []\OT1/cmr/m/n/12 Amazon Sa-ge-Ma-ker. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 htt
 ps : / / aws . amazon . com /
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 1336--1337
+Underfull \hbox (badness 2096) in paragraph at lines 1394--1395
 \OT1/cmtt/m/n/12 blog / named-[]entity-[]recognition-[]and-[]its-[]types/$[][] 
 \OT1/cmr/m/n/12 [Do-sto-pano 10.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1337--1338
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
 []\OT1/cmr/m/n/12 Sentiment Ana-lysis. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 htt
 ps : / / aws . amazon . com /
  []
 
-[51
+[53
 
 ]
-Underfull \hbox (badness 4686) in paragraph at lines 1338--1339
+Underfull \hbox (badness 4686) in paragraph at lines 1396--1397
 []\OT1/cmr/m/n/12 Summarization. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 https : /
  / huggingface . co / tasks /
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 1342--1343
+Underfull \hbox (badness 1038) in paragraph at lines 1400--1401
 []\OT1/cmr/m/n/12 True vs. False and Po-si-tive vs. Ne-ga-tive. Do-sto-pno na: 
 [][]$\OT1/cmtt/m/n/12 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1401
 \OT1/cmtt/m/n/12 / / developers . google . com / machine-[]learning / crash-[]c
 ourse /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1346
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1404
 \OT1/cmtt/m/n/12 datasets / lakshmi25npathi / imdb-[]dataset-[]of-[]50k-[]movie
 -[]reviews$[][]
  []
 
 
-Underfull \hbox (badness 3039) in paragraph at lines 1346--1347
+Underfull \hbox (badness 3039) in paragraph at lines 1404--1405
 []\OT1/cmr/m/n/12 COCO 2017 Da-ta-set. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 htt
 ps : / / www . kaggle . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1406--1407
 []\OT1/cmr/m/n/12 SemEval-datasetst. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 https
  : / / www . kaggle . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1406--1407
 \OT1/cmtt/m/n/12 datasets / azzouza2018 / semevaldatadets ? resource = download
 $[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1407--1409
 []\OT1/cmr/m/n/12 Accuracy. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 https : / / de
 velopers . google . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1407--1409
 \OT1/cmtt/m/n/12 machine-[]learning / crash-[]course / classification / accurac
 y$[][] \OT1/cmr/m/n/12 [Do-
  []
@@ -2057,37 +2095,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1353
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1411
 []\OT1/cmr/m/n/12 Precision and Re-call. Do-sto-pno na: [][]$\OT1/cmtt/m/n/12 h
 ttps : / / developers .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1353
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1411
 \OT1/cmtt/m/n/12 google . com / machine-[]learning / crash-[]course / classific
 ation /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1353--1355
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
 []\OT1/cmr/m/n/12 Arya Roy: Re-cent Trends in Na-med En-tity Re-co-gni-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1353--1355
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
 \OT1/cmr/m/n/12 (NER).Dostopno na: [][]$\OT1/cmtt/m/n/12 https : / / arxiv . or
 g / pdf / 2101 . 11420 . pdf$[][]
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 1358--1359
+Underfull \hbox (badness 5036) in paragraph at lines 1416--1417
 []\OT1/cmr/m/n/12 Xiaoyu Luo: Effi-ci-ent En-glish text clas-si-fi-ca-tion usin
 g se-lec-
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 1358--1359
+Underfull \hbox (badness 2126) in paragraph at lines 1416--1417
 \OT1/cmr/m/n/12 ted Ma-chine Le-ar-ning Te-ch-niques. Do-sto-pno na: [][]$\OT1/
 cmtt/m/n/12 https : / / www .
  []
@@ -2100,7 +2138,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53] (./thesis_template.aux)
+[55] (./thesis_template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2111,13 +2149,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis_template.out' has not changed.
-(rerunfilecheck)             Checksum: FDFAB212B7CFE165FFD3F45558E492E7;5005.
+(rerunfilecheck)             Checksum: 2D877DBC96F1F1F6067FC27D7EFFE392;5204.
  ) 
 Here is how much of TeX's memory you used:
- 13947 strings out of 476025
- 226889 string characters out of 5790017
- 1870388 words of memory out of 5000000
- 33891 multiletter control sequences out of 15000+600000
+ 13969 strings out of 476025
+ 227241 string characters out of 5790017
+ 1869388 words of memory out of 5000000
+ 33900 multiletter control sequences out of 15000+600000
  528184 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,79p,996b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2138,10 +2176,10 @@ live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/
 2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis_template.pdf (69 pages, 2295330 bytes).
+Output written on thesis_template.pdf (71 pages, 2363739 bytes).
 PDF statistics:
- 870 PDF objects out of 1000 (max. 8388607)
- 718 compressed objects within 8 object streams
- 220 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 891 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 232 named destinations out of 1000 (max. 500000)
+ 403 words of extra memory for PDF output out of 10000 (max. 10000000)
 
