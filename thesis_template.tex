@@ -264,10 +264,10 @@ Uporabljamo ga lahko z pomočjo več različnih programskih jezikov C\#, Java, J
 
 Pri analizi sentimenta so med najbolj znanimi algoritmi Naive Bayes, Support Vector Machine,  Logistic Regression, Decision Tree, Maximum Entropy  ter K-nearest Neighbors\cite{sent_clanek}. Ti algoritmi se uporabljajo za določanje čustvenega tona v besedilnih podatkih, kot so pozitivni, negativni ali nevtralni. Pri izbiri ustreznega algoritma za analizo sentimenta je ključno upoštevati specifične potrebe naloge in naravo podatkov. 
 
-Za povzemanje je najpogosteje uporabljen algoritem SVM supervised machine learning. --- DODAJ
-Luščenje ključnih besed
-Klasifikacija besedila
-Zazava objektov
+Za povzemanje sta najpogosteje uporabljena algoritema PageRank and TextRank algoritma. \cite{summ_clanek}
+Za luščenje ključnih besed je napogosteje uporabljen algoritem TextRank . \cite{kljucne_clanek}
+Klasifikacija besedila je najpogosteje uporabljen algoritem SVM supervised machine learning.  \cite{summ_clanek} 
+Pri zazava objektov so najogosteje uporabljeni R-CNN, R-FCN, FPN, in Casecade R-CNN algoritmi\cite{zaznava_clanek}.
 
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
@@ -1036,6 +1036,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \end{tabular}}
 \end{table}
 
+  \newpage
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{KEY.png}
@@ -1049,14 +1050,14 @@ Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus  \hyperref[
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
-  \newpage
 
+  \newpage
 \subsection{Analiza napak pri izvlečeku besedne zveze} 
 
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri izvlečeku besedne zveze} \label{tab:title}
-\begin{tabularx}{1.1\textwidth} { 
+\begin{tabularx}{1.0\textwidth} { 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X  
@@ -1065,7 +1066,7 @@ Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Az
  \hline
   \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Transformers}    \\
  \hline
-John Doe je živel v San Franciscu. Bil je uspešen poslovnež.    &John Doe, uspešen poslovnež, uspešen, poslovnež, San Francisco     &John Doe, San Francisco  & John Doe, Francisco        \\ 
+John Doe je živel v San Franciscu. Bil je uspešen poslovnež.    &John Doe, uspešen poslovnež, San Francisco    &John Doe, San Francisco  & John Doe, Francisco        \\ 
 \hline
 Apple je bila ustanovljena leta 1976. Je ena največjih tehnoloških podjetij na svetu.   &Apple, podjetje, tehnološko, ustanovljeno leta 1976  &Apple, tehnološko podjetje, ustanovljeno  1976  &Apple, podjetje, ustanovljeno leta 1976, tehnološko        \\ 
     \hline
@@ -1085,7 +1086,8 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
  \end{enumerate}
 
 
-  \newpage
+
+
 %----------------------------------------------------------------
 % Klasifikacija besedila 
 %----------------------------------------------------------------
@@ -1132,7 +1134,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \label{pic2}
 \end{figure}
 
-
+  \newpage
 Pri izvajanju naloge klasifikacije besedila je bil uporabljen korpus  \hyperref[sec:imdb]{\underline {IMDb Reviews}}.
 
 Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
@@ -1201,7 +1203,7 @@ Najpogosteje opažene napake pri klasifikaciji besedila:
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=10cm]{OBJECT.png}
+\includegraphics[width=9cm]{OBJECT.png}
 \end{center}
 \caption{ Zaznava objektov Ocena F1}
 \label{pic2}
@@ -1212,13 +1214,11 @@ Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} k
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
-
-
 \subsection{Analiza napak pri zaznavi objektov} 
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri zaznavi objektov} \label{tab:title}
-\begin{tabularx}{1.1\textwidth} { 
+\begin{tabularx}{1.0\textwidth} { 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X  
@@ -1327,6 +1327,7 @@ V zaznavanju objektov je prvo mesto zasedla storitev AWS Cognitive Services, tak
 Ocena cene v tabeli je bila določena glede na stroške ene iteracije glede na storitev. Pomembno je omeniti da smo za odprtokodno rešitev koristili virtualni stroj. 
 Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev.Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure. Google Vertex AI je bil ob uporabi še v razvoju, in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja.
 
+ \newpage
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{graf.png}
@@ -1335,6 +1336,7 @@ Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri
 \label{pic2}
 \end{figure}
 
+I grafa je razvidno da je najprimernejša storitev Azure Cognitive Services saj je najcenejša ter najenostavnejša rešitev za uporabo. 
 
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
@@ -1415,6 +1417,9 @@ and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s104
 \bibitem{povz_clanek} Divakar Yadav, Jalpa Desai, Arun Kumar Yadav: Automatic Text Summarization Methods: A Comprehensive Review. Dostopno na: \url{https://arxiv.org/pdf/2204.01849.pdf}  [Dostopano10. 06. 2023].
 \bibitem{uvrscanje_clanek} Xiaoyu Luo: Efficient English text classification using selected Machine Learning Techniques. Dostopno na: \url{https://www.sciencedirect.com/science/article/pii/S1110016821000806}  [Dostopano10. 06. 2023].
 \bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano10. 06. 2023].
+\bibitem{zaznava_clanek} Lixuan Du, Rongyu Zhang, Xiaotian Wang : Overview of two-stage object detection algorithms . Dostopno na: \url{https://iopscience.iop.org/article/10.1088/1742-6596/1544/1/012033/pdf}  [Dostopano10. 06. 2023].
+\bibitem{summ_clanek} NLP Text Summarization – Popular Machine Learning And Deep Learning Algorithms . Dostopno na: \url{https://spotintelligence.com/2022/12/01/nlp-text-summarization/}  [Dostopano10. 06. 2023].
+\bibitem{ključne_clanek} Algorithms to Detect Phrases and Keywords from Text . Dostopno na: \url{https://saturncloud.io/blog/algorithms-to-detect-phrases-and-keywords-from-text/}  [Dostopano10. 06. 2023].
 
 
 \end{thebibliography}
