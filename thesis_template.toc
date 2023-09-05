@@ -43,13 +43,13 @@
 \contentsline {section}{\numberline {6.2}Analiza sentimenta}{37}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{38}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Povzemanje besedila}{39}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{41}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{42}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{44}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{45}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{46}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov}{46}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{48}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Diskusija}{49}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Odločitvena tabela}{50}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Zaključek}{53}{chapter.7}%
+\contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{40}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{41}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{43}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{44}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{45}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov}{45}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{47}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Diskusija}{48}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Odločitvena tabela}{49}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Zaključek}{51}{chapter.7}%

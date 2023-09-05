@@ -627,7 +627,7 @@ Korpus razdeljen na tri sklope:
 %----------------------------------------------------------------
 \chapter{Metrike}
 \label{ch6}
-V tem poglavju bomo obravnavali ključne metrike, ki so izbrane zaradi njihove univerzalnosti in razširjenosti v znanstvenih člankih za poročanje rezultatov. Te metrike predstavljajo standardni način izražanja in ocenjevanja raziskovalnih ugotovitev ter omogočajo primerjavo z drugimi študijami. Uporaba teh splošno priznanih metrik bo zagotovila natančno in ustrezno vrednotenje rezultatov naše magistrske naloge.
+V tem poglavju bomo obravnavali ključne metrike, ki so izbrane zaradi njihove univerzalnosti in razširjenosti v znanstvenih člankih za poročanje rezultatov. Te metrike predstavljajo standardni način izražanja in ocenjevanja raziskovalnih ugotovitev ter omogočajo primerjavo z drugimi študijami. Uporaba teh splošno priznanih metrik bo zagotovila natančno in ustrezno vrednotenje rezultatov naše raziskave.
 
 \section{Spremenljivke za izračun metrik}
 \textbf{Pravilno pozitivni }
@@ -684,7 +684,7 @@ V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razu
 
 
 \section{Priklic }
-Priklic se \cite{recall} nanaša na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji priklic pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med priklicom in natančnostjo pri oceni uspešnosti modelov. Primer uporabe priklica je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. 
+Priklic se \cite{percision} nanaša na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji priklic pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med priklicom in natančnostjo pri oceni uspešnosti modelov. Primer uporabe priklica je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. 
 
  Formula za izračun:
 \begin{center}
@@ -733,7 +733,7 @@ Izbrani so bili trije največji ponudniki storitev v oblaku: Google Cloud, Amazo
 \textbf{Analiza napak}
 
 
-Pri raziskovanju modelov in korpusov, hitro spoznamo da so lahko modeli celo preveč prilagojeni (overfit) določenemu področju, kar pomeni da preveč podrobno pozna eno področje, na katerem je bil model treniran in ne more dobro razumeti novih podatkov/primerov, kakor tudi da so premalo podrobni ali premalo raznoliki. 
+Pri raziskovanju modelov in korpusov, hitro spoznamo da so lahko modeli celo preveč prilagojeni  določenemu področju, kar pomeni da preveč podrobno pozna eno področje, na katerem je bil model treniran in ne more dobro razumeti novih podatkov/primerov, kakor tudi da so premalo podrobni ali premalo raznoliki. 
 
 Zato so najbolj poznani in razširjeni modeli, učeni na širokem naboru različnih podatkov, da je možnost napake manjša. 
 
@@ -754,10 +754,10 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 \textbf{Izbrani testni podatki}
 
-Za analizo obdelave naravnega jezika so bile izbrane tri testne testnih podatkov, vsaka od njih je vsebovala 50 primerov. Razdeljene so bile v tri različne kategorije: novice, finance ter šport. 
-Pri zaznavi objektov pa so bile kategorije: osebe, živali ter vozila.
+Za analizo obdelave naravnega jezika so bile izbrane tri množice testne testnih podatkov, vsaka od njih je vsebovala 50 primerov. Razdeljene so bile v tri različne kategorije: novice, finance ter šport. 
+Pri zaznavi objektov pa so bile izbrane nslednje kategorije: osebe, živali ter vozila.
 
-V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
+V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo vrednosti od povprečja. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
 \newpage
 
@@ -932,7 +932,7 @@ Najpogosteje opažene napake pri analizi sentimenta:
 
 \begin{table}[h!]
 \centering
-\caption{Povzetek}
+\caption{Povzemanje besedila}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -959,7 +959,7 @@ Najpogosteje opažene napake pri analizi sentimenta:
 \label{pic2}
 \end{figure}
 
-Pri izdelavi povzetka je bil uporabljen korpus CNN/Daily Mail (glej poglavje~\ref{sec:cnn}).
+Pri povzemanju je bil uporabljen korpus CNN/Daily Mail (glej poglavje~\ref{sec:cnn}).
 
 Kot najboljša izbira za ustvarjanje povzetkov se je izkazala storitev Azure Cognitive Services.
 
@@ -1022,10 +1022,10 @@ Najpogosteje opažene napake pri povzemanju besedila:
                                      & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519 (±0.058)  			   \\
                                      \hline  
 \textbf{Google Vertex AI}         & Priklic  & 0.499              & 0.541              & 0.589              & 0.543 (±0.045)                                            \\
-                                   &  Natančnost & 0.688             & 0.635              & 0.589              & 0.637 (±0.050 )                                          \\
+                                   &  Natančnost & 0.688             & 0.635              & 0.589              & \textbf{0.637} (±0.050 )                                          \\
                                    & F1 ocena   & 0.578             & 0.584              & 0.589              & 0.586 (±0.005)                                          \\
                                    \hline  
-\textbf{AWS SageMaker}   & Priklic  & 0.675              & 0.605              & 0.587              & 0.622  (±0.046)                                         \\
+\textbf{AWS SageMaker}   & Priklic  & 0.675              & 0.605              & 0.587              &\textbf{0.622}  (±0.046)                                         \\
                                    &  Natančnost & 0.520              & 0.492             & 0.526             & 0.513 (±0.018)                                            \\
                                    & F1 ocena   & 0.587             & 0.543             & 0.555              & 0.562 (±0.023)   					  \\
                                    \hline  
@@ -1051,7 +1051,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \end{figure}
 
 
-Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus (glej poglavje~\ref{sec:semeval}).
+Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus SemEval 2017(glej poglavje~\ref{sec:semeval}).
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
@@ -1140,7 +1140,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \end{figure}
 
   \newpage
-Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus  IMDb Reviews (glej poglavje~\ref{sec:imdb}).
+Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus IMDb Reviews (glej poglavje~\ref{sec:ch9}).
 
 Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Transformers.
 
