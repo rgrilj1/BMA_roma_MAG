@@ -250,31 +250,31 @@ Uporabljamo ga lahko z pomočjo več različnih programskih jezikov, kot so: C\#
 \label{pic2}
 \end{figure}
 
-V tabeli so predstavljeni stroški uporabe posameznih storitev. Pri nekaterih je potrebno plačati le virtualna okolja, za Azure Cognitive Services pa plačamo glede na zahtevke. Pomembno je omeniti, da je v tabeli dodana cena za Transformers, katere lahko uporabljamo tudi na svojih lokalnih napravah. 
+V tabeli so predstavljeni stroški uporabe posameznih storitev. Pri nekaterih je potrebno plačati le virtualna okolja, za Azure Cognitive Services pa plačamo glede na zahtevke. Pomembno je omeniti, da je v tabeli uporabljena cena za Transformers, katere lahko uporabljamo tudi lokalno. 
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
 \chapter{Izbrana področja uporabe}
 
 
-\section{Najpogosteje uporabljeni algoritmi po področjih}
+\section{Najpogosteje uporabljeni algoritmi po področjih uporabe}
 
- Različni algoritmi strojnega učenja se uporabljajo za različne naloge, najboljši algoritem za uporabo pa je odvisen od specifičnega problema. Na primer, linearna regresija je dobra izbira za naloge, pri katerih morate napovedati stalno vrednost, kot je cena hiše. Logistična regresija je dobra izbira za naloge, pri katerih morate predvideti kategorično vrednost, na primer, ali je e-poštno sporočilo vsiljena pošta ali ne. Odločitvena drevesa so dobra izbira za naloge, pri katerih se morate odločiti na podlagi niza funkcij, na primer, ali odobriti posojilo ali ne. SVM-ji so dobra izbira za naloge, pri katerih morate ločiti podatkovne točke v različne razrede, kot je razvrščanje slik kot mačk ali psov. K najbližjih sosedov je dobra izbira za naloge, kjer morate poiskati podobne podatkovne točke, kot je priporočanje izdelkov strankam. 
+ Različni algoritmi strojnega učenja se uporabljajo za različne naloge, najboljši algoritem za uporabo pa je odvisen od specifičnega problema. Na primer, linearna regresija je dobra izbira za naloge, pri katerih je potrebno napovedati stalno vrednost, kot je cena hiše. Logistična regresija je dobra izbira za naloge, pri katerih morate predvideti kategorično vrednost, na primer, ali je e-poštno sporočilo nezaželjeno ali ne. Odločitvena drevesa so dobra izbira za naloge, pri katerih se je potrebno odločiti na podlagi niza funkcij, na primer, ali odobriti posojilo ali ne. SVM-ji so dobra izbira za naloge, pri katerih morate ločiti podatkovne točke v različne razrede, kot je razvrščanje slik kot mačk ali psov. K najbližjih sosedov je dobra izbira za naloge, kjer morate poiskati podobne podatkovne točke, kot je priporočanje izdelkov strankam. 
  
- Za prepoznavanje imenskih entitet  v naravnem jeziku je najbolj poznan algoritem CRF (Conditional Random Field) \cite{ner_clanek}, ki se uporablja zaradi svoje visoke natančnosti in učinkovitosti. Uporablja se v številnih aplikacijah, ki zahtevajo identifikacijo imenskih entitet, kot so prepoznavanje imen oseb, krajev, organizacij itd.
+ Za prepoznavanje imenskih entitet  v naravnem jeziku je najbolj poznan algoritem CRF\cite{ner_clanek}, ki se uporablja zaradi svoje visoke natančnosti in učinkovitosti. Uporablja se v številnih aplikacijah, ki zahtevajo identifikacijo imenskih entitet, kot so prepoznavanje imen oseb, krajev, organizacij ter druge.
  
 
-Pri analizi sentimenta so med najbolj znanimi algoritmi Naive Bayes, Support Vector Machine,  Logistic Regression, Decision Tree, Maximum Entropy  ter K-nearest Neighbors\cite{sent_clanek}. Ti algoritmi se uporabljajo za določanje čustvenega tona v besedilnih podatkih, kot so pozitivni, negativni ali nevtralni. Pri izbiri ustreznega algoritma za analizo sentimenta je ključno upoštevati specifične potrebe naloge in naravo podatkov. 
+Pri analizi sentimenta so med najbolj znanimi algoritmi Naive Bayes, Support Vector Machine,  Logistic Regression, Decision Tree, Maximum Entropy  ter K-nearest Neighbors\cite{sent_clanek}. Ti algoritmi se uporabljajo za določanje čustvenega tona v besedilu, kot je pozitivn, negativen ali nevtralen. Pri izbiri ustreznega algoritma za analizo sentimenta je ključno upoštevati specifične potrebe naloge in raznolikost podatkov. 
 
-Za povzemanje sta najpogosteje uporabljena algoritema PageRank and TextRank algoritma. \cite{summ_clanek}
-Za luščenje ključnih besed je napogosteje uporabljen algoritem TextRank . \cite{kljucne_clanek}
-Klasifikacija besedila je najpogosteje uporabljen algoritem SVM supervised machine learning.  \cite{summ_clanek} 
+Za povzemanje besedila sta najpogosteje uporabljena algoritema PageRank in TextRank\cite{summ_clanek}.
+Za luščenje ključnih besed je napogosteje uporabljen algoritem TextRank\cite{kljucne_clanek}. 
+Pri uvrščanju besedila je najpogosteje uporabljen algoritem SVM\cite{summ_clanek}. 
 Pri zazavi objektov so najogosteje uporabljeni R-CNN, R-FCN, FPN, in Casecade R-CNN algoritmi\cite{zaznava_clanek}.
 
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
 \label{sec:ner}
-Prepoznavanje imenskih entitet \cite{ner} je tehnika na področju obdelave naravnega jezika, ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
+Prepoznavanje imenskih entitet\cite{ner} je tehnika na področju obdelave naravnega jezika, ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
 
 Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo.
 
@@ -306,7 +306,6 @@ Analiza sentimenta \cite{sentiment} je proces določanja čustvenega odziva, nag
  \item Pravilni pristopi: Uporabljajo se predvsem pravila in vzorci za identifikacijo pozitivnih in negativnih izrazov v besedilu. Na primer, besede, kot so 'dobro', 'fantastično', 'radostno' itd., bi bile označene kot pozitivne, medtem ko bi bile besede, kot so 'slabo','žalostno', 'neznosno' in tako dalje označene kot negativne.
  \item Strojno učenje na podlagi besedila: Ta pristop vključuje uporabo algoritmov strojnega učenja, ki so naučeni prepoznati čustveni naboj besed v besedilu na podlagi velikega števila označenih podatkov (besedil s čustvenimi oznakami). 
  \item Analiza sentimenta s čustvenimi slovarji: Ta pristop vključuje uporabo slovarjev z besedami in izrazoslovjem, ki so povezani z določenimi čustvi. Besedilo se nato preveri in oceni glede na prisotnost pozitivnih ali negativnih besed iz čustvenih slovarjev.
- \item Algoritmi globokega učenja.
  \end{enumerate}
  
  \begin{figure}[h!]
@@ -321,7 +320,7 @@ Analiza sentimenta \cite{sentiment} je proces določanja čustvenega odziva, nag
  \section{Povzemanje besedila}
 Pri povzermanju besedila \cite{povzetek} gre za postopek ustvarjanja krajšega in jedrnatega povzetka iz daljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno pri velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
 
-Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporab, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več. 
+Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporabe, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več. 
  
   \begin{figure}[h!]
 \begin{center}
@@ -332,7 +331,7 @@ Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo
 \end{figure}
  
  \section{Prepoznavanje besedih zvez}
-Prepoznavanje besedih zvez  \cite{luscenje}  se nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
+Prepoznavanje besedih zvez  \cite{luscenje}  se nanaša na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
 
 Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
 
@@ -348,7 +347,7 @@ Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen
  \section{Uvrščanje besedil}
  Uvrščanje besedil \cite{klasifikacija} je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
 
-Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. 'in', 'ali', 'je', 'na', itd.).
+Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedila. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. 'in', 'ali', 'je', 'na' ter ostali).
 
 Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed, kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. 
 
@@ -371,7 +370,7 @@ Postopek objektnega zaznavanja običajno vključuje naslednje korake:
  \item Zaznava lokacije: Po tem, ko so bile regije prepoznane, algoritem določi omejitvene okvirje, ki natančno označujejo položaje in mejne točke objektov na sliki.
  \item Uvrščanje: Ko so objekti omejeni z omejitvenimi okviri, analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
  \item  Sledenje: V video posnetkih je lahko zaželeno, da algoritem sledi objektom skozi različne kadre in tako beleži njihovo gibanje.
- \end{enumerate}'
+ \end{enumerate}
 Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacijo prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. 
  \begin{figure}[h!]
 \begin{center}
@@ -387,7 +386,7 @@ Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih 
 \chapter{Korpusi}
 \label{ch5}
 \section{Kaj je korpus?}
-Je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskav, učenja modelov ali drugih postopkov obdelave podatkov. Korpusi vsebujejo različne vrste podatkov, od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
+Je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskave, učenja modelov ali drugih postopkov obdelave podatkov. Korpusi vsebujejo različne vrste podatkov od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
 V kontekstu računalniškega znanstvenega modeliranja in strojnega učenja so korpusi ključnega pomena, saj služijo kot osnova za razvoj, treniranje in evalvacijo modelov. Modeli se učijo na teh podatkih, tako da prepoznajo vzorce in povezave med vhodnimi podatki in ciljnimi izhodi.
 Na primer, v naravnojezikovni obdelavi  korpusov vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. 
 
@@ -406,12 +405,14 @@ Nekatere ključne točke o uporabi korpusov:
 
 \emph{Razvoj modelov za redke jezike: } Razvoj  modelov obdelave naravnega jezika za redke jezike zahteva ustrezne korpuse v ciljnem jeziku, kar je lahko izziv, saj so ti korpusi pogosto omejeni ali pa jih sploh ni na voljo.
 
+
+
 Pomembno je, da so korpusi pravilno pripravljeni, imajo ustrezne metapodatke in so primerni za ciljno nalogo, da bi omogočili kakovostno analizo in doseganje uporabnih rezultatov.
 
 \section{Uporabljeni korpusi}
 \subsection{CoNLL 2003}
 \label{sec:ch8}
- Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika, prevsem za nalogo imenskih entitet.  Imenuje se po konferenci CoNLL leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
+ Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistema obdelavo naravnega jezika, prevsem za nalogo imenskih entitet.  Imenuje se po konferenci CoNLL leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
  Korpus CoNLL 2003 je priljubljen referenčni korpus za prepoznavanje poimenovanih entitet naravnega jezika v obdelavi naravnega jezika. Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
 Poimenovane entitete so razdeljene v štiri glavne kategorije:
@@ -453,9 +454,9 @@ CoNLL2003  podatkovna zbirka je  razdeljena na tri sklope:
 
 \subsection{IMDb Reviews}
 \label{sec:ch9}
-IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset \cite{imdb}. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb\cite{imdb_page}..
+IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset \cite{imdb}. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb\cite{imdb_page}.
 
-Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo. 
+Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo. 
 
 \begin{table}[h!]
 \centering
@@ -463,7 +464,7 @@ Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost up
 \resizebox{\textwidth}{!}{%
  \begin{tabular}{l|ccc}
 \hline
-{review}            & sentiment             \\ \hline                                                                                                                                                                                                                                                                                                                                           
+{pregled}            & sentiment             \\ \hline                                                                                                                                                                                                                                                                                                                                           
 If you like original gut wrenching laughter you will like movie.   & positive            \\
 A rating of '1', depressing and relentlessly bad this movie is.  & negative                                                                     
 \end{tabular}}
@@ -1424,7 +1425,7 @@ and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s104
 \bibitem{zaznava_clanek} Lixuan Du, Rongyu Zhang, Xiaotian Wang : Overview of two-stage object detection algorithms . Dostopno na: \url{https://iopscience.iop.org/article/10.1088/1742-6596/1544/1/012033/pdf}  [Dostopano10. 06. 2023].
 \bibitem{summ_clanek} NLP Text Summarization – Popular Machine Learning And Deep Learning Algorithms . Dostopno na: \url{https://spotintelligence.com/2022/12/01/nlp-text-summarization/}  [Dostopano10. 06. 2023].
 \bibitem{kljucne_clanek} Algorithms to Detect Phrases and Keywords from Text . Dostopno na: \url{https://saturncloud.io/blog/algorithms-to-detect-phrases-and-keywords-from-text/}  [Dostopano10. 06. 2023].
-\bibitem{IMDB_page} IMDB . Dostopno na: \url{https://www.imdb.com/}  [Dostopano10. 06. 2023].
+\bibitem{imdb_page} IMDB . Dostopno na: \url{https://www.imdb.com/}  [Dostopano10. 06. 2023].
 
 \end{thebibliography}
 
