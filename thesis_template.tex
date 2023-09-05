@@ -274,7 +274,7 @@ Pri zazavi objektov so najogosteje uporabljeni R-CNN, R-FCN, FPN, in Casecade R-
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
 \label{sec:ner}
-Prepoznavanje imenskih entitet\cite{ner} je tehnika na področju obdelave naravnega jezika, ki se uporablja za prepoznavanje in klasifikacijo besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
+Prepoznavanje imenskih entitet\cite{ner} je tehnika na področju obdelave naravnega jezika, ki se uporablja za prepoznavanje in uvrščanje besed v besedilu. Te posebne vrste so imenovane entitete, kot so imena oseb, organizacij, lokacij, datumov, številk, denarnih zneskov in drugih specifičnih poimenovanj.
 
 Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu ter jim pripisati ustrezno kategorijo.
 
@@ -347,7 +347,7 @@ Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen
  \section{Uvrščanje besedil}
  Uvrščanje besedil \cite{klasifikacija} je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
 
-Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedila. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. 'in', 'ali', 'je', 'na' ter ostali).
+Postopek uvrščanja besedila se običajno začne s pripravo in čiščenjem besedila. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za uvrščanje besedila (npr. 'in', 'ali', 'je', 'na' ter ostali).
 
 Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed, kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. 
 
@@ -657,7 +657,7 @@ Predpostavimo, da imamo model za prepoznavanje nezaželjenih sporočil v elektro
 
 \textbf{Napačno negativni}
 
-Napačno negativni \cite{truevsfalse} označujejo napako, ki se pojavi v kontekstu klasifikacije ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov. 
+Napačno negativni \cite{truevsfalse} označujejo napako, ki se pojavi v kontekstu uvrščanja besedila ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov. 
 V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer napačno negativni. 
 
 \emph{Primer:}
@@ -704,7 +704,7 @@ F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besed
 \section{Točnost}
 Točnost \cite{accuracy} je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
-V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so 'pozitivno', 'negativno' ali 'neutralno'. Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah uvrščanja besedila. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so 'pozitivno', 'negativno' ali 'neutralno'. Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
 
  Formula za izračun:
 \begin{center}
@@ -927,9 +927,8 @@ Najpogosteje opažene napake pri analizi sentimenta:
  \item Napaka v viru: zaznamo jo, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \end{enumerate}
 
-
+\newpage
 \section{Povzemanje besedila}
-
 \begin{table}[h!]
 \centering
 \caption{Povzemanje besedila}
@@ -962,15 +961,13 @@ Najpogosteje opažene napake pri analizi sentimenta:
 Pri povzemanju je bil uporabljen korpus CNN/Daily Mail (glej poglavje~\ref{sec:cnn}).
 
 Kot najboljša izbira za ustvarjanje povzetkov se je izkazala storitev Azure Cognitive Services.
-
 \newpage
-
 
 \subsection{Analiza napak pri povzemanju besedila} 
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri povzemanju besedila} \label{tab:title}
-\begin{tabularx}{1.1\textwidth} { 
+\begin{tabularx}{0.9\textwidth} { 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X  
@@ -1062,7 +1059,7 @@ Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Az
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri izvlečeku besedne zveze} \label{tab:title}
-\begin{tabularx}{1.0\textwidth} { 
+\begin{tabularx}{0.9\textwidth} { 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X 
   | >{\centering\arraybackslash}X  
@@ -1144,7 +1141,6 @@ Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus IMDb Reviews 
 
 Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Transformers.
 
-\vspace{\baselineskip}
 
 \subsection{Analiza napak pri uvrščanje besedila} 
 
@@ -1172,7 +1168,7 @@ Apple je bila ustanovljena leta 1976.    &Novice  &Tehnologija   &Novice        
 
 Iz tabele lahko razberemo da so bile narejene napake pri obeh ponudnikih, vendar je Transformers imel manj napak. 
 
-Najpogosteje opažene napake pri klasifikaciji besedila:  
+Najpogosteje opažene napake pri uvrščanju besedila:  
 
 \begin{enumerate}
   \item Napačno uvrščanje razredov: zaradi pomanjkanja jasnih ločnic med razredi ali zaradi podobnosti med besedili različnih razredov. 
@@ -1294,25 +1290,25 @@ Najpogosteje opažene napake pri zaznavi objektov:
    \hline                                                          
 \end{tabular}}
 \end{table}
-Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
+Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  uvrščanje besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
 Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla storitev AWS Sage Maker. Na drugem mestu je bila odprtokodna storitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI ponudnika Google Cloud.
 
 Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugo mesto se je uvrstila odprtokodna rešitev Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google.
 
-Najboljši rezultati so bili doseženi pri povzemanju z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
+Najboljši rezultati  pri povzemanju besedila so bili doseženi z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
 
 Pri ocenjevanju izvlečka besednih zvez je prvo mesto osvojila storitev Azure Cognitive Services. Na drugem mestu je Vertex AI, medtem ko je tretjem mestu  AWS SageMaker.
 
-FPri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+Pri uvrščanju besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
 
-V zaznavanju objektov je prvo mesto zasedla storitev AWS Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
+V zaznavanju objektov je prvo mesto zasedla storitev Azure Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
 
 
 \section{Odločitvena tabela}
 
 \begin{table}[h!]
 \centering
-\caption{Zaznava objektov }
+\caption{Odločitvena tabela }
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -1330,7 +1326,7 @@ V zaznavanju objektov je prvo mesto zasedla storitev AWS Cognitive Services, tak
 \end{table}
 
 Ocena cene v tabeli je bila določena glede na stroške ene iteracije glede na storitev. Pomembno je omeniti da smo za odprtokodno rešitev koristili virtualni stroj. 
-Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure. Google Vertex AI je bil ob v času raziskave še v razvoju, in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja.
+Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure Cognitive Services. Google Vertex AI je bil ob v času raziskave še v razvoju in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja.
 
  \newpage
  \begin{figure}[h!]
@@ -1341,7 +1337,7 @@ Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri
 \label{pic2}
 \end{figure}
 
-I grafa je razvidno da je najprimernejša storitev Azure Cognitive Services saj je najcenejša ter najenostavnejša rešitev za uporabo. 
+Iz grafa je razvidno, da je najprimernejša storitev Azure Cognitive Services saj je najcenejša ter najenostavnejša rešitev za uporabo. 
 
 %----------------------------------------------------------------
 % Poglavje (Chapter) 6
@@ -1349,18 +1345,18 @@ I grafa je razvidno da je najprimernejša storitev Azure Cognitive Services saj 
 \chapter{Zaključek}
 \label{ch8}
 
-Magistrska naloga je obravnavala širok spekter področij obdelave naravnega jezika z uporabo oblačnih ter odprtokodne rešitev Hugging Face Transformers. Cilj raziskave je bil razumeti, kako se različni ponudniki odzivajo na različne izzive in naloge ter določiti njihovo uspešnost na posameznih področjih. Analiza je zajemala prepoznavanje imenskih entitet, analizo sentimenta, povzemanje besedil, luščenje ključnih besed, klasifikacijo besedila ter zaznavo objektov.
+Magistrska naloga je obravnavala širok spekter področij obdelave naravnega jezika z uporabo oblačnih ter odprtokodne rešitev Transformers. Cilj raziskave je bil razumeti, kako se različni ponudniki odzivajo na različne izzive in naloge ter določiti njihovo uspešnost na posameznih področjih. Analiza je zajemala prepoznavanje imenskih entitet, analizo sentimenta, povzemanje besedil, luščenje ključnih besed, uvrščanje besedila ter zaznavo objektov.
 
 
-Na podlagi raziskave smo ugotovili, da se je vsak ponudnik specializiral in izkazal za najboljšega na določenem področju. Pri prepoznavanju imenskih entitet je izstopal AWS SageMaker s svojo natančnostjo. Google Cloud Vertex AI je blestel pri analizi sentimenta, kar je ključno za razumevanje čustev in mnenj v besedilu. Pri povzemanju besedila se je Azure Cognitive Services izkazal kot najboljši, kar poudarja njegovo sposobnost za ustvarjanje povzetkov besedilnih vsebin. Pri luščenju ključnih besed je bila rešitev Azure Cognitive Services v ospredju, saj je omogočala najboljši izvleček bistvenih informacij iz besedil. Hugging Face je prevzel vodilno vlogo pri analizi sentimenta z natančnostjo določanja čustvenega tona besedil.  AWS SageMaker pa se je izkazal kot močan v zaznavanju objektov.
+Na podlagi raziskave smo ugotovili, da se je vsak ponudnik specializiral in izkazal za najboljšega na določenem področju. Pri prepoznavanju imenskih entitet je izstopal AWS SageMaker s svojo natančnostjo. Google Cloud Vertex AI je blestel pri analizi sentimenta, kar je ključno za razumevanje čustev in mnenj v besedilu. Pri povzemanju besedila se je Azure Cognitive Services izkazal kot najboljši, kar poudarja njegovo sposobnost za ustvarjanje povzetkov besedilnih vsebin. Pri luščenju ključnih besed je bila rešitev Azure Cognitive Services v ospredju, saj je omogočala najboljši izvleček bistvenih informacij iz besedil. Transformers je prevzel vodilno vlogo pri analizi sentimenta z natančnostjo določanja čustvenega tona besedil.  AWS SageMaker pa se je izkazal kot močan v zaznavanju objektov.
 
 Vendar pa je pomembno poudariti, da ima vsak ponudnik v oblaku svoje prednosti in omejitve ter da izbira med njimi temelji na specifičnih potrebah in zahtevah uporabnika. Pri izbiri pravega ponudnika je potrebno upoštevati različne faktorje, kot so natančnost, hitrost, stroške, prilagodljivost in integracija z obstoječimi sistemi.
 
-Pomembno je izpostaviti, da so rezultati analize odvisni od specifičnih nalog,modelov in korpusov , ki so bili uporabljeni v tej raziskavi. Prav tako se tehnologije in zmogljivosti ponudnikov v oblaku nenehno razvijajo, zato je pomembno, da podjetja in raziskovalci ostanejo pozorni na nove in izboljšane metode za obdelavo naravnega jezika.
+Pomembno je izpostaviti, da so rezultati analize odvisni od specifičnih nalog, modelov in korpusov, ki so bili uporabljeni v tej raziskavi. Prav tako se tehnologije in zmogljivosti ponudnikov v oblaku nenehno razvijajo, zato je pomembno, da podjetja in raziskovalci ostanejo pozorni na nove in izboljšane modele za obdelavo naravnega jezika in zaznavo objektov.
 
-V sklepni fazi je jasno, da noben ponudnik v oblaku ne izstopa kot absolutno najboljši na vseh področjih. Različni ponudniki imajo svoje prednosti in posebne zmogljivosti glede na določene naloge obdelave naravnega jezika. Izbiro ustrezne platforme je torej smiselno prilagoditi specifičnim potrebam in zahtevam. Hkrati pa je obetavno opazovati, kako odprtokodne rešitve, kot je Hugging Face Transformers, pridobivajo na veljavi in omogočajo raziskovalcem in razvijalcem, da izkoristijo najboljše iz več različnih tehnologij.
+V sklepni fazi je jasno, da noben ponudnik v oblaku ne izstopa kot absolutno najboljši na vseh področjih. Različni ponudniki imajo svoje prednosti in posebne zmogljivosti glede na določene naloge obdelave naravnega jezika. Izbiro ustrezne platforme je torej smiselno prilagoditi specifičnim potrebam in zahtevam. Obetavno pa je  opazovati, kako odprtokodne rešitve, kot je  Transformers pridobivajo na veljavi in omogočajo raziskovalcem in razvijalcem, da izkoristijo najboljše iz več različnih tehnologij.
 
-Zaključno lahko rečemo, da je obdelava naravnega jezika v oblaku zelo dinamično in obetavno področje, ki bo še naprej oblikovalo način, kako interaktiramo s tehnologijo in kako razumemo ter uporabljamo jezikovne vsebine v digitalnem svetu.
+Zaključimo, da je obdelava naravnega jezika ter zaznave objektov v oblaku zelo dinamično in obetavno področje, ki bo še naprej oblikovalo način, kako napredujemo s tehnologijo in kako razumemo ter uporabljamo jezikovne vsebine v digitalnem svetu.
 
 
 % ---------------------------------------------------------------
@@ -1405,27 +1401,23 @@ Zaključno lahko rečemo, da je obdelava naravnega jezika v oblaku zelo dinamič
 \bibitem{klasifikacija} Text Classification. Dostopno na: \url{https://huggingface.co/tasks/text-classification}  [Dostopano 10. 06. 2023].
 \bibitem{object} Object Detection. Dostopno na: \url{https://huggingface.co/tasks/object-detection}  [Dostopano 10. 06. 2023].
 \bibitem{truevsfalse} True vs. False and Positive vs. Negative. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative}  [Dostopano10. 06. 2023].
-\bibitem{conll}Erik F. Tjong Kim Sang and Fien De Meulder  ``Introduction to the CoNLL-2003''. Dostopno na: \url{https://aclanthology.org/W03-0419.pdf}  [Dostopano
-10. 06. 2023].
+\bibitem{conll}Erik F. Tjong Kim Sang and Fien De Meulder  ``Introduction to the CoNLL-2003''. Dostopno na: \url{https://aclanthology.org/W03-0419.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{imdb} IMDB Dataset Reviews. Dostopno na: \url{https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews}  [Dostopano 10. 06. 2023].
 \bibitem{coco} COCO 2017 Dataset. Dostopno na: \url{https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset}  [Dostopano 10. 06. 2023].
 \bibitem{cnn} CNN dailymail Dataset. Dostopno na: \url{https://huggingface.co/datasets/cnn_dailymail}  [Dostopano 10. 06. 2023].
 \bibitem{semeval} SemEval-datasetst. Dostopno na: \url{https://www.kaggle.com/datasets/azzouza2018/semevaldatadets?resource=download}  [Dostopano 10. 06. 2023].
-\bibitem{accuracy} Accuracy. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/accuracy}  [Dostopano
-10. 06. 2023].
-\bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano
-10. 06. 2023].
-\bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano
-10. 06. 2023].
+\bibitem{accuracy} Accuracy. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/accuracy}  [Dostopano 10. 06. 2023].
+\bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano 10. 06. 2023].
+\bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{sent_clanek} Mayur Wankhade, Annavarapu Chandra Sekhara Rao, Chaitanya Kulkarni: A survey on sentiment analysis methods, applications,
-and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s10462-022-10144-1}  [Dostopano10. 06. 2023].
-\bibitem{povz_clanek} Divakar Yadav, Jalpa Desai, Arun Kumar Yadav: Automatic Text Summarization Methods: A Comprehensive Review. Dostopno na: \url{https://arxiv.org/pdf/2204.01849.pdf}  [Dostopano10. 06. 2023].
-\bibitem{uvrscanje_clanek} Xiaoyu Luo: Efficient English text classification using selected Machine Learning Techniques. Dostopno na: \url{https://www.sciencedirect.com/science/article/pii/S1110016821000806}  [Dostopano10. 06. 2023].
-\bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano10. 06. 2023].
-\bibitem{zaznava_clanek} Lixuan Du, Rongyu Zhang, Xiaotian Wang : Overview of two-stage object detection algorithms . Dostopno na: \url{https://iopscience.iop.org/article/10.1088/1742-6596/1544/1/012033/pdf}  [Dostopano10. 06. 2023].
-\bibitem{summ_clanek} NLP Text Summarization – Popular Machine Learning And Deep Learning Algorithms . Dostopno na: \url{https://spotintelligence.com/2022/12/01/nlp-text-summarization/}  [Dostopano10. 06. 2023].
-\bibitem{kljucne_clanek} Algorithms to Detect Phrases and Keywords from Text . Dostopno na: \url{https://saturncloud.io/blog/algorithms-to-detect-phrases-and-keywords-from-text/}  [Dostopano10. 06. 2023].
-\bibitem{imdb_page} IMDB . Dostopno na: \url{https://www.imdb.com/}  [Dostopano10. 06. 2023].
+and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s10462-022-10144-1}  [Dostopano 10. 06. 2023].
+\bibitem{povz_clanek} Divakar Yadav, Jalpa Desai, Arun Kumar Yadav: Automatic Text Summarization Methods: A Comprehensive Review. Dostopno na: \url{https://arxiv.org/pdf/2204.01849.pdf}  [Dostopano 10. 06. 2023].
+\bibitem{uvrscanje_clanek} Xiaoyu Luo: Efficient English text classification using selected Machine Learning Techniques. Dostopno na: \url{https://www.sciencedirect.com/science/article/pii/S1110016821000806}  [Dostopano 10. 06. 2023].
+\bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano 10. 06. 2023].
+\bibitem{zaznava_clanek} Lixuan Du, Rongyu Zhang, Xiaotian Wang : Overview of two-stage object detection algorithms . Dostopno na: \url{https://iopscience.iop.org/article/10.1088/1742-6596/1544/1/012033/pdf}  [Dostopano 10. 06. 2023].
+\bibitem{summ_clanek} NLP Text Summarization – Popular Machine Learning And Deep Learning Algorithms . Dostopno na: \url{https://spotintelligence.com/2022/12/01/nlp-text-summarization/}  [Dostopano 10. 06. 2023].
+\bibitem{kljucne_clanek} Algorithms to Detect Phrases and Keywords from Text . Dostopno na: \url{https://saturncloud.io/blog/algorithms-to-detect-phrases-and-keywords-from-text/}  [Dostopano 10. 06. 2023].
+\bibitem{imdb_page} IMDB . Dostopno na: \url{https://www.imdb.com/}  [Dostopano 10. 06. 2023].
 
 \end{thebibliography}
 
