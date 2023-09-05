@@ -10,10 +10,10 @@
 \contentsline {subsection}{\numberline {2.1.1}Hugging Face Transformers }{4}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Google Cloud}{5}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Vertex AI }{6}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Amazon Web Services }{6}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Amazon Web Services }{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{7}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Microsoft Azure}{8}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{8}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Najpogosteje uporabljeni algoritmi po področjih}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{12}{section.3.2}%
