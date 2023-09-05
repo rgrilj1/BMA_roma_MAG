@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.2}Google Cloud}{5}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Vertex AI }{6}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Amazon Web Services }{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{7}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Microsoft Azure}{8}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{9}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{11}{chapter.3}%
@@ -32,9 +32,9 @@
 \contentsline {subsection}{\numberline {4.2.5} SemEval - 2017}{25}{subsection.4.2.5}%
 \contentsline {chapter}{\numberline {5}Metrike}{27}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Spremenljivke za izračun metrik}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Natančnost (Precision)}{29}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Priklic (Recall)}{29}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ocena F1 (F1-score)}{30}{section.5.4}%
+\contentsline {section}{\numberline {5.2}Natančnost)}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Priklic }{29}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ocena F1}{30}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Točnost}{30}{section.5.5}%
 \contentsline {section}{\numberline {5.6}ROUGE}{31}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Primerjava orodij}{33}{chapter.6}%
@@ -43,13 +43,13 @@
 \contentsline {section}{\numberline {6.2}Analiza sentimenta}{37}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{38}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Povzemanje besedila}{39}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{40}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{41}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{43}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{44}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{45}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{41}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{42}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{44}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{45}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{46}{subsection.6.5.1}%
 \contentsline {section}{\numberline {6.6}Zaznava objektov}{46}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{47}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Diskusija}{48}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Odločitvena tabela}{49}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Zaključek}{51}{chapter.7}%
+\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{48}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Diskusija}{49}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Odločitvena tabela}{50}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Zaključek}{53}{chapter.7}%

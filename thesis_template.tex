@@ -23,8 +23,8 @@
  
 
 %================================================================
-% SLO: Odkomentiraj "\SLOtrue " za izbiro slovenskega jezika
-% ENG: Uncomment "\SLOfalse" to chose English languagge
+% SLO: Odkomentiraj '\SLOtrue ' za izbiro slovenskega jezika
+% ENG: Uncomment '\SLOfalse' to chose English languagge
 %================================================================
 \newif\ifSLO
 \newif\ifTRACKEXIST
@@ -48,9 +48,9 @@
  \TRACKEXISTfalse
 %\TRACKEXISTtrue
 
-% default course name is "Computer science" if your course name is "Data science", set the following switch to false
-\TRACKCStrue % uncomment if the thesis is from course "Information science"
-%\TRACKCSfalse % uncomment if the thesis is from course "Data Science"
+% default course name is 'Computer science' if your course name is 'Data science', set the following switch to false
+\TRACKCStrue % uncomment if the thesis is from course 'Information science'
+%\TRACKCSfalse % uncomment if the thesis is from course 'Data Science'
 % -------------------------------------------------------------------------------------------
 % End of language, program and course adjustment
 % -------------------------------------------------------------------------------------------
@@ -90,22 +90,23 @@
 \chapter{Uvod}
 \label{ch:uvod}
 
+ Also see~\ref{ch4}
+
+
 Obdelava naravnega jezika je eno izmed najhitreje razvijajočih se področij v umetni inteligenci, ki se ukvarja z obdelavo, razumevanjem in generiranjem naravnega jezika, kot ga uporabljamo ljudje za komunikacijo. Napredne tehnike obdelave naravnega jezika in modeli so v zadnjem desetletju privedli do prebojev v številnih storitvah, ki segajo od avtomatskega prevajanja in analize čustev do odgovarjanja na vprašanja in samodejnega povzemanja besedil, zato je zelo zanimivo področje za analizo. 
 
 Cilj te magisterske naloge je podrobneje raziskati ter analizirati različne ponudnike storitev za obdelavo naravnega jezika ter zaznavo objektov, uporabo različnih korpusov glede na različna področja uporabe, predstavljene bodo najpogosteje uporabljene metrike za evalvacijo modelov. Potrebno je povdariti, da je na trgu prisotnih veliko storitev, tako za velika podjetja kot tudi za končne uporabnike. Opazimo lahko tudi veliko število odprtokodnih rešitev, ki so lahko nekoliko specifična glede na področje uporabe.
 
 V nadaljevanju se bomo osredotočili na pomembnost kakovostnih korpusov za uspešno učenje modelov. Pregledali bomo obstoječe in priljubljene korpuse, ki se uporabljajo za različne naloge.
-Kot ključen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so natančnost, F1-ocena, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko z njimi ocenimo zmogljivost modelov.
+Kot ključen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so priklic, Ocena F1, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko z njimi ocenimo zmogljivost modelov.
 
 Nato se bomo posvetili raznolikim področjem uporabe tehnologij obdelave naravnega jezika. Raziskali bomo, kako se tehnologije uporabljajo v  analizi čustev, povzemanje, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
 
-V poglavju~\nameref{ch4}  bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, uvrščanje besedil in še več.
+V poglavju  najpogosteje uporabljenih algoritmov (glej poglavje~\ref{ch4}) bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, uvrščanje besedil in še več.
 
-V poglavju~\nameref{ch5} bomo podrobneje spoznali uporabljene korpuse, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Korpusi so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
+V poglavju korpusov (glej poglavje~\ref{ch5}) bomo podrobneje spoznali uporabljene korpuse, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Korpusi so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
 
-V poglavju ~\nameref{ch6}  bomo temeljito raziskali različne metrike, ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog na področju obdelave naravnega jezika zahteva prilagodljivost pri izbiri metrik. Predstavljene navedene ključne metrike, ki jih bomo uporabljali pri evalvaciji modelov.
-
-V predzanjem poglavju ~\nameref{ch7}  so predstavljeni rezultati različnih ponudnikov ter njihovih storitev.
+V nalednjem poglavju bomo temeljito raziskali različne metrike (glej poglavje~\ref{ch6}) , ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog na področju obdelave naravnega jezika zahteva prilagodljivost pri izbiri metrik. Predstavljene navedene ključne metrike, ki jih bomo uporabljali pri evalvaciji modelov.
 
 
 
@@ -134,16 +135,16 @@ Pridobili bomo pregled nad uporabo modelov ter njihovo uporabo na različnih pod
 \label{ch3}
 Izbrani ponudniki so bili Google Cloud, Amazon Web Services in Microsoft Azure, saj so bili po člankih prepoznani kot najbolj razširjeni in zanesljivi oblačni ponudniki na trgu. 
 
-Za analizo je bila uporabljena odprtokodna platforma Hugging Face Transforemers, ki je po objavljenih člankih dosegel najboljše rezultate. Platforma je bil je prepoznana kot izjemno učinkovita in zmogljiva, ki se je odlično izkazala pri obdelavi različnih nalog.
+Za analizo je bila uporabljena odprtokodna platforma Hugging Face Transformers, ki je po objavljenih člankih dosegel najboljše rezultate. Platforma je bil je prepoznana kot izjemno učinkovita in zmogljiva, ki se je odlično izkazala pri obdelavi različnih nalog.
 
 
 \section{Hugging Face}
 \label{sec:transformers}
 Hugging Face je platforma na področju obdelave naravnega jezika in strojnega učenja. Njihova rešitev je postala zelo uporabna na področju raziskav, razvoja in uporabe strojnega učenja. 
 
-Njihova glavna odprtokodna knjižnica "Transformers" je postala temelj raziskav obdelave naravnega jezika, saj ponuja več kot 315.000 modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
+Njihova glavna odprtokodna knjižnica 'Transformers' je postala temelj raziskav obdelave naravnega jezika, saj ponuja več kot 315.000 modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
 
-Hugging Face Hub \cite{hugging} je platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno deljenje in odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do že pripravljenih modelov.
+Hugging Face Hub \cite{hugging} je platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do vnaprej treniranih modelov.
 Področje obdelave naravnega jezika je prvič bilo na voljo leta 2017.  
 
  \begin{figure}[h!]
@@ -151,7 +152,7 @@ Področje obdelave naravnega jezika je prvič bilo na voljo leta 2017.
 \includegraphics[width=8cm]{transf.png}
 \end{center}
 \caption{Hugging Face}
-\label{pic2}
+\label{pic2}F
 \end{figure}
 
 \subsection{Hugging Face Transformers }
@@ -162,14 +163,14 @@ Ena od ključnih prednosti Hugging Face Transformers je enostavnost uporabe. Raz
 Knjižnica ponuja tudi funkcionalnosti za preprosto prenosljivost modelov med različnimi platformami in orodji za povečanje učinkovitosti uporabe modelov na stvarnih sistemih. Poleg tega Hugging Face Transformers omogoča tudi preprosto združevanje z drugimi knjižnicami za strojno učenje in obdelavo podatkov.  
 
 Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
-Transforjerji ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanje besedil, prevajanje, povzemanje, znakovno uvrščanje, tabela vprašanj odgovorov, odgovori na vprašanja, razvrščanje brez vzorcev, klepet, generiranje besedila, dodajanje mankajočih besed, podobnost besed  
+Transformerji ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanje besedil, prevajanje, povzemanje, znakovno uvrščanje, tabela vprašanj odgovorov, odgovori na vprašanja, razvrščanje brez vzorcev, klepet, generiranje besedila, dodajanje mankajočih besed, podobnost besed, itd.
 
 
 \section{Google Cloud}
 \label{sec:google}
-Google Cloud  \cite{google} je celovita platforma za računalništvo v oblaku, ki jo zagotavlja Google. Ponuja različne storitve ko so: shranjevanje, bazami podatkov, strojnim učenjem, kar omogoča podjetjem, da gradijo in razvijajo aplikacije ter storitve v globalnem obsegu. Google Cloud zagotavlja prilagodljivo in razširljivo infrastrukturo, ki organizacijam omogoča inovacije ter optimizacijo operacij prek rešitev v oblaku. S svojimi podatkovnimi centri po vsem svetu Google Cloud zagotavlja zanesljivo zmogljivost, varnost in dostopnost za podjetja vseh velikosti.
+Google Cloud  \cite{google} je celovita platforma za računalništvo v oblaku, ki jo zagotavlja Google. Ponuja različne storitve ko so: shranjevanje, baze podatkov, strojno učenje, kar omogoča podjetjem, da gradijo in razvijajo aplikacije ter storitve v globalnem obsegu. Google Cloud zagotavlja prilagodljivo in razširljivo infrastrukturo, ki organizacijam omogoča inovacije ter optimizacijo operacij prek rešitev v oblaku. S svojimi podatkovnimi centri po vsem svetu Google Cloud zagotavlja zanesljivo zmogljivost, varnost in dostopnost za podjetja vseh velikosti.
 
-Področje obdelave naravnega jezika je bilo dodano v Google cloud leta 2015. Ponuja več kot 100 različnih modelov, najbolj prepoznavni modeli so OWL-ViT, BERT ter PaLM kateri se uporablja za obdelavo naravnega jezika.
+Področje obdelave naravnega jezika je bilo dodano v Google cloud leta 2015. Ponuja več kot 100 različnih modelov, najbolj prepoznavni modeli so OWL-ViT, BERT ter PaLM, kateri se uporablja za obdelavo naravnega jezika.
 
 
  \begin{figure}[h!]
@@ -208,7 +209,7 @@ Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
 \label{pic2}
 \end{figure}
 
- \newpage
+
 \subsection{Amazon SageMaker}
 Amazon SageMaker \cite{sage} je storitev za strojno učenje, ki jo ponuja Amazon Web Services (AWS). Omogoča hitro in enostavno izgradnjo, usposabljanje in razporejanje zmogljivih modelov, kar omogoča razvoj naprednih rešitev in izboljšanje procesov. Ponuja intuitiven uporabniški vmesnik in API-je, ki omogočajo hitro postavitev in upravljanje. SageMaker ponuja tudi integrirano okolje Jupyter, ki omogoča uporabo interaktivnih beležnic za raziskovanje in analizo podatkov. 
 
@@ -235,7 +236,7 @@ Azure ponuja široko podporo različnim jezikom, skupno več kot 96.Nekateri izm
 \end{figure}
 
 \subsection{Azure Cognitive Services }
-Azure Cognitive Services \cite{cognitive} je celovita in napredna platforma za umetno inteligenco (AI), ki jo ponuja Microsoftova platforma Azure. Te storitve omogočajo analizo in razumevanje naravnega jezika v besedilu, kar omogoča razvoj aplikacij za avtomatsko razvrščanje besedil, odgovarjanje na vprašanja, prevajanje besedil in analizo sentimenta. Ponuja širok nabor naprednih storitev in API-jev, ki omogočajo prepoznavanje, razumevanje in generiranje naravnega jezika, prepoznavanje obrazov, prepoznavanje govora, analizo besedil, prevajanje med jeziki in še veliko več. Te storitve omogočajo razvoj pametnih aplikacij, ki temeljijo na umetni inteligenci, in reševanje različnih izzivov na področju razumevanja in analize podatkov. 
+Azure Cognitive Services \cite{cognitive} je celovita in napredna platforma za umetno inteligenco, ki jo ponuja Microsoftova platforma Azure. Te storitve omogočajo analizo in razumevanje naravnega jezika v besedilu, kar omogoča razvoj aplikacij za avtomatsko razvrščanje besedil, odgovarjanje na vprašanja, prevajanje besedil in analizo sentimenta. Ponuja širok nabor naprednih storitev in API-jev, ki omogočajo prepoznavanje, razumevanje in generiranje naravnega jezika, prepoznavanje obrazov, prepoznavanje govora, analizo besedil, prevajanje med jeziki in še veliko več. Te storitve omogočajo razvoj pametnih aplikacij, ki temeljijo na umetni inteligenci, in reševanje različnih izzivov na področju razumevanja in analize podatkov. 
 
 Azure Cognitive Services ponujaja širok nabor storitev za obdelavo naravnega jezika in sicer: prepoznava entitet, sentimentalna analiza, odgovarjanje na vprašanja, prevajanje. 
 
@@ -249,6 +250,8 @@ Uporabljamo ga lahko z pomočjo več različnih programskih jezikov C\#, Java, J
 \caption{Primerjava ponudnikov glede na ceno in funkcionalnosti}
 \label{pic2}
 \end{figure}
+
+V tabeli so prestavljeni stroški posameznih storitev. Pri nekaterih je potrebno plačati le virtualna orodnja, pri drugih pa je plačilo glede na iteracije. Pomembno je omeniti da je v tabeli dodana cena za Transformes, katere lahko uporabljamo tudi na svojih lokalnih napravah. 
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
@@ -267,7 +270,7 @@ Pri analizi sentimenta so med najbolj znanimi algoritmi Naive Bayes, Support Vec
 Za povzemanje sta najpogosteje uporabljena algoritema PageRank and TextRank algoritma. \cite{summ_clanek}
 Za luščenje ključnih besed je napogosteje uporabljen algoritem TextRank . \cite{kljucne_clanek}
 Klasifikacija besedila je najpogosteje uporabljen algoritem SVM supervised machine learning.  \cite{summ_clanek} 
-Pri zazava objektov so najogosteje uporabljeni R-CNN, R-FCN, FPN, in Casecade R-CNN algoritmi\cite{zaznava_clanek}.
+Pri zazavi objektov so najogosteje uporabljeni R-CNN, R-FCN, FPN, in Casecade R-CNN algoritmi\cite{zaznava_clanek}.
 
 \label{ch4}
 \section{Prepoznavanje imenskih entitet}
@@ -301,7 +304,7 @@ Analiza sentimenta \cite{sentiment} je proces določanja čustvenega odziva, nag
 
  Obstaja več pristopov k analizi sentimenta:
 \begin{enumerate}
- \item Pravilni pristopi: Uporabljajo se predvsem pravila in vzorci za identifikacijo pozitivnih in negativnih izrazov v besedilu. Na primer, besede, kot so "dobro", "fantastično", "radostno" itd., bi bile označene kot pozitivne, medtem ko bi bile besede, kot so "slabo", "žalostno", "neznosno" in tako dalje označene kot negativne.
+ \item Pravilni pristopi: Uporabljajo se predvsem pravila in vzorci za identifikacijo pozitivnih in negativnih izrazov v besedilu. Na primer, besede, kot so 'dobro', 'fantastično', 'radostno' itd., bi bile označene kot pozitivne, medtem ko bi bile besede, kot so 'slabo','žalostno', 'neznosno' in tako dalje označene kot negativne.
  \item Strojno učenje na podlagi besedila: Ta pristop vključuje uporabo algoritmov strojnega učenja, ki so naučeni prepoznati čustveni naboj besed v besedilu na podlagi velikega števila označenih podatkov (besedil s čustvenimi oznakami). 
  \item Analiza sentimenta s čustvenimi slovarji: Ta pristop vključuje uporabo slovarjev z besedami in izrazoslovjem, ki so povezani z določenimi čustvi. Besedilo se nato preveri in oceni glede na prisotnost pozitivnih ali negativnih besed iz čustvenih slovarjev.
  \item Algoritmi globokega učenja.
@@ -330,7 +333,7 @@ Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo
 \end{figure}
  
  \section{Prepoznavanje besedih zvez}
-Prepoznavanje besedih zvez  \cite{luscenje}Nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
+Prepoznavanje besedih zvez  \cite{luscenje}  se nanaša se na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
 
 Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
 
@@ -346,9 +349,9 @@ Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen
  \section{Uvrščanje besedil}
  Uvrščanje besedil \cite{klasifikacija} je tehnika, pri kateri avtomatizirano določimo kategorijo ali razred določenega besedila na podlagi vsebine besedila. To je lahko zelo uporabno, saj nam omogoča razvrščanje besedil v različne skupine glede na njihovo vsebino. 
 
-Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. "in", "ali", "je", "na", itd.).
+Postopek klasifikacije besedil se običajno začne s pripravo in čiščenjem besedil. To vključuje odstranjevanje nepotrebnih znakov, šumnikov, posebnih znakov, pretvorbo vseh črk v male črke, lahko pa tudi odstranjevanje pogostih besed, ki nimajo velikega pomena za klasifikacijo (npr. 'in', 'ali', 'je', 'na', itd.).
 
-Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed ("Bag-of-Words"), kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. 
+Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed, kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. 
 
  \begin{figure}[h!]
 \begin{center}
@@ -361,16 +364,16 @@ Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. 
  
  
   \section{Zaznava objektov}
-Zaznava objektov \cite{object} je tehnika, ki se uporablja za avtomatsko zaznavanje in identifikacijo objektov na digitalnih slikah ali video posnetkih. Namen te tehnike je, da  prepozna in označi različne objekte v podobi ter jih loči od ozadja ali drugih objektov.
+Zaznava objektov \cite{object} je tehnika, ki se uporablja za avtomatsko zaznavanje in identifikacijo objektov na digitalnih slikah ali video posnetkih. Namen te tehnike je, da  prepozna in označi različne objekte, ter jih loči od ozadja ali drugih objektov.
 
 Postopek objektnega zaznavanja običajno vključuje naslednje korake:
 \begin{enumerate}
  \item Zaznavanje: Model preučuje sliko ali video posnetek in identificira regije, kjer bi se lahko nahajali objekti.
- \item Zaznava lokacije: Po tem, ko so bile regije prepoznane, algoritem določi omejitveno okvirje (bounding boxes), ki natančno označujejo položaje in mejne točke objektov na sliki.
+ \item Zaznava lokacije: Po tem, ko so bile regije prepoznane, algoritem določi omejitvene okvirje, ki natančno označujejo položaje in mejne točke objektov na sliki.
  \item Uvrščanje: Ko so objekti omejeni z omejitvenimi okviri, analizira vsebino znotraj teh okvirov in jih razvrsti v različne kategorije (npr. avto, pes, zgradba, itd.).
  \item  Sledenje: V video posnetkih je lahko zaželeno, da algoritem sledi objektom skozi različne kadre in tako beleži njihovo gibanje.
- \end{enumerate}
-Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacija prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. 
+ \end{enumerate}'
+Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih vozilih za zaznavanje drugih vozil in pešcev, identifikacijo prometnih znakov, nadzorne kamere, prepoznavanje obrazov, analiza medicinskih slik in še veliko drugega. Gre za enega ključnih elementov umetne inteligence. 
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=12cm]{objectDT.png}
@@ -408,8 +411,8 @@ Pomembno je, da so korpusi pravilno pripravljeni, imajo ustrezne metapodatke in 
 
 \section{Uporabljeni korpusi}
 \subsection{CoNLL 2003}
-\label{sec:my_subsection}
- Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika, prevsem za nalogo imenskih entitet.  Imenuje se po konferenci CoNLL (Conference on Computational Natural Language Learning) leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
+\label{sec:ch8}
+ Je zbirka podatkov, ki se uporablja za razvoj in evalvacijo sistemov za obdelavo naravnega jezika, prevsem za nalogo imenskih entitet.  Imenuje se po konferenci CoNLL leta 2003, kjer je bil ta nabor podatkov predstavljen v okviru tekmovanja za prepoznavanje imenovanih entitet.
  Korpus CoNLL 2003 je priljubljen referenčni korpus za prepoznavanje poimenovanih entitet naravnega jezika v obdelavi naravnega jezika. Uporabljen je bil v skupni nalogi na konferenci o računalniškem učenju naravnega jezika (CoNLL) leta 2003.
 
 Poimenovane entitete so razdeljene v štiri glavne kategorije:
@@ -420,7 +423,7 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
  \item Razno (MISC): Druge poimenovane entitete, ki ne spadajo v zgoraj navedene kategorije, na primer datumi, odstotki ali denar.
  \end{enumerate}
  Podatki v korpusu so predstavljeni v obliki ene besede na vrstico, kjer vsaka vrstica predstavlja besedo in pripadajočo oznako v stavku. Besede in oznake so ločene z presledkom.
- Korpus CoNLL 2003 \cite{conll}se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in že več let je standardno merilo (benchmark) za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za prepoznavo imenskih intitet. 
+ Korpus CoNLL 2003\cite{conll}se pogosto uporablja za evalvacijo zmogljivosti modelov za prepoznavanje poimenovanih entitet in je že več let standardno merilo za raziskovalce in strokovnjake v skupnosti obdelave naravnega jezika. Ostaja dragocen vir za razvoj in preizkušanje novih algoritmov in sistemov za prepoznavo imenskih intitet. 
 
 \begin{table}[h!]
 \caption{Primer CoNLL 2003 korpusa}
@@ -442,16 +445,16 @@ Poimenovane entitete so razdeljene v štiri glavne kategorije:
 \end{table}
 
 
-CoNLL2003  podatkovna zbirka je običajno razdeljena na tri sklope:
+CoNLL2003  podatkovna zbirka je  razdeljena na tri sklope:
 \begin{enumerate}
- \item učni (train) z 14.000 vrsticami  primerov
- \item validacijski (validation) z 3.250 vrsticami primerov
- \item preizkusni (test) z 3.450 vrsticami primerov
+ \item učni  z 14.000 vrsticami  primerov
+ \item validacijski  z 3.250 vrsticami primerov
+ \item preizkusni z 3.450 vrsticami primerov
  \end{enumerate}
 
 \subsection{IMDb Reviews}
-\label{sec:imdb}
-IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset \cite{imdb}. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb (Internet Movie Database).
+\label{sec:ch9}
+IMDB podatkovna zbirka, znana tudi kot IMDB Movie Reviews Dataset \cite{imdb}. Sestavljen iz pregledov filmov, ki so jih prispevali uporabniki na spletni strani IMDb\cite{imdb_page}..
 
 Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost uporabnikov IMDb. Vsak pregled vsebuje besedilni komentar in oceno filma, ki se giblje med 1 (najslabša) in 10 (najboljša). Cilj te podatkovne zbirke v naravnem jeziku je razviti modele, ki lahko avtomatsko analizirajo besedilne komentarje in napovedo, ali je pregled pozitiven ali negativen glede na oceno in besedilo. 
 
@@ -463,29 +466,29 @@ Podatki vsebujejo ocene in besedilne komentarje, ki jih je ustvarila skupnost up
 \hline
 {review}            & sentiment             \\ \hline                                                                                                                                                                                                                                                                                                                                           
 If you like original gut wrenching laughter you will like movie.   & positive            \\
-A rating of "1", depressing and relentlessly bad this movie is.  & negative                                                                     
+A rating of '1', depressing and relentlessly bad this movie is.  & negative                                                                     
 \end{tabular}}
 \end{table}
 
 
 
-IMDB podatkovna zbirka je običajno razdeljena na dva sklopa: 
+IMDB podatkovna zbirka je  razdeljena na dva sklopa: 
 \begin{enumerate}
- \item učni (train) z 25.000 vrsticami  primerov
- \item preizkusni (test) z 25.000 vrsticami primerov
+ \item učni  z 25.000 vrsticami  primerov
+ \item preizkusni z 25.000 vrsticami primerov
  \end{enumerate}
 Vsak sklop vsebuje tisoče pregledov filmov. To je idealna podatkovna zbirka za naloge analize čustvenega tona besedil (sentiment analysis), kjer modeli ocenjujejo, ali je mnenje v besedilu pozitivno, negativno ali nevtralno.
 
 \subsection{ COCO }
 \label{sec:coco}
-COCO (Common Objects in Context) \cite{coco} je nabor podatkov v področju računalniškega vida in zaznave objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z zaznavo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
+COCO\cite{coco} je nabor podatkov v področju računalniškega vida in zaznave objektov. Namenjen je zagotavljanju celovite in raznolike zbirke slik za različne naloge, vključno z zaznavo objektov, segmentacijo in podnaslavljanjem. Nabor podatkov naj bi odražal scenarije iz resničnega sveta in vsebuje slike, ki so kompleksne ter vključujejo več objektov v različnih kontekstih.
 
 Nabor podatkov je obsežen in vsebuje deset tisoče slik z milijoni označenih posameznih objektov. Slike prihajajo iz različnih virov, zajemajo raznolike prizore, ozadja, svetlobne pogoje in velikosti objektov.
 
 
 Ključne značilnosti:
 \begin{enumerate}
- \item Kategorije slik: Nabor podatkov  vsebuje slike, ki zajemajo 80 različnih kategorij objektov, od splošnih objektov, kot so "oseba," "avto" in "pes," do bolj specifičnih objektov, kot so "mobilni telefon," "zobna ščetka" in "zmaj."
+ \item Kategorije slik: Nabor podatkov  vsebuje slike, ki zajemajo 80 različnih kategorij objektov, od splošnih objektov, kot so 'oseba,' 'avto' in 'pes,' do bolj specifičnih objektov, kot so 'mobilni telefon,' 'zobna ščetka' in 'zmaj.'
 
  \item Anotacije: Vsaka slika v korpusu je opremljena z oznakami na ravni objekta in koordinatami  okvirja. To pomeni, da je vsak posamezen objekt določene kategorije znotraj slike označen, okoli njega pa je narisano območje z okvirjem, ki označuje njegovo lokacijo. Informacije o anotacijah so ključnega pomena za usposabljanje modelov za detekcijo objektov in segmentacijo.
 
@@ -494,8 +497,8 @@ Ključne značilnosti:
  
  Korpus je razdeljen na dva sklopa: 
 \begin{enumerate}
- \item učni (train) z 117.000 primeri
- \item preizkusni (test) z 4.950 primeri
+ \item učni  z 117.000 primeri
+ \item preizkusni z 4.950 primeri
  \end{enumerate}
  
    \begin{figure}[h!]
@@ -512,17 +515,17 @@ Ključne značilnosti:
  \begin{tiny}
 \begin{verbatim}
    [{
-        "license": 3,
-        "file_name": "000000502136.jpg",
-        "coco_url": "http://images.cocodataset.org/val2017/000000502136.jpg",
-        "height": 423,
-        "width": 500,
-        "date_captured": "2013-11-15 17:08:30",
-        "flickr_url": "http://farm3.staticflickr.com/2253/1755223462_fabbeb8dc3_z.jpg",
-        "id": 502136
+        'license': 3,
+        'file_name': '000000502136.jpg',
+        'coco_url': 'http://images.cocodataset.org/val2017/000000502136.jpg',
+        'height': 423,
+        'width': 500,
+        'date_captured': '2013-11-15 17:08:30',
+        'flickr_url': 'http://farm3.staticflickr.com/2253/1755223462_fabbeb8dc3_z.jpg',
+        'id': 502136
     },
     {
-        "segmentation": [
+        'segmentation': [
             [
                 54.74,
                 350.34,
@@ -532,17 +535,17 @@ Ključne značilnosti:
                     349.35
             ]
         ],
-        "area": 4651.359250000001,
-        "iscrowd": 0,
-        "image_id": 502136,
-        "bbox": [
+        'area': 4651.359250000001,
+        'iscrowd': 0,
+        'image_id': 502136,
+        'bbox': [
             3.98,
             289.63,
             120.43,
             103.51
         ],
-        "category_id": 64,
-        "id": 21011
+        'category_id': 64,
+        'id': 21011
     }]
 \end{verbatim}
 \end{tiny}
@@ -559,7 +562,7 @@ Ključne značilnosti:
  
 Ključne značilnosti korpusa:
  \begin{enumerate}
-  \item Novičarski Članki in Povzetki: Nabor podatkov vsebuje novičarske članke iz medijskih virov, kot sta CNN (Cable News Network) in Daily Mail, skupaj s pripadajočimi povzetki. Ti članki pokrivajo različne teme in dogodke ter so različnih dolžin.
+  \item Novičarski članki in povzetki: Nabor podatkov vsebuje novičarske članke iz medijskih virov, kot sta CNN in Daily Mail, skupaj s pripadajočimi povzetki. Ti članki pokrivajo različne teme in dogodke ter so različnih dolžin.
  \item Abstraktno Povzemanje: Vključuje ustvarjanje povzetka v povsem novih besedah. 
   \end{enumerate}
  
@@ -603,7 +606,7 @@ Ključne značilnosti korpusa SemEval:
     \begin{center}
         \begin{tabular}{l|ccc}
             label & {\tt text}  \\ \hline
-                        {\tt -1} & I missed the Barcelona game yesterday. http://t.co/AqpknXC  \\
+                        {\tt -1} & I missed the Barcelona game yesterday.  \\
                         {\tt 0}   & I'm bout to just listen to nicki minaj all night \\
                         {\tt 1}   & One Night like In Vegas I make dat Nigga Famous
         \end{tabular}
@@ -614,9 +617,9 @@ Ključne značilnosti korpusa SemEval:
 
 Korpus razdeljen na tri sklope: 
 \begin{enumerate}
- \item učni (train) z 49.547 vrsticami  primerov
- \item validacijski (dev) z 12.285 vrsticami primerov
- \item preizkusni (test) z 12.285 vrsticami primerov
+ \item učni  z 49.547 vrsticami  primerov
+ \item validacijski z 12.285 vrsticami primerov
+ \item preizkusni  z 12.285 vrsticami primerov
  \end{enumerate}
  
  %----------------------------------------------------------------
@@ -627,19 +630,19 @@ Korpus razdeljen na tri sklope:
 V tem poglavju bomo obravnavali ključne metrike, ki so izbrane zaradi njihove univerzalnosti in razširjenosti v znanstvenih člankih za poročanje rezultatov. Te metrike predstavljajo standardni način izražanja in ocenjevanja raziskovalnih ugotovitev ter omogočajo primerjavo z drugimi študijami. Uporaba teh splošno priznanih metrik bo zagotovila natančno in ustrezno vrednotenje rezultatov naše magistrske naloge.
 
 \section{Spremenljivke za izračun metrik}
-\textbf{Pravilno pozitivni (True Positive)}
+\textbf{Pravilno pozitivni }
 
 Pravilno pozitivni \cite{truevsfalse} je izraz, ki se uporablja v statistiki in strojnem učenju za opis primerov, kjer je model pravilno napovedal pozitiven rezultat za določeno skupino. To pomeni, da je model prepoznal pozitiven pojav, ko je bil dejansko prisoten. 
 
 \emph{Primer:}
 
-Predpostavimo, da razvijamo model za prepoznavanje spam sporočil v elektronski pošti. Model pravilno prepozna 25 sporočil kot nezaželena (spam), ki dejansko vsebujejo nezaželeno vsebino. To pomeni, da imamo 25 primerov "pravilno pozitivnih". Te primere model pravilno prepozna kot nezaželjene, ker resnično vsebujejo neželeno vsebino.
+Predpostavimo, da razvijamo model za prepoznavanje nezaželenih sporočil v elektronski pošti. Model pravilno prepozna 25 sporočil kot nezaželena, ki dejansko vsebujejo nezaželeno vsebino. To pomeni, da imamo 25 primerov 'pravilno pozitivnih'. Te primere model pravilno prepozna kot nezaželjene, ker resnično vsebujejo neželeno vsebino.
 
 
 
 
 
-\textbf{Napačno pozitivni (False Positive)}
+\textbf{Napačno pozitivni}
 
 Napačno pozitivni \cite{truevsfalse} označujejo situacijo, ko model napačno napove, da je nekaj pozitivno, medtem ko je v resnici negativno. Gre za vrsto napake, kjer model napačno identificira primer kot pripadajoč pozitivnemu razredu, čeprav dejansko pripada negativnemu razredu.
 
@@ -652,22 +655,22 @@ Predpostavimo, da imamo model za prepoznavanje nezaželjenih sporočil v elektro
 
 
 
-\textbf{Napačno negativni (False Negatives)}
+\textbf{Napačno negativni}
 
 Napačno negativni \cite{truevsfalse} označujejo napako, ki se pojavi v kontekstu klasifikacije ali analize besedila, ko model napačno napove, da je nekaj negativno, čeprav je v resnici pozitivno. To je vrsta napake, kjer model spregleda ali ne prepozna pozitivnih primerov. 
-V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer false negative. 
+V primeru analize besedila v naravni jezikovni obdelavi, false negative se zgodi, ko model ne uspe zaznati pozitivnega elementa v besedilu, ki bi ga moral prepoznati. Na primer, če imamo model za prepoznavanje pozitivnih izjav v komentarjih in model spregleda pozitivno izjavo, to bi bil primer napačno negativni. 
 
 \emph{Primer:}
 
 
 Predpostavimo, da imamo napreden sistem za filtriranje nezaželjenih sporočil, ki ga uporabljamo za preverjanje prihajajočih e-poštnih sporočil. Sistem je zasnovan tako, da prepoznava in premika neželena sporočila v mapo za neželeno pošto.
 
-Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-poštno sporočilo kot varno (ne nezaželjeno), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od "Napačno negativni".
+Vendar pa se pojavi napačno negativen rezultat, ko sistem napačno presodi e-poštno sporočilo kot varno (ne nezaželjeno), čeprav vsebuje vse znake neželene vsebine. Na primer, če e-poštno sporočilo vsebuje povezave do nerealnih ponudb ali oglasev za sumljive izdelke, bi bila takšna sporočila številčno gledano ena od 'Napačno negativni'.
 
 V tem primeru je sistem spregledal prepoznavo neželene vsebine, kar je povzročilo, da je sporočilo pristalo v glavnem predalu prejete pošte namesto v mapi za neželeno pošto. To lahko predstavlja težavo, saj se takšni neželeni vsebini lahko izognemo le, če sistem zanesljivo prepozna vse takšne primere. 
 
 
-\section{Natančnost (Precision)}
+\section{Natančnost)}
 
 Natančnost \cite{percision} je pomembna metrika za ocenjevanje uspešnosti modelov v različnih nalogah. Povdarja natančnost pozitivnih napovedi, torej tistih primerov, ki jih model prepozna kot pozitivne. Visoka preciznost pomeni, da so pozitivne napovedi modela zanesljive in imajo malo lažno pozitivnih napak.
 
@@ -680,15 +683,15 @@ V kontekstu naravne jezikovne obdelave, natančnost igra ključno vlogo pri razu
 \end{center}
 
 
-\section{Priklic (Recall)}
-Priklic se \cite{recall} nanaša na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji priklic pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med priklicom in natančnostjo pri oceni uspešnosti modelov. Primer uporabe priklic je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoki kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. 
+\section{Priklic }
+Priklic se \cite{recall} nanaša na eno od metrik uspešnosti pri vrednotenju modelov za obdelavo naravnega jezika. Meri kot razmerje med številom pravilno prepoznanih relevantnih primerov in celotnim številom dejansko obstoječih relevantnih primerov. Višji priklic pomeni, da je model bolje usposobljen za iskanje in pridobivanje vseh relevantnih informacij, vendar to lahko vodi tudi v več lažno pozitivnih rezultatov. Zato je pomembno doseči uravnoteženost med priklicom in natančnostjo pri oceni uspešnosti modelov. Primer uporabe priklica je v iskalnih sistemih, kjer želimo zagotoviti, da se relevantni dokumenti ali informacije ne izpustijo pri iskanju. S pravilno optimizacijo modelov lahko dosežemo visoko kakovostno izluščevanje informacij iz besedil, kar je ključno za številne aplikacije, kot so avtomatizirano odzivanje na povratne informacije strank, analiza sentimenta in razumevanje besedil v različnih jezikih. 
 
  Formula za izračun:
 \begin{center}
  \Large{Priklic = \(\frac{Pravilno Pozitivni}{Pravilno Pozitivni + Napacno Negativni}\)}
 \end{center}
 
-\section{Ocena F1 (F1-score)}
+\section{Ocena F1}
 
 F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besedil. Združuje natančnost in priklic v eno metriko, ki odraža ravnotežje med tema dvema metrikama. Pri  nalogah, kot so uvrščanje besedil, luščenje informacij ali identifikacija entitet, sta tako natančnost  kot priklic ključni. Visoka natančnost pomeni pravilno identifikacijo relevantnih elementov, medtem ko visoki priklic zagotavlja prepoznavanje vseh resnično pozitivnih primerov. Izračuna se kot povprečje med natančnost in priklicom, dajeta pa ji enako težo. To omogoča, da ocenimo, kako dobro model obvladuje oba cilja hkrati. Visoka vrednost F1 ocene kaže, da je model uspešno uskladil identifikacijo pravih pozitivnih primerov z izogibanjem napačno pozitivnim rezultatom. Uporaba metrike je zlasti smiselna, ko sta metriki natančnost in priklic pomembni za končni rezultat in ko želimo doseči optimalno uravnoteženost med tema dvema vidikoma.
 
@@ -701,7 +704,7 @@ F1 ocena je pomembna metrika za ocenjevanje uspešnosti modelov v obdelavi besed
 \section{Točnost}
 Točnost \cite{accuracy} je metrika, ki se pogosto uporablja za ocenjevanje uspešnosti modelov v strojnem učenju, vključno z modeli uporabljenimi v obdelavi naravnega jezika. Ta metrika meri, kako pravilno model napove razrede ali kategorije za vhodne podatke v primerjavi z dejanskimi vrednostmi.
 
-V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so "pozitivno", "negativno" ali "neutralno." Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
+V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri nalogah klasifikacije besedil. Predpostavimo, da imamo model, ki se uči razvrščati besedila v določene kategorije, kot so 'pozitivno', 'negativno' ali 'neutralno'. Za vsako besedilo ima model svojo napoved, kateri kategoriji pripada.
 
  Formula za izračun:
 \begin{center}
@@ -709,7 +712,7 @@ V kontekstu obdelave naravnega jezika se natančnost uporablja, na primer, pri n
 \end{center}
 
 \section{ROUGE}
-Je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi z referenčnimi besedili. Gre za kratico, ki označuje "Recall-Oriented Understudy for Gisting Evaluation". Metrika je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
+Je metrika, ki se uporablja za ocenjevanje kakovosti generiranih besedil v primerjavi z referenčnimi besedili. Gre za kratico, ki označuje 'Recall-Oriented Understudy for Gisting Evaluation'. Metrika je pogosto uporabljena v področju obdelave naravnega jezika, še posebej v nalogah avtomatskega povzemanja besedil.
 
 Primerja generirano besedilo z referenčnim besedilom (običajno človeško ustvarjenim besedilom) in oceni, kako dobro so se ujemale. Metrika upošteva različne vidike, kot so prekrivanje besed, besedni nizi in skupna dolžina besedil. Glavni cilj metrike je merjenje stopnje, do katere je generirano besedilo sposobno pravilno povzeti pomembne informacije iz referenčnega besedila.
 
@@ -725,12 +728,12 @@ Metrika ima širok nabor uporabe v raziskavah in nalogah, ki vključujejo avtoma
 \label{ch7}
 Pimerjava ponudnikov ter storitev je bila izvedena v času od Februarja do Maja 2023. 
 
-Izbrani so bili trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
+Izbrani so bili trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. 
 
 \textbf{Analiza napak}
 
 
-Pri raziskovanju modelov in korpusov, hitro spoznamo da so lahko modeli celo preveč prilagojeni (overfit) določenemu področju, kar pomeni da preveč podrobno pozna eno področje, na katerem je bil model treniran in ne more dobro generalizirati novih podatkov/primerov, kakor tudi da so premalo podrobni ali premalo raznoliki. 
+Pri raziskovanju modelov in korpusov, hitro spoznamo da so lahko modeli celo preveč prilagojeni (overfit) določenemu področju, kar pomeni da preveč podrobno pozna eno področje, na katerem je bil model treniran in ne more dobro razumeti novih podatkov/primerov, kakor tudi da so premalo podrobni ali premalo raznoliki. 
 
 Zato so najbolj poznani in razširjeni modeli, učeni na širokem naboru različnih podatkov, da je možnost napake manjša. 
 
@@ -753,6 +756,8 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 Za analizo obdelave naravnega jezika so bile izbrane tri testne testnih podatkov, vsaka od njih je vsebovala 50 primerov. Razdeljene so bile v tri različne kategorije: novice, finance ter šport. 
 Pri zaznavi objektov pa so bile kategorije: osebe, živali ter vozila.
+
+V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
 \newpage
 
@@ -800,9 +805,9 @@ Pri zaznavi objektov pa so bile kategorije: osebe, živali ter vozila.
 \label{pic2}
 \end{figure}
 
-Pri analizi imenskih entitet je bil uporabljen \hyperref[sec:my_subsection]{\underline {CONLL-2003}} korpus.
+Pri analizi imenskih entitet je bil uporabljen CONLL-2003 korpus (glej poglavje~\ref{sec:ch8}).
 
-Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker.
+Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker, saj je bil najboljši kar na obeh področjih, tako pri priklicu kot pri natančnosti. 
 
 
 \subsection{Analiza napak pri prepoznavanje imenskih entitet} 
@@ -828,7 +833,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storite
 \end{center}
 \end{table}
 
-Kot je razvidno iz tabele so pri prvem primeru Transformers naredil napako pri zvezi "San Franciscu", kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto "ustanovljena". V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
+Kot je razvidno iz tabele so pri prvem primeru Transformers naredil napako pri zvezi 'San Franciscu', kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto 'ustanovljena'. V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
 
 Najpogosteje opažene napake pri prepoznavi imenskih entitet:  
 \begin{enumerate}
@@ -881,7 +886,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \label{pic2}
 \end{figure}
 
-Pri analizi sentimenta je bil uporabljen  \hyperref[sec:imdb]{\underline {IMDb Reviews}} korpus.
+Pri analizi sentimenta je bil uporabljen  IMDb Reviews korpus (glej poglavje~\ref{sec:ch9}).
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 \newpage
@@ -912,7 +917,7 @@ Ta knjiga je zelo zanimiva.   &Pozitivno    & Pozitivno   &Negativno   \\
 \end{center}
 \end{table}
 
-Opazimo da sta obe storitvi naredili isto napako pri istem primeru, saj sta zaznali dolgočano kot nevtralno in ne negativno. 
+Opazimo da sta obe storitvi naredili isto napako pri istem primeru, saj sta zaznali dolgočasno kot nevtralno in ne negativno. 
 
 Najpogosteje opažene napake pri analizi sentimenta:  
 \begin{enumerate}
@@ -954,9 +959,9 @@ Najpogosteje opažene napake pri analizi sentimenta:
 \label{pic2}
 \end{figure}
 
-Pri izdelavi povzetka je bil uporabljen korpus  \hyperref[sec:cnn]{\underline {CNN/Daily Mail}}.
+Pri izdelavi povzetka je bil uporabljen korpus CNN/Daily Mail (glej poglavje~\ref{sec:cnn}).
 
-Kot najboljša izbira za ustvarjanje povzetkov je storitev Vertex AI.
+Kot najboljša izbira za ustvarjanje povzetkov se je izkazala storitev Azure Cognitive Services.
 
 \newpage
 
@@ -1046,7 +1051,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \end{figure}
 
 
-Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus  \hyperref[sec:semeval]{\underline {SemEval-2017}}.
+Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus (glej poglavje~\ref{sec:semeval}).
 
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
@@ -1135,9 +1140,9 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \end{figure}
 
   \newpage
-Pri izvajanju naloge klasifikacije besedila je bil uporabljen korpus  \hyperref[sec:imdb]{\underline {IMDb Reviews}}.
+Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus  IMDb Reviews (glej poglavje~\ref{sec:imdb}).
 
-Kot najboljša rešitev za naloge klasifikacije besedila pa se je izkazala storitev Transformers.
+Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Transformers.
 
 \vspace{\baselineskip}
 
@@ -1210,7 +1215,7 @@ Najpogosteje opažene napake pri klasifikaciji besedila:
 \end{figure}
 
 
-Pri zaznavi objektov je bil uporabljen  \hyperref[sec:coco]{\underline {COCO}} korpus.
+Pri zaznavi objektov je bil uporabljen  COCO korpus (glej poglavje~\ref{sec:coco}).
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
 
@@ -1289,7 +1294,7 @@ Najpogosteje opažene napake pri zaznavi objektov:
    \hline                                                          
 \end{tabular}}
 \end{table}
-
+Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  klasifikacijo besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
 Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla storitev AWS Sage Maker. Na drugem mestu je bila odprtokodna storitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI ponudnika Google Cloud.
 
 Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugo mesto se je uvrstila odprtokodna rešitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google Cloud.
@@ -1298,7 +1303,7 @@ Najboljši rezultati so bili doseženi pri povzemanju z uporabo storitve Azure C
 
 Pri ocenjevanju izvlečka besednih zvez je prvo mesto osvojila storitev Azure Cognitive Services. Na drugem mestu je Vertex AI, medtem ko je tretjem mestu  AWS SageMaker.
 
-Pri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+FPri klasifikaciji besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
 
 V zaznavanju objektov je prvo mesto zasedla storitev AWS Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
 
@@ -1325,7 +1330,7 @@ V zaznavanju objektov je prvo mesto zasedla storitev AWS Cognitive Services, tak
 \end{table}
 
 Ocena cene v tabeli je bila določena glede na stroške ene iteracije glede na storitev. Pomembno je omeniti da smo za odprtokodno rešitev koristili virtualni stroj. 
-Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev.Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure. Google Vertex AI je bil ob uporabi še v razvoju, in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja.
+Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure. Google Vertex AI je bil ob v času raziskave še v razvoju, in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja.
 
  \newpage
  \begin{figure}[h!]
@@ -1419,8 +1424,8 @@ and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s104
 \bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano10. 06. 2023].
 \bibitem{zaznava_clanek} Lixuan Du, Rongyu Zhang, Xiaotian Wang : Overview of two-stage object detection algorithms . Dostopno na: \url{https://iopscience.iop.org/article/10.1088/1742-6596/1544/1/012033/pdf}  [Dostopano10. 06. 2023].
 \bibitem{summ_clanek} NLP Text Summarization – Popular Machine Learning And Deep Learning Algorithms . Dostopno na: \url{https://spotintelligence.com/2022/12/01/nlp-text-summarization/}  [Dostopano10. 06. 2023].
-\bibitem{ključne_clanek} Algorithms to Detect Phrases and Keywords from Text . Dostopno na: \url{https://saturncloud.io/blog/algorithms-to-detect-phrases-and-keywords-from-text/}  [Dostopano10. 06. 2023].
-
+\bibitem{kljucne_clanek} Algorithms to Detect Phrases and Keywords from Text . Dostopno na: \url{https://saturncloud.io/blog/algorithms-to-detect-phrases-and-keywords-from-text/}  [Dostopano10. 06. 2023].
+\bibitem{IMDB_page} IMDB . Dostopno na: \url{https://www.imdb.com/}  [Dostopano10. 06. 2023].
 
 \end{thebibliography}
 
