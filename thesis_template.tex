@@ -90,7 +90,9 @@
 \chapter{Uvod}
 \label{ch:uvod}
 
-Obdelava naravnega jezika je eno izmed najhitreje razvijajočih se področij v umetni inteligenci, ki se ukvarja z obdelavo, razumevanjem in generiranjem naravnega jezika, kot ga uporabljamo ljudje za komunikacijo. Napredne tehnike obdelave naravnega jezika in modeli so v zadnjem desetletju privedli do prebojev v številnih storitvah, ki segajo od avtomatskega prevajanja in analize čustev do odgovarjanja na vprašanja in samodejnega povzemanja besedil, zato je zelo zanimivo področje za analizo. 
+Sodobni digitalni svet je priča izjemnemu napredku na področju obdelave naravnega jezika, ki seže preko širokega spektra aplikacij in storitev ter ima pomembno vlogo v sodobnem digitalnem okolju. Sposobnost učinkovitega obvladovanja in analize besedila postajata nepogrešljiva veščina, ki se širi iz informacijskih tehnologij in trženja v številne druge sektorje, vključno z zdravstvom in novinarstvom. Kljub temu se tako večja kot manjša podjetja vsakodnevno soočajo z izzivi, ki jih prinaša obdelava in razumevanje besedilnih in vizualnih podatkov. Eden izmed ključnih izzivov, ki jim lahko olajšave, je povezan s tako imenovanimi tehnikami naravnega jezika  in zaznavo objektov.
+
+Kot najbolj zanimiva poročja v obdelavni naravnega jezika se bomo osredotočili na šest zelo uporabnih ter zanimivih poročij. Prvo področje opisuje prepoznavanje imenskih entitet, katero uporabnikom lahko močno olajša vsakodnevno delo z strankami, saj lahko prepozna imena strnk ter datume v elektronskih sporočilih za lažje sledenje naročilom. Naslenje področje pokriva analizo sentimenta s pomočjo katere uporabniki na družbenih omrežjih lahko ugotovijo, kako se stranke odzivajo na njihove produkte ter s tem prilagajajo svoje produkte glede na rezultate.  Naslednje zelo pomembno področje je povzemanje, ki hitro ustvarja krajše povzetke dolgih poročil in analiz, kar zaposlenim omogoča bolj učinkovito pregledovanje ključnih informacij. Zelo pomembno je tudi prepoznavanje besednih zvez za indetifikacijo ključnih pojmov v strateških dokumentih, kar. Pomaga pri načrtovanju marketinških kompanij in analiz konkurenčnega okolja. Uvrščanje besedil pomaga uporabnikom  pri analizi strankinih mnenj in ocen, kar jim pomaga razumeti, kako se izdelki ali storitve pozicionirajo na trgu v primerjavi z konkurenco. Zadnje področje, ki ga bomo raziskali se na naša na zaznavo objektov, ki jo lahko uporabljamo za nadzor in identifikacijo neželenih oseb ali predmetov na območju objekta, kar prispeva k izboljšani varnosti in nadzoru.
 
 Cilj te magisterske naloge je podrobneje raziskati ter analizirati različne ponudnike storitev za obdelavo naravnega jezika ter zaznavo objektov, uporabo različnih korpusov glede na različna področja uporabe, predstavljene bodo najpogosteje uporabljene metrike za evalvacijo modelov. Potrebno je povdariti, da je na trgu prisotnih veliko storitev, tako za velika podjetja kot tudi za končne uporabnike. Opazimo lahko tudi veliko število odprtokodnih rešitev, ki so lahko nekoliko specifična glede na področje uporabe.
 
@@ -108,6 +110,8 @@ V poglavju o metrikah temeljito raziskali različne metrike (glej poglavje~\ref{
 
 
 Pridobili bomo pregled nad uporabo modelov ter njihovo uporabo za različna področja. Cilj raziskave je prispevati k boljšemu razumevanju  tehnologij obdelave naravnega jezika ter zaznave objektov in predstaviti rezultate med različnimi ponudkniki storitev.
+
+
 %----------------------------------------------------------------
 % Poglavje (Chapter) 2
 %----------------------------------------------------------------
@@ -139,7 +143,7 @@ Za analizo je bila uporabljena odprtokodna platforma Hugging Face Transformers, 
 \label{sec:transformers}
 Hugging Face je platforma na področju obdelave naravnega jezika in strojnega učenja. Njihova rešitev je postala zelo uporabna na področju raziskav, razvoja in uporabe strojnega učenja. 
 
-Njihova glavna odprtokodna knjižnica 'Transformers' je postala temelj raziskav obdelave naravnega jezika, saj ponuja več kot 315.000 modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
+Njihova glavna odprtokodna knjižnica Hugging Face Transformers je postala temelj raziskav obdelave naravnega jezika, saj ponuja več kot 315.000 modelov, kot so GPT, BERT, RoBERTa in drugih, ki so ključni za različne naloge, vključno z razumevanjem jezika, strojnim prevajanjem, analizo čustev in generiranjem besedila.
 
 Hugging Face Hub \cite{hugging} je platforma, ki spodbuja sodelovanje in izmenjavo med raziskovalci, razvijalci in navdušenci nad strojnim učenjem. Ta platforma omogoča enostavno odkrivanje modelov, kar olajša razvoj novih aplikacij in omogoča dostop do vnaprej treniranih modelov.
 Področje obdelave naravnega jezika je prvič bilo na voljo leta 2017. Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
@@ -249,8 +253,8 @@ Uporabljamo ga lahko z pomočjo več različnih programskih jezikov, kot so: C\#
 \caption{Primerjava ponudnikov glede na ceno in funkcionalnosti}
 \label{pic2}
 \end{figure}
-
-V tabeli so predstavljeni stroški uporabe posameznih storitev. Pri nekaterih je potrebno plačati le virtualna okolja, za Azure Cognitive Services pa plačamo glede na zahtevke. Pomembno je omeniti, da je v tabeli uporabljena cena za Transformers, katere lahko uporabljamo tudi lokalno. 
+ \newpage
+V tabeli so predstavljeni stroški uporabe posameznih storitev. Pri nekaterih je potrebno plačati le virtualna okolja, za Azure Cognitive Services pa plačamo glede na zahtevke. Pomembno je omeniti, da je v tabeli uporabljena cena za Hugging Face Transformers, katere lahko uporabljamo tudi lokalno. 
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
@@ -385,7 +389,7 @@ Zaznava objektov se uporablja v številnih aplikacijah, kot tudi v samovozečih 
 %----------------------------------------------------------------f
 \chapter{Korpusi}
 \label{ch5}
-\section{Kaj je korpus?}
+
 Je zbirka podatkov, ki so organizirani in shranjeni v strukturirani ali ne-strukturirani obliki ter označeni za namen analize, raziskave, učenja modelov ali drugih postopkov obdelave podatkov. Korpusi vsebujejo različne vrste podatkov od številk, besedil, slik, zvokov, videoposnetkov do drugih tipov informacij.
 V kontekstu računalniškega znanstvenega modeliranja in strojnega učenja so korpusi ključnega pomena, saj služijo kot osnova za razvoj, treniranje in evalvacijo modelov. Modeli se učijo na teh podatkih, tako da prepoznajo vzorce in povezave med vhodnimi podatki in ciljnimi izhodi.
 Na primer, v naravnojezikovni obdelavi  korpusov vsebuje besedilne podatke, ki so lahko članki, knjige, novičarski članki ali socialni mediji. 
@@ -588,7 +592,7 @@ Korpus jerazdeljen na tri sklope:
  \item preizkusni (test) z 11.500 vrsticami primerov
  \end{enumerate}
  
- \subsection{ SemEval - 2017}
+ \subsection{ SemEval 2017}
   \label{sec:semeval}
 SemEval- 2017 \cite{semeval} je zbirka besedilnih podatkov, ki je anotirana za različne naloge na področju obdelave naravnega jezika.
  
@@ -728,7 +732,7 @@ Metrika ima širok nabor uporabe v raziskavah in nalogah, ki vključujejo avtoma
 \label{ch7}
 Pimerjava ponudnikov ter storitev je bila izvedena v času od Februarja do Maja 2023. 
 
-Izbrani so bili trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face - Transformers. 
+Izbrani so bili trije največji ponudniki storitev v oblaku: Google Cloud, Amazon Web Services ter Microsoft Azure. Pri izbiri odprtokodne rešitve je bilo težko izbrati najboljšega, saj so v tem času tri najboljše odprtokodne rešitve zelo tesno skupaj kakor tudi povezane. Na podlagi pregledanih funkcionalnosti ter uporabe je bil izbran Hugging Face  Transformers. 
 
 \textbf{Analiza napak}
 
@@ -772,7 +776,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                            \\ \hline                                                                                                                                                                                                                                                                                                                                           
  \hline
-\textbf{Transformers}   & Priklic  & 0.929              & 0.912                  & 0.917              & 0.919 (± 0.009)                                     \\
+\textbf{Hugging Face Transformers}   & Priklic  & 0.929              & 0.912                  & 0.917              & 0.919 (± 0.009)                                     \\
 				    &  Natančnost  & 0.924              & 0.945                  & 0.901               & 0.923 (± 0.022)  \\
                                      & F1 ocena    & 0.927                 & 0.928                  & 0.909             & 0.921 (± 0.011)   \\
   \hline
@@ -788,6 +792,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
                        &  Natančnost & 0.831              & 0.841              & 0.903              & 0.858  (±0.039 )                                        \\
                         & F1 ocena   & 0.826              & 0.836              & 0.860              & 0.841 (± 0.017 )                                   \\  
   \hline
+   \hline  
   \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.918                                           \\
                        &  Natančnost &               &               &             & 0.913                                          \\
                         & F1 ocena   &              &             &               & 0.916 (± 0.33)                                           \\  
@@ -821,7 +826,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storite
     | >{\centering\arraybackslash}X  
     | >{\centering\arraybackslash}X |}
  \hline
-  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{AWS SageMaker} &  \textbf{Transformers}    \\
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{AWS SageMaker} &  \textbf{Hugging Face Transformers}    \\
  \hline
  John Doe je živel v San Franciscu.  & John Doe, San Francisco  & John Doe, San Francisco  & John Doe, San Fran  \\ 
 \hline
@@ -833,7 +838,7 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storite
 \end{center}
 \end{table}
 
-Kot je razvidno iz tabele so pri prvem primeru Transformers naredil napako pri zvezi 'San Franciscu', kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto 'ustanovljena'. V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
+Kot je razvidno iz tabele so pri prvem primeru Hugging Face Transformers naredil napako pri zvezi 'San Franciscu', kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto 'ustanovljena'. V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
 
 Najpogosteje opažene napake pri prepoznavi imenskih entitet:  
 \begin{enumerate}
@@ -853,7 +858,7 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \begin{tabular}{lrrrrrr}
 
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                              \\ \hline     \hline                                                                                                                                                                                                                                                                                                                                      
-\textbf{Transformers}   & Priklic  & 0.937              & 0.912                 & 0.930              & 0.926 (±0.013)                                     \\
+\textbf{Hugging Face Transformers}   & Priklic  & 0.937              & 0.912                 & 0.930              & 0.926 (±0.013)                                     \\
 				    &  Natančnost  & 0.938              & 0.987                  & 0.860               & \textbf{0.928} (±0.064)                                     \\
                                      & F1 ocena    & 0.937                 & 0.952                  & 0.893             & 0.929 (±0.031)                    \\
 \hline
@@ -868,7 +873,8 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 \textbf{Azure Cognitive Services}   & Priklic  & 0.881              & 0.905              & 0.887              & \textbf{0.981} (±0.012)                                            \\
                        &  Natančnost & 0.852              & 0.884              & 0.851              & 0.862 (±0.019)                                          \\
                         & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876  (±0.015)                                          \\  
-  \hline                            
+  \hline   
+   \hline                           
   \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.980                                           \\
                        &  Natančnost &               &               &             & 0.650                                          \\
                         & F1 ocena   &              &             &               & 0.782                                         \\  
@@ -903,7 +909,7 @@ Za analizo sentimenta  je bila najboljša Vertex AI storitev.
         | >{\centering\arraybackslash}X  
     | >{\centering\arraybackslash}X |}
  \hline
-  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Google Vertex AI  } &  \textbf{Transformers}    \\
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Google Vertex AI  } &  \textbf{Hugging Face Transformers}    \\
  \hline
 Ta knjiga je zelo zanimiva.   &Pozitivno    & Pozitivno   &Negativno   \\ 
 \hline
@@ -936,7 +942,7 @@ Najpogosteje opažene napake pri analizi sentimenta:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                          \\ \hline   \hline                                                                                                                                                                                                                                                                                                                                        
-\textbf{Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192 (±0.018)                                    \\
+\textbf{Hugging Face Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192 (±0.018)                                    \\
 \hline
 \textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306 (±0.013)                                          \\
 \hline
@@ -944,7 +950,8 @@ Najpogosteje opažene napake pri analizi sentimenta:
 \hline
 \textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & \textbf{0.330} (±0.052)                  \\
 \hline
-\textbf{Rezultati članka}   & ROUGE-L   &               &              &             & \textbf{0.392}                    \\
+ \hline  
+\textbf{Rezultati članka}   & ROUGE-L   &               &              &             & 0.392                   \\
 \hline
 \hline                                                                                              
 \end{tabular}}
@@ -974,7 +981,7 @@ Kot najboljša izbira za ustvarjanje povzetkov se je izkazala storitev Azure Cog
     | >{\centering\arraybackslash}X  
     | >{\centering\arraybackslash}X |}
  \hline
-  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Transformers}    \\
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Hugging Face Transformers}    \\
  \hline
 John Doe je živel v San Franciscu. Bil je uspešen poslovnež.   &John Doe, uspešen poslovnež iz San Francisca.    &John Doe je živel v San Franciscu in bil poslovnež. & John Doe, poslovnež, živel v San Franciscu.       \\ 
 \hline
@@ -986,7 +993,7 @@ Apple je bila ustanovljena leta 1976. Je ena največjih tehnoloških podjetij na
 \end{center}
 \end{table}
 
-Kot je razvidno iz tabele je Transformers vse stavke zelo slabo oblikoval in so zelo nepovezani. 
+Kot je razvidno iz tabele je Hugging Face Transformers vse stavke zelo slabo oblikoval in so zelo nepovezani. 
 
 \vspace{\baselineskip}
 
@@ -1014,7 +1021,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 \begin{tabular}{lrrrrrr}
 
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                        \\ \hline \hline                                                                                                                                                                                                                                                                                                                                            
-\textbf{Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573 (±0.060)                                        \\
+\textbf{Hugging Face Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573 (±0.060)                                        \\
 				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475 (±0.068 )  	          	   \\
                                      & F1 ocena    & 0.452                  & 0.561                  & 0.542              & 0.519 (±0.058)  			   \\
                                      \hline  
@@ -1030,6 +1037,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
                        &  Natančnost & 0.674              & 0.648             & 0.689              & 0.670 (±0.021)                                         	  \\
                         & F1 ocena   & 0.595              & 0.600              & 0.579              & \textbf{0.592}  (±0.011)                                                   \\
                                    \hline  
+                                    \hline  
 \textbf{Rezultati članka}   & Priklic  &              &              &               &0.543                                            \\
                        &  Natančnost &             &             &               &0.637                                        	  \\
                         & F1 ocena   &               &              &               &0.519                                                     \\
@@ -1066,7 +1074,7 @@ Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Az
     | >{\centering\arraybackslash}X  
     | >{\centering\arraybackslash}X |}
  \hline
-  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Transformers}    \\
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Azure Cognitive Services} &  \textbf{Hugging Face Transformers}    \\
  \hline
 John Doe je živel v San Franciscu. Bil je uspešen poslovnež.    &John Doe, uspešen poslovnež, San Francisco    &John Doe, San Francisco  & John Doe, Francisco        \\ 
 \hline
@@ -1078,7 +1086,7 @@ Apple je bila ustanovljena leta 1976. Je ena največjih tehnoloških podjetij na
 \end{center}
 \end{table}
 
-Iz tabele lahko razberemo, da je do napak prišlo pri uporabi obeh storitev, kot pri  Transformers kakor tudi pri Azure Cognitive Services. Opazimo lahko makajoči  del ključne besede kateri je zelo pomemben, napačno povezovanje besed ter dodajanje neresničnih podatkov.
+Iz tabele lahko razberemo, da je do napak prišlo pri uporabi obeh storitev, kot pri Hugging Face Transformers kakor tudi pri Azure Cognitive Services. Opazimo lahko makajoči  del ključne besede kateri je zelo pomemben, napačno povezovanje besed ter dodajanje neresničnih podatkov.
 
 Najpogosteje opažene napake pri izvlečeku besedne zveze:  
 \begin{enumerate}
@@ -1104,7 +1112,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 \begin{tabular}{lrrrrrr}
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}      
                  \\ \hline      \hline                                                                                                                                                                                                                                                                                                                                       
-\textbf{Transformers}   & Priklic  & 0.933             & 0.948                  &  0.896             &  0.926 (±0.027)                                         \\
+\textbf{Hugging Face Transformers}   & Priklic  & 0.933             & 0.948                  &  0.896             &  0.926 (±0.027)                                         \\
 				    &  Natančnost  &  0.898               & 0.935                 & 0.958               &  0.930 (±0.030)   		      \\
                                      & F1 ocena    &  0.915                  &  0.941                  &  0.926              &  \textbf{0.928} (±0.013) 		     \\
                                      \hline  
@@ -1120,6 +1128,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
                        &  Natančnost &  0.827              &  0.888              &  0.925             &  0.880 (±0.049)                                            \\
                         & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900(±0.018)                                           \\
                                    \hline  
+                                    \hline  
 \textbf{Rezultati članka}   & Priklic  &                &               &              &  0.757                                            \\
                        &  Natančnost &                &               &             &  0.707                                            \\
                         & F1 ocena   &                &                &                &  0.735                                        \\
@@ -1139,7 +1148,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
   \newpage
 Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus IMDb Reviews (glej poglavje~\ref{sec:ch9}).
 
-Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Transformers.
+Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Hugging Face Transformers.
 
 
 \subsection{Analiza napak pri uvrščanje besedila} 
@@ -1154,7 +1163,7 @@ Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storite
     | >{\centering\arraybackslash}X  
     | >{\centering\arraybackslash}X |}
  \hline
-  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Google Vertex AI } &  \textbf{Transformers}    \\
+  \textbf{Besedilo}  & \textbf{ Imenske entitete}   & \textbf{Google Vertex AI } &  \textbf{Hugging Face Transformers}    \\
  \hline
 John Doe je živel v San Franciscu.     &Novice     &Novice  & Novice        \\ 
 \hline
@@ -1166,7 +1175,7 @@ Apple je bila ustanovljena leta 1976.    &Novice  &Tehnologija   &Novice        
 \end{center}
 \end{table}
 
-Iz tabele lahko razberemo da so bile narejene napake pri obeh ponudnikih, vendar je Transformers imel manj napak. 
+Iz tabele lahko razberemo da so bile narejene napake pri obeh ponudnikih, vendar je Hugging Face Transformers imel manj napak. 
 
 Najpogosteje opažene napake pri uvrščanju besedila:  
 
@@ -1188,7 +1197,7 @@ Najpogosteje opažene napake pri uvrščanju besedila:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje }                            \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
-\textbf{Transformers}   & Točnost  & 0.900             & 0.970                  & 0.940              & 0.940 (±0.018 )                                    \\
+\textbf{Hugging Face Transformers}   & Točnost  & 0.900             & 0.970                  & 0.940              & 0.940 (±0.018 )                                    \\
 \hline
 \textbf{Google Vertex AI}         & Točnost  & 0.963              & 0.991              & 0.977             & 0.977 (±0.014)                                           \\
 \hline
@@ -1196,6 +1205,7 @@ Najpogosteje opažene napake pri uvrščanju besedila:
 \hline
 \textbf{Azure Cognitive Services}   & Točnost  & 0.960             & 0.950              & 0.985             & 0.965 (±0.017)               \\
 \hline
+ \hline  
 \textbf{Rezultati članka}   & Točnost  &             &               &              & 0.780               \\
 \hline\hline                                                                   
 \end{tabular}}
@@ -1229,7 +1239,7 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
     | >{\centering\arraybackslash}X  
     | >{\centering\arraybackslash}X |}
  \hline
-  \textbf{Slika}  & \textbf{ Pravilni objekti}   & \textbf{AWS SageMaker } &  \textbf{Transformers}    \\
+  \textbf{Slika}  & \textbf{ Pravilni objekti}   & \textbf{AWS SageMaker } &  \textbf{Hugging Face Transformers}    \\
  \hline
 Psa     &Pes     &Pes  & Mačka        \\ 
 \hline
@@ -1245,7 +1255,7 @@ Avtomobila    &Avtomobil  &Avtomobil, cesta   &Avtomobil        \\
 \end{center}
 \end{table}
 
-Tudi pri tej tabeli lahko vidimo da sta obe storitvi naredili napake. Opazimo da je Transformers večkrat napačno kategoriziral. 
+Tudi pri tej tabeli lahko vidimo da sta obe storitvi naredili napake. Opazimo da je Hugging Face Transformers večkrat napačno kategoriziral. 
 
 Do napak pri zazvanju objektov prihaja zaradi različnih razlogov, na primer zaradi napak v algoritmu za zaznavanje objektov, zaradi slabe kakovosti slik ali zaradi prisotnosti motenj v okolju. 
 
@@ -1265,7 +1275,7 @@ Najpogosteje opažene napake pri zaznavi objektov:
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 
-\multicolumn{1}{r}{} &                                                & \textbf{Transformers}             & \textbf{Google Vertex AI}                & \textbf{AWS SageMaker}               & \textbf{Azure Cognitive Services}                             \\ \hline 
+\multicolumn{1}{r}{} &                                                & \textbf{Hugging Face Transformers}             & \textbf{Google Vertex AI}                & \textbf{AWS SageMaker}               & \textbf{Azure Cognitive Services}                             \\ \hline 
 \hline                                                                                                                                                                                                                                                                                                                                          
 \textbf{Prepoznavanje imenskih entitet}                         &  Priklic  & 0.919               & 0.919                           & 0.961               & 0.824 \\
 										   & Natančnost  & 0.923                & 0.920                  &0.954              & 0.858                                         \\
@@ -1290,18 +1300,18 @@ Najpogosteje opažene napake pri zaznavi objektov:
    \hline                                                          
 \end{tabular}}
 \end{table}
-Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  uvrščanje besedila  odprtokodna rešitev Transformers je imela najboljši rezultat. 
+Pomembno je omeniti, da so vse oblačne storitve po rezultatih tesno skupaj v nekaterih primerih, kot je razvidno iz tabele analize je za  uvrščanje besedila  odprtokodna rešitev Hugging Face Transformers je imela najboljši rezultat. 
 Pri testitranju  imenovanje imenskih entitet je najvišjo uspešnost dosegla storitev AWS Sage Maker. Na drugem mestu je bila odprtokodna storitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI ponudnika Google Cloud.
 
-Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugo mesto se je uvrstila odprtokodna rešitev Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google.
+Pri testiranju sentimentalne analize je najboljše rezultate dosegla storitev AWS SageMaker. Na drugo mesto se je uvrstila odprtokodna rešitev Hugging Face Transformers, medtem ko je tretje mesto zasedla storitev Vertex AI podjetja Google.
 
 Najboljši rezultati  pri povzemanju besedila so bili doseženi z uporabo storitve Azure Cognitive Services. Na drugem mestu se je uvrstil Vertex AI, medtem ko je tretje mesto pripadlo AWS SageMaker.
 
 Pri ocenjevanju izvlečka besednih zvez je prvo mesto osvojila storitev Azure Cognitive Services. Na drugem mestu je Vertex AI, medtem ko je tretjem mestu  AWS SageMaker.
 
-Pri uvrščanju besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
+Pri uvrščanju besedila se je najboljša učinkovitost pokazala pri odprtokodni platformi Hugging Face Transformers. Na drugem mestu je bila storitev Vertex AI, medtem ko je tretje mesto pripadlo storitvi Azure Cognitive Services.
 
-V zaznavanju objektov je prvo mesto zasedla storitev Azure Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Transformers.
+V zaznavanju objektov je prvo mesto zasedla storitev Azure Cognitive Services, takoj za njo je sledil Vertex AI, medtem ko je tretje mesto pripadlo odprtokodni rešitvi Hugging Face Transformers.
 
 
 \section{Odločitvena tabela}
@@ -1313,7 +1323,7 @@ V zaznavanju objektov je prvo mesto zasedla storitev Azure Cognitive Services, t
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
 \multicolumn{1}{r}{}    & \textbf{Cena}             & \textbf{Enostavnost}                & \textbf{Uspešnost}                                        \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
-\textbf{Transformers}   & 2  & 4            & 4                                                          \\
+\textbf{Hugging Face Transformers}   & 2  & 4            & 4                                                          \\
 \hline
 \textbf{Google Vertex AI}         & 3  & 3              & 1                                                            \\
 \hline
@@ -1345,16 +1355,16 @@ Iz grafa je razvidno, da je najprimernejša storitev Azure Cognitive Services sa
 \chapter{Zaključek}
 \label{ch8}
 
-Magistrska naloga je obravnavala širok spekter področij obdelave naravnega jezika z uporabo oblačnih ter odprtokodne rešitev Transformers. Cilj raziskave je bil razumeti, kako se različni ponudniki odzivajo na različne izzive in naloge ter določiti njihovo uspešnost na posameznih področjih. Analiza je zajemala prepoznavanje imenskih entitet, analizo sentimenta, povzemanje besedil, luščenje ključnih besed, uvrščanje besedila ter zaznavo objektov.
+Magistrska naloga je obravnavala širok spekter področij obdelave naravnega jezika z uporabo oblačnih ter odprtokodne rešitev Hugging Face Transformers. Cilj raziskave je bil razumeti, kako se različni ponudniki odzivajo na različne izzive in naloge ter določiti njihovo uspešnost na posameznih področjih. Analiza je zajemala prepoznavanje imenskih entitet, analizo sentimenta, povzemanje besedil, luščenje ključnih besed, uvrščanje besedila ter zaznavo objektov.
 
 
-Na podlagi raziskave smo ugotovili, da se je vsak ponudnik specializiral in izkazal za najboljšega na določenem področju. Pri prepoznavanju imenskih entitet je izstopal AWS SageMaker s svojo natančnostjo. Google Cloud Vertex AI je blestel pri analizi sentimenta, kar je ključno za razumevanje čustev in mnenj v besedilu. Pri povzemanju besedila se je Azure Cognitive Services izkazal kot najboljši, kar poudarja njegovo sposobnost za ustvarjanje povzetkov besedilnih vsebin. Pri luščenju ključnih besed je bila rešitev Azure Cognitive Services v ospredju, saj je omogočala najboljši izvleček bistvenih informacij iz besedil. Transformers je prevzel vodilno vlogo pri analizi sentimenta z natančnostjo določanja čustvenega tona besedil.  AWS SageMaker pa se je izkazal kot močan v zaznavanju objektov.
+Na podlagi raziskave smo ugotovili, da se je vsak ponudnik specializiral in izkazal za najboljšega na določenem področju. Pri prepoznavanju imenskih entitet je izstopal AWS SageMaker s svojo natančnostjo. Google Cloud Vertex AI je blestel pri analizi sentimenta, kar je ključno za razumevanje čustev in mnenj v besedilu. Pri povzemanju besedila se je Azure Cognitive Services izkazal kot najboljši, kar poudarja njegovo sposobnost za ustvarjanje povzetkov besedilnih vsebin. Pri luščenju ključnih besed je bila rešitev Azure Cognitive Services v ospredju, saj je omogočala najboljši izvleček bistvenih informacij iz besedil. Hugging Face Transformers je prevzel vodilno vlogo pri analizi sentimenta z natančnostjo določanja čustvenega tona besedil.  AWS SageMaker pa se je izkazal kot močan v zaznavanju objektov.
 
 Vendar pa je pomembno poudariti, da ima vsak ponudnik v oblaku svoje prednosti in omejitve ter da izbira med njimi temelji na specifičnih potrebah in zahtevah uporabnika. Pri izbiri pravega ponudnika je potrebno upoštevati različne faktorje, kot so natančnost, hitrost, stroške, prilagodljivost in integracija z obstoječimi sistemi.
 
 Pomembno je izpostaviti, da so rezultati analize odvisni od specifičnih nalog, modelov in korpusov, ki so bili uporabljeni v tej raziskavi. Prav tako se tehnologije in zmogljivosti ponudnikov v oblaku nenehno razvijajo, zato je pomembno, da podjetja in raziskovalci ostanejo pozorni na nove in izboljšane modele za obdelavo naravnega jezika in zaznavo objektov.
 
-V sklepni fazi je jasno, da noben ponudnik v oblaku ne izstopa kot absolutno najboljši na vseh področjih. Različni ponudniki imajo svoje prednosti in posebne zmogljivosti glede na določene naloge obdelave naravnega jezika. Izbiro ustrezne platforme je torej smiselno prilagoditi specifičnim potrebam in zahtevam. Obetavno pa je  opazovati, kako odprtokodne rešitve, kot je  Transformers pridobivajo na veljavi in omogočajo raziskovalcem in razvijalcem, da izkoristijo najboljše iz več različnih tehnologij.
+V sklepni fazi je jasno, da noben ponudnik v oblaku ne izstopa kot absolutno najboljši na vseh področjih. Različni ponudniki imajo svoje prednosti in posebne zmogljivosti glede na določene naloge obdelave naravnega jezika. Izbiro ustrezne platforme je torej smiselno prilagoditi specifičnim potrebam in zahtevam. Obetavno pa je  opazovati, kako odprtokodne rešitve, kot je  Hugging Face Transformers pridobivajo na veljavi in omogočajo raziskovalcem in razvijalcem, da izkoristijo najboljše iz več različnih tehnologij.
 
 Zaključimo, da je obdelava naravnega jezika ter zaznave objektov v oblaku zelo dinamično in obetavno področje, ki bo še naprej oblikovalo način, kako napredujemo s tehnologijo in kako razumemo ter uporabljamo jezikovne vsebine v digitalnem svetu.
 
