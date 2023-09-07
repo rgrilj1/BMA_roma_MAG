@@ -20,7 +20,7 @@
 % ENG: define file structure
 %================================================================
 \documentclass[a4paper, 12pt]{book}
- 
+
 
 %================================================================
 % SLO: Odkomentiraj '\SLOtrue ' za izbiro slovenskega jezika
@@ -849,6 +849,37 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
  \end{enumerate}
 
 \section{Analiza sentimenta}
+
+\begin{verbatim}
+Google Vertex AI klic:
+predict_text_sentiment_analysis_sample(
+    project: str, endpoint_id: str, content: str, 
+    location: str = "us-central1",
+    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
+)
+\end{verbatim}
+   
+\begin{verbatim}
+AWS SageMaker klic:
+comprehend.detect_sentiment(Text=d, LanguageCode='en')
+\end{verbatim}
+f
+\begin{verbatim}
+Azure Cognitive Services klic:
+text_analytics_client.analyze_sentiment(documents, show_opinion_mining=True)
+\end{verbatim}
+
+\begin{verbatim}
+Hugging Face Transformers klic:
+sentiment_pipeline = pipeline("sentiment-analysis")
+\end{verbatim}
+    
+    
+
+    
+    
+
+    
 
 \begin{table}[h!]
 \centering
