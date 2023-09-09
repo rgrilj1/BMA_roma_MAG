@@ -765,15 +765,36 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 \newpage
 
-\section{Prepoznavanje imenskih entitet}
+\section{Prepoznavanje imenskih entitet (named entity recognition)}
 
+Google Vertex AI klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]    
+predict_text_entity_extraction_sample(
+    project: str,
+    endpoint_id: str,
+    content: str,
+    location: str = "us-central1",
+    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
+)        
+    \end{lstlisting}
+    
+AWS SageMaker klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+comprehend.detect_entities(Text=sample_tweet, LanguageCode='en')
+    \end{lstlisting}
+   
+
+Azure Cognitive Services klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+client.recognize_entities(documents = documents)[0]
+    \end{lstlisting}
+   
 \begin{table}[h!]
 \centering
-\caption{Prepoznavanje imenskih entitet}
+\caption{Prepoznavanje imenskih entitet (named entity recognition)}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
-
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                            \\ \hline                                                                                                                                                                                                                                                                                                                                           
  \hline
 \textbf{Hugging Face Transformers}   & Priklic  & 0.929              & 0.912                  & 0.917              & 0.919 (± 0.009)                                     \\
@@ -848,42 +869,33 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
  \item Ponavljanje: napaka, pri katerih se imenska entiteta ponovi v besedilu. 
  \end{enumerate}
 
-\section{Analiza sentimenta}
+\section{Analiza sentimenta }
 
-\begin{verbatim}
 Google Vertex AI klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
 predict_text_sentiment_analysis_sample(
-    project: str, endpoint_id: str, content: str, 
+    project: str, 
+    endpoint_id: str, 
+    content: str, 
     location: str = "us-central1",
-    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
-)
-\end{verbatim}
-   
-\begin{verbatim}
+    api_endpoint: str = "us-central1-aiplatform.googleapis.com")
+    \end{lstlisting}
+    
 AWS SageMaker klic:
-comprehend.detect_sentiment(Text=d, LanguageCode='en')
-\end{verbatim}
-f
-\begin{verbatim}
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+comprehend.detect_sentiment(Text=d, LanguageCode='en'))
+    \end{lstlisting}
+   
+
 Azure Cognitive Services klic:
-text_analytics_client.analyze_sentiment(documents, show_opinion_mining=True)
-\end{verbatim}
-
-\begin{verbatim}
-Hugging Face Transformers klic:
-sentiment_pipeline = pipeline("sentiment-analysis")
-\end{verbatim}
-    
-    
-
-    
-    
-
-    
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+client.recognize_sentiment(documents, show_opinion_mining=True)
+    \end{lstlisting}
+   
 
 \begin{table}[h!]
 \centering
-\caption{Analiza sentimenta}
+\caption{Analiza sentimenta(sentiment analaysis)}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -966,9 +978,35 @@ Najpogosteje opažene napake pri analizi sentimenta:
 
 \newpage
 \section{Povzemanje besedila}
+Google Vertex AI klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+text_summarization(
+    temperature: float,
+    project_id: str,
+    location: str,
+)
+    \end{lstlisting}
+    
+AWS SageMaker klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+    \end{lstlisting}
+   
+
+Azure Cognitive Services klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+sample_extractive_summarization(client):
+    from azure.core.credentials import AzureKeyCredential
+    from azure.ai.textanalytics import (
+        TextAnalyticsClient,
+        ExtractiveSummaryAction
+    )
+    \end{lstlisting}
+
+
+
 \begin{table}[h!]
 \centering
-\caption{Povzemanje besedila}
+\caption{Povzemanje besedila (summarization)}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -1042,15 +1080,33 @@ Najpogosteje opažene napake pri povzemanju besedila:
 
 %----------------------------------------------------------------
 
-\section{Prepoznavanje besednih zvez}
+\section{Prepoznavanje besednih zvez (key pharses)}
+Google Vertex AI klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+
+    \end{lstlisting}
+    
+AWS SageMaker klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+client.detect_key_phrases(
+    Text='text',
+    LanguageCode='en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW'
+)
+    \end{lstlisting}
+   
+
+Azure Cognitive Services klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+client.extract_key_phrases(documents = documents)[0]
+    \end{lstlisting}
+
 
 \begin{table}[h!]
 \centering
-\caption{Prepoznavanje besednih zvez}
+\caption{Prepoznavanje besednih zvez (Key pharses)}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
-
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                        \\ \hline \hline                                                                                                                                                                                                                                                                                                                                            
 \textbf{Hugging Face Transformers}   & Priklic  & 0.523              & 0.640                  & 0.556              & 0.573 (±0.060)                                        \\
 				    &  Natančnost  & 0.398               & 0.499                 & 0.528               & 0.475 (±0.068 )  	          	   \\
@@ -1133,7 +1189,30 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 % Klasifikacija besedila 
 %----------------------------------------------------------------
 
-\section{Uvrščanje besedil}
+\section{Uvrščanje besedil ( Text classification)}
+
+Google Vertex AI klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+text_classification_label_sample(
+    project, location, endpoint, content
+)
+    \end{lstlisting}
+    
+AWS SageMaker klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+
+    \end{lstlisting}
+   
+
+Azure Cognitive Services klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+TextAnalyticsClient(
+        endpoint=endpoint,
+        credential=AzureKeyCredential(key),
+    )
+    \end{lstlisting}
+
+
 
 \begin{table}[h!]
 \centering
@@ -1220,7 +1299,30 @@ Najpogosteje opažene napake pri uvrščanju besedila:
 % Zaznava objektov 
 %---------------------------------------------------------------
 
-\section{Zaznava objektov}
+\section{Zaznava objektov (object detection)}
+
+Google Vertex AI klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+predict_image_object_detection_sample(
+    project: str,
+    endpoint_id: str,
+    filename: str,
+    location: str = "us-central1",
+    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
+)
+    \end{lstlisting}
+    
+AWS SageMaker klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+    \end{lstlisting}
+   
+
+Azure Cognitive Services klic:
+\begin{lstlisting}[ basicstyle=\tiny,frame=single]
+client.analyze_image(url,visual_features=[VisualFeatureTypes.tags])
+    \end{lstlisting}
+
+
 \begin{table}[h!]
 \centering
 \caption{Zaznava objektov }

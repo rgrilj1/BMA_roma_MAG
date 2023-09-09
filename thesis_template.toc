@@ -37,17 +37,17 @@
 \contentsline {section}{\numberline {5.5}Točnost}{34}{section.5.5}%
 \contentsline {section}{\numberline {5.6}ROUGE}{35}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Primerjava orodij}{37}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (named entity recognition)}{39}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Analiza napak pri prepoznavanje imenskih entitet}{40}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta}{41}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Analiza sentimenta }{41}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{42}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Povzemanje besedila}{44}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{45}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez}{46}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{46}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{48}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil}{49}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil ( Text classification)}{49}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{50}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov}{51}{section.6.6}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov (object detection)}{51}{section.6.6}%
 \contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{52}{subsection.6.6.1}%
 \contentsline {section}{\numberline {6.7}Diskusija}{53}{section.6.7}%
 \contentsline {section}{\numberline {6.8}Odločitvena tabela}{54}{section.6.8}%
