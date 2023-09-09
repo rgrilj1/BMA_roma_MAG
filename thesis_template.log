@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  8 SEP 2023 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  9 SEP 2023 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1790,6 +1790,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
+Overfull \hbox (10.34445pt too wide) in paragraph at lines 124--125
+[]\OT1/cmr/m/n/12 Cilj ma-gi-str-ske na-loge je raz-i-skati, ka-teri po-nu-dnik
+ je naj-bolj^^Tsi na dolo^^Tcenem
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1798,21 +1803,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6
 
 ]
 Poglavje 2.
 
-Overfull \hbox (2.5376pt too wide) in paragraph at lines 139--140
+Overfull \hbox (2.5376pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 Za ana-lizo je bila upo-ra-bljena od-pr-to-ko-dna plat-forma 
 Hu-gging Face Trans-
  []
 
-[5]
-<figures//transf.png, id=323, 503.38063pt x 326.72063pt>
+[7]
+<figures//transf.png, id=333, 503.38063pt x 326.72063pt>
 File: figures//transf.png Graphic file (type png)
 <use figures//transf.png>
-Package pdftex.def Info: figures//transf.png  used on input line 153.
+Package pdftex.def Info: figures//transf.png  used on input line 170.
 (pdftex.def)             Requested size: 256.0748pt x 166.20654pt.
 
 
@@ -1823,11 +1846,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6 <./figures//transf.png>]
-<figures//cloud.png, id=335, 602.25pt x 341.275pt>
+[8 <./figures//transf.png>]
+<figures//cloud.png, id=346, 602.25pt x 341.275pt>
 File: figures//cloud.png Graphic file (type png)
 <use figures//cloud.png>
-Package pdftex.def Info: figures//cloud.png  used on input line 179.
+Package pdftex.def Info: figures//cloud.png  used on input line 196.
 (pdftex.def)             Requested size: 199.16928pt x 112.86063pt.
 
 
@@ -1841,7 +1864,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[9]
 Underfull \vbox (badness 3942) has occurred while \output is active []
 
 
@@ -1853,11 +1876,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8 <./figures//cloud.png>]
-<figures//amazonAWS.png, id=352, 501.875pt x 282.05376pt>
+[10 <./figures//cloud.png>]
+<figures//amazonAWS.png, id=363, 501.875pt x 282.05376pt>
 File: figures//amazonAWS.png Graphic file (type png)
 <use figures//amazonAWS.png>
-Package pdftex.def Info: figures//amazonAWS.png  used on input line 209.
+Package pdftex.def Info: figures//amazonAWS.png  used on input line 226.
 (pdftex.def)             Requested size: 227.62204pt x 127.9258pt.
 
 
@@ -1868,14 +1891,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9 <./figures//amazonAWS.png>]
-<figures//MSAzure.png, id=365, 1563.8425pt x 872.25874pt>
+[11 <./figures//amazonAWS.png>]
+<figures//MSAzure.png, id=375, 1563.8425pt x 872.25874pt>
 File: figures//MSAzure.png Graphic file (type png)
 <use figures//MSAzure.png>
-Package pdftex.def Info: figures//MSAzure.png  used on input line 235.
+Package pdftex.def Info: figures//MSAzure.png  used on input line 252.
 (pdftex.def)             Requested size: 398.33858pt x 222.1768pt.
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 235--236
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 252--253
  [] 
  []
 
@@ -1890,15 +1913,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10]
-<figures//tabela_ponudniki.png, id=374, 793.96625pt x 982.67125pt>
+[12]
+<figures//tabela_ponudniki.png, id=384, 793.96625pt x 982.67125pt>
 File: figures//tabela_ponudniki.png Graphic file (type png)
 <use figures//tabela_ponudniki.png>
-Package pdftex.def Info: figures//tabela_ponudniki.png  used on input line 251.
+Package pdftex.def Info: figures//tabela_ponudniki.png  used on input line 268.
 
 (pdftex.def)             Requested size: 398.33858pt x 493.02878pt.
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 251--252
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 268--269
  [] 
  []
 
@@ -1913,7 +1936,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./figures//MSAzure.png>]
+[13 <./figures//MSAzure.png>]
 Underfull \vbox (badness 1824) has occurred while \output is active []
 
 
@@ -1925,7 +1948,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <./figures//tabela_ponudniki.png>]
+[14 <./figures//tabela_ponudniki.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1934,7 +1957,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1943,26 +1966,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14
+[16
 
 ]
 Poglavje 3.
 
-Overfull \hbox (4.48767pt too wide) in paragraph at lines 264--264
+Overfull \hbox (4.48767pt too wide) in paragraph at lines 281--281
 []\OT1/cmr/bx/n/17.28 Najpogosteje upo-ra-bljeni al-go-ritmi po po-
  []
 
 
-Overfull \hbox (25.41931pt too wide) in paragraph at lines 268--269
+Overfull \hbox (25.41931pt too wide) in paragraph at lines 285--286
 \OT1/cmr/m/n/12 al-go-ri-tem CRF[[]], ki se upo-ra-blja za-radi svoje vi-soke n
 a-tan^^Tcnosti in u^^Tcinkovitosti.
  []
 
-[15]
-<figures//named.png, id=408, 804.00375pt x 225.84375pt>
+[17]
+<figures//named.png, id=418, 804.00375pt x 225.84375pt>
 File: figures//named.png Graphic file (type png)
 <use figures//named.png>
-Package pdftex.def Info: figures//named.png  used on input line 295.
+Package pdftex.def Info: figures//named.png  used on input line 312.
 (pdftex.def)             Requested size: 341.43306pt x 95.90822pt.
 
 
@@ -1976,11 +1999,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[16]
-<figures//sentiment.png, id=422, 813.0375pt x 409.53pt>
+[18]
+<figures//sentiment.png, id=432, 813.0375pt x 409.53pt>
 File: figures//sentiment.png Graphic file (type png)
 <use figures//sentiment.png>
-Package pdftex.def Info: figures//sentiment.png  used on input line 317.
+Package pdftex.def Info: figures//sentiment.png  used on input line 334.
 (pdftex.def)             Requested size: 341.43306pt x 171.97643pt.
 
 
@@ -1994,16 +2017,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17 <./figures//named.png>]
-Overfull \hbox (25.09708pt too wide) in paragraph at lines 327--328
+[19 <./figures//named.png>]
+Overfull \hbox (25.09708pt too wide) in paragraph at lines 344--345
 []\OT1/cmr/m/n/12 Tehnike za pov-ze-ma-nje upo-ra-bljajo razli^^Tcne al-go-ritm
 e in me-tode, ki vklju^^Tcujejo
  []
 
-<figures//povzetek.png, id=434, 813.0375pt x 409.53pt>
+<figures//povzetek.png, id=444, 813.0375pt x 409.53pt>
 File: figures//povzetek.png Graphic file (type png)
 <use figures//povzetek.png>
-Package pdftex.def Info: figures//povzetek.png  used on input line 331.
+Package pdftex.def Info: figures//povzetek.png  used on input line 348.
 (pdftex.def)             Requested size: 341.43306pt x 171.97643pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2020,11 +2043,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[18 <./figures//sentiment.png>]
-<figures//kljucne.png, id=443, 809.0225pt x 153.57375pt>
+[20 <./figures//sentiment.png>]
+<figures//kljucne.png, id=453, 809.0225pt x 153.57375pt>
 File: figures//kljucne.png Graphic file (type png)
 <use figures//kljucne.png>
-Package pdftex.def Info: figures//kljucne.png  used on input line 344.
+Package pdftex.def Info: figures//kljucne.png  used on input line 361.
 (pdftex.def)             Requested size: 341.43306pt x 64.81453pt.
 
 Underfull \vbox (badness 5756) has occurred while \output is active []
@@ -2038,11 +2061,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19 <./figures//povzetek.png> <./figures//kljucne.png>]
-<figures//uvrscanje.png, id=454, 688.5725pt x 428.60126pt>
+[21 <./figures//povzetek.png> <./figures//kljucne.png>]
+<figures//uvrscanje.png, id=465, 688.5725pt x 428.60126pt>
 File: figures//uvrscanje.png Graphic file (type png)
 <use figures//uvrscanje.png>
-Package pdftex.def Info: figures//uvrscanje.png  used on input line 360.
+Package pdftex.def Info: figures//uvrscanje.png  used on input line 377.
 (pdftex.def)             Requested size: 341.43306pt x 212.52124pt.
 
 Underfull \vbox (badness 4193) has occurred while \output is active []
@@ -2056,11 +2079,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[20 <./figures//uvrscanje.png>]
-<figures//objectDT.png, id=463, 144.54pt x 75.1608pt>
+[22 <./figures//uvrscanje.png>]
+<figures//objectDT.png, id=474, 144.54pt x 75.1608pt>
 File: figures//objectDT.png Graphic file (type png)
 <use figures//objectDT.png>
-Package pdftex.def Info: figures//objectDT.png  used on input line 381.
+Package pdftex.def Info: figures//objectDT.png  used on input line 398.
 (pdftex.def)             Requested size: 341.43306pt x 177.55452pt.
 
 
@@ -2074,7 +2097,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
+[23]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -2083,12 +2106,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[22 <./figures//objectDT.png>]
+[24 <./figures//objectDT.png>]
 Poglavje 4.
 
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
- [23
+ [25
 
 ]
 
@@ -2099,47 +2122,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [26]
-<figures//000000502136.jpg, id=519, 501.875pt x 424.58624pt>
-File: figures//000000502136.jpg Graphic file (type jpg)
-<use figures//000000502136.jpg>
-Package pdftex.def Info: figures//000000502136.jpg  used on input line 510.
-(pdftex.def)             Requested size: 199.16928pt x 168.49689pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 6.0pt on input line 520.
-LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 5
-22.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
-File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
-)
-LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
-(Font)              scaled to size 6.0pt on input line 522.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2150,7 +2133,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27]
 
-LaTeX Warning: Text page 28 contains only floats.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
+<figures//000000502136.jpg, id=530, 501.875pt x 424.58624pt>
+File: figures//000000502136.jpg Graphic file (type jpg)
+<use figures//000000502136.jpg>
+Package pdftex.def Info: figures//000000502136.jpg  used on input line 527.
+(pdftex.def)             Requested size: 199.16928pt x 168.49689pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 6.0pt on input line 537.
+LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 5
+39.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
+File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
+(Font)              scaled to size 6.0pt on input line 539.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2160,9 +2171,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc} 
+[29]
+
+LaTeX Warning: Text page 30 contains only floats.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc} 
 <./figures//000000502136.jpg>]
-Overfull \hbox (4.78757pt too wide) in paragraph at lines 569--570
+Overfull \hbox (4.78757pt too wide) in paragraph at lines 586--587
 []\OT1/cmr/m/n/12 Novi^^Tcarski ^^Tclanki in pov-zetki: Na-bor po-dat-kov vse-b
 uje novi^^Tcarske ^^Tclanke
  []
@@ -2175,9 +2198,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29]
+[31]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 12.0pt on input line 612.
+(Font)              scaled to size 12.0pt on input line 629.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2187,18 +2210,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+[32]
 Poglavje 5.
 
-Overfull \hbox (1.88899pt too wide) in paragraph at lines 643--644
+Overfull \hbox (1.88899pt too wide) in paragraph at lines 660--661
 []\OT1/cmr/m/n/12 Predpostavimo, da raz-vi-jamo mo-del za pre-po-zna-va-nje nez
 a^^Tzelenih sporo^^Tcil
  []
 
-[31
+[33
 
 ]
-Overfull \hbox (13.86525pt too wide) in paragraph at lines 664--666
+Overfull \hbox (13.86525pt too wide) in paragraph at lines 681--683
 []\OT1/cmr/m/n/12 Napa^^Tcno ne-ga-tivni [[]] ozna^^Tcujejo na-pako, ki se po-j
 avi v kon-te-kstu uvr^^Ts^^Tcanja
  []
@@ -2211,7 +2234,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
+[34]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -2220,7 +2243,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[33]
+[35]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2229,8 +2252,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34]
-Overfull \hbox (16.10643pt too wide) in paragraph at lines 725--726
+[36]
+Overfull \hbox (16.10643pt too wide) in paragraph at lines 742--743
 \OT1/cmr/m/n/12 be-se-dili. Me-trika lahko po-maga raz-i-sko-val-cem in raz-vi-
 jal-cem oce-niti u^^Tcinkovitost
  []
@@ -2243,19 +2266,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[36
-
-]
-Poglavje 6.
 [37]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2265,11 +2275,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38]
-<figures//NER.png, id=608, 628.311pt x 336.165pt>
+[38
+
+]
+Poglavje 6.
+[39]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40]
+<figures//NER.png, id=620, 628.311pt x 336.165pt>
 File: figures//NER.png Graphic file (type png)
 <use figures//NER.png>
-Package pdftex.def Info: figures//NER.png  used on input line 828.
+Package pdftex.def Info: figures//NER.png  used on input line 845.
 (pdftex.def)             Requested size: 284.52756pt x 152.23718pt.
 
 
@@ -2283,8 +2306,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.85004pt}.
 
-[39]
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 858--859
+[41]
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 875--876
  [] 
  []
 
@@ -2296,8 +2319,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <./figures//NER.png>]
-Overfull \hbox (2.0501pt too wide) in paragraph at lines 866--867
+[42 <./figures//NER.png>]
+Overfull \hbox (2.0501pt too wide) in paragraph at lines 883--884
 []\OT1/cmr/m/n/12 Napake imen: to so na-pake v imenu imen-ske en-ti-tete, na pr
 i-mer napa^^Tcna
  []
@@ -2305,10 +2328,10 @@ i-mer napa^^Tcna
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures//KP.png, id=640, 593.052pt x 337.26pt>
+<figures//KP.png, id=650, 593.052pt x 337.26pt>
 File: figures//KP.png Graphic file (type png)
 <use figures//KP.png>
-Package pdftex.def Info: figures//KP.png  used on input line 932.
+Package pdftex.def Info: figures//KP.png  used on input line 949.
 (pdftex.def)             Requested size: 284.52756pt x 161.81091pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2321,8 +2344,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41]
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 965--966
+[43]
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 982--983
  [] 
  []
 
@@ -2330,7 +2353,7 @@ Overfull \hbox (39.00238pt too wide) in paragraph at lines 965--966
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (5.05284pt too wide) in paragraph at lines 973--974
+Overfull \hbox (5.05284pt too wide) in paragraph at lines 990--991
 []\OT1/cmr/m/n/12 Nepravilna iden-ti-fi-ka-cija sen-ti-menta: je ena iz-med naj
 -po-go-steje opa^^Tzenih
  []
@@ -2343,7 +2366,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42 <./figures//KP.png>]
+[44 <./figures//KP.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2352,14 +2375,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43]
-<figures//SUMM.png, id=678, 593.052pt x 337.26pt>
+[45]
+<figures//SUMM.png, id=689, 593.052pt x 337.26pt>
 File: figures//SUMM.png Graphic file (type png)
 <use figures//SUMM.png>
-Package pdftex.def Info: figures//SUMM.png  used on input line 1024.
+Package pdftex.def Info: figures//SUMM.png  used on input line 1048.
 (pdftex.def)             Requested size: 284.52756pt x 161.81091pt.
 
-Overfull \hbox (21.29436pt too wide) in paragraph at lines 1030--1031
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (21.29436pt too wide) in paragraph at lines 1054--1055
 []\OT1/cmr/m/n/12 Pri pov-ze-ma-nju je bil upo-ra-bljen kor-pus CN-N/Da-ily Mai
 l (glej po-glavje [][]4.1.4[][]). 
  []
@@ -2372,16 +2399,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44 <./figures//SUMM.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[45]
+[46]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2393,22 +2411,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
-<figures//KEY.png, id=712, 566.115pt x 337.26pt>
-File: figures//KEY.png Graphic file (type png)
-<use figures//KEY.png>
-Package pdftex.def Info: figures//KEY.png  used on input line 1127.
-(pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
+[47 <./figures//SUMM.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+110.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1110.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[47 <./figures//KEY.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2418,27 +2431,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48]
-<figures//CLASSIFICATION.png, id=728, 566.115pt x 337.26pt>
-File: figures//CLASSIFICATION.png Graphic file (type png)
-<use figures//CLASSIFICATION.png>
-Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 1236.
-(pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.92502pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49]
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 1268--1269
- [] 
- []
+<figures//KEY.png, id=740, 566.115pt x 337.26pt>
+File: figures//KEY.png Graphic file (type png)
+<use figures//KEY.png>
+Package pdftex.def Info: figures//KEY.png  used on input line 1156.
+(pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2448,11 +2454,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50 <./figures//CLASSIFICATION.png>]
-<figures//OBJECT.png, id=753, 566.115pt x 337.26pt>
+[50 <./figures//KEY.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[51]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures//CLASSIFICATION.png, id=756, 566.115pt x 337.26pt>
+File: figures//CLASSIFICATION.png Graphic file (type png)
+<use figures//CLASSIFICATION.png>
+Package pdftex.def Info: figures//CLASSIFICATION.png  used on input line 1269.
+(pdftex.def)             Requested size: 284.52756pt x 169.50957pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[52 <./figures//CLASSIFICATION.png>]
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 1301--1302
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1142) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+
+[53]
+<figures//OBJECT.png, id=784, 566.115pt x 337.26pt>
 File: figures//OBJECT.png Graphic file (type png)
 <use figures//OBJECT.png>
-Package pdftex.def Info: figures//OBJECT.png  used on input line 1334.
+Package pdftex.def Info: figures//OBJECT.png  used on input line 1367.
 (pdftex.def)             Requested size: 256.0748pt x 152.5581pt.
 
 
@@ -2466,34 +2518,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[51]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[52 <./figures//OBJECT.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[53]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [54]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55 <./figures//OBJECT.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -2502,29 +2545,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[55]
-<figures//graf.png, id=799, 598.089pt x 281.853pt>
+[57]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[58]
+<figures//graf.png, id=829, 598.089pt x 281.853pt>
 File: figures//graf.png Graphic file (type png)
 <use figures//graf.png>
-Package pdftex.def Info: figures//graf.png  used on input line 1461.
+Package pdftex.def Info: figures//graf.png  used on input line 1494.
 (pdftex.def)             Requested size: 284.52756pt x 134.088pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.92502pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.92502pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
+
+[59 <./figures//graf.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[56 <./figures//graf.png>]
+[60
+
+]
 Poglavje 7.
 
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
- [57
-
-]
+ [61]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -2533,101 +2594,101 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[58]
-Underfull \hbox (badness 7504) in paragraph at lines 1516--1517
+[62]
+Underfull \hbox (badness 7504) in paragraph at lines 1549--1550
 []\OT1/cmr/m/n/12 Hugging Face. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https : / /
  huggingface . co / learn /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1517--1518
+Underfull \hbox (badness 10000) in paragraph at lines 1550--1551
 []\OT1/cmr/m/n/12 Transformers. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https : / /
  huggingface . co / learn /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1518--1519
+Underfull \hbox (badness 10000) in paragraph at lines 1551--1552
 []\OT1/cmr/m/n/12 Google Cloud. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https : / /
  cloud . google . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1521--1522
+Underfull \hbox (badness 10000) in paragraph at lines 1554--1555
 []\OT1/cmr/m/n/12 Amazon Sa-ge-Ma-ker. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 http
 s : / / aws . amazon . com /
  []
 
-[59
+[63
 
 ]
-Underfull \hbox (badness 7685) in paragraph at lines 1526--1527
+Underfull \hbox (badness 7685) in paragraph at lines 1559--1560
 []\OT1/cmr/m/n/12 Summarization. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https : / 
 / huggingface . co / tasks /
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 1529--1530
+Underfull \hbox (badness 1248) in paragraph at lines 1562--1563
 []\OT1/cmr/m/n/12 Object De-tec-tion. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https
  : / / huggingface . co / tasks /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1530--1531
+Underfull \hbox (badness 10000) in paragraph at lines 1563--1564
 []\OT1/cmr/m/n/12 True vs. False and Po-si-tive vs. Ne-ga-tive. Do-sto-pno na:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1530--1531
+Underfull \hbox (badness 10000) in paragraph at lines 1563--1564
 [][]$\OT1/zi4/m/n/12 https : / / developers . google . com / machine-[]learning
  / crash-[]course /
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 1530--1531
+Underfull \hbox (badness 1917) in paragraph at lines 1563--1564
 \OT1/zi4/m/n/12 classification / true-[]false-[]positive-[]negative$[][] \OT1/c
 mr/m/n/12 [Do-sto-pano10. 06.
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 1532--1533
+Underfull \hbox (badness 1019) in paragraph at lines 1565--1566
 []\OT1/cmr/m/n/12 IMDB Da-ta-set Re-views. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 
 https : / / www . kaggle . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1532--1533
+Underfull \hbox (badness 10000) in paragraph at lines 1565--1566
 \OT1/zi4/m/n/12 datasets / lakshmi25npathi / imdb-[]dataset-[]of-[]50k-[]movie-
 []reviews$[][]
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 1533--1534
+Underfull \hbox (badness 4144) in paragraph at lines 1566--1567
 []\OT1/cmr/m/n/12 COCO 2017 Da-ta-set. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 http
 s : / / www . kaggle . com /
  []
 
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 8.0pt on input line 1534.
+(Font)              scaled to size 8.0pt on input line 1567.
 
-Underfull \hbox (badness 1082) in paragraph at lines 1534--1535
+Underfull \hbox (badness 1082) in paragraph at lines 1567--1568
 []\OT1/cmr/m/n/12 CNN da-i-lymail Da-ta-set. Do-sto-pno na: [][]$\OT1/zi4/m/n/1
 2 https : / / huggingface . co /
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 1535--1536
+Underfull \hbox (badness 5607) in paragraph at lines 1568--1569
 \OT1/zi4/m/n/12 azzouza2018 / semevaldatadets ? resource = download$[][] \OT1/c
 mr/m/n/12 [Do-sto-pano 10.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1536--1537
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1570
 []\OT1/cmr/m/n/12 Accuracy. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https : / / dev
 elopers . google . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1536--1537
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1570
 \OT1/zi4/m/n/12 machine-[]learning / crash-[]course / classification / accuracy
 $[][] \OT1/cmr/m/n/12 [Do-
  []
@@ -2640,25 +2701,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 1537--1538
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1571
 []\OT1/cmr/m/n/12 Precision and Re-call. Do-sto-pno na: [][]$\OT1/zi4/m/n/12 ht
 tps : / / developers .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1537--1538
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1571
 \OT1/zi4/m/n/12 google . com / machine-[]learning / crash-[]course / classifica
 tion /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1538--1539
+Underfull \hbox (badness 10000) in paragraph at lines 1571--1572
 []\OT1/cmr/m/n/12 Arya Roy: Re-cent Trends in Na-med En-tity Re-co-gni-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1538--1539
+Underfull \hbox (badness 10000) in paragraph at lines 1571--1572
 \OT1/cmr/m/n/12 (NER).Dostopno na: [][]$\OT1/zi4/m/n/12 https : / / arxiv . org
  / pdf / 2101 . 11420 . pdf$[][]
  []
@@ -2671,19 +2732,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1547
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
 []\OT1/cmr/m/n/12 Algorithms to De-tect Phra-ses and Key-words from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1547
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
 \OT1/cmr/m/n/12 Text . Do-sto-pno na: [][]$\OT1/zi4/m/n/12 https : / / saturncl
 oud . io / blog /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1547
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
 \OT1/zi4/m/n/12 algorithms-[]to-[]detect-[]phrases-[]and-[]keywords-[]from-[]te
 xt/$[][] \OT1/cmr/m/n/12 [Do-
  []
@@ -2696,7 +2757,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[62] (./thesis_template.aux)
+[66] (./thesis_template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2707,13 +2768,13 @@ Package rerunfilecheck Info: File `thesis_template.out' has not changed.
 (rerunfilecheck)             Checksum: 7502F53BDF6E21BE0971826935B96FD7;5414.
  ) 
 Here is how much of TeX's memory you used:
- 31716 strings out of 476025
- 631540 string characters out of 5790017
+ 31755 strings out of 476025
+ 632131 string characters out of 5790017
  1881388 words of memory out of 5000000
- 51244 multiletter control sequences out of 15000+600000
+ 51260 multiletter control sequences out of 15000+600000
  529124 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,12n,120p,1401b,1129s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,12n,120p,1401b,1347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
 a-zi4r.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -2726,15 +2787,16 @@ b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr
 /local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis_template.pdf (78 pages, 2387231 bytes).
+local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/lo
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on thesis_template.pdf (82 pages, 2401971 bytes).
 PDF statistics:
- 1038 PDF objects out of 1200 (max. 8388607)
- 849 compressed objects within 9 object streams
- 293 named destinations out of 1000 (max. 500000)
+ 1080 PDF objects out of 1200 (max. 8388607)
+ 885 compressed objects within 9 object streams
+ 313 named destinations out of 1000 (max. 500000)
  551 words of extra memory for PDF output out of 10000 (max. 10000000)
 
