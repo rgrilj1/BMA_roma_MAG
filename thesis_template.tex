@@ -855,6 +855,8 @@ Pri analizi imenskih entitet je bil uporabljen CONLL-2003 korpus (glej poglavje~
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker, saj je bil najboljši kar na obeh področjih, tako pri priklicu kot pri natančnosti. 
 
 
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clanek}, kjer je Arya Roy naredil primerjavo med več modeli, razberemo lahko da se je najboljše izkazal model Chiu and Nichols (2015) + emb + lex.
+
 \subsection{Analiza napak pri prepoznavanje imenskih entitet} 
 \begin{table}[h!]
 \begin{center}
@@ -937,9 +939,9 @@ client.recognize_sentiment(documents, show_opinion_mining=True)
                         & F1 ocena   & 0.866              & 0.894              & 0.869              & 0.876  (±0.015)                                          \\  
   \hline   
    \hline                           
-  \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.980                                           \\
-                       &  Natančnost &               &               &             & 0.650                                          \\
-                        & F1 ocena   &              &             &               & 0.782                                         \\  
+  \textbf{Najboljši rezultat z članka}   & Priklic    &               &             &               & 0.928                                           \\
+                       &  Natančnost &               &               &             & 0.915                                          \\
+                        & F1 ocena   &              &             &               & 0.921                                         \\  
                          
 \hline
 \hline                            
@@ -956,6 +958,9 @@ client.recognize_sentiment(documents, show_opinion_mining=True)
 
 Pri analizi sentimenta je bil uporabljen  IMDb Reviews korpus (glej poglavje~\ref{sec:ch9}).
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
+
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{sent1_clanek}, kjer so Guizian Xu in ostali naredili analizo na Twiter korpusu.
+
 
 \newpage
 
@@ -1056,6 +1061,9 @@ sample_extractive_summarization(client):
 Pri povzemanju je bil uporabljen korpus CNN/Daily Mail (glej poglavje~\ref{sec:cnn}).
 
 Kot najboljša izbira za ustvarjanje povzetkov se je izkazala storitev Azure Cognitive Services.
+
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clanek}, kjer je Arya Roy naredil primerjavo med več modeli, razberemo lahko da se je najboljše izkazal model Chiu and Nichols (2015) + emb + lex.
+
 \newpage
 
 \subsection{Analiza napak pri povzemanju besedila} 
@@ -1573,6 +1581,8 @@ Zaključimo, da je obdelava naravnega jezika ter zaznave objektov v oblaku zelo 
 \bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{sent_clanek} Mayur Wankhade, Annavarapu Chandra Sekhara Rao, Chaitanya Kulkarni: A survey on sentiment analysis methods, applications,
 and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s10462-022-10144-1}  [Dostopano 10. 06. 2023].
+\bibitem{sent1_clanek} GUIXIAN XU, YUETING MENG, XIAOYU QIU, ZIHENG YU and XU WU: Sentiment Analysis of Comment
+Texts Based on BiLSTM. Dostopno na: \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8684825}  [Dostopano 10. 06. 2023].
 \bibitem{povz_clanek} Divakar Yadav, Jalpa Desai, Arun Kumar Yadav: Automatic Text Summarization Methods: A Comprehensive Review. Dostopno na: \url{https://arxiv.org/pdf/2204.01849.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{uvrscanje_clanek} Xiaoyu Luo: Efficient English text classification using selected Machine Learning Techniques. Dostopno na: \url{https://www.sciencedirect.com/science/article/pii/S1110016821000806}  [Dostopano 10. 06. 2023].
 \bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano 10. 06. 2023].
