@@ -1152,10 +1152,9 @@ client.extract_key_phrases(documents = documents)[0]
                         & F1 ocena   & 0.595              & 0.600              & 0.579              & \textbf{0.592}  (±0.011)                                                   \\
                                    \hline  
                                     \hline  
-\textbf{Rezultati članka}   & Priklic  &              &              &               &0.543                                            \\
-                       &  Natančnost &             &             &               &0.637                                        	  \\
-                        & F1 ocena   &               &              &               &0.519                                                     \\
-                        \hline  
+\textbf{Rezultati članka}  & F1 ocena   &               &              &               &0.406                                                     \\
+
+                                               \hline  
                         \hline                  
 \end{tabular}}
 \end{table}
@@ -1175,7 +1174,7 @@ Pri izvajanju naloge zvlečka besedne zveze je bil uporabljen korpus SemEval 201
 Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Azure Cognitive Services.
 
 
-Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{povz_clanek}, kjer so Debanjan Mahata in ostali naredili analizo na različnih korpusih, kjer pa je najboljši rezultat dosegel CNN/ DailyMail.
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{key_phrases_clanek}, kjer so Xingdi Yuan in ostali naredili analizo na različnih korpusih, kjer pa je najboljši rezultat dosegel NUS, na drugem mestu pa je bil SemEval, kateri je dosegel oceno 0,357.
 
   \newpage
 \subsection{Analiza napak pri izvlečeku besedne zveze} 
@@ -1268,9 +1267,9 @@ TextAnalyticsClient(
                         & F1 ocena   &  0.878              &  0.906              &  0.912              &  0.900(±0.018)                                           \\
                                    \hline  
                                     \hline  
-\textbf{Rezultati članka}   & Priklic  &                &               &              &  0.757                                            \\
-                       &  Natančnost &                &               &             &  0.707                                            \\
-                        & F1 ocena   &                &                &                &  0.735                                        \\
+\textbf{Rezultati članka}   & Priklic  &                &               &              &  0.9057                                            \\
+                       &  Natančnost &                &               &             & 0.8975                                            \\
+                        & F1 ocena   &                &                &                &  0.9018                                        \\
                         \hline  
                         \hline                                  
 \end{tabular}}
@@ -1288,6 +1287,8 @@ TextAnalyticsClient(
 Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus IMDb Reviews (glej poglavje~\ref{sec:ch9}).
 
 Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Hugging Face Transformers.
+
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{imdb1_clanek}, kjer so Shanshan Yu in ostali naredili analizo na IMDb Reviews korpusu.
 
 
 \subsection{Analiza napak pri uvrščanje besedila} 
@@ -1580,12 +1581,14 @@ Zaključimo, da je obdelava naravnega jezika ter zaznave objektov v oblaku zelo 
 \bibitem{semeval} SemEval-datasetst. Dostopno na: \url{https://www.kaggle.com/datasets/azzouza2018/semevaldatadets?resource=download}  [Dostopano 10. 06. 2023].
 \bibitem{accuracy} Accuracy. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/accuracy}  [Dostopano 10. 06. 2023].
 \bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano 10. 06. 2023].
+\bibitem{key_phrases_clanek} Xingdi Yuan, Tong Wang, Rui Meng, Khushboo Thaker, Peter Brusilovsky, Daqing He, Adam Trischler: One Size Does Not Fit All: Generating and Evaluating Variable Number of Keyphrases. Dostopno na: \url{https://arxiv.org/pdf/1810.05241.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{sent_clanek} Mayur Wankhade, Annavarapu Chandra Sekhara Rao, Chaitanya Kulkarni: A survey on sentiment analysis methods, applications,
 and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s10462-022-10144-1}  [Dostopano 10. 06. 2023].
 \bibitem{sent1_clanek} GUIXIAN XU, YUETING MENG, XIAOYU QIU, ZIHENG YU and XU WU: Sentiment Analysis of Comment
 Texts Based on BiLSTM. Dostopno na: \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8684825}  [Dostopano 10. 06. 2023].
 \bibitem{povz_clanek} Divakar Yadav, Jalpa Desai, Arun Kumar Yadav: Automatic Text Summarization Methods: A Comprehensive Review. Dostopno na: \url{https://arxiv.org/pdf/2204.01849.pdf}  [Dostopano 10. 06. 2023].
+\bibitem{imdb1_clanek} Beakcheol Jang, Myeonghwi Kim, Gaspard Harerimana, Sang-ug Kang and Jong Wook Kim: Bi-LSTM Model to Increase Accuracy in Text Classification: Combining Word2vec CNN and Attention Mechanism. Dostopno na: \url{https://www.mdpi.com/2076-3417/10/17/5841}  [Dostopano 10. 06. 2023].
 \bibitem{uvrscanje_clanek} Xiaoyu Luo: Efficient English text classification using selected Machine Learning Techniques. Dostopno na: \url{https://www.sciencedirect.com/science/article/pii/S1110016821000806}  [Dostopano 10. 06. 2023].
 \bibitem{pharses_clanek} Debanjan Mahata, John Kuriakose, Rajiv Ratn Shah, Roger Zimmermann : Automatic Ranked Keyphrase Extraction from Scientific Articles using Phrase Embeddings. Dostopno na: \url{https://osf.io/j76y3/download}  [Dostopano 10. 06. 2023].
 \bibitem{zaznava_clanek} Lixuan Du, Rongyu Zhang, Xiaotian Wang : Overview of two-stage object detection algorithms . Dostopno na: \url{https://iopscience.iop.org/article/10.1088/1742-6596/1544/1/012033/pdf}  [Dostopano 10. 06. 2023].
