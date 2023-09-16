@@ -812,7 +812,7 @@ comprehend.detect_entities(Text=sample_tweet, LanguageCode='en')
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.recognize_entities(documents = documents)[0]
+text_analytics_client.recognize_entities(besedilo)
     \end{lstlisting}
    
 \begin{table}[h!]
@@ -1025,12 +1025,7 @@ AWS SageMaker klic:
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-sample_extractive_summarization(client):
-    from azure.core.credentials import AzureKeyCredential
-    from azure.ai.textanalytics import (
-        TextAnalyticsClient,
-        ExtractiveSummaryAction
-    )
+text_analytics_client.analyze_sentiment(besedilo)
     \end{lstlisting}
 
 
@@ -1123,15 +1118,15 @@ Google Vertex AI klic:
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
 client.detect_key_phrases(
-    Text='text',
-    LanguageCode='en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW'
+    Text=besedilo,
+    LanguageCode='en'
 )
     \end{lstlisting}
    
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.extract_key_phrases(documents = documents)[0]
+text_analytics_client.extract_key_phrases(besedilo)
     \end{lstlisting}
 
 
@@ -1229,7 +1224,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 Google Vertex AI klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
 text_classification_label_sample(
-    project, location, endpoint, content
+    project, location, endpoint, besedilo
 )
     \end{lstlisting}
     
@@ -1241,10 +1236,7 @@ AWS SageMaker klic:
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-TextAnalyticsClient(
-        endpoint=endpoint,
-        credential=AzureKeyCredential(key),
-    )
+text_analytics_client.analyze_sentiment(besedilo)
     \end{lstlisting}
 
 
