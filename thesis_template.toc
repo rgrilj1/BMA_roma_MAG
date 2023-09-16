@@ -8,14 +8,14 @@
 \contentsline {subsection}{\numberline {1.0.1}Motivacija in ciji }{3}{subsection.1.0.1}%
 \contentsline {subsection}{\numberline {1.0.2}Prispevki}{5}{subsection.1.0.2}%
 \contentsline {chapter}{\numberline {2}Opis ponudnikov in storitev}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Hugging Face}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Hugging Face Transformers }{8}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.1}Hugging Face}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Hugging Face Transformers }{9}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Google Cloud}{9}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Vertex AI }{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Vertex AI }{11}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Amazon Web Services }{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{11}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Microsoft Azure}{12}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{12}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Microsoft Azure}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{14}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Najpogosteje uporabljeni algoritmi po področjih uporabe}{17}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{18}{section.3.2}%
