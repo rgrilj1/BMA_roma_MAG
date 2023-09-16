@@ -1369,7 +1369,7 @@ client.analyze_image(url,visual_features=[VisualFeatureTypes.tags])
 \textbf{Azure Cognitive Services}   & Točnost  & 0.960             & 0.950              & 0.985             & 0.965 (±0.017)               \\
 \hline
  \hline  
-\textbf{Rezultati članka}   & Točnost  &             &               &              & 0.780               \\
+\textbf{Rezultati članka}   & Točnost  &             &               &              & 0.948               \\
 \hline\hline                                                                   
 \end{tabular}}
 \end{table}
@@ -1387,6 +1387,9 @@ client.analyze_image(url,visual_features=[VisualFeatureTypes.tags])
 Pri zaznavi objektov je bil uporabljen  COCO korpus (glej poglavje~\ref{sec:coco}).
 
 Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS SageMaker.
+
+
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{obj1_clanek} spisanega leta 2019, kjer sta Ali Borji in Seyed Mehdi Iranmanesh naredila analizo na različnih korpusih, kjer pa je najboljši rezultat dosegel VOC, tretje mesto pa je zasedel COCO z 0.867.
 
 \subsection{Analiza napak pri zaznavi objektov} 
 \begin{table}[h!]
@@ -1583,6 +1586,7 @@ Zaključimo, da je obdelava naravnega jezika ter zaznave objektov v oblaku zelo 
 \bibitem{percision} Precision and Recall. Dostopno na: \url{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall}  [Dostopano 10. 06. 2023].
 \bibitem{key_phrases_clanek} Xingdi Yuan, Tong Wang, Rui Meng, Khushboo Thaker, Peter Brusilovsky, Daqing He, Adam Trischler: One Size Does Not Fit All: Generating and Evaluating Variable Number of Keyphrases. Dostopno na: \url{https://arxiv.org/pdf/1810.05241.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{ner_clanek} Arya Roy: Recent Trends in Named Entity Recognition (NER).Dostopno na: \url{https://arxiv.org/pdf/2101.11420.pdf}  [Dostopano 10. 06. 2023].
+\bibitem{obj1_clanek} Ali Borji, Seyed Mehdi Iranmanesh: Empirical Upper Bound in Object Detection and More Dostopno na: \url{https://arxiv.org/pdf/1911.12451.pdf}  [Dostopano 10. 06. 2023].
 \bibitem{sent_clanek} Mayur Wankhade, Annavarapu Chandra Sekhara Rao, Chaitanya Kulkarni: A survey on sentiment analysis methods, applications,
 and challenges. Dostopno na: \url{https://link.springer.com/article/10.1007/s10462-022-10144-1}  [Dostopano 10. 06. 2023].
 \bibitem{sent1_clanek} GUIXIAN XU, YUETING MENG, XIAOYU QIU, ZIHENG YU and XU WU: Sentiment Analysis of Comment
