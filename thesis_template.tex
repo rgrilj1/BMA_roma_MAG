@@ -1109,10 +1109,9 @@ client.extractKeywords(request={"document":besedilo})
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.detect_key_phrases(
+client.detect_phrases(
     Text=besedilo,
-    LanguageCode='en'
-)
+    LanguageCode='en')
     \end{lstlisting}
    
 
@@ -1215,10 +1214,7 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 
 Google Vertex AI klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.classify_text(
-        request={
-            "document": besedilo
-                         } )
+client.classify_text( request={"document": besedilo} )
     \end{lstlisting}
     
 AWS SageMaker klic:
@@ -1337,7 +1333,7 @@ predict_image_object_detection_sample(
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-query_response = query(model, slika)
+query_response = query(model, url)
     \end{lstlisting}
    
 
