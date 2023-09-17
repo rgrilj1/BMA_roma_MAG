@@ -42,8 +42,8 @@
 \contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (named entity recognition)}{41}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Analiza napak pri prepoznavanje imenskih entitet}{42}{subsection.6.1.1}%
 \contentsline {section}{\numberline {6.2}Analiza sentimenta }{43}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{45}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Povzemanje besedila}{47}{section.6.3}%
+\contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{44}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Povzemanje besedila}{46}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{48}{subsection.6.3.1}%
 \contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{49}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{52}{subsection.6.4.1}%

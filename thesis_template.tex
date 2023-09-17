@@ -795,13 +795,9 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 Google Vertex AI klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]    
-predict_text_entity_extraction_sample(
-    project: str,
-    endpoint_id: str,
-    content: str,
-    location: str = "us-central1",
-    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
-)        
+client.analyze_entities(
+        request={"document": besedilo, "encoding_type": encoding_type}
+    )
     \end{lstlisting}
     
 AWS SageMaker klic:
@@ -812,7 +808,7 @@ comprehend.detect_entities(Text=sample_tweet, LanguageCode='en')
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-text_analytics_client.recognize_entities(besedilo)
+analytics_client.recognize_entities(besedilo)
     \end{lstlisting}
    
 \begin{table}[h!]
@@ -901,12 +897,9 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 
 Google Vertex AI klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-predict_text_sentiment_analysis_sample(
-    project: str, 
-    endpoint_id: str, 
-    content: str, 
-    location: str = "us-central1",
-    api_endpoint: str = "us-central1-aiplatform.googleapis.com")
+client.analyze_sentiment(
+        request={"document": besedilo, "encoding_type": encoding_type}
+    )
     \end{lstlisting}
     
 AWS SageMaker klic:
@@ -917,7 +910,7 @@ comprehend.detect_sentiment(Text=d, LanguageCode='en'))
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.recognize_sentiment(documents, show_opinion_mining=True)
+analytics_client.analyze_sentiment(besedilo)
     \end{lstlisting}
    
 
@@ -1025,7 +1018,7 @@ AWS SageMaker klic:
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-text_analytics_client.analyze_sentiment(besedilo)
+analytics_client.begin_abstract_summary(besedilo)
     \end{lstlisting}
 
 
@@ -1126,7 +1119,7 @@ client.detect_key_phrases(
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-text_analytics_client.extract_key_phrases(besedilo)
+analytics_client.extract_key_phrases(besedilo)
     \end{lstlisting}
 
 
@@ -1223,9 +1216,10 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 
 Google Vertex AI klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-text_classification_label_sample(
-    project, location, endpoint, besedilo
-)
+client.classify_text(
+        request={
+            "document": besedilo
+                         } )
     \end{lstlisting}
     
 AWS SageMaker klic:
@@ -1236,7 +1230,7 @@ AWS SageMaker klic:
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-text_analytics_client.analyze_sentiment(besedilo)
+analytics_client.begin_multi_label_classify(besedilo)
     \end{lstlisting}
 
 
