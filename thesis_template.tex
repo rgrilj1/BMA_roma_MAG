@@ -202,7 +202,7 @@ Področje obdelave naravnega jezika je bilo dodano v Google Cloud leta 2015. Pon
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=7cm]{cloud.png}
+\includegraphics[width=7cm]{google.png}
 \end{center}
 \caption{Google Cloud storitve}
 \label{pic2}
@@ -232,7 +232,7 @@ Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=8cm]{amazonAWS}
+\includegraphics[width=8cm]{amazonAWS1}
 \end{center}
 \caption{Amazon Web Services storitve}
 \label{pic2}
@@ -258,7 +258,7 @@ Ponuja široko podporo različnim jezikom, skupno več kot 96. Nekateri izmed nj
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=14cm]{MSAzure.png}
+\includegraphics[width=14cm]{MS.png}
 \end{center}
 \caption{Microsoft Azure storitve}
 \label{pic2}
@@ -802,13 +802,13 @@ client.analyze_entities(
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-comprehend.detect_entities(Text=sample_tweet, LanguageCode='en')
+client.detect_entities(besedilo, LanguageCode='en')
     \end{lstlisting}
    
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-analytics_client.recognize_entities(besedilo)
+client.recognize_entities(besedilo)
     \end{lstlisting}
    
 \begin{table}[h!]
@@ -904,13 +904,13 @@ client.analyze_sentiment(
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-comprehend.detect_sentiment(Text=d, LanguageCode='en'))
+client.detect_sentiment(Text=besedilo, LanguageCode='en'))
     \end{lstlisting}
    
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-analytics_client.analyze_sentiment(besedilo)
+client.analyze_sentiment(besedilo)
     \end{lstlisting}
    
 
@@ -1004,21 +1004,20 @@ Najpogosteje opažene napake pri analizi sentimenta:
 \section{Povzemanje besedila}
 Google Vertex AI klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-text_summarization(
-    temperature: float,
-    project_id: str,
-    location: str,
-)
+document = language.Document(content=besedilo, type_=language.Document.Type.PLAIN_TEXT)
+response = client.text_summarization(document=document, encoding_type=EncodingType.UTF8)
     \end{lstlisting}
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
+query_response = query(model_predictor, besedilo)
+summary_text = parse_response(query_response)
     \end{lstlisting}
    
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-analytics_client.begin_abstract_summary(besedilo)
+client.begin_abstract_summary(besedilo)
     \end{lstlisting}
 
 
@@ -1119,7 +1118,7 @@ client.detect_key_phrases(
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-analytics_client.extract_key_phrases(besedilo)
+client.extract_key_phrases(besedilo)
     \end{lstlisting}
 
 
@@ -1224,13 +1223,14 @@ client.classify_text(
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-
+ query_response = query_endpoint(text.encode("utf-8"))
+    probabilities, labels, predicted_label = parse_response(query_response)
     \end{lstlisting}
    
 
 Azure Cognitive Services klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
-analytics_client.begin_multi_label_classify(besedilo)
+client.begin_multi_label_classify(besedilo)
     \end{lstlisting}
 
 
@@ -1337,6 +1337,7 @@ predict_image_object_detection_sample(
     
 AWS SageMaker klic:
 \begin{lstlisting}[ basicstyle=\tiny,frame=single]
+query_response = query(model, slika)
     \end{lstlisting}
    
 
@@ -1495,7 +1496,7 @@ V zaznavanju objektov je prvo mesto zasedla storitev Azure Cognitive Services, t
 \end{table}
 
 Ocena cene v tabeli je bila določena glede na stroške ene iteracije glede na storitev. Pomembno je omeniti da smo za odprtokodno rešitev koristili virtualni stroj. 
-Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure Cognitive Services. Google Vertex AI je bil ob v času raziskave še v razvoju in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja.
+Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure Cognitive Services. Google Vertex AI je bil ob v času raziskave še v razvoju in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja. Za oceno uspešnosti pa so uprabili rezulate z tabela analize (glej Tabela analize), kjer smo ponudnike razvrstili glede na uspešnost na vsakem posameznem področju (1 mesto je dobil najboljši ponudnik, ter 4 mesto najslapši ponudnik). 
 
  \newpage
  \begin{figure}[h!]
@@ -1517,16 +1518,7 @@ Iz grafa je razvidno, da je najprimernejša storitev Azure Cognitive Services sa
 Magistrska naloga je obravnavala širok spekter področij obdelave naravnega jezika z uporabo oblačnih ter odprtokodne rešitev Hugging Face Transformers. Cilj raziskave je bil razumeti, kako se različni ponudniki odzivajo na različne izzive in naloge ter določiti njihovo uspešnost na posameznih področjih. Analiza je zajemala prepoznavanje imenskih entitet, analizo sentimenta, povzemanje besedil, luščenje ključnih besed, uvrščanje besedila ter zaznavo objektov.
 
 
-Na podlagi raziskave smo ugotovili, da se je vsak ponudnik specializiral in izkazal za najboljšega na določenem področju. Pri prepoznavanju imenskih entitet je izstopal AWS SageMaker s svojo natančnostjo. Google Cloud Vertex AI je blestel pri analizi sentimenta, kar je ključno za razumevanje čustev in mnenj v besedilu. Pri povzemanju besedila se je Azure Cognitive Services izkazal kot najboljši, kar poudarja njegovo sposobnost za ustvarjanje povzetkov besedilnih vsebin. Pri luščenju ključnih besed je bila rešitev Azure Cognitive Services v ospredju, saj je omogočala najboljši izvleček bistvenih informacij iz besedil. Hugging Face Transformers je prevzel vodilno vlogo pri analizi sentimenta z natančnostjo določanja čustvenega tona besedil.  AWS SageMaker pa se je izkazal kot močan v zaznavanju objektov.
-
-Vendar pa je pomembno poudariti, da ima vsak ponudnik v oblaku svoje prednosti in omejitve ter da izbira med njimi temelji na specifičnih potrebah in zahtevah uporabnika. Pri izbiri pravega ponudnika je potrebno upoštevati različne faktorje, kot so natančnost, hitrost, stroške, prilagodljivost in integracija z obstoječimi sistemi.
-
-Pomembno je izpostaviti, da so rezultati analize odvisni od specifičnih nalog, modelov in korpusov, ki so bili uporabljeni v tej raziskavi. Prav tako se tehnologije in zmogljivosti ponudnikov v oblaku nenehno razvijajo, zato je pomembno, da podjetja in raziskovalci ostanejo pozorni na nove in izboljšane modele za obdelavo naravnega jezika in zaznavo objektov.
-
-V sklepni fazi je jasno, da noben ponudnik v oblaku ne izstopa kot absolutno najboljši na vseh področjih. Različni ponudniki imajo svoje prednosti in posebne zmogljivosti glede na določene naloge obdelave naravnega jezika. Izbiro ustrezne platforme je torej smiselno prilagoditi specifičnim potrebam in zahtevam. Obetavno pa je  opazovati, kako odprtokodne rešitve, kot je  Hugging Face Transformers pridobivajo na veljavi in omogočajo raziskovalcem in razvijalcem, da izkoristijo najboljše iz več različnih tehnologij.
-
-Zaključimo, da je obdelava naravnega jezika ter zaznave objektov v oblaku zelo dinamično in obetavno področje, ki bo še naprej oblikovalo način, kako napredujemo s tehnologijo in kako razumemo ter uporabljamo jezikovne vsebine v digitalnem svetu.
-
+Po zaključku analize ponudnikov storitev laho zaključimo, da je bil Azure Cognitive Services najcenejši, če upoštevamo, da smo morali za Hugging Face Transformers ločeno zakupiti infrastrukturo. Poleg tega je Azure Cognitive Services izstopal zaradi svoje preproste uporabe, kar je olajšalo raziskavo. Kljub temu pa je Google Vertex AI blestel kot najboljši ponudnik glede uspešnosti, kar je ključnega pomena za projekte, ki zahtevajo visoko zmogljive modele globokega učenja. Končna izbira med ponudniki bo odvisna od specifičnih potreb in ciljev projekta.
 
 % ---------------------------------------------------------------
 % Appendix
