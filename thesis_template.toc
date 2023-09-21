@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {2.3}Amazon Web Services }{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{13}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Microsoft Azure}{14}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{15}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{14}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Najpogosteje uporabljeni algoritmi po področjih uporabe}{19}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{20}{section.3.2}%
