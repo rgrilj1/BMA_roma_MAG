@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{23}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Analiza sentimenta}{24}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Povzemanje besedila}{25}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Prepoznavanje besedih zvez}{26}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Prepoznavanje besedih zvez}{25}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Uvrščanje besedil}{26}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Zaznava objektov}{27}{section.3.7}%
 \contentsline {chapter}{\numberline {4}Korpusi}{29}{chapter.4}%

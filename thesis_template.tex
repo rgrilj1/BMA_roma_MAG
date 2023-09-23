@@ -396,14 +396,15 @@ negativen   & 0.006                           \\
 Pri povzermanju besedila \cite{povzetek} gre za postopek ustvarjanja krajšega in jedrnatega povzetka iz daljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno pri velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
 
 Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporabe, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več. 
- 
-  \begin{figure}[h!]
+
+
+Rezultat povzemanja besedila dodanega v začetku poglavja (glej začetek poglavja~\ref{ex1}):
 \begin{center}
-\includegraphics[width=12cm]{povzetek.png}
+\fbox{\begin{minipage}[h!]{29em}
+The tower is 324 metres tall, about the same height as an 81-storey building. Its base is square, measuring 125 metres on each side. During its construction, it surpassed the Washington Monument to become the tallest man-made structure in the world. Due to the addition of a broadcasting aerial at the top of the tower, it is now taller than the Chrysler.
+\end{minipage}}
 \end{center}
-\caption{Primer povzemanja besedila}
-\label{pic2}
-\end{figure}
+
  
  \section{Prepoznavanje besedih zvez}
 Prepoznavanje besedih zvez  \cite{luscenje}  se nanaša na besede ali izraze, ki so najpomembnejši ali najbolj značilni za določeno besedilo ali dokument. Te besede so običajno tiste, ki nosijo ključne informacije ali so bistvene za razumevanje vsebine.
@@ -417,6 +418,12 @@ Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določen
 \caption{Primer prepoznavanja besedih zvez}
 \label{pic2}
 \end{figure}
+
+\begin{center}
+\fbox{\begin{minipage}[h!]{29em}
+The tower is 324 metres tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres on each side. During its construction, the \colorbox{gray!90}{Eiffel Tower} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} surpassed the \colorbox{gray!90}{Washington Monument} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}}  to become the tallest man-made structure in the world. Due to the addition of a \colorbox{gray!90}{broadcasting} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} aerial at the top of the tower in 1957, it is now taller than the \colorbox{gray!90}{Chrysler} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}}. The \colorbox{gray!90}{Eiffel Tower} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} is connected with an organization known as the Société d'Exploitation de la Tour Eiffel or the \colorbox{gray!90}{Eiffel Tower Operating Company} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} in English . It was designed by the French engineer Gustave Eiffel.
+\end{minipage}}
+\end{center}
 
 
  \section{Uvrščanje besedil}
