@@ -411,14 +411,7 @@ Prepoznavanje besedih zvez  \cite{luscenje}  se nanaša na besede ali izraze, ki
 
 Je pomembna naloga, saj nam omogoča, da hitro ugotovimo, o čem govori določeno besedilo. Te besede so lahko uporabne tudi za avtomatsko indeksiranje dokumentov, iskanje relevantnih informacij in razumevanje teme besedila brez potrebe po branju celotnega besedila.
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=12cm]{kljucne.png}
-\end{center}
-\caption{Primer prepoznavanja besedih zvez}
-\label{pic2}
-\end{figure}
-
+Rezultat prepoznavanja besedih zvez besedila dodanega v začetku poglavja (glej začetek poglavja 3):
 \begin{center}
 \fbox{\begin{minipage}[h!]{29em}
 The tower is 324 metres tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres on each side. During its construction, the \colorbox{gray!90}{Eiffel Tower} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} surpassed the \colorbox{gray!90}{Washington Monument} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}}  to become the tallest man-made structure in the world. Due to the addition of a \colorbox{gray!90}{broadcasting} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} aerial at the top of the tower in 1957, it is now taller than the \colorbox{gray!90}{Chrysler} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}}. The \colorbox{gray!90}{Eiffel Tower} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} is connected with an organization known as the Société d'Exploitation de la Tour Eiffel or the \colorbox{gray!90}{Eiffel Tower Operating Company} \textcolor{gray!90}{{\textbf{\tiny (KEY)}}} in English . It was designed by the French engineer Gustave Eiffel.
@@ -433,13 +426,28 @@ Postopek uvrščanja besedila se običajno začne s pripravo in čiščenjem bes
 
 Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. Pogosto se uporablja metoda imenovana vreča besed, kjer se besedilo pretvori v nabor besed, ki se pojavljajo v njem, in število pojavitev teh besed. Ta postopek lahko ponazorimo s pomočjo vektorja. 
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=12cm]{uvrscanje.png}
-\end{center}
-\caption{Primer uvrščanja besedil}
-\label{pic2}
-\end{figure}
+
+
+\begin{table}[h!]
+\centering
+\caption{Rezultat uvrščanja besedila (glej začetek poglavja~\ref{ex1})}
+\label{my-label}
+%\resizebox{\textwidth}{!}{%
+\resizebox{!}{0.09\textheight}{
+\begin{tabular}{lrrrrrr}
+\multicolumn{1}{r}  \textbf{sentiment}      & verjetnost               \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
+finance   & 0.399                                                                      \\
+\hline
+potovanje  & 0.157                                                   \\
+\hline
+slike   & 0.100                          \\
+\hline
+novice   & 0.086                           \\
+\hline
+poltika   & 0.041                           \\
+\hline\hline                                                                   
+\end{tabular}}
+\end{table}
 
  
  
