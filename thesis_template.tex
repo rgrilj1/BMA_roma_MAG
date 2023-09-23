@@ -314,12 +314,14 @@ V tem poglavju se bomo podrobneje posvetili analizi izbranih področij obdelave 
 
 
 \begin{center}
-Primer vzorčnega besedila:
+Besedilo za ponazoritev analize:
+\label{ex1}
 
 \fbox{\begin{minipage}[h!]{29em}
 The tower is 324 metres tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres on each side. During its construction, the Eiffel Tower surpassed the Washington Monument  to become the tallest man-made structure in the world. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the Chrysler. The Eiffel Tower is connected with an organization known as the Société d'Exploitation de la Tour Eiffel or the Eiffel Tower Operating Company  in English . It was designed by the French engineer Gustave Eiffel.
 \end{minipage}}
 \end{center}
+
 
 \section{Najpogosteje uporabljeni algoritmi po področjih uporabe}
 
@@ -349,15 +351,12 @@ Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu 
  \item Pomoč pri analizi sentimenta, kjer želimo razumeti, kako se osebe, organizacije ali druge entitete omenjene v besedilu nanašajo na določeno temo ali izdelek.
 \end{enumerate}
  
- 
- \begin{figure}[h!]
+Primer prepoznavanja imenskih entitet:
 \begin{center}
-\includegraphics[width=12cm]{named.png}
+\fbox{\begin{minipage}[h!]{29em}
+The tower is 324 metres tall, about the same height as an 81-storey building, and the tallest structure in \colorbox{blue!50}{Paris} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} . Its base is square, measuring 125 metres on each side. During its construction, the \colorbox{blue!50}{Eiffel Tower} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} surpassed the \colorbox{blue!50}{Washington Monument} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}}   to become the tallest man-made structure in the world. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the \colorbox{brown!50}{Chrysler} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}}. \colorbox{blue!90}{Eiffel Tower} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} is connected with an organization known as the \colorbox{brown!50}{Société d'Exploitation de la Tour Eiffel} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}} or the \colorbox{brown!50}{Eiffel Tower Operating Company} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}}  in \colorbox{gray!90}{English} \textcolor{gray!90}{{\textbf{\tiny (MISC)}}}. It was designed by the French engineer \colorbox{red!70}{Gustave Eiffel} \textcolor{red!70}{{\textbf{\tiny (PER)}}}.
+\end{minipage}}
 \end{center}
-\caption{Primer prepoznavanja imenskih entitet}
-\label{pic2}
-\end{figure}
-
 
 
 
@@ -372,15 +371,27 @@ Analiza sentimenta \cite{sentiment} je proces določanja čustvenega odziva, nag
  \item Analiza sentimenta s čustvenimi slovarji: Ta pristop vključuje uporabo slovarjev z besedami in izrazoslovjem, ki so povezani z določenimi čustvi. Besedilo se nato preveri in oceni glede na prisotnost pozitivnih ali negativnih besed iz čustvenih slovarjev.
  \end{enumerate}
  
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=12cm]{sentiment.png}
-\end{center}
-\caption{Primer analize sentimenta}
-\label{pic2}
-\end{figure}
+
+\begin{table}[h!]
+\centering
+\caption{Rezultat sentimentalne analize besedila dodanega v začetku poglavja (glej začetek poglavja~\ref{ex1})}
+\label{my-label}
+%\resizebox{\textwidth}{!}{%
+\resizebox{!}{0.09\textheight}{
+\begin{tabular}{lrrrrrr}
+\multicolumn{1}{r}  \textbf{sentiment}      & verjetnost               \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
+pozitiven   & 0.557                                                                      \\
+\hline
+nevtralen  & 0.437                                                    \\
+\hline
+negativen   & 0.006                           \\
+
+\hline\hline                                                                   
+\end{tabular}}
+\end{table}
 
 
+\newpage
  \section{Povzemanje besedila}
 Pri povzermanju besedila \cite{povzetek} gre za postopek ustvarjanja krajšega in jedrnatega povzetka iz daljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno pri velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
 
