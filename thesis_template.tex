@@ -190,7 +190,7 @@ Ena od ključnih prednosti Hugging Face Transformers je enostavnost uporabe. Raz
 Knjižnica ponuja tudi funkcionalnosti za preprosto prenosljivost modelov med različnimi platformami in orodji za povečanje učinkovitosti uporabe modelov na različnih sistemih. Med drugim Hugging Face Transformers omogoča tudi preprosto združevanje z drugimi knjižnicami za strojno učenje in obdelavo podatkov.  
 
 Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
-Transformerji ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanje besedil, prevajanje, povzemanje, znakovno uvrščanje, tabela vprašanj odgovorov, odgovori na vprašanja, razvrščanje brez vzorcev, klepet, generiranje besedila, dodajanje mankajočih besed, podobnost besed, in druge.
+Ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanje besedil, prevajanje, povzemanje, znakovno uvrščanje, tabela vprašanj odgovorov, odgovori na vprašanja, razvrščanje brez vzorcev, klepet, generiranje besedila, dodajanje mankajočih besed, podobnost besed, in druge.
 
 
 \section{Google Cloud}
@@ -852,23 +852,20 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 \section{Prepoznavanje imenskih entitet (named entity recognition)}
 
-Google Vertex AI klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]    
-client.analyze_entities(
-        request={"document": besedilo, "encoding_type": encoding_type}
-    )
-    \end{lstlisting}
-    
-AWS SageMaker klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.detect_entities(besedilo, LanguageCode='en')
-    \end{lstlisting}
-   
+\textbf{Uporabljene metode za prepoznavanje imenskih entitet}
 
-Azure Cognitive Services klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.recognize_entities(besedilo)
-    \end{lstlisting}
+\textit{Amazon Web Services:} 
+
+Uporabjena je bila metoda “DetectEntities” z dva obveznima parametroma, ki sta “LanguageCode” (jezik besedila) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval eno ali več zaznanih imenskih entitet ter njegovo lokacijo v stavku 
+
+\textit{Azure:} 
+
+Uporabljena je bila metoda “EntityRecognition” z obveznim parametrom “Text” (besedilo na katerem bo narejena analiza), ter language ki je default “en” (angleški jezik), odgovor je vseboval zaznano kategorijo ter podkategorijo ter  verjetnost. 
+
+\textit{Google:} 
+
+Uporabljena je bila metoda “AnalyzeEntities” kjer imamo dva parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom ter tipom 
+
    
 \begin{table}[h!]
 \centering
@@ -902,7 +899,7 @@ client.recognize_entities(besedilo)
        \hline                                                   
 \end{tabular}}
 \end{table}
-
+\newpage
  
  \begin{figure}[h!]
 \begin{center}
@@ -1551,7 +1548,7 @@ V zaznavanju objektov je prvo mesto zasedla storitev Azure Cognitive Services, t
 \end{table}
 
 Ocena cene v tabeli je bila določena glede na stroške ene iteracije glede na storitev. Pomembno je omeniti da smo za odprtokodno rešitev koristili virtualni stroj. 
-Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure Cognitive Services. Google Vertex AI je bil ob v času raziskave še v razvoju in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Transformerjev je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja. Za oceno uspešnosti pa so uprabili rezulate z tabela analize (glej Tabela analize), kjer smo ponudnike razvrstili glede na uspešnost na vsakem posameznem področju (1 mesto je dobil najboljši ponudnik, ter 4 mesto najslapši ponudnik). 
+Ocena enostavnosti uporabe temelji na naših izkušnjah iz uporabe storitev. Pri uporabi Azure Cognitive Services smo ugotovili, da je ta storitev izjemno enostavna za uporabo. Ponuja dobro dokumentacijo in uporabniku prijazen vmesnik, ki omogoča preprost razvoj storitev. Pri AWS SageMakerju smo opazili, da je potrebnih nekoliko več izkušenj z vmesniki. Ta platforma zahteva več truda pri učenju in je bolj tehnično zahtevna v primerjavi z Azure Cognitive Services. Google Vertex AI je bil ob v času raziskave še v razvoju in opaziti je bilo številne mankajoče informacije. To pomeni, da ta storitev morda ni tako zrela in dobro dokumentirana kot ostale storitve v analizi raziskave. Pri uporabi Hugging Face Transformers je bilo potrebno tehnično znanje za postavitev ustreznega delovnega okolja. Za oceno uspešnosti pa so uprabili rezulate z tabela analize (glej Tabela analize), kjer smo ponudnike razvrstili glede na uspešnost na vsakem posameznem področju (1 mesto je dobil najboljši ponudnik, ter 4 mesto najslapši ponudnik). 
 
  \newpage
  \begin{figure}[h!]
