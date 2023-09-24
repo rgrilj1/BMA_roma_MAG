@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  23 SEP 2023 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  24 SEP 2023 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1399,7 +1399,7 @@ LaTeX Warning: Label `pic2' multiply defined.
 LaTeX Warning: Label `pic2' multiply defined.
 
 
-LaTeX Warning: Label `pic2' multiply defined.
+LaTeX Warning: Label `my-label' multiply defined.
 
 
 LaTeX Warning: Label `pic2' multiply defined.
