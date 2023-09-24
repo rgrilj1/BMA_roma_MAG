@@ -856,15 +856,15 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila metoda “DetectEntities” z dva obveznima parametroma, ki sta “LanguageCode” (jezik besedila) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval eno ali več zaznanih imenskih entitet ter njegovo lokacijo v stavku 
+Uporabjena je bila funkcija “DetectEntities” z dva obveznima parametroma, ki sta “LanguageCode” (jezik besedila) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval eno ali več zaznanih imenskih entitet ter njegovo lokacijo v stavku 
 
 \textit{Azure:} 
 
-Uporabljena je bila metoda “EntityRecognition” z obveznim parametrom “Text” (besedilo na katerem bo narejena analiza), ter language ki je default “en” (angleški jezik), odgovor je vseboval zaznano kategorijo ter podkategorijo ter  verjetnost. 
+Uporabljena je bila funkcija “EntityRecognition” z obveznim parametrom “Text” (besedilo na katerem bo narejena analiza), ter “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik), odgovor je vseboval zaznano kategorijo ter podkategorijo ter  verjetnost. 
 
 \textit{Google:} 
 
-Uporabljena je bila metoda “AnalyzeEntities” kjer imamo dva parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom ter tipom 
+Uporabljena je bila funkcija “AnalyzeEntities” kjer imamo dva parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom ter tipom 
 
    
 \begin{table}[h!]
@@ -914,7 +914,7 @@ Pri analizi imenskih entitet je bil uporabljen CONLL-2003 korpus (glej poglavje~
 Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storitev Vertex AI. Na splošno pa je bil v vseh področjih najboljši AWS SageMaker, saj je bil najboljši kar na obeh področjih, tako pri priklicu kot pri natančnosti. 
 
 
-Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clanek}, kjer je Arya Roy naredil primerjavo med več modeli, razberemo lahko da se je najboljše izkazal model Chiu and Nichols (2015) + emb + lex.
+Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clanek}, kjer je Arya Roy naredil primerjavo med več modeli, razberemo lahko da se je najboljše izkazal model “Chiu and Nichols (2015) + emb + lex”.
 
 \subsection{Analiza napak pri prepoznavanje imenskih entitet} 
 \begin{table}[h!]
@@ -949,26 +949,22 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
  \item Ponavljanje: napaka, pri katerih se imenska entiteta ponovi v besedilu. 
  \end{enumerate}
 
+
 \section{Analiza sentimenta }
 
-Google Vertex AI klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.analyze_sentiment(
-        request={"document": besedilo, "encoding_type": encoding_type}
-    )
-    \end{lstlisting}
-    
-AWS SageMaker klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.detect_sentiment(Text=besedilo, LanguageCode='en'))
-    \end{lstlisting}
-   
+\textbf{Uporabljene metode za analizo sentimenta}
 
-Azure Cognitive Services klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.analyze_sentiment(besedilo)
-    \end{lstlisting}
-   
+\textit{Amazon Web Services:} 
+
+Uporabjena je bila funkcija “DetectSentiment” z 2 obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval zaznan sentiment ter točkovanje kjer pozitiven pomeni več kot 0, negative manj kot 0, nevtralen pa 0.
+
+\textit{Azure:} 
+
+Uporabjena je bila funkcija “SentimentAnalysis”  z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval zaznan sentiment ter točkovanje. 
+
+\textit{Google:} 
+
+Uporabjena je bila funkcija “AnalyzeSentiment”  kjer imamo 2 parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo)   ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom, tipom entitete ter točkovanje. 
 
 \begin{table}[h!]
 \centering
@@ -1058,24 +1054,19 @@ Najpogosteje opažene napake pri analizi sentimenta:
 
 \newpage
 \section{Povzemanje besedila}
-Google Vertex AI klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-document = language.Document(content=besedilo, type_=language.Document.Type.PLAIN_TEXT)
-response = client.text_summarization(document=document, encoding_type=EncodingType.UTF8)
-    \end{lstlisting}
-    
-AWS SageMaker klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-query_response = query(model_predictor, besedilo)
-summary_text = parse_response(query_response)
-    \end{lstlisting}
-   
 
-Azure Cognitive Services klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.begin_abstract_summary(besedilo)
-    \end{lstlisting}
+\textbf{Uporabljene metode za povzemanje besedila}
 
+\textit{Amazon Web Services:} 
+
+Uporabjena je bila funkcija “Summarize”  z  obveznim parametrom, ki je Text (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
+
+\textit{Azure:} 
+
+Uporabjena je bila funkcija “AbstractiveSummarization” z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
+
+\textit{Google:} 
+Uporabjena je bila funkcija “SummarizeText” z dvema parametroma “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
 
 
 \begin{table}[h!]
@@ -1158,24 +1149,19 @@ Najpogosteje opažene napake pri povzemanju besedila:
 %----------------------------------------------------------------
 
 \section{Prepoznavanje besednih zvez (key pharses)}
-Google Vertex AI klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.extractKeywords(request={"document":besedilo})
-    \end{lstlisting}
-    
-AWS SageMaker klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.detect_phrases(
-    Text=besedilo,
-    LanguageCode='en')
-    \end{lstlisting}
-   
 
-Azure Cognitive Services klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.extract_key_phrases(besedilo)
-    \end{lstlisting}
+\textbf{Uporabljene metode za povzemanje besedila}
 
+\textit{Amazon Web Services:} 
+
+Uporabjena je bila funkcija “DetectKeyPhrases” z dvema obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed. 
+
+\textit{Azure:} 
+
+Uporabjena je bila funkcija “KeyPhraseExtraction” z dvema obveznima parametroma, ki sta  “Language”  (predstavlja izbran jezik)  ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed.  
+
+\textit{Google:} 
+Uporabjena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
 \begin{table}[h!]
 \centering
@@ -1266,25 +1252,20 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 % Klasifikacija besedila 
 %----------------------------------------------------------------
 
-\section{Uvrščanje besedil ( Text classification)}
+\section{Uvrščanje besedil ( angl. Text classification)}
 
-Google Vertex AI klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.classify_text( request={"document": besedilo} )
-    \end{lstlisting}
-    
-AWS SageMaker klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
- query_response = query_endpoint(text.encode("utf-8"))
-    probabilities, labels, predicted_label = parse_response(query_response)
-    \end{lstlisting}
-   
+\textbf{Uporabljene metode za povzemanje besedila}
 
-Azure Cognitive Services klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.begin_multi_label_classify(besedilo)
-    \end{lstlisting}
+\textit{Amazon Web Services:} 
 
+Uporabjena je bila funkcija “DetectKeyPhrases” z dvema obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed. 
+
+\textit{Azure:} 
+
+Uporabjena je bila funkcija “KeyPhraseExtraction” z dvema obveznima parametroma, ki sta  “Language”  (predstavlja izbran jezik)  ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed.  
+
+\textit{Google:} 
+Uporabjena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
 
 \begin{table}[h!]
@@ -1374,30 +1355,22 @@ Najpogosteje opažene napake pri uvrščanju besedila:
 % Zaznava objektov 
 %---------------------------------------------------------------
 
-\section{Zaznava objektov (object detection)}
+\section{Zaznava objektov (angl.  Object detection)}
 
-Google Vertex AI klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-predict_image_object_detection_sample(
-    project: str,
-    endpoint_id: str,
-    filename: str,
-    location: str = "us-central1",
-    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
-)
-    \end{lstlisting}
-    
-AWS SageMaker klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-query_response = query(model, url)
-    \end{lstlisting}
-   
 
-Azure Cognitive Services klic:
-\begin{lstlisting}[ basicstyle=\tiny,frame=single]
-client.analyze_image(url,visual_features=[VisualFeatureTypes.tags])
-    \end{lstlisting}
+\textbf{Uporabljene metode za zaznavo objektov}
 
+\textit{Amazon Web Services:} 
+
+Uporabjena je bila funkcija “DetectLabels” z obveznim parametrom, ki je “Image” (slika v formatu base64), odgovor je vseboval zaznane objekte z lokacijskimi okvirji. 
+
+\textit{Azure:} 
+
+Uporabjena je bila funkcija “ImageAnalysis”  z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
+
+\textit{Google:} 
+
+Uporabjena je bila funkcija “DetectLabels” z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
 
 \begin{table}[h!]
 \centering
