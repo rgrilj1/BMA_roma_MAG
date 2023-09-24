@@ -917,6 +917,27 @@ Za prepoznavanje oseb (PER) in organizacij (ORG) se je najbolje izkazala storite
 Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clanek}, kjer je Arya Roy naredil primerjavo med več modeli, razberemo lahko da se je najboljše izkazal model “Chiu and Nichols (2015) + emb + lex”.
 
 \subsection{Analiza napak pri prepoznavanje imenskih entitet} 
+
+Za analizo  smo uporabili nabor podatkov CoNLL-2003, ki vsebuje več kot 200.000 stavkov z označenimi imenskimi entitetami.. Vsako besedilo je bilo obdelano z vsako od navedenih storitev 
+
+
+\textbf{Natančnost} 
+
+Na podlagi rezultatov iz tabele (glej tabelo Prepoznavanje imenskih entitet) je razvidno, da je najvišjo stopnjo natančnosti dosegel AWS Sagemaker, saj je bil za 3,1\% boljši od drugega uvrščenega Hugging Face Transformers. Google Vertex AI pa je bil le za 0,1\% boljši od drugega uvrščenega modela. Na koncu lestvice pa se je uvrstil Azure Cognitive Services, saj je zaostajal za kar 6,4\% v primerjavi z Google Vertex AI.  
+
+Kot zanimivost lahko navedemo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 9,6 odstotnih točk. 
+
+\textbf{Priklic} 
+
+Najboljši priklic je dosegel AWS Sagemaker, ki je bil 4,2\% boljši od Google Vertex AI in Hugging Face Transformers, ki sta bila drugo uvrščena. Na zadnjem mestu pa je še vedno Azure Cognitive Services, ki je za 9,5\% manj učinkovit od drugo uvrščenih.
+Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 13,7 odstotnih točk.
+
+
+\textbf{Hitrost obdelave} 
+
+Google Vertex AI je izkazal večjo učinkovitost v primerjavi z obema drugima storitvama. Povprečen čas obdelave dokumenta je znašal 1,1 sekunde, medtem ko sta Azure Cognitive Services in AWS SageMaker za enak postopek potrebovala 1,5 sekunde oziroma 1,6 sekunde. Vredno omeniti je, da so bili HuggingFace Transformers najhitrejši za en zahtevek, s časom 0,6 sekunde, vendar pa je bila ta analiza izvedena v lokalnem okolju.
+
+
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri prepoznavanje imenskih entitet} \label{tab:title}
