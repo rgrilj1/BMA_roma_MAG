@@ -45,12 +45,12 @@
 \contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{51}{subsection.6.2.1}%
 \contentsline {section}{\numberline {6.3}Povzemanje besedila}{53}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{54}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{55}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{56}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{58}{subsection.6.4.1}%
 \contentsline {section}{\numberline {6.5}Uvrščanje besedil ( angl. Text classification)}{59}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{61}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{61}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{63}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Diskusija}{64}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Odločitvena tabela}{65}{section.6.8}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{63}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{64}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Diskusija}{65}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Odločitvena tabela}{66}{section.6.8}%
 \contentsline {chapter}{\numberline {7}Zaključek}{69}{chapter.7}%

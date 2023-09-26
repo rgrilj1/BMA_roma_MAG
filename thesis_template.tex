@@ -856,7 +856,7 @@ V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povpreč
 
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila funkcija “DetectEntities” z dva obveznima parametroma, ki sta “LanguageCode” (jezik besedila) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval eno ali več zaznanih imenskih entitet ter njegovo lokacijo v stavku 
+Uporabljena je bila funkcija “DetectEntities” z dva obveznima parametroma, ki sta “LanguageCode” (jezik besedila) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval eno ali več zaznanih imenskih entitet ter njegovo lokacijo v stavku 
 
 \textit{Azure:} 
 
@@ -977,15 +977,15 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
 
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila funkcija “DetectSentiment” z 2 obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval zaznan sentiment ter točkovanje kjer pozitiven pomeni več kot 0, negative manj kot 0, nevtralen pa 0.
+Uporabljena je bila funkcija “DetectSentiment” z 2 obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval zaznan sentiment ter točkovanje kjer pozitiven pomeni več kot 0, negative manj kot 0, nevtralen pa 0.
 
 \textit{Azure:} 
 
-Uporabjena je bila funkcija “SentimentAnalysis”  z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval zaznan sentiment ter točkovanje. 
+Uporabljena je bila funkcija “SentimentAnalysis”  z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval zaznan sentiment ter točkovanje. 
 
 \textit{Google:} 
 
-Uporabjena je bila funkcija “AnalyzeSentiment”  kjer imamo 2 parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo)   ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom, tipom entitete ter točkovanje. 
+Uporabljena je bila funkcija “AnalyzeSentiment”  kjer imamo 2 parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo)   ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom, tipom entitete ter točkovanje. 
 
 \begin{table}[h!]
 \centering
@@ -1098,14 +1098,14 @@ Najpogosteje opažene napake pri analizi sentimenta:
 
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila funkcija “Summarize”  z  obveznim parametrom, ki je Text (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
+Uporabljena je bila funkcija “Summarize”  z  obveznim parametrom, ki je Text (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
 
 \textit{Azure:} 
 
-Uporabjena je bila funkcija “AbstractiveSummarization” z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
+Uporabljena je bila funkcija “AbstractiveSummarization” z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
 
 \textit{Google:} 
-Uporabjena je bila funkcija “SummarizeText” z dvema parametroma “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
+Uporabljena je bila funkcija “SummarizeText” z dvema parametroma “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
 
 
 \begin{table}[h!]
@@ -1207,14 +1207,14 @@ Najpogosteje opažene napake pri povzemanju besedila:
 
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila funkcija “DetectKeyPhrases” z dvema obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed. 
+Uporabljena je bila funkcija “DetectKeyPhrases” z dvema obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
 \textit{Azure:} 
 
-Uporabjena je bila funkcija “KeyPhraseExtraction” z dvema obveznima parametroma, ki sta  “Language”  (predstavlja izbran jezik)  ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed.  
+Uporabljena je bila funkcija “KeyPhraseExtraction” z dvema obveznima parametroma, ki sta  “Language”  (predstavlja izbran jezik)  ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed.  
 
 \textit{Google:} 
-Uporabjena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
+Uporabljena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
 \begin{table}[h!]
 \centering
@@ -1269,17 +1269,19 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{key_phra
 
 
 \textbf{Natančnost} 
+Na podlagi rezultatov iz tabele (glej tabelo Prepoznavanje besednih zvez) je razvidno, da je najvišjo stopnjo natančnosti dosegel Google Vertex AI  vendar je bil od drugouvrščenega Azure Cognitive Services boljši za 4,5\%. AWS Sagemaker je bil od Hugging Face Transformers boljši za 7,9\%.
+Kot zanimivost lahko navedemo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 16,2 odstotnih točk. 
 
 
 
 \textbf{Priklic} 
-
+Najboljši priklic je dosegel Hugging Face Transformers ki je bil 4,9\% boljši od AWS Sagemaker. Na tretjem mestu je bil Google Vertex AI, kateri je bil od zadnje uvrščenega Azure Cognitive Services boljši za 1,3\%.
+Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 9,2 odstotne točke.
 
 
 
 \textbf{Hitrost obdelave} 
-
-
+Google Vertex AI se je izkazal za bolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,2 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,3 sekunde, Azure Cognitive Services 0,5 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1s.
 
 
 \begin{table}[h!]
@@ -1324,16 +1326,17 @@ Najpogosteje opažene napake pri izvlečeku besedne zveze:
 
 \textbf{Uporabljene metode za povzemanje besedila}
 
+
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila funkcija “DetectKeyPhrases” z dvema obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed. 
+Uporabljena je bila funkcija “DetectKeyPhrases” z dvema obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
 \textit{Azure:} 
 
-Uporabjena je bila funkcija “KeyPhraseExtraction” z dvema obveznima parametroma, ki sta  “Language”  (predstavlja izbran jezik)  ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed.  
+Uporabljena je bila funkcija “KeyPhraseExtraction” z dvema obveznima parametroma, ki sta  “Language”  (predstavlja izbran jezik)  ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval več zaznanih ključnih besed.  
 
 \textit{Google:} 
-Uporabjena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
+Uporabljena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
 
 \begin{table}[h!]
@@ -1387,6 +1390,25 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{imdb1_cl
 
 \subsection{Analiza napak pri uvrščanje besedila} 
 
+
+
+\textbf{Natančnost} 
+
+Na osnovi podatkov iz prikazane tabele (glej Tabelo Uvrščanje besedil) je razvidno, da je Google Vertex AI dosegel najvišjo stopnjo natančnosti, vendar pa je bil njegov rezultat boljši le za 2,7\% v primerjavi z drugouvrščenim Hugging Face Transformers. Azure Cognitive Services pa je zaostal za kar 5\% v primerjavi z drugo uvrščenim. a zadnjem mestu pa je le za 0,8\% slapši  AWS Sagemaker.
+ Vredno omeniti je, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala 9,9 odstotnih točk.
+
+
+
+\textbf{Priklic} 
+Najboljši priklic je dosegel Google Vertex AI ki je bil 3,6\% boljši od Hugging Face Transformers. Na tretjem mestu je bil Azure Cognitive Services, kateri je bil od zadnje uvrščenega AWS Sagemaker boljši za 15,7\%.
+Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 19,9 odstotne točke.
+
+
+
+\textbf{Hitrost obdelave} 
+Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
+
+
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri uvrščanje besedila} \label{tab:title}
@@ -1430,15 +1452,15 @@ Najpogosteje opažene napake pri uvrščanju besedila:
 
 \textit{Amazon Web Services:} 
 
-Uporabjena je bila funkcija “DetectLabels” z obveznim parametrom, ki je “Image” (slika v formatu base64), odgovor je vseboval zaznane objekte z lokacijskimi okvirji. 
+Uporabljena je bila funkcija “DetectLabels” z obveznim parametrom, ki je “Image” (slika v formatu base64), odgovor je vseboval zaznane objekte z lokacijskimi okvirji. 
 
 \textit{Azure:} 
 
-Uporabjena je bila funkcija “ImageAnalysis”  z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
+Uporabljena je bila funkcija “ImageAnalysis”  z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
 
 \textit{Google:} 
 
-Uporabjena je bila funkcija “DetectLabels” z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
+Uporabljena je bila funkcija “DetectLabels” z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
 
 \begin{table}[h!]
 \centering
