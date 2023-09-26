@@ -1389,7 +1389,9 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{imdb1_cl
 
 
 \subsection{Analiza napak pri uvrščanje besedila} 
+Za potrebe analize smo uporabili množico 50 primerov, pri čemer je vsak primer označen s kategorijo, ki je bila predmet klasifikacije. Vsebina besedil je bila nato obdelana s pomočjo vsake od navedenih storitev.
 
+Število napak je izraženo kot število primerov, kjer je bila kategorija napačno zaznana, glede na skupno število 50 besedil v množici.
 
 
 \textbf{Natančnost} 
@@ -1501,6 +1503,21 @@ Kot najboljša izbira za zaznavanje objektov pa se je izkazala storitev AWS Sage
 Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{obj1_clanek} spisanega leta 2019, kjer sta Ali Borji in Seyed Mehdi Iranmanesh naredila analizo na različnih korpusih, kjer pa je najboljši rezultat dosegel VOC, tretje mesto pa je zasedel COCO z 0.867.
 
 \subsection{Analiza napak pri zaznavi objektov} 
+Pri izvedbi analize smo sestavili množico 50 slik, na katerih so bili jasno označeni predmeti iz COCO dataseta.
+Za vsako od izbranih ponudnikov smo izvedli postopek zaznave predmetov na teh slikah.
+
+Število napak smo nato določili kot število slik, pri katerih je posamezni ponudnik napačno zaznal prisotnost predmeta v sliki.
+\textbf{Točnost} 
+
+Na osnovi podatkov iz prikazane tabele (glej Zaznava objektov) je razvidno, da je AWS Sagemakerdosegel najvišjo stopnjo točnosti, vendar pa je bil njegov rezultat boljši le za 0,3\% v primerjavi z drugouvrščenim Google Vertex AI. Azure Cognitive Services pa je zaostal za kar 1,2\% v primerjavi z drugo uvrščenim. Na zadnjem mestu pa je za kar 2,5\% slapši  Hugging Face Transformers.
+Pomembno je omeniti, da je razlika med najvišje in najnižje uvrščenim rezultatom znašala zgolj 4 odstotne točke.
+
+\textbf{Hitrost obdelave} 
+Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
+
+
+ 
+ 
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri zaznavi objektov} \label{tab:title}

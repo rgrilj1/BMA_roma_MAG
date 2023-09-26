@@ -51,6 +51,6 @@
 \contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{61}{subsection.6.5.1}%
 \contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{63}{section.6.6}%
 \contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{64}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Diskusija}{65}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Odločitvena tabela}{66}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Zaključek}{69}{chapter.7}%
+\contentsline {section}{\numberline {6.7}Diskusija}{66}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Odločitvena tabela}{67}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Zaključek}{71}{chapter.7}%
