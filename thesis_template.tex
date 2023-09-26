@@ -1038,21 +1038,23 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{sent1_cl
 \newpage
 
 \subsection{Analiza napak pri analizi sentimenta} 
-Bil je pripravljen nabor 50 besedilnih stavkov, ki so bili opremljeni z označbami pozitivnega, negativnega ali nevtralnega sentimenta.
+Analiza je bila izvedena na 50 besedilih, ki so bili opremljeni z označbami pozitivnega, negativnega ali nevtralnega sentimenta.
 Število napak je izračunano kot število stavkov, pri katerih se sentiment ne ujema z označbo.
 
 \textbf{Natančnost} 
 
-Na podlagi rezultatov iz tabele (glej tabelo Analiza sentimenta) je razvidno, da je najvišjo stopnjo natančnosti dosegel Azure Cognitive Services vendar je bil od drugouvrščenega Google Vertex AI boljši le za 0,4%. AWS Sagemaker kot tudi Azure Cognitive Services pa sta bila od drugouvrščenega slabša za 6,2.
+Na podlagi rezultatov iz tabele (glej tabelo Analiza sentimenta) je razvidno, da je najvišjo stopnjo natančnosti dosegel Azure Cognitive Services vendar je bil od drugouvrščenega Google Vertex AI boljši le za 0,4\%. AWS Sagemaker kot tudi Azure Cognitive Services pa sta bila od drugouvrščenega slabša za 6,2.
 Kot zanimivost lahko navedemo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 6,6 odstotnih točk. 
 
 \textbf{Priklic} 
+
 Najboljši priklic je dosegel Azure Cognitive Services ki je bil 4,5\% boljši od Google Vertex AI, kateri je bil za 1\% boljši od Hugging Face Transformers. Na zadnjem mestu pa AWS Sagemaker, ki je za 3,5\% manj učinkovit od drugo uvrščenega.
 Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 9 odstotnih točk.
 
 
 
 \textbf{Hitrost obdelave} 
+
 Google Vertex AI se je izkazal za bolj učinkovitega v primerjavi z obema drugima storitvama. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 1,1 sekunde, medtem ko je Azure Cognitive Services za isto nalogo zahteval 1,5 sekund, AWS SageMaker pa 1,6 sekund.
 
 
@@ -1117,9 +1119,9 @@ Uporabljena je bila funkcija “SummarizeText” z dvema parametroma “Type” 
 \multicolumn{1}{r}{} &   & \textbf{Množica 1}             & \textbf{Množica 2}                & \textbf{Množica 3}               & \textbf{Povprečje}                          \\ \hline   \hline                                                                                                                                                                                                                                                                                                                                        
 \textbf{Hugging Face Transformers}   & ROUGE-L   & 0.178              & 0.187                 & 0.212              & 0.192 (±0.018)                                    \\
 \hline
-\textbf{Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306 (±0.013)                                          \\
+\textbf{Google Vertex AI}         & ROUGE-L   & 0.312              & 0.291              & 0.315              & 0.306 (±0.013)                                          \\
 \hline
-\textbf{AWS SageMaker}.   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201 (±0.016)                                           \\
+\textbf{AWS SageMaker}   & ROUGE-L   & 0.203             & 0.184              & 0.216             & 0.201 (±0.016)                                           \\
 \hline
 \textbf{Azure Cognitive Services}   & ROUGE-L   & 0.387              & 0.318             & 0.284             & \textbf{0.330} (±0.052)                  \\
 \hline
@@ -1147,18 +1149,15 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{povz_cla
 \newpage
 
 \subsection{Analiza napak pri povzemanju besedila} 
-
+Izbrana množica 50 primerov za izvajanje postopkov povzemanja je bila različnih dolžin.
 
 \textbf{ROUGE-L} 
 
-Na podlagi rezultatov iz tabele (glej tabelo Analiza sentimenta) je razvidno, da je najvišjo stopnjo natančnosti dosegel Azure Cognitive Services vendar je bil od drugouvrščenega Google Vertex AI boljši le za 0,4%. AWS Sagemaker kot tudi Azure Cognitive Services pa sta bila od drugouvrščenega slabša za 6,2.
-Kot zanimivost lahko navedemo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 6,6 odstotnih točk. 
-
-
+Za merjenje kakovosti povzetkov v primerjavi z originalnim besedilom smo uporabili metriko ROUGE-L. Najboljše povzetke je generiral Azure Cognitive Services, sledi mu Google Vertex AI na drugem mestu. Tretje mesto je zasedel AWS SageMaker, medtem ko je Hugging Face Transformers zasedel četrto mesto.
 
 \textbf{Hitrost obdelave} 
 
-
+Na tem področju se je Google Vertex AI izkazal za najhitrejšega . Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal le 0,45 sekunde, medtem ko je AWS Sagemaker za izvajanje na lokalnem oklolju potreboval 0,42 sekunde. Za isto nalogo je Azure Cognitive Services potreboval 0,37 sekunde, Hugging Face Transformers pa so za izvajanje na lokalnem oklolju potrebovali  največ časa in nicer  0,82 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem oklolju potrebovali najdlje in sicer 1,4s.
 
 
 \begin{table}[h!]
@@ -1266,7 +1265,8 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{key_phra
 
   \newpage
 \subsection{Analiza napak pri izvlečeku besedne zveze} 
-
+Vsak od 50 primerov v množici je bil označen s ključnimi besedami in nato obdelan s pomočjo vsake od navedenih storitev.
+Število napak je predstavljeno kot število napačno zaznanih ključnih besed.
 
 \textbf{Natančnost} 
 Na podlagi rezultatov iz tabele (glej tabelo Prepoznavanje besednih zvez) je razvidno, da je najvišjo stopnjo natančnosti dosegel Google Vertex AI  vendar je bil od drugouvrščenega Azure Cognitive Services boljši za 4,5\%. AWS Sagemaker je bil od Hugging Face Transformers boljši za 7,9\%.
@@ -1507,12 +1507,14 @@ Pri izvedbi analize smo sestavili množico 50 slik, na katerih so bili jasno ozn
 Za vsako od izbranih ponudnikov smo izvedli postopek zaznave predmetov na teh slikah.
 
 Število napak smo nato določili kot število slik, pri katerih je posamezni ponudnik napačno zaznal prisotnost predmeta v sliki.
+
 \textbf{Točnost} 
 
-Na osnovi podatkov iz prikazane tabele (glej Zaznava objektov) je razvidno, da je AWS Sagemakerdosegel najvišjo stopnjo točnosti, vendar pa je bil njegov rezultat boljši le za 0,3\% v primerjavi z drugouvrščenim Google Vertex AI. Azure Cognitive Services pa je zaostal za kar 1,2\% v primerjavi z drugo uvrščenim. Na zadnjem mestu pa je za kar 2,5\% slapši  Hugging Face Transformers.
+Na osnovi podatkov iz prikazane tabele (glej graf Zaznava objektov) je razvidno, da je AWS Sagemakerdosegel najvišjo stopnjo točnosti, vendar pa je bil njegov rezultat boljši le za 0,3\% v primerjavi z drugouvrščenim Google Vertex AI. Azure Cognitive Services pa je zaostal za kar 1,2\% v primerjavi z drugo uvrščenim. Na zadnjem mestu pa je za kar 2,5\% slapši  Hugging Face Transformers.
 Pomembno je omeniti, da je razlika med najvišje in najnižje uvrščenim rezultatom znašala zgolj 4 odstotne točke.
 
 \textbf{Hitrost obdelave} 
+
 Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
 
 
