@@ -16,41 +16,42 @@
 \contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{13}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Microsoft Azure}{14}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{16}{subsection.2.4.1}%
-\contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Najpogosteje uporabljeni algoritmi po področjih uporabe}{22}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Analiza sentimenta}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Povzemanje besedila}{25}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Prepoznavanje besedih zvez}{25}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Uvrščanje besedil}{26}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Zaznava objektov}{27}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Korpusi}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Uporabljeni korpusi}{30}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}CoNLL 2003}{30}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}IMDb Reviews}{32}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3} COCO }{32}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4} CNN/Daily Mail }{35}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5} SemEval 2017}{35}{subsection.4.1.5}%
-\contentsline {chapter}{\numberline {5}Metrike}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Spremenljivke za izračun metrik}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Natančnost}{39}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Priklic }{39}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ocena F1}{40}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Točnost}{40}{section.5.5}%
-\contentsline {section}{\numberline {5.6}ROUGE}{41}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Primerjava orodij}{43}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (named entity recognition)}{45}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Analiza napak pri prepoznavanje imenskih entitet}{47}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta }{49}{section.6.2}%
+\contentsline {subsection}{\numberline {2.4.2}Stroški storitev}{17}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Izbrana področja uporabe}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Najpogosteje uporabljeni algoritmi po področjih uporabe}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Prepoznavanje imenskih entitet}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analiza sentimenta}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Povzemanje besedila}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Prepoznavanje besedih zvez}{23}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Uvrščanje besedil}{24}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Zaznava objektov}{25}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Korpusi}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Uporabljeni korpusi}{28}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}CoNLL 2003}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}IMDb Reviews}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3} COCO }{30}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4} CNN/Daily Mail }{33}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5} SemEval 2017}{33}{subsection.4.1.5}%
+\contentsline {chapter}{\numberline {5}Metrike}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Spremenljivke za izračun metrik}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Natančnost}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Priklic }{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ocena F1}{38}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Točnost}{38}{section.5.5}%
+\contentsline {section}{\numberline {5.6}ROUGE}{39}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Primerjava orodij}{41}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (named entity recognition)}{43}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Analiza napak pri prepoznavanje imenskih entitet}{46}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Analiza sentimenta }{48}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{51}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Povzemanje besedila}{53}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{54}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{56}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{59}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil ( angl. Text classification)}{60}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{62}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{64}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{65}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Diskusija}{67}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Odločitvena tabela}{68}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Zaključek}{71}{chapter.7}%
+\contentsline {section}{\numberline {6.3}Povzemanje besedila}{54}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{56}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{57}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{61}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil ( angl. Text classification)}{62}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{65}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{67}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{69}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Diskusija}{71}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Odločitvena tabela}{72}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Zaključek}{75}{chapter.7}%

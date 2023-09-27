@@ -296,16 +296,24 @@ Azure Cognitive Services ponujaja širok nabor storitev za obdelavo naravnega je
 
 Uporabljamo ga lahko z pomočjo več različnih programskih jezikov, kot so: C\#, Java, JavaScript ter Python. 
 
-
+\subsection{Stroški storitev}
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=14cm]{tabela_ponudniki.png}
 \end{center}
-\caption{Primerjava ponudnikov glede na ceno in funkcionalnosti}
+\caption{Primerjava stroškov med ponudniki}
 \label{pic2}
 \end{figure}
  \newpage
-V tabeli so predstavljeni stroški uporabe posameznih storitev. Pri nekaterih je potrebno plačati le virtualna okolja, za Azure Cognitive Services pa plačamo glede na zahtevke. Pomembno je omeniti, da je v tabeli uporabljena cena za Hugging Face Transformers, katere lahko uporabljamo brez uporabe plačljive infrastrukture. 
+ 
+V spodnji tabeli so predstavljeni stroški uporabe posameznih storitev za obdelavo besedila in slik. Pri nekaterih storitvah je potrebno plačati le za uporabo virtualnih okolij, medtem ko pri storitvah Azure Cognitive Services plačujemo glede na dejansko uporabo. Pomembno je poudariti, da je cena za uporabo Hugging Face Transformers v tej tabeli navedena za primer brez potrebe po plačljivi infrastrukturi. Izbrane instances ponudnikov AWS in Google so bile izbrane v skladu s priporočili ponudnikov storitev.
+
+Za izvajanje storitve AWS SageMaker smo uporabili instanco “ml.m5.xlarge”, ki je opremljena s štirimi virtualnimi procesorskimi enotami in 16 GB delovnega pomnilnika. Za shranjevanje podatkov smo uporabili dva pomnilnika velikosti 100 GB.
+
+Pri izvajanju storitve Google Vertex AI smo uporabili instanco “n1-standard-16”, ki vključuje štiri virtualne procesorske enote in 15 GB delovnega pomnilnika. Za shranjevanje podatkov smo uporabili dva pomnilnika velikosti 100 GB.
+
+Obdelavo besedila in slik s pomočjo Hugging Face Transformers smo izvajali lokalno, vendar smo za namene primerjave storitev dodali ekvivalentno strojno opremo, ki jo ponuja Hugging Face Hub. Uporabili smo instanco “Nvidia A10G - small”, ki je opremljena s štirimi virtualnimi procesorskimi enotami in 10 GB delovnega pomnilnika. Za shranjevanje podatkov smo uporabili dva pomnilnika velikosti 150 GB.
+
 %----------------------------------------------------------------
 % Poglavje (Opis funkciionalnosti) 5
 %----------------------------------------------------------------
@@ -393,7 +401,7 @@ negativen   & 0.006                           \\
 
 \newpage
  \section{Povzemanje besedila}
-Pri povzermanju besedila \cite{povzetek} gre za postopek ustvarjanja krajšega in jedrnatega povzetka iz daljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno pri velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
+Pri povzemanju besedila \cite{povzetek} gre za postopek ustvarjanja krajšega in jedrnatega povzetka iz daljšega besedila, kot je članek ali dokument. Namen povzemanja je izluščiti ključne informacije in ideje iz izvornega besedila ter jih predstaviti na bolj pregleden in krajši način. To je zelo koristno pri velikih količinah podatkov, ko želimo hitro pridobiti bistvo informacij, ne da bi brali celotno besedilo.
 
 Tehnike za povzemanje uporabljajo različne algoritme in metode, ki vključujejo strojno učenje in obdelavo naravnega jezika, da bi učinkovito izluščile ključne besede, stavke ali odstavke, ki predstavljajo osrednje ideje v izvornem besedilu. Rezultat je običajno kratek povzetek, ki ohranja pomembne informacije iz izvirnega besedila. Ta tehnologija ima širok spekter uporabe, kot so samodejno povzemanje novic, generiranje opisov izdelkov, izdelava povzetkov raziskovalnih člankov in še veliko več. 
 
@@ -435,7 +443,7 @@ Nato se besedila predstavijo v obliki, ki jo lahko uporabimo za učenje modela. 
 \resizebox{!}{0.09\textheight}{
 \begin{tabular}{lrrrrrr}
 \multicolumn{1}{r}  \textbf{sentiment}      & verjetnost               \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
-finance   & 0.399                                                                      \\
+finance   &.    0.399                                                                      \\
 \hline
 potovanje  & 0.157                                                   \\
 \hline
@@ -841,6 +849,8 @@ Prepoznane pogoste napake modelov:
 
 V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo razpršenosti podatkov. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
+\hfill 
+
 \textbf{Izbrani testni podatki}
 
 Za analizo obdelave naravnega jezika so bile izbrane tri množice testne testnih podatkov, vsaka od njih je vsebovala 50 primerov. Razdeljene so bile v tri različne kategorije: novice, finance ter šport. 
@@ -848,17 +858,33 @@ Pri zaznavi objektov pa so bile izbrane nslednje kategorije: osebe, živali ter 
 
 V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo vrednosti od povprečja. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
+\hfill 
 
 \textbf{Stroški glede na ponudnika}
--za vsako področjeuporabljena množica 50 besedil
--cena predstavlja iteracijo 50 besedil na 4h storitvah
--pri aws google in transformerjih  je potrebno še upoštevati postavitev okolja, ki pa ni vključeno v to ceno 
--prikazani so strosški izključno obdelave 50 besedil na 5tih področjih ter obdelave 50tih slik, ter zaznave objektov na 50 slikah
--pri izbiri strojnih zahtev so bile upoštevane priporočljive instance izbranih ponudnikov. 
--opis kaj je x large ....n1- standard
--
 
-\newpage
+\begin{table}[h!]
+\centering
+\caption{Stroški uporabe storitev}
+\label{my-label}
+\resizebox{!}{0.09\textheight}{
+\begin{tabular}{lrrrrrr}
+\multicolumn{1}{r}{} &   & \textbf{Strošek}                           \\ \hline    \hline                                                                                                                                                                                                                                                                                                                                       
+\textbf{Google}   &   &     2.05\texteuro   \\
+\hline
+\textbf{AWS}         &   & 2.39\texteuro   \\
+\hline
+\textbf{Azure}  &    & 2.24\texteuro      \\
+\hline
+ \hline  
+\textbf{Hugging Face}   &   & 0.0\texteuro         \\
+\hline\hline                                                                   
+\end{tabular}}
+\end{table}
+
+
+V tabeli so prikazani stroški obdelave besedilne in slikovne množice na omenjenih področjih. Pri izbiri strojnih virov smo upoštevali priporočene instance ponudnikov storitev, transformatorje smo uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
+
+
 
 \section{Prepoznavanje imenskih entitet (named entity recognition)}
 
@@ -876,6 +902,19 @@ Uporabljena je bila funkcija “EntityRecognition” z obveznim parametrom “Te
 
 Uporabljena je bila funkcija “AnalyzeEntities” kjer imamo dva parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom ter tipom 
 
+\hfill 
+
+\textbf{Stroški uporabe}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{ner_stroski.png}
+\end{center}
+\caption{Stroški uporabe prepoznavanja imenskih entitet }
+\label{nerST}
+\end{figure}
+
+Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
    
 \begin{table}[h!]
 \centering
@@ -928,7 +967,7 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clan
 
 \subsection{Analiza napak pri prepoznavanje imenskih entitet} 
 
-Za analizo je bil uporabljen korpus CoNLL-2003, ki vsebuje več kot 200.000 stavkov z označenimi imenskimi entitetami. Vsako besedilo je bilo obdelano z vsako od navedenih storitev 
+Za analizo je bil uporabljen korpus CoNLL-2003, ki vsebuje več kot 200.000 stavkov z označenimi imenskimi entitetami. Vsako besedilo je bilo obdelano z vsako od navedenih storitev.
 
 
 \textbf{Natančnost} 
@@ -947,6 +986,14 @@ Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrš�
 
 Google Vertex AI je izkazal večjo učinkovitost v primerjavi z obema drugima storitvama. Povprečen čas obdelave dokumenta je znašal 1,1 sekunde, medtem ko sta Azure Cognitive Services in AWS SageMaker za enak postopek potrebovala 1,5 sekunde oziroma 1,6 sekunde. Vredno omeniti je, da so bili HuggingFace Transformers najhitrejši za en zahtevek, s časom 0,6 sekunde, vendar pa je bila ta analiza izvedena v lokalnem okolju.
 
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{ner_napake.png}
+\end{center}
+\caption{Napake pri prepoznavanje imenskih entitet }
+\label{pic2}
+\end{figure}
 
 \begin{table}[h!]
 \begin{center}
@@ -996,6 +1043,20 @@ Uporabljena je bila funkcija “SentimentAnalysis”  z parametroma, ki sta “L
 \textit{Google:} 
 
 Uporabljena je bila funkcija “AnalyzeSentiment”  kjer imamo 2 parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo)   ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom, tipom entitete ter točkovanje. 
+
+\hfill 
+
+\textbf{Stroški uporabe}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{sent_stroski.png}
+\end{center}
+\caption{Stroški uporabe analize sentimenta }
+\label{nerST}
+\end{figure}
+
+Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
 
 \begin{table}[h!]
 \centering
@@ -1067,6 +1128,13 @@ Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrš�
 
 Google Vertex AI se je izkazal za bolj učinkovitega v primerjavi z obema drugima storitvama. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 1,1 sekunde, medtem ko je Azure Cognitive Services za isto nalogo zahteval 1,5 sekund, AWS SageMaker pa 1,6 sekund.
 
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{sent_napake.png}
+\end{center}
+\caption{Napake pri zaznavi sentimenta}
+\label{pic2}
+\end{figure}
 
 \begin{table}[h!]
 \begin{center}
@@ -1118,6 +1186,19 @@ Uporabljena je bila funkcija “AbstractiveSummarization” z parametroma, ki st
 
 \textit{Google:} 
 Uporabljena je bila funkcija “SummarizeText” z dvema parametroma “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval povzeto besedilo. 
+
+
+\textbf{Stroški uporabe}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{sum_stroski.png}
+\end{center}
+\caption{Stroški uporabe povzemanja besedila}
+\label{nerST}
+\end{figure}
+
+Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
 
 
 \begin{table}[h!]
@@ -1225,6 +1306,20 @@ Uporabljena je bila funkcija “KeyPhraseExtraction” z dvema obveznima paramet
 \textit{Google:} 
 Uporabljena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
+\hfill 
+
+\textbf{Stroški uporabe}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{key_stroski.png}
+\end{center}
+\caption{Stroški uporabe prepoznavanja besednih zvez }
+\label{nerST}
+\end{figure}
+
+Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
+
 \begin{table}[h!]
 \centering
 \caption{Prepoznavanje besednih zvez (Key pharses)}
@@ -1293,6 +1388,13 @@ Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrš�
 \textbf{Hitrost obdelave} 
 Google Vertex AI se je izkazal za bolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,2 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,3 sekunde, Azure Cognitive Services 0,5 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1s.
 
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{key_napake.png}
+\end{center}
+\caption{Napake pri prepoznavanju besednih zvez}
+\label{pic2}
+\end{figure}
 
 \begin{table}[h!]
 \begin{center}
@@ -1348,6 +1450,19 @@ Uporabljena je bila funkcija “KeyPhraseExtraction” z dvema obveznima paramet
 \textit{Google:} 
 Uporabljena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma, ki sta “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), odgovor je vseboval več zaznanih ključnih besed. 
 
+\hfill 
+
+\textbf{Stroški uporabe}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{text_stroski.png}
+\end{center}
+\caption{Stroški uporabe uvrščanja besedil}
+\label{nerST}
+\end{figure}
+
+Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
 
 \begin{table}[h!]
 \centering
@@ -1390,7 +1505,6 @@ Uporabljena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma
 \label{pic2}
 \end{figure}
 
-  \newpage
 Pri izvajanju naloge uvrščanja besedila je bil uporabljen korpus IMDb Reviews (glej poglavje~\ref{sec:ch9}).
 
 Kot najboljša rešitev za naloge uvrščanje besedila pa se je izkazala storitev Hugging Face Transformers.
@@ -1419,6 +1533,15 @@ Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrš�
 
 \textbf{Hitrost obdelave} 
 Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{text_napake.png}
+\end{center}
+\caption{Napake pri uvrščanju besedil}
+\label{pic2}
+\end{figure}
+
 
 
 \begin{table}[h!]
@@ -1474,6 +1597,22 @@ Uporabljena je bila funkcija “ImageAnalysis”  z obveznim parametrom “Image
 
 Uporabljena je bila funkcija “DetectLabels” z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
 
+
+\newpage
+
+\textbf{Stroški uporabe}
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{object_stroski.png}
+\end{center}
+\caption{Stroški uporabe zaznave objektov}
+\label{nerST}
+\end{figure}
+
+Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
+
+
 \begin{table}[h!]
 \centering
 \caption{Zaznava objektov }
@@ -1527,6 +1666,13 @@ Pomembno je omeniti, da je razlika med najvišje in najnižje uvrščenim rezult
 
 Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
 
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=10cm]{obj_napake.png}
+\end{center}
+\caption{Napake pri zaznavanju objektov}
+\label{pic2}
+\end{figure}
 
  
  
