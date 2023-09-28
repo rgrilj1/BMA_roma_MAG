@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  28 SEP 2023 11:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.30)  28 SEP 2023 11:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2760,6 +2760,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [74]
+<figures//graf.png, id=878, 598.089pt x 281.853pt>
+File: figures//graf.png Graphic file (type png)
+<use figures//graf.png>
+Package pdftex.def Info: figures//graf.png  used on input line 1822.
+(pdftex.def)             Requested size: 284.52756pt x 134.088pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -2768,13 +2774,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.92502pt}.
 
-[75]
-<figures//graf.png, id=883, 598.089pt x 281.853pt>
-File: figures//graf.png Graphic file (type png)
-<use figures//graf.png>
-Package pdftex.def Info: figures//graf.png  used on input line 1822.
-(pdftex.def)             Requested size: 284.52756pt x 134.088pt.
-
+[75 <./figures//graf.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2783,11 +2783,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[76 <./figures//graf.png>]
-Poglavje 7.
-[77
+[76
 
 ]
+Poglavje 7.
+[77]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.92502pt, for example:
@@ -3030,7 +3030,7 @@ Here is how much of TeX's memory you used:
  51066 multiletter control sequences out of 15000+600000
  529096 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,13n,120p,1432b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,13n,120p,1400b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
 a-zi4r.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -3047,7 +3047,7 @@ r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
 ocal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on thesis_template.pdf (99 pages, 3650630 bytes).
+Output written on thesis_template.pdf (99 pages, 3650548 bytes).
 PDF statistics:
  1133 PDF objects out of 1200 (max. 8388607)
  911 compressed objects within 10 object streams
