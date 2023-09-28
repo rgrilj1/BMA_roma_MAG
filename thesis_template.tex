@@ -90,42 +90,22 @@
 \chapter{Uvod}
 \label{ch:uvod}
 
-Sodobni digitalni svet je priča izjemnemu napredku na področju obdelave naravnega jezika, ki seže preko širokega spektra aplikacij in storitev ter ima pomembno vlogo v sodobnem digitalnem okolju. Sposobnost učinkovitega obvladovanja in analize besedila postajata nepogrešljiva veščina, ki se širi iz informacijskih tehnologij in trženja v številne druge sektorje, vključno z zdravstvom in novinarstvom. Kljub temu se tako večja kot manjša podjetja vsakodnevno soočajo z izzivi, ki jih prinaša obdelava in razumevanje besedilnih in vizualnih podatkov. Eden izmed ključnih izzivov, ki jim lahko olajšave, je povezan s tako imenovanimi tehnikami naravnega jezika  in zaznavo objektov.
 
-Kot najbolj zanimiva poročja v obdelavni naravnega jezika se bomo osredotočili na šest zelo uporabnih ter zanimivih poročij. Prvo področje opisuje prepoznavanje imenskih entitet, katero uporabnikom lahko močno olajša vsakodnevno delo z strankami, saj lahko prepozna imena strnk ter datume v elektronskih sporočilih za lažje sledenje naročilom. Naslenje področje pokriva analizo sentimenta s pomočjo katere uporabniki na družbenih omrežjih lahko ugotovijo, kako se stranke odzivajo na njihove produkte ter s tem prilagajajo svoje produkte glede na rezultate.  Naslednje zelo pomembno področje je povzemanje, ki hitro ustvarja krajše povzetke dolgih poročil in analiz, kar zaposlenim omogoča bolj učinkovito pregledovanje ključnih informacij. Zelo pomembno je tudi prepoznavanje besednih zvez za indetifikacijo ključnih pojmov v strateških dokumentih, kar. Pomaga pri načrtovanju marketinških kompanij in analiz konkurenčnega okolja. Uvrščanje besedil pomaga uporabnikom  pri analizi strankinih mnenj in ocen, kar jim pomaga razumeti, kako se izdelki ali storitve pozicionirajo na trgu v primerjavi z konkurenco. Zadnje področje, ki ga bomo raziskali se na naša na zaznavo objektov, ki jo lahko uporabljamo za nadzor in identifikacijo neželenih oseb ali predmetov na območju objekta, kar prispeva k izboljšani varnosti in nadzoru.
-
-Cilj te magisterske naloge je podrobneje raziskati ter analizirati različne ponudnike storitev za obdelavo naravnega jezika ter zaznavo objektov, uporabo različnih korpusov glede na različna področja uporabe, predstavljene bodo najpogosteje uporabljene metrike za evalvacijo modelov. Potrebno je povdariti, da je na trgu prisotnih veliko storitev, tako za velika podjetja kot tudi za končne uporabnike. Opazimo lahko tudi veliko število odprtokodnih rešitev, ki so lahko nekoliko specifična glede na področje uporabe.
-
-V nadaljevanju se bomo osredotočili na pomembnost kakovostnih korpusov za uspešno učenje modelov. Pregledali bomo obstoječe in priljubljene korpuse, ki se uporabljajo za različne naloge.
-Kot ključen element bomo preučili metrike za ocenjevanje učinkovitosti modelov, kot so priklic, Ocena F1, ROUGE in druge. Razložili bomo, kako se uporabljajo za različne naloge in kako lahko z njimi ocenimo zmogljivost modelov.
-
-Nato se bomo posvetili raznolikim področjem uporabe tehnologij obdelave naravnega jezika. Raziskali bomo, kako se tehnologije uporabljajo v  analizi čustev, povzemanje, iskanju informacij in še več. Preučili bomo tudi izzive in omejitve, s katerimi se srečujejo modeli pri uporabi na različnih področjih.
-
-V poglavju  najpogosteje uporabljenih algoritmov (poglavje~\ref{ch4}) bomo podrobneje spoznali izbrane funkcionalnosti, ki jih omogočajo modeli, ki temeljijo na umetni inteligenci in strojnem učenju ter so zasnovane za obdelavo, razumevanje in generiranje naravnega jezika. Različni modeli se uporabljajo za reševanje različnih nalog, povezanih z obdelavo jezika, kot so avtomatsko prevajanje, analiza čustev, razumevanje besedil, odgovarjanje na vprašanja, izluščevanje informacij iz besedil, uvrščanje besedil in še več.
-
-V poglavju o korpusih (glej poglavje~\ref{ch5}) bomo podrobneje spoznali uporabljene korpuse, ki so ključnega pomena za uspešen razvoj, učenje in evalvacijo modelov. Korpusi so zbirke podatkov, ki so ročno označeni ali označeni s pomočjo algoritmov za različne naloge.
-
-V poglavju o metrikah temeljito raziskali različne metrike (glej poglavje~\ref{ch6}), ki omogočajo oceno učinkovitosti modelov glede na njihove specifične naloge. Raznolikost nalog na področju obdelave naravnega jezika zahteva prilagodljivost pri izbiri metrik. Predstavljene bodo ključne metrike, ki jih bodo uporabljene pri evalvaciji modelov.
-
-
-
-Pridobili bomo pregled nad uporabo modelov ter njihovo uporabo za različna področja. Cilj raziskave je prispevati k boljšemu razumevanju  tehnologij obdelave naravnega jezika ter zaznave objektov in predstaviti rezultate med različnimi ponudkniki storitev.
-
-\subsection{Motivacija in ciji }
+\section{Motivacija in ciji }
 
 Sodobni digitalni svet je priča izjemnemu napredku na področju obdelave naravnega jezika, ki seže preko širokega spektra aplikacij in storitev ter ima pomembno vlogo v sodobnem digitalnem okolju. Sposobnost učinkovitega obvladovanja in analize besedila postajata nepogrešljiva veščina, ki se širi iz informacijskih tehnologij in trženja v številne druge sektorje, vključno z zdravstvom in novinarstvom. Kljub temu se tako večja kot manjša podjetja vsakodnevno soočajo z izzivi, ki jih prinaša obdelava in razumevanje besedilnih in vizualnih podatkov. Eden izmed ključnih izzivov, ki jim lahko oljša, je povezan s tako imenovanimi tehnikami naravnega jezika  in zaznavo objektov.
 
-Umetna inteligenca je v današnjem času ključna za številna področja. AI modeli se uporabljajo v različnih industrijah, kot so računalniški vid  (angl:Computer Vision),  analiza zvoka (angl: Audio), obdelava tabelarnih podatkov (angl: Tabular), okrepitveno učenje (angl: Reinforcement Learning), večmodalni pristop (angl:Multimodal), prepoznavanje govora (angl:Speech), odločitveno modeliranje (angl:Decision Making) in analitika podatkov (angl:Analytics) . Vendar se bomo v naši raziskavi osredotočili na dve ključni področji: obdelavo naravnega jezika, ki se ukvarja z razumevanjem in generiranjem besedil, ter zaznavanje objektov (angl:Object detection), ki omogoča identifikacijo objektov v slikah in videoposnetkih.
+Umetna inteligenca je v današnjem času ključna za številna področja. AI modeli se uporabljajo v različnih industrijah, kot so računalniški vid (angl. Computer Vision),  analiza zvoka (angl. Audio), obdelava tabelarnih podatkov (angl. Tabular), okrepitveno učenje (angl. Reinforcement Learning), večmodalni pristop (angl. Multimodal), prepoznavanje govora (angl. Speech), odločitveno modeliranje (angl. Decision Making) in analitika podatkov (angl. Analytics) . Vendar se bomo v naši raziskavi osredotočili na dve ključni področji: obdelavo naravnega jezika, ki se ukvarja z razumevanjem in generiranjem besedil, ter zaznavanje objektov (angl. Object detection), ki omogoča identifikacijo objektov v slikah.
 
-Kot najbolj zanimiva poročja v obdelavni naravnega jezika se bomo osredotočili na šest zelo uporabnih ter zanimivih poročij. Prvo področje opisuje prepoznavanje imenskih entitet, katero uporabnikom lahko močno olajša vsakodnevno delo z strankami, saj lahko prepozna imena strnk ter datume v elektronskih sporočilih za lažje sledenje naročilom. Naslenje področje pokriva analizo sentimenta s pomočjo katere uporabniki na družbenih omrežjih lahko ugotovijo, kako se stranke odzivajo na njihove produkte ter s tem prilagajajo svoje produkte glede na rezultate.  Naslednje zelo pomembno področje je povzemanje, ki hitro ustvarja krajše povzetke dolgih poročil in analiz, kar zaposlenim omogoča bolj učinkovito pregledovanje ključnih informacij. Zelo pomembno je tudi prepoznavanje besednih zvez za indetifikacijo ključnih pojmov v strateških dokumentih, kar. Pomaga pri načrtovanju marketinških kompanij in analiz konkurenčnega okolja. Uvrščanje besedil pomaga uporabnikom  pri analizi strankinih mnenj in ocen, kar jim pomaga razumeti, kako se izdelki ali storitve pozicionirajo na trgu v primerjavi z konkurenco. Zadnje področje, ki ga bomo raziskali se na naša na zaznavo objektov, ki jo lahko uporabljamo za nadzor in identifikacijo neželenih oseb ali predmetov na območju objekta, kar prispeva k izboljšani varnosti in nadzoru.
+Kot najbolj zanimiva poročja v obdelavni naravnega jezika se bomo osredotočili na šest zelo uporabnih ter zanimivih poročij. Prvo področje opisuje prepoznavanje imenskih entitet, katera uporabnikom lahko močno olajša vsakodnevno delo z strankami, saj lahko prepozna imena strnk ter datume v elektronskih sporočilih za lažje sledenje naročilom. Naslenje področje pokriva analizo sentimenta s pomočjo katere uporabniki na družbenih omrežjih lahko ugotovijo, kako se stranke odzivajo na njihove produkte ter s tem prilagajajo svoje produkte glede na rezultate.  Naslednje zelo pomembno področje je povzemanje, ki hitro ustvarja krajše povzetke dolgih poročil in analiz, kar zaposlenim omogoča bolj učinkovito pregledovanje ključnih informacij. Zelo pomembno je tudi prepoznavanje besednih zvez za indetifikacijo ključnih pojmov v strateških dokumentih, kar pomaga pri načrtovanju marketinških kompanij in analiz konkurenčnega okolja. Uvrščanje besedil pomaga uporabnikom  pri analizi strankinih mnenj in ocen, kar jim pomaga razumeti, kako se izdelki ali storitve pozicionirajo na trgu v primerjavi z konkurenco. Zadnje področje, ki ga bomo raziskali se na naša na zaznavo objektov, ki jo lahko uporabljamo za nadzor in identifikacijo neželenih oseb ali predmetov na območju objekta, kar prispeva k izboljšani varnosti in nadzoru.
 
-V nadaljevanju bomo prevrili kateri so najboljši odprtokodni ponudniki na trgu in izbrali enega izmed najboljših ter naredili primerjavo z najbolj prepoznavnimi oblačnimi ponudniki. Trenutno so na trgu najbolj prepoznavni Google Cloud, Microsoft  Azure ter Amazon Web Services . 
+Preverili bomo kateri so najboljši odprtokodni ponudniki na trgu in izbrali enega izmed najboljših ter naredili primerjavo z najbolj prepoznavnimi oblačnimi ponudniki. Trenutno so na trgu najbolj prepoznavni Google Cloud, Microsoft  Azure ter Amazon Web Services . 
 
-Za merjenje uspešnosti posameznega področja, bomo uporabili dobro uveljavljene in standardne metrike. Te metrike predstavljajo ključno orodje za oceno učinkovitosti različnih rešitev na izbranem področju.
+Za merjenje uspešnosti posameznega področja, bodo uporabljene dobro uveljavljene in standardne metrike. Te metrike predstavljajo ključno orodje za oceno učinkovitosti različnih rešitev na izbranem področju.
 
 Cilj magistrske naloge je raziskati, kateri ponudnik je najboljši na določenem področju, ter na podlagi analize cenovne ugodnosti, enostavnosti uporabe in uspešnosti določiti, katerega ponudnika se najbolj izplača izbrati.
 
-\subsection{Prispevki}
+\section{Prispevki}
 Magistrska naloga bo temeljila na obsežni analizi specifičnih področij naravnega jezika in obdelave slik. Naša raziskava bo usmerjena v prepoznavanje najboljših ponudnikov za vsako od teh izbranih področij. Osredotočili se bomo na razumevanje, kateri ponudniki na teh področjih izstopajo in kako se primerjajo glede na pomembne dejavnike, kot so cenovna konkurenčnost, uspešnost ter enostavnost uporabe njihovih rešitev.
 
 Glavni cilj magistrske naloge bo organizacijam in posameznikom pomagati pri odločitvi, kateri ponudnik obdelave naravnegajezika in slik rešitev je najbolj primeren za njihove specifične potrebe. S tem bomo izvedli poglobljeno analizo in preverili, kako se posamezni ponudniki odrežejo na različnih področjih uporabe naravnega jezika  in obdelave slik.
@@ -153,15 +133,15 @@ Naš prispevek bo poudaril, kateri ponudnik ponuja najboljšo kombinacijo cenovn
 %----------------------------------------------------------------
 \chapter{Opis ponudnikov in storitev}
 \label{ch3}
-Izbrani ponudniki so bili Google Cloud, Amazon Web Services in Microsoft Azure, saj so bili po raziskavi na spletu prepoznani kot najbolj razširjeni in zanesljivi oblačni ponudniki na trgu. 
+Izbrani oblačni ponudniki so Google Cloud, Amazon Web Services in Microsoft Azure, saj so bili identificirani kot najbolj razširjeni in zanesljivi ponudniki storitev na trgu, na podlagi raziskave, opravljene na spletu
 
-V članku je Marek Hernans naredil raziskavo stotih najboljših oblačnih ponudnikov storitev\cite{najboljsi_cloud}, kjer poudari da so trenutno vodillni Google Cloud, Microsoft in Amazon Web Services ponudniki.  
+V članku, ki ga je pripravil Marek Hernans in ki je vključen v literaturo\cite{najboljsi_cloud}, je bila izvedena raziskava stotih najboljših ponudnikov storitev v oblaku, pri čemer je bil poudarek na dejstvu, da trenutno prevladujejo Google Cloud, Microsoft in Amazon Web Services kot vodilni igralci v tem sektorju.
 
-Prav tako Paulo Gardini Miguel v svojem članku, kjer naredi analizo najboljših 23 ponudnikov\cite{najboljsi1_cloud} potrdi da je na prvem mestu najboljši ponudnik Amazon Web Services na drugem mestu Microsoft Azure, ter na tretjem mestu Google Cloud. 
+Prav tako je Paulo Gardini Miguel v svojem članku\cite{najboljsi1_cloud}, izvedel analizo najboljših 23 ponudnikov storitev v oblaku, pri čemer je ugotovil, da je najboljši ponudnik Amazon Web Services, Microsoft Azure pa se uvršča na drugo mesto, medtem ko je Google Cloud na tretjem mestu.
 
-Za analizo je bila uporabljena odprtokodna platforma Hugging Face Transformers, ki je po objavljenih člankih dosegla najboljše rezultate. Platforma je bila je prepoznana kot izjemno učinkovita in zmogljiva, ki se je odlično izkazala pri obdelavi različnih nalog.
+Pri izvedbi analize je bila uporabljena odprtokodna platforma Hugging Face Transformers, ki je po rezultatih, predstavljenih v več objavljenih člankih, dosegla najboljše rezultate. Ta platforma je bila prepoznana kot izjemno učinkovita in zmogljiva, z izvrstnimi zmogljivostmi pri obdelavi različnih nalog.
 
-Pri raziskavi se tako ODSC (ang. Open Data Scince)\cite{hf1} kot tud Juliette iz NLP Cloud portala\cite{hf2} soupadata z mnenem da je Hugging Face najboljša izbira pri odprtokodnih podnudnikih. Saj je ponudnik pri katerem je enostavno uporabljati, ter dodajati nove modele. 
+Raziskava, ki so jo izvedli ODSC (Open Data Science Community)\cite{hf1}, kot tudi Juliette iz NLP Cloud portala\cite{hf2}, potrjujeta, da je Hugging Face najboljša izbira med odprtokodnimi ponudniki. Prepoznana je kot ponudnik, pri katerem je enostavno uporabljati in dodajati nove modele.
 
 \section{Hugging Face}
 \label{sec:transformers}
@@ -176,12 +156,14 @@ Vizija Hugging Face je ''demokratizirati'' obdelavo naravnega jezika in postati 
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=9cm]{transf.png}
+\includegraphics[width=7cm]{ransf.png}
 \end{center}
 \caption{Hugging Face}
 \label{pic2}
 \end{figure}
 
+
+\newpage
 \subsection{Hugging Face Transformers }
 Hugging Face Transformers \cite{transformers} je odprtokodna knjižnica, ki je postala ena najpomembnejših orodij za obdelavo naravnega  jezika in strojnega učenja. Njen cilj je ponuditi razvijalcem enostaven dostop do najnovejših arhitektur in modelov. Zgrajena je na osnovi Pythona in je postala ključno orodje za reševanje izzivov na področju obdelave naravnega jezika in razvoja aplikacij ter storitev.
 
@@ -197,13 +179,13 @@ Ponujajo širok nabor storitev za obdelavo naravnega jezika in sicer: uvrščanj
 \label{sec:google}
 Google Cloud\cite{google}  je vodilna platforma za računalništvo v oblaku, ki zagotavlja široko paleto storitev in rešitev za podjetja in razvijalce. Ta platforma omogoča shranjevanje in obdelavo podatkov, razvoj aplikacij, umetno inteligenco, strojno učenje in še veliko več.
 
-Google Cloud podpira številne storitve za shranjevanje podatkov, vključno z Cloud Storage, Cloud SQL in Cloud Bigtable, ki omogočajo enostavno in zanesljivo shranjevanje ter upravljanje podatkov v oblaku. Poleg tega omogoča obdelavo podatkov s storitvami, kot so Google Cloud Dataflow in BigQuery, ki omogočajo analizo in obdelavo podatkov v realnem času.
+Google Cloud podpira številne storitve, vključno z Cloud Storage,  Cloud SQL in  Cloud Bigtable, ki omogočajo enostavno in zanesljivo shranjevanje ter upravljanje podatkov v oblaku. Poleg tega omogoča obdelavo podatkov s storitvami, kot so  Google Cloud Dataflow in  BigQuery, ki omogočajo analizo in obdelavo podatkov v realnem času.
 
-Kar zadeva umetno inteligenco, Google Cloud ponuja številne storitve in orodja za razvoj, usposabljanje in razporejanje modelov strojnega učenja. Na primer, Google Cloud AutoML omogoča enostavno ustvarjanje strojno učenih modelov brez potrebe po globokem strojnem znanju. Poleg tega platforma podpira tudi TensorFlow in PyTorch za razvoj naprednih modelov.
+Kar zadeva umetno inteligenco, Google Cloud ponuja številne storitve in orodja za razvoj, usposabljanje in razporejanje modelov strojnega učenja. Na primer, Google Cloud AutoML omogoča enostavno ustvarjanje strojno učenih modelov brez potrebe po globokem strojnem znanju. Poleg tega platforma podpira tudi  TensorFlow in  PyTorch za razvoj naprednih modelov.
 
 Ko se osredotočimo na obdelavo naravnega jezika, Google Cloud ponuja močne rešitve, kot je Vertex AI, ki omogoča analizo besedil, razumevanje sentimenta in identifikacijo entitet v besedilih. Poleg tega Cloud Translation omogoča prevajanje besedil med različnimi jeziki, kar je koristno za globalna podjetja in aplikacije.
 
-Poleg tega je Google Cloud Vertex AI postala nepogrešljiva platforma za razvoj aplikacij s področja NLP. S svojimi zmogljivostmi za upravljanje podatkov, treniranje modelov in avtomatizacijo razvojnega cikla omogoča hitro in učinkovito razvijanje in razširjanje modelov za obdelavo naravnega jezika. Vertex AI prinaša napredne tehnologije, kot so transformerski modeli, ki so postali temeljni gradnik v razvoju najnovejših NLP aplikacij. S tem omogoča razvijalcem ustvarjanje bolj natančnih in zmogljivih sistemov za razumevanje in generiranje besedila, kar ima velik vpliv na različna področja, od obdelave besedilnih podatkov do avtomatizacije odzivanja na stranke. Vertex AI tako omogoča razvijalcem, da izkoristijo najnovejše dosežke na področju NLP in jih vključijo v svoje aplikacije ter izboljšajo uporabniško izkušnjo in učinkovitost svojih sistemov.
+Poleg tega je Google Cloud Vertex AI postala nepogrešljiva platforma za razvoj aplikacij s področja obdelave naravnega jezika. S svojimi zmogljivostmi za upravljanje podatkov, treniranje modelov in avtomatizacijo razvojnega cikla omogoča hitro in učinkovito razvijanje in razširjanje modelov za obdelavo naravnega jezika. Vertex AI prinaša napredne tehnologije, kot so transformerski modeli, ki so postali temeljni gradnik v razvoju najnovejših aplikacij za obdelavo naravnega jezika. S tem omogoča razvijalcem ustvarjanje bolj natančnih in zmogljivih sistemov za razumevanje in generiranje besedila, kar ima velik vpliv na različna področja, od obdelave besedilnih podatkov do avtomatizacije odzivanja na stranke. Vertex AI tako omogoča razvijalcem, da izkoristijo najnovejše dosežke na področju NLP in jih vključijo v svoje aplikacije ter izboljšajo uporabniško izkušnjo in učinkovitost svojih sistemov.
 
 
 Področje obdelave naravnega jezika je bilo dodano v Google Cloud leta 2015. Ponuja več kot 100 različnih modelov, najbolj prepoznavni modeli so OWL-ViT, BERT ter PaLM, kateri se uporablja za obdelavo naravnega jezika.
@@ -211,7 +193,7 @@ Področje obdelave naravnega jezika je bilo dodano v Google Cloud leta 2015. Pon
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=7cm]{google.png}
+\includegraphics[width=9cm]{google.png}
 \end{center}
 \caption{Google Cloud storitve}
 \label{pic2}
@@ -245,7 +227,7 @@ Podpora različnih jezikov je pogojena v prvi vrsti z izbiro modela.
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=8cm]{amazonAWS1}
+\includegraphics[width=10cm]{amazonAWS1}
 \end{center}
 \caption{Amazon Web Services storitve}
 \label{pic2}
@@ -280,9 +262,10 @@ Ponuja široko podporo različnim jezikom, skupno več kot 96. Nekateri izmed nj
 \label{pic2}
 \end{figure}
 
+\newpage
 \subsection{Azure Cognitive Services }
 Azure Cognitive Services \cite{cognitive} je celovita in napredna platforma za umetno inteligenco, ki jo ponuja Microsoftova platforma Azure. Te storitve omogočajo analizo in Microsoft Azure je vodilna platforma za računalništvo v oblaku, ki zagotavlja širok nabor storitev in zmogljivosti za organizacije in razvijalce. Podpira gostovanje virtualnih strojev, omogoča razvoj in upravljanje aplikacij s pomočjo aplikacijskih strežnikov, kot so Azure App Service in Azure Functions, ter ponuja različne podatkovne storitve, vključno s SQL Database, Cosmos DB in Azure Synapse Analytics.
-Kar zadeva naravno obdelavo jezika (NLP), je Azure izredno zmogljiv. Omogoča razvijalcem, da ustvarijo aplikacije in rešitve, ki razumejo, analizirajo in generirajo človeški jezik. Azure ponuja številne orodja in storitve za podporo NLP, vključno s strojnim učenjem, globokim učenjem in analizo besedila.
+Kar zadeva obdelavo naravnega jezika, je Azure izredno zmogljiv. Omogoča razvijalcem, da ustvarijo aplikacije in rešitve, ki razumejo, analizirajo in generirajo človeški jezik. Azure ponuja številne orodja in storitve za podporo obdelave naravnega jezika, vključno s strojnim učenjem, globokim učenjem in analizo besedila.
 
 Azure Cognitive Services so ključni del Azure-jevih zmogljivosti za NLP. Te storitve uporabljajo napredne algoritme in modele, da omogočijo razvoj aplikacij za razumevanje govora, prepoznavo besedila, prevajanje jezikov, analizo sentimenta in še več. 
 
@@ -291,11 +274,11 @@ S pomočjo Azure Cognitive Services lahko razvijalci enostavno integrirajo obdel
 Azure podpira kontejnerizacijo z orodji, kot sta Azure Kubernetes Service in Azure Container Instances, za enostavno upravljanje in orkestracijo kontejnerjev. Za razvojnih skupin ponuja Azure DevOps orodja za upravljanje procesov razvoja in nenehno dostavo aplikaciij. 
 
 
-
 Azure Cognitive Services ponujaja širok nabor storitev za obdelavo naravnega jezika in sicer: prepoznavanje imenskih entitet, sentimentalna analiza, odgovarjanje na vprašanja, prevajanje ter druge. 
 
 Uporabljamo ga lahko z pomočjo več različnih programskih jezikov, kot so: C\#, Java, JavaScript ter Python. 
 
+\newpage
 \subsection{Stroški storitev}
  \begin{figure}[h!]
 \begin{center}
