@@ -40,18 +40,18 @@
 \contentsline {section}{\numberline {5.5}Točnost}{38}{section.5.5}%
 \contentsline {section}{\numberline {5.6}ROUGE}{39}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Primerjava orodij}{41}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (named entity recognition)}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Prepoznavanje imenskih entitet (angl. Named entity recognition)}{43}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Analiza napak pri prepoznavanje imenskih entitet}{46}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Analiza sentimenta }{48}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{51}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Povzemanje besedila}{54}{section.6.3}%
+\contentsline {section}{\numberline {6.2}Analiza sentimenta (angl. Sentiment Analysis)}{49}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Analiza napak pri analizi sentimenta}{52}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Povzemanje besedila (angl. Summarization)}{54}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{56}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (key pharses)}{57}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (angl. Key pharses)}{58}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{61}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Uvrščanje besedil ( angl. Text classification)}{62}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{65}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{67}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{69}{subsection.6.6.1}%
-\contentsline {section}{\numberline {6.7}Diskusija}{71}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Odločitvena tabela}{72}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Zaključek}{75}{chapter.7}%
+\contentsline {section}{\numberline {6.5}Uvrščanje besedil ( angl. Text classification)}{64}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{66}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{69}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Analiza napak pri zaznavi objektov}{71}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Diskusija}{73}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Odločitvena tabela}{74}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Zaključek}{77}{chapter.7}%

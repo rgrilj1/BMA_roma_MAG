@@ -345,7 +345,7 @@ Cilj je prepoznati in določiti začetek in konec posameznih entitet v besedilu 
 Primer prepoznavanja imenskih entitet:
 \begin{center}
 \fbox{\begin{minipage}[h!]{29em}
-The tower is 324 metres tall, about the same height as an 81-storey building, and the tallest structure in \colorbox{blue!50}{Paris} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} . Its base is square, measuring 125 metres on each side. During its construction, the \colorbox{blue!50}{Eiffel Tower} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} surpassed the \colorbox{blue!50}{Washington Monument} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}}   to become the tallest man-made structure in the world. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the \colorbox{brown!50}{Chrysler} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}}. \colorbox{blue!90}{Eiffel Tower} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} is connected with an organization known as the \colorbox{brown!50}{Société d'Exploitation de la Tour Eiffel} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}} or the \colorbox{brown!50}{Eiffel Tower Operating Company} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}}  in \colorbox{gray!90}{English} \textcolor{gray!90}{{\textbf{\tiny (MISC)}}}. It was designed by the French engineer \colorbox{red!70}{Gustave Eiffel} \textcolor{red!70}{{\textbf{\tiny (PER)}}}.
+The tower is 324 metres tall, about the same height as an 81-storey building, and the tallest structure in \colorbox{blue!50}{Paris} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} . Its base is square, measuring 125 metres on each side. During its construction, the \colorbox{blue!50}{Eiffel Tower} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} surpassed the \colorbox{blue!50}{Washington Monument} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}}   to become the tallest man-made structure in the world. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the \colorbox{brown!50}{Chrysler} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}}. \colorbox{blue!50}{Eiffel Tower} \textcolor{blue!50}{{\textbf{\tiny (LOC)}}} is connected with an organization known as the \colorbox{brown!50}{Société d'Exploitation de la Tour Eiffel} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}} or the \colorbox{brown!50}{Eiffel Tower Operating Company} \textcolor{brown!90}{{\textbf{\tiny (ORG)}}}  in \colorbox{gray!90}{English} \textcolor{gray!90}{{\textbf{\tiny (MISC)}}}. It was designed by the French engineer \colorbox{red!70}{Gustave Eiffel} \textcolor{red!70}{{\textbf{\tiny (PER)}}}.
 \end{minipage}}
 \end{center}
 
@@ -842,6 +842,7 @@ Pri zaznavi objektov pa so bile izbrane nslednje kategorije: osebe, živali ter 
 V nadaljevanju so predstavljeni podrobnejši rezultati treh iteracij  z povprečnimi vrednostmi pripadajočih metrik ter  standardni odklon kateri je merilo vrednosti od povprečja. Pomaga nam razumeti, koliko se podatki razlikujejo od povprečne vrednosti. Rezultati v vseh tabelah so zaokroženi na tri decimalna mesta. 
 
 \hfill 
+\newpage
 
 \textbf{Stroški glede na ponudnika}
 
@@ -869,21 +870,24 @@ V tabeli so prikazani stroški obdelave besedilne in slikovne množice na omenje
 
 
 
-\section{Prepoznavanje imenskih entitet (named entity recognition)}
+\section{Prepoznavanje imenskih entitet (angl. Named entity recognition)}
 
 \textbf{Uporabljene metode za prepoznavanje imenskih entitet}
 
 \textit{Amazon Web Services:} 
 
-Uporabljena je bila funkcija “DetectEntities” z dva obveznima parametroma, ki sta “LanguageCode” (jezik besedila) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval eno ali več zaznanih imenskih entitet ter njegovo lokacijo v stavku 
+Za analizo besedila je bila upirabljena funkcija "DetectEntities" z dvema obveznima parametroma, "LanguageCode" (ki določa jezik besedila) in "Text" (ki vsebuje besedilo, ki bo analizirano). Odgovor funkcije vsebuje eno ali več zaznanih imenskih entitet ter njihovo lokacijo v stavku.
 
 \textit{Azure:} 
 
 Uporabljena je bila funkcija “EntityRecognition” z obveznim parametrom “Text” (besedilo na katerem bo narejena analiza), ter “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik), odgovor je vseboval zaznano kategorijo ter podkategorijo ter  verjetnost. 
 
-\textit{Google:} 
+V kontekstu storitve Azure je bila uporabljena funkcija "EntityRecognition" s ključnima parametroma "Text" (vsebina besedila, ki bo analizirana) ter "Language" (jezik besedila). V primiru da jezika ne podamo, je privzeti jezik za analizo je angleščina ("en"). Odgovor funkcije vsebuje zaznano kategorijo, podkategorijo in verjetnost za vsako entiteto.
 
-Uporabljena je bila funkcija “AnalyzeEntities” kjer imamo dva parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo) ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom ter tipom 
+\textit{Google:} 
+Za analizo entitet je bila uporabljena funkcija "AnalyzeEntities", ki zahteva dva parametra: "Type" (tip vhoda, ki je lahko dokument ali besedilo) ter "Content" (vsebina besedila, ki bo analizirana). Kot odgovor prejmemo več entitet, vsako z imenom in tipom.
+
+
 
 \hfill 
 
@@ -901,7 +905,7 @@ Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da sm
    
 \begin{table}[h!]
 \centering
-\caption{Prepoznavanje imenskih entitet (named entity recognition)}
+\caption{Prepoznavanje imenskih entitet}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -952,10 +956,21 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{ner_clan
 
 Za analizo je bil uporabljen korpus CoNLL-2003, ki vsebuje več kot 200.000 stavkov z označenimi imenskimi entitetami. Vsako besedilo je bilo obdelano z vsako od navedenih storitev.
 
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{ner_napake.png}
+\end{center}
+\caption{Napake pri prepoznavanje imenskih entitet }
+\label{pic2}
+\end{figure}
+
+Iz grafa je razvidno, da je pri prepoznavanju oseb največ napak naredil AWS Sagemaker, medtem ko so vsi ostali ponudniki dosegli enako število napak. Ko gre za prepoznavanje lokacij, je AWS Sagemaker tudi izstopal s številnimi napakami, medtem ko so vsi preostali ponudniki dosegli isto stopnjo napak. Pri prepoznavanju imenske entitete “razno” pa se je izkazal Azure Cognitive Services, saj je naredil najmanj napak, medtem ko so vsi drugi ponudniki dosegli enako število napak.
+
+\newpage
 
 \textbf{Natančnost} 
 
-Na podlagi rezultatov iz tabele (glej tabelo Prepoznavanje imenskih entitet) je razvidno, da je najvišjo stopnjo natančnosti dosegel AWS Sagemaker, saj je bil za 3,1\% boljši od drugega uvrščenega Hugging Face Transformers. Google Vertex AI pa je bil le za 0,1\% boljši od drugega uvrščenega modela. Na koncu lestvice pa se je uvrstil Azure Cognitive Services, saj je zaostajal za kar 6,4\% v primerjavi z Google Vertex AI.  
+Na podlagi rezultatov iz tabele (glej tabelo Prepoznavanje imenskih entitet) je razvidno, da je najvišjo stopnjo natančnosti dosegel AWS Sagemaker, saj je bil za 3,1\% boljši od drugo  uvrščenega Hugging Face Transformers. Google Vertex AI pa je bil le za 0,1\% boljši od drugega uvrščenega modela. Na koncu lestvice pa se je uvrstil Azure Cognitive Services, saj je zaostajal za kar 6,4\% v primerjavi z Google Vertex AI.  
 
 Kot zanimivost lahko navedemo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 9,6 odstotnih točk. 
 
@@ -970,14 +985,8 @@ Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrš�
 Google Vertex AI je izkazal večjo učinkovitost v primerjavi z obema drugima storitvama. Povprečen čas obdelave dokumenta je znašal 1,1 sekunde, medtem ko sta Azure Cognitive Services in AWS SageMaker za enak postopek potrebovala 1,5 sekunde oziroma 1,6 sekunde. Vredno omeniti je, da so bili HuggingFace Transformers najhitrejši za en zahtevek, s časom 0,6 sekunde, vendar pa je bila ta analiza izvedena v lokalnem okolju.
 
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=12cm]{ner_napake.png}
-\end{center}
-\caption{Napake pri prepoznavanje imenskih entitet }
-\label{pic2}
-\end{figure}
 
+\newpage
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri prepoznavanje imenskih entitet} \label{tab:title}
@@ -1002,7 +1011,7 @@ Google Vertex AI je izkazal večjo učinkovitost v primerjavi z obema drugima st
 
 Kot je razvidno iz tabele so pri prvem primeru Hugging Face Transformers naredil napako pri zvezi 'San Franciscu', kjer je izpustil del besede. V drugem primeru je AWS SageMaker izpustil pomembno entiteto 'ustanovljena'. V zadnjem primeru pa lahko vidimo da AWS SageMaker ni zaznal nobene imenske entitete. 
 
-Najpogosteje opažene napake pri prepoznavi imenskih entitet:  
+\textbf{Najpogosteje opažene napake pri prepoznavi imenskih entitet: }  
 \begin{enumerate}
  \item Napake imen: to so napake v imenu imenske entitete, na primer napačna črka ali napačen zlog, zapletene besede ali tuje besede. To lahko oteži identifikacijo imena in njegovo kategorizacijo. 
  \item Napake v tipu: napaka v tipu imenske entitete, na primer napačno označitev osebe kot kraja ali obratno. Ime je zapleteno ali dvoumno zato, ker imajo zapletena imena lahko več kot eno pomensko področje. 
@@ -1011,23 +1020,25 @@ Najpogosteje opažene napake pri prepoznavi imenskih entitet:
  \end{enumerate}
 
 
-\section{Analiza sentimenta }
+\section{Analiza sentimenta (angl. Sentiment Analysis)}
 
 \textbf{Uporabljene metode za analizo sentimenta}
 
-\textit{Amazon Web Services:} 
+\textit{Amazon Web Services:}
 
-Uporabljena je bila funkcija “DetectSentiment” z 2 obveznima parametroma, ki sta “LanguageCode” (predstavlja izbran jezik) ter “Text” (podano besedilo, nad katerim je bila izvedena analiza), odgovor je vseboval zaznan sentiment ter točkovanje kjer pozitiven pomeni več kot 0, negative manj kot 0, nevtralen pa 0.
+Za analizo sentimenta besedila je bila uporabljena funkcija "DetectSentiment" z dvema obveznima parametroma, in sicer "LanguageCode" (ki predstavlja izbrani jezik) ter "Text" (vsebino besedila, nad katerim je bila izvedena analiza). Odgovor funkcije vključuje zaznan sentiment ter točkovanje, pri čemer pozitiven sentiment pomeni vrednost večjo od 0, negativen manjšo od 0, in nevtralen 0.
 
 \textit{Azure:} 
 
 Uporabljena je bila funkcija “SentimentAnalysis”  z parametroma, ki sta “Language” (jezik besedila), privzeti jezik je “en” (angleški jezik) ter “Text” (besedilo na katerem bo narejena analiza), odgovor je vseboval zaznan sentiment ter točkovanje. 
 
+Pri storitvi Azure je analizo sentimenta bila uporabljena funkcija "SentimentAnalysis" s parametri "Language" (ki določa jezik besedila, pri čemer je privzeti jezik angleščina, "en") in "Text" (besedilo, ki bo analizirano). Odgovor funkcije vsebuje zaznan sentiment ter točkovanje.
+
 \textit{Google:} 
 
-Uporabljena je bila funkcija “AnalyzeSentiment”  kjer imamo 2 parametra “Type” (tip vhoda, ki je lahko dokument ali besedilo)   ter “Content” (besedilo na katerem bo narejena analiza), kot odgovor pa dobimo več entitet z imenom, tipom entitete ter točkovanje. 
+Za analizo sentimenta je bila uporabljena funkcija "AnalyzeSentiment", ki zahteva dva parametra: "Type" (tip vhoda, ki je lahko dokument ali besedilo) ter "Content" (vsebino besedila, ki bo analizirana). Kot odgovor prejmemo več entitet, vsako z imenom, tipom entitete ter točkovanjem.
 
-\hfill 
+\newpage
 
 \textbf{Stroški uporabe}
 
@@ -1041,9 +1052,10 @@ Uporabljena je bila funkcija “AnalyzeSentiment”  kjer imamo 2 parametra “T
 
 Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
 
+\newpage
 \begin{table}[h!]
 \centering
-\caption{Analiza sentimenta(sentiment analaysis)}
+\caption{Analiza sentimenta}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -1084,6 +1096,7 @@ Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da sm
 \end{figure}
 
 Pri analizi sentimenta je bil uporabljen  IMDb Reviews korpus (glej poglavje~\ref{sec:ch9}).
+
 Za analizo sentimenta  je bila najboljša Vertex AI storitev.
 
 Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{sent1_clanek}, kjer so Guizian Xu in ostali naredili analizo na Twiter korpusu.
@@ -1094,6 +1107,16 @@ Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{sent1_cl
 \subsection{Analiza napak pri analizi sentimenta} 
 Analiza je bila izvedena na 50 besedilih, ki so bili opremljeni z označbami pozitivnega, negativnega ali nevtralnega sentimenta.
 Število napak je izračunano kot število stavkov, pri katerih se sentiment ne ujema z označbo.
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=13cm]{sent_napake.png}
+\end{center}
+\caption{Napake pri zaznavi sentimenta}
+\label{pic2}
+\end{figure}
+
+Iz grafa je mogoče razbrati, da je največ napak pri analizi naredila platforma Google Vertex AI, takoj za njo pa se je uvrstila platforma Azure Cognitive Services. Na drugi strani pa sta platformi Hugging Face Transformers in AWS Sagemaker pokazali najmanjšo stopnjo napak. V kontekstu tega specifičnega področja se je najbolje izkazala platforma AWS Sagemaker, saj je zagotovila najvišjo natančnost pri analizi podatkov.
 
 \textbf{Natančnost} 
 
@@ -1111,13 +1134,8 @@ Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrš�
 
 Google Vertex AI se je izkazal za bolj učinkovitega v primerjavi z obema drugima storitvama. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 1,1 sekunde, medtem ko je Azure Cognitive Services za isto nalogo zahteval 1,5 sekund, AWS SageMaker pa 1,6 sekund.
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{sent_napake.png}
-\end{center}
-\caption{Napake pri zaznavi sentimenta}
-\label{pic2}
-\end{figure}
+
+
 
 \begin{table}[h!]
 \begin{center}
@@ -1146,7 +1164,7 @@ Ta knjiga je zelo zanimiva.   &Pozitivno    & Pozitivno   &Negativno   \\
 
 Opazimo da sta obe storitvi naredili isto napako pri istem primeru, saj sta zaznali dolgočasno kot nevtralno in ne negativno. 
 
-Najpogosteje opažene napake pri analizi sentimenta:  
+\textbf{ Najpogosteje opažene napake pri analizi sentimenta:  } 
 \begin{enumerate}
  \item Nepravilna identifikacija sentimenta: je ena izmed najpogosteje opaženih napak, ki se je pojavila pri analizi sentimenta, kar je lahko ko je beseda ali besedna zveza dvoumna in lahko pomeni tako pozitiven kot negativen sentiment. Lahko je tudi napaka v zapisu same besede ali besedne zveze, kot tudi da je model premalo naučen za določeno področje. 
  \item Nepravilna kategorizacija sentimenta: se pojavi, ko analiza sentimenta pravilno identificira sentiment, vendar ga napačno kategorizira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
@@ -1154,8 +1172,8 @@ Najpogosteje opažene napake pri analizi sentimenta:
  \item Napaka v viru: zaznamo jo, ko analiza sentimenta pravilno identificira sentiment, ga pravilno kategorizira in ga pravilno razvrsti v kontekstu, vendar ga napačno dobi iz vira. To lahko povzroči, da analiza sentimenta ne bo uporabna za namen, za katerega je bila namenjena. 
  \end{enumerate}
 
-\newpage
-\section{Povzemanje besedila}
+
+\section{Povzemanje besedila (angl. Summarization)}
 
 \textbf{Uporabljene metode za povzemanje besedila}
 
@@ -1186,7 +1204,7 @@ Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da sm
 
 \begin{table}[h!]
 \centering
-\caption{Povzemanje besedila (summarization)}
+\caption{Povzemanje besedila}
 \label{my-label}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrr}
@@ -1206,6 +1224,8 @@ Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da sm
 \end{tabular}}
 \end{table}
 
+\newpage
+
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{SUMM.png}
@@ -1220,7 +1240,6 @@ Kot najboljša izbira za ustvarjanje povzetkov se je izkazala storitev Azure Cog
 
 Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{povz_clanek}, kjer so Guizian Xu in ostali naredili analizo na različnih korpusih, kjer pa je najboljši rezultat dosegel CNN/ DailyMail.
 
-\newpage
 
 \subsection{Analiza napak pri povzemanju besedila} 
 Izbrana množica 50 primerov za izvajanje postopkov povzemanja je bila različnih dolžin.
@@ -1262,7 +1281,7 @@ Kot je razvidno iz tabele je Hugging Face Transformers vse stavke zelo slabo obl
 
 
 
-Najpogosteje opažene napake pri povzemanju besedila:  
+\textbf{ Najpogosteje opažene napake pri povzemanju besedila:  }
 \begin{enumerate}
  \item Izpuščanje pomembnih informacij: kar pomeni, da je povzetek netočen ali nepopoln. To se lahko zgodi iz več razlogov, na primer zaradi tega, da model ne prepozna pomembnih informacij ali pa ne more pravilno razumeti pomena besedila. 
   \item Dodajanje napačnih informacij: povzroča, da je povzetek netočen ali zavajajoč. To se lahko zgodi iz več razlogov, na primer zaradi tega, da model napačno intrepterira besedilo ali pa uporablja napačne podatke pri treniranju modela. 
@@ -1274,7 +1293,7 @@ Najpogosteje opažene napake pri povzemanju besedila:
 
 %----------------------------------------------------------------
 
-\section{Prepoznavanje besednih zvez (key pharses)}
+\section{Prepoznavanje besednih zvez (angl. Key pharses)}
 
 \textbf{Uporabljene metode za povzemanje besedila}
 
@@ -1351,34 +1370,42 @@ Kot najboljša rešitev za izvleček besedne zveze pa se je izkazala storitev Az
 
 Kot referenco vidimo v tabeli tudi najboljše rezultate iz članka\cite{key_phrases_clanek}, kjer so Xingdi Yuan in ostali naredili analizo na različnih korpusih, kjer pa je najboljši rezultat dosegel NUS, na drugem mestu pa je bil SemEval, kateri je dosegel oceno 0,357.
 
-  \newpage
+
 \subsection{Analiza napak pri izvlečeku besedne zveze} 
 Vsak od 50 primerov v množici je bil označen s ključnimi besedami in nato obdelan s pomočjo vsake od navedenih storitev.
 Število napak je predstavljeno kot število napačno zaznanih ključnih besed.
 
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{key_napake.png}
+\end{center}
+\caption{Napake pri prepoznavanju besednih zvez}
+\label{pic2}
+\end{figure}
+Iz grafa je razvidno, da je največje število napak zabeleženo pri platformi Google Vertex AI, pri čemer ji takoj sledi Azure Cognitive Services. Nasprotno, platformi Hugging Face Transformers in AWS Sagemaker sta pokazali najmanjše število napak. V tem konkretnem kontekstu se je platforma AWS Sagemaker izkazala kot najboljša, saj je zagotovila najvišjo stopnjo natančnosti pri analizi podatkov.
+
+
 \textbf{Natančnost} 
+
 Na podlagi rezultatov iz tabele (glej tabelo Prepoznavanje besednih zvez) je razvidno, da je najvišjo stopnjo natančnosti dosegel Google Vertex AI  vendar je bil od drugouvrščenega Azure Cognitive Services boljši za 4,5\%. AWS Sagemaker je bil od Hugging Face Transformers boljši za 7,9\%.
 Kot zanimivost lahko navedemo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 16,2 odstotnih točk. 
 
 
 
 \textbf{Priklic} 
+
 Najboljši priklic je dosegel Hugging Face Transformers ki je bil 4,9\% boljši od AWS Sagemaker. Na tretjem mestu je bil Google Vertex AI, kateri je bil od zadnje uvrščenega Azure Cognitive Services boljši za 1,3\%.
 Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 9,2 odstotne točke.
 
 
 
 \textbf{Hitrost obdelave} 
+
 Google Vertex AI se je izkazal za bolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,2 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,3 sekunde, Azure Cognitive Services 0,5 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1s.
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=10cm]{key_napake.png}
-\end{center}
-\caption{Napake pri prepoznavanju besednih zvez}
-\label{pic2}
-\end{figure}
 
+ \newpage
+ 
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri izvlečeku besedne zveze} \label{tab:title}
@@ -1403,7 +1430,9 @@ Apple je bila ustanovljena leta 1976. Je ena največjih tehnoloških podjetij na
 
 Iz tabele lahko razberemo, da je do napak prišlo pri uporabi obeh storitev, kot pri Hugging Face Transformers kakor tudi pri Azure Cognitive Services. Opazimo lahko makajoči  del ključne besede kateri je zelo pomemben, napačno povezovanje besed ter dodajanje neresničnih podatkov.
 
-Najpogosteje opažene napake pri izvlečeku besedne zveze:  
+\hfill
+
+\textbf{Najpogosteje opažene napake pri izvlečeku besedne zveze}:  
 \begin{enumerate}
  \item Napačne oznake: napake v oznaki besednih zvez, na primer napačno označitev besedne zveze kot pomembne, čeprav ni pomembna ali obratno. 
   \item Izpuščanje: napake, pri katerih se besedna zveza izpusti iz izvlečka, na primer zaradi napake pri prepoznavanju besednih zvez ali zaradi napake pri razdelitvi besedila na stavke. 
@@ -1435,17 +1464,21 @@ Uporabljena je bila funkcija “ExtractKeywords” z dvema obveznima parametroma
 
 \hfill 
 
+\newpage
+
 \textbf{Stroški uporabe}
 
  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=12cm]{text_stroski.png}
+\includegraphics[width=9cm]{text_stroski.png}
 \end{center}
 \caption{Stroški uporabe uvrščanja besedil}
 \label{nerST}
 \end{figure}
 
 Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da smo smo transformatorje uporabljali na lokalnem okolju, kar pomeni, da stroški uporabe niso nastali. 
+
+
 
 \begin{table}[h!]
 \centering
@@ -1480,6 +1513,8 @@ Graf prikazuje strošek obdelave testne množice, kjer je potrebno omeniti da sm
 \end{tabular}}
 \end{table}
 
+ \newpage
+
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{CLASSIFICATION.png}
@@ -1500,6 +1535,17 @@ Za potrebe analize smo uporabili množico 50 primerov, pri čemer je vsak primer
 
 Število napak je izraženo kot število primerov, kjer je bila kategorija napačno zaznana, glede na skupno število 50 besedil v množici.
 
+ \newpage
+
+ \begin{figure}[h!]
+\begin{center}
+\includegraphics[width=11cm]{text_napake.png}
+\end{center}
+\caption{Napake pri uvrščanju besedil}
+\label{pic2}
+\end{figure}
+Iz grafa je jasno razvidno, da je največ napak zabeležil Google Vertex AI, pri čemer mu tesno sledi Azure Cognitive Services. Nasprotno pa sta platformi AWS Sagemaker in Hugging Face Transformers pokazali najmanjše število napak. Na tem specifičnem področju se je izkazala platforma Hugging Face Transformers kot najboljša, saj je zagotovila najvišjo stopnjo natančnosti pri analizi podatkov.
+
 
 \textbf{Natančnost} 
 
@@ -1507,26 +1553,21 @@ Na osnovi podatkov iz prikazane tabele (glej Tabelo Uvrščanje besedil) je razv
  Vredno omeniti je, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala 9,9 odstotnih točk.
 
 
-
 \textbf{Priklic} 
+
 Najboljši priklic je dosegel Google Vertex AI ki je bil 3,6\% boljši od Hugging Face Transformers. Na tretjem mestu je bil Azure Cognitive Services, kateri je bil od zadnje uvrščenega AWS Sagemaker boljši za 15,7\%.
 Kot zanimivost lahko omenimo, da je razlika med najboljšim in najslabše uvrščenim rezultatom znašala kar 19,9 odstotne točke.
 
 
 
 \textbf{Hitrost obdelave} 
+
 Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
 
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=12cm]{text_napake.png}
-\end{center}
-\caption{Napake pri uvrščanju besedil}
-\label{pic2}
-\end{figure}
 
 
 
+ 
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri uvrščanje besedila} \label{tab:title}
@@ -1551,14 +1592,13 @@ Apple je bila ustanovljena leta 1976.    &Novice  &Tehnologija   &Novice        
 
 Iz tabele lahko razberemo da so bile narejene napake pri obeh ponudnikih, vendar je Hugging Face Transformers imel manj napak. 
 
-Najpogosteje opažene napake pri uvrščanju besedila:  
-
+\textbf{Najpogosteje opažene napake pri uvrščanju besedila: }
 \begin{enumerate}
   \item Napačno uvrščanje razredov: zaradi pomanjkanja jasnih ločnic med razredi ali zaradi podobnosti med besedili različnih razredov. 
     \item Nezaznavanje: kadar se izpustijo pomembne informacije iz besedila, kar la povzroči, da je uvrščanje netočno ali nepopolno. 
-
-
  \end{enumerate}
+ 
+  \newpage
 %----------------------------------------------------------------
 % Zaznava objektov 
 %---------------------------------------------------------------
@@ -1581,7 +1621,6 @@ Uporabljena je bila funkcija “ImageAnalysis”  z obveznim parametrom “Image
 Uporabljena je bila funkcija “DetectLabels” z obveznim parametrom “Image” (format ['image/*', 'application/octet-stream']), odgovor je vseboval zaznane objekte z kategorijo ter verjetnostjo za zaznani objekt.
 
 
-\newpage
 
 \textbf{Stroški uporabe}
 
@@ -1640,15 +1679,6 @@ Za vsako od izbranih ponudnikov smo izvedli postopek zaznave predmetov na teh sl
 
 Število napak smo nato določili kot število slik, pri katerih je posamezni ponudnik napačno zaznal prisotnost predmeta v sliki.
 
-\textbf{Točnost} 
-
-Na osnovi podatkov iz prikazane tabele (glej graf Zaznava objektov) je razvidno, da je AWS Sagemakerdosegel najvišjo stopnjo točnosti, vendar pa je bil njegov rezultat boljši le za 0,3\% v primerjavi z drugouvrščenim Google Vertex AI. Azure Cognitive Services pa je zaostal za kar 1,2\% v primerjavi z drugo uvrščenim. Na zadnjem mestu pa je za kar 2,5\% slapši  Hugging Face Transformers.
-Pomembno je omeniti, da je razlika med najvišje in najnižje uvrščenim rezultatom znašala zgolj 4 odstotne točke.
-
-\textbf{Hitrost obdelave} 
-
-Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
-
  \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=10cm]{obj_napake.png}
@@ -1657,8 +1687,20 @@ Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelav
 \label{pic2}
 \end{figure}
 
- 
- 
+Iz grafa je jasno razvidno, da je največje število napak naredila platforma Hugging Face Transformers, takoj za njo pa se je uvrstila platforma Azure Cognitive Services. Platformi Google Vertex AI in AWS Sagemaker sta napačno prepoznali samo en objekt.
+
+
+\textbf{Točnost} 
+
+Na osnovi podatkov iz prikazane tabele (glej graf Zaznava objektov) je razvidno, da je AWS Sagemakerdosegel najvišjo stopnjo točnosti, vendar pa je bil njegov rezultat boljši le za 0,3\% v primerjavi z drugouvrščenim Google Vertex AI. Azure Cognitive Services pa je zaostal za kar 1,2\% v primerjavi z drugo uvrščenim. Na zadnjem mestu pa je za kar 2,5\% slapši  Hugging Face Transformers.
+Pomembno je omeniti, da je razlika med najvišje in najnižje uvrščenim rezultatom znašala zgolj 4 odstotne točke.
+
+\newpage
+\textbf{Hitrost obdelave} 
+
+Google Vertex AI se je izkazal za najbolj učinkovitega. Povprečen čas obdelave dokumenta v okviru Google Vertex AI je znašal 0,5 sekunde, medtem ko je AWS SageMaker za isto nalogo zahteval 0,7 sekunde, Azure Cognitive Services 0,9 sekunde. Hugging Face Transformers pa so za izvajanje na lokalnem okolju potrebovali najdlje in sicer 1,4s.
+
+
 \begin{table}[h!]
 \begin{center}
 \caption {Primeri napak pri zaznavi objektov} \label{tab:title}
@@ -1692,7 +1734,10 @@ Tudi pri tej tabeli lahko vidimo da sta obe storitvi naredili napake. Opazimo da
 
 Do napak pri zazvanju objektov prihaja zaradi različnih razlogov, na primer zaradi napak v algoritmu za zaznavanje objektov, zaradi slabe kakovosti slik ali zaradi prisotnosti motenj v okolju. 
 
-Najpogosteje opažene napake pri zaznavi objektov:
+\hfill
+
+
+\textbf{Najpogosteje opažene napake pri zaznavi objektov:}
 \begin{enumerate}
  \item  Nenamerna zaznava: zaznava objektov, ki v dejanskem okolju niso prisotni.
   \item Nezaznavanje: izpuščanje objektov, ki so dejansko pristotni v okolju.
