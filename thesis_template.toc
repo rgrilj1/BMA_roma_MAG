@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.2}Google Cloud}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Vertex AI }{9}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Amazon Web Services }{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}Amazon SageMaker}{11}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Microsoft Azure}{12}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Azure Cognitive Services }{14}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Stroški storitev}{16}{subsection.2.4.2}%
@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {6.3}Povzemanje besedila (angl. Summarization)}{54}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Analiza napak pri povzemanju besedila}{56}{subsection.6.3.1}%
 \contentsline {section}{\numberline {6.4}Prepoznavanje besednih zvez (angl. Key pharses)}{58}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečeku besedne zveze}{61}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.1}Analiza napak pri izvlečku besedne zveze}{60}{subsection.6.4.1}%
 \contentsline {section}{\numberline {6.5}Uvrščanje besedil ( angl. Text classification)}{64}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Analiza napak pri uvrščanje besedila}{66}{subsection.6.5.1}%
 \contentsline {section}{\numberline {6.6}Zaznava objektov (angl. Object detection)}{69}{section.6.6}%
