@@ -5,8 +5,7 @@
 \contentsline {chapter}{Abstract}{}{section*.4}%
 \babel@toc {slovene}{}\relax 
 \contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivacija in ciji }{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Prispevki}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.1}Prispevki}{3}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Opis ponudnikov in storitev}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Hugging Face}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Hugging Face Transformers }{7}{subsection.2.1.1}%
